@@ -1,0 +1,20 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  app9:
+    lang: python3-debian
+    handler: ./app9
+    image: localhost:5000/app9:latest
+    constraints:
+    - "performance=high"
+    limits:
+      memory: 500Mi
+      cpu: 1000m
+    requests:
+      memory: 300Mi
+      cpu: 500m
+configuration:
+  copy:
+    - ./app9/model.pkl

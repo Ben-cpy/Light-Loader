@@ -1,0 +1,73 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building cli-application.
+[0mClearing temporary build folder: ./build/cli-application/
+Preparing: ./cli-application/ build/cli-application/function
+Building: localhost:5000/cli-application:latest with python3-debian template. Please wait..
+cli-application shrink-wrapped to ./build/cli-application/
+[33m[0] < Building cli-application done in 0.22s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.22s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params tags='' image-build-engine='internal' target.type='image' target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:8db448db63fa7b89409029579d028558aab319e10b20189fd771c49c5366fb4c' size.bytes='1068927420' size.human='1.1 GB' 
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack name='fat-img:latest' id='sha256:8db448db63fa7b89409029579d028558aab319e10b20189fd771c49c5366fb4c' index='0' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_81854_20241210032056' id='04ffe76d746e1a6bd214653b44861f1e1d07b06271474d88315b35ed6da94dc1' 
+cmd=build info=container status='running' name='slimk_81854_20241210032056' id='04ffe76d746e1a6bd214653b44861f1e1d07b06271474d88315b35ed6da94dc1' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container target.port.info='8080/tcp => 0.0.0.0:32978' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_81854_20241210032056' id='04ffe76d746e1a6bd214653b44861f1e1d07b06271474d88315b35ed6da94dc1' target.port.list='32978' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32978' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call attempt='1' error='none' time='2024-12-10T03:21:08Z' status='200' method='GET' target='http://127.0.0.1:32978/' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32978/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32978/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building engine=internal message="building optimized image" 
+cmd=build state=completed
+cmd=build info=results by='23.33X' size.original='1.1 GB' size.optimized='46 MB' status='MINIFIED' 
+cmd=build info=results has.data='true' image-build-engine='internal' image.name='fat-img.slim' image.size='46 MB' image.id='sha256:ba4abdb23ca7cd2fc61140cfb8a989dfdf5547a1271701d2822eb88560fb885e' image.digest='sha256:d27a48a1ffcf184d72eec547deefd0c03940bf158d0159e51eda7cc14f76753c' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/8db448db63fa7b89409029579d028558aab319e10b20189fd771c49c5366fb4c/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='fat-img-seccomp.json' 
+cmd=build info=results artifacts.apparmor='fat-img-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Step 5: Renaming the slimmed image...
+Step 6: Pushing the slimmed image to the registry...
+The push refers to repository [localhost:5000/cli-application]
+e21584527281: Preparing
+e21584527281: Pushed
+latest: digest: sha256:192633319c724a33fb79c94e913a1578d3e56f26c30244009c35a7e4062bb4e3 size: 529
+Step 7: Checking if function is already deployed...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: cli-application.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/cli-application
+
+Deployment complete!

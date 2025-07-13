@@ -1,0 +1,8 @@
+package
+__pycache__/
+.vscode/
+dockerfile
+/pycg.json
+/api_key
+/CLAUDE.md
+/.claude

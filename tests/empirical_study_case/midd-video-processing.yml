@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  midd-video-processing:
+    lang: python3-debian
+    handler: ./midd-video-processing
+    image: localhost:5001/midd-video-processing:latest
+    constraints:
+    - "performance=high"
+    limits:
+      cpu: 1000m
+      memory: 500Mi
+configuration:
+  copy:
+    - ./midd-video-processing/cat.jpg
+    - ./midd-video-processing/demo.mp3

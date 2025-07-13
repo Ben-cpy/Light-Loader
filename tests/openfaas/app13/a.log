@@ -1,0 +1,152 @@
+Using regular OpenFaaS workflow...
+Step 1: Building the function...
+[33m[0] > Building app13.
+[0mClearing temporary build folder: ./build/app13/
+Preparing: ./app13/ build/app13/function
+Building: localhost:5000/app13:latest with python3-debian template. Please wait..
+[33m[0] < Building app13 done in 7.03s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 7.03s[0m
+[31mErrors received during build:
+- [app13] received non-zero exit code from build, error: #0 building with "default" instance using docker driver
+
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.2s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 2.09kB done
+#2 DONE 0.3s
+
+#3 [internal] load metadata for localhost:5000/python:3.10.5
+#3 DONE 0.3s
+
+#4 [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1
+#4 ERROR: failed to do request: Head "https://ghcr.io/v2/openfaas/classic-watchdog/manifests/0.3.1": read tcp 127.0.0.1:42112->127.0.0.1:7890: read: connection reset by peer
+------
+ > [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1:
+------
+Dockerfile:2
+--------------------
+   1 |     ARG PYTHON_VERSION=3.10.5
+   2 | >>> FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/openfaas/classic-watchdog:0.3.1 AS watchdog
+   3 |     FROM --platform=${TARGETPLATFORM:-linux/amd64} localhost:5000/python:${PYTHON_VERSION}
+   4 |     
+--------------------
+ERROR: failed to solve: ghcr.io/openfaas/classic-watchdog:0.3.1: failed to do request: Head "https://ghcr.io/v2/openfaas/classic-watchdog/manifests/0.3.1": read tcp 127.0.0.1:42112->127.0.0.1:7890: read: connection reset by peer
+
+[0m
+Step 2: Pushing to registry...
+[33m[0] > Pushing app13 [localhost:5000/app13:latest].
+[0mThe push refers to repository [localhost:5000/app13]
+9a9513cbfc76: Preparing
+18f570c30e99: Preparing
+9ffa64ae0d31: Preparing
+f5e4a7297372: Preparing
+5f70bf18a086: Preparing
+a18c23ae2eaf: Preparing
+394a50e5be31: Preparing
+5f70bf18a086: Preparing
+1174a6a700ce: Preparing
+9f0e390b780a: Preparing
+375947e1c02b: Preparing
+0ab843e8726f: Preparing
+efbe7d117ecd: Preparing
+b3a08655b9e3: Preparing
+fe700f73da43: Preparing
+a18c23ae2eaf: Waiting
+e2a2c4680acc: Preparing
+f1011ad616ce: Preparing
+394a50e5be31: Waiting
+c6b89608d737: Preparing
+1174a6a700ce: Waiting
+0d9e4c33e011: Preparing
+0ab843e8726f: Waiting
+9f0e390b780a: Waiting
+b3a08655b9e3: Waiting
+59de3390a451: Preparing
+375947e1c02b: Waiting
+e729c4134cc3: Preparing
+fe700f73da43: Waiting
+0d9e4c33e011: Waiting
+e2a2c4680acc: Waiting
+25b7ac7c2745: Preparing
+efbe7d117ecd: Waiting
+f1011ad616ce: Waiting
+c1537681ddab: Preparing
+c4c2f1c63c2f: Preparing
+c6b89608d737: Waiting
+4be7fe848f91: Preparing
+59de3390a451: Waiting
+6a3d7465dae1: Preparing
+e729c4134cc3: Waiting
+c1537681ddab: Waiting
+4be7fe848f91: Waiting
+2143381c9922: Preparing
+25b7ac7c2745: Waiting
+c4c2f1c63c2f: Waiting
+12228ba7a3b1: Preparing
+6a3d7465dae1: Waiting
+2143381c9922: Waiting
+9b55156abf26: Preparing
+12228ba7a3b1: Waiting
+293d5db30c9f: Preparing
+9b55156abf26: Waiting
+03127cdb479b: Preparing
+293d5db30c9f: Waiting
+9c742cd6c7a5: Preparing
+03127cdb479b: Waiting
+9c742cd6c7a5: Waiting
+9ffa64ae0d31: Layer already exists
+18f570c30e99: Layer already exists
+9a9513cbfc76: Layer already exists
+f5e4a7297372: Layer already exists
+a18c23ae2eaf: Layer already exists
+5f70bf18a086: Layer already exists
+1174a6a700ce: Layer already exists
+394a50e5be31: Layer already exists
+9f0e390b780a: Layer already exists
+375947e1c02b: Layer already exists
+0ab843e8726f: Layer already exists
+efbe7d117ecd: Layer already exists
+b3a08655b9e3: Layer already exists
+e2a2c4680acc: Layer already exists
+fe700f73da43: Layer already exists
+f1011ad616ce: Layer already exists
+c6b89608d737: Layer already exists
+0d9e4c33e011: Layer already exists
+59de3390a451: Layer already exists
+e729c4134cc3: Layer already exists
+c4c2f1c63c2f: Layer already exists
+c1537681ddab: Layer already exists
+4be7fe848f91: Layer already exists
+25b7ac7c2745: Layer already exists
+6a3d7465dae1: Layer already exists
+2143381c9922: Layer already exists
+12228ba7a3b1: Layer already exists
+9b55156abf26: Layer already exists
+9c742cd6c7a5: Layer already exists
+03127cdb479b: Layer already exists
+293d5db30c9f: Layer already exists
+latest: digest: sha256:63fb113ccd131e50621df5cd5fad0355ea67ab5154f00cee0c946e69031a9265 size: 7019
+[33m[0] < Pushing app13 [localhost:5000/app13:latest] done.
+[0m[33m[0] Worker done.
+[0mStep 7: Checking if function is already deployed...
+Thu Feb 20 20:05:27 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:29 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:31 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:33 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:35 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:37 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:39 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:41 CST 2025 - Function 'app13' is already deployed. Waiting...
+Thu Feb 20 20:05:44 CST 2025 - Function 'app13' is already deployed. Waiting...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: app13.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/app13
+
+Deployment complete!

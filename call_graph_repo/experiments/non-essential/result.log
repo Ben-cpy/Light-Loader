@@ -1,0 +1,31 @@
+[root@cloud-node non-essential_size]# python3 demonstrate_optional_file.py 
+请输入目录路径: /home/chenpengyu/openfaas-la/app5
+目录总大小: 18.14 MB
+匹配的文件和目录总大小: 0.82 MB
+匹配项占目录总大小的比例: 4.50%
+[root@cloud-node non-essential_size]# python3 demonstrate_optional_file.py 
+请输入目录路径: /home/chenpengyu/openfaas-la/app6
+目录总大小: 119.39 MB
+匹配的文件和目录总大小: 39.41 MB
+匹配项占目录总大小的比例: 33.01%
+[root@cloud-node non-essential_size]# python3 demonstrate_optional_file.py 
+请输入目录路径: /home/chenpengyu/openfaas-la/app7
+目录总大小: 246.58 MB
+匹配的文件和目录总大小: 33.11 MB
+匹配项占目录总大小的比例: 13.43%
+[root@cloud-node non-essential_size]# python3 demonstrate_optional_file.py 
+请输入目录路径: /home/chenpengyu/openfaas-la/app8
+目录总大小: 238.13 MB
+匹配的文件和目录总大小: 8.70 MB
+匹配项占目录总大小的比例: 3.65%
+[root@cloud-node non-essential_size]# python3 demonstrate_optional_file.py 
+请输入目录路径: /home/chenpengyu/openfaas-la/marshal
+目录总大小: 0.52 MB
+匹配的文件和目录总大小: 0.20 MB
+匹配项占目录总大小的比例: 37.53%
+[root@cloud-node non-essential_size]# python3 demonstrate_optional_file.py 
+请输入目录路径: /home/chenpengyu/openfaas-la/app10
+目录总大小: 259.08 MB
+匹配的文件和目录总大小: 56.34 MB
+匹配项占目录总大小的比例: 21.75%
+[root@cloud-node non-essential_size]# 

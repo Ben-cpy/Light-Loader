@@ -1,0 +1,2119 @@
+{
+    "handler": [
+        "<builtin>.print",
+        "handler.handle"
+    ],
+    "cv2": [
+        "<builtin>.print",
+        "cv2.bootstrap"
+    ],
+    "os": [
+        "extend",
+        "os._add",
+        "os._Environ.__init__",
+        "<builtin>.globals",
+        "<builtin>.set",
+        "append",
+        "os._createenviron",
+        "os._fscodec",
+        "os._exists",
+        "<builtin>.type",
+        "<builtin>.ImportError"
+    ],
+    "abc": [],
+    "_py_abc": [],
+    "_weakrefset": [],
+    "types": [
+        "types._ag",
+        "<builtin>.globals",
+        "types._c",
+        "types._cell_factory",
+        "<builtin>.type",
+        "types._g",
+        "<builtin>.object"
+    ],
+    "<builtin>.type": [],
+    "types._cell_factory": [],
+    "types._g": [],
+    "types._c": [],
+    "types._ag": [],
+    "<builtin>.object": [],
+    "types._GeneratorWrapper": [
+        "<builtin>.property"
+    ],
+    "<builtin>.property": [],
+    "<builtin>.globals": [],
+    "_weakrefset.WeakSet": [
+        "<builtin>.classmethod"
+    ],
+    "<builtin>.classmethod": [],
+    "stat": [],
+    "<builtin>.ImportError": [],
+    "append": [],
+    "ntpath": [
+        "<builtin>.hasattr"
+    ],
+    "genericpath": [],
+    "<builtin>.hasattr": [],
+    "extend": [],
+    "posixpath": [],
+    "os._exists": [
+        "<builtin>.globals"
+    ],
+    "<builtin>.set": [],
+    "os._add": [],
+    "os._createenviron": [
+        "os._createenviron.encodekey",
+        "os._Environ.__init__"
+    ],
+    "os._createenviron.encodekey": [
+        "os._createenviron.encode"
+    ],
+    "os._createenviron.encode": [
+        "<builtin>.type",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.isinstance": [],
+    "<builtin>.TypeError": [],
+    "os._Environ.__init__": [],
+    "os._fscodec": [],
+    "os.PathLike": [
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "abc.abstractmethod": [],
+    "importlib": [],
+    "warnings": [
+        "warnings.filterwarnings",
+        "warnings._processoptions",
+        "warnings.simplefilter",
+        "<builtin>.hasattr"
+    ],
+    "warnings._processoptions": [
+        "<builtin>.print",
+        "warnings._setoption"
+    ],
+    "warnings._setoption": [
+        "<builtin>.int",
+        "warnings._getaction",
+        "warnings._getcategory",
+        "re.escape",
+        "<builtin>.len",
+        "warnings.filterwarnings"
+    ],
+    "<builtin>.len": [],
+    "warnings._getaction": [],
+    "warnings._getcategory": [
+        "<builtin>.getattr",
+        "<builtin>.issubclass",
+        "<builtin>.__import__"
+    ],
+    "<builtin>.__import__": [],
+    "<builtin>.getattr": [],
+    "<builtin>.issubclass": [],
+    "re": [
+        "functools.lru_cache",
+        "<builtin>.chr",
+        "functools.lru_cache.decorating_function",
+        "<builtin>.globals",
+        "copyreg.pickle",
+        "<builtin>.type",
+        "sre_compile.compile"
+    ],
+    "enum": [
+        "<builtin>.object"
+    ],
+    "enum.EnumMeta": [
+        "<builtin>.property",
+        "<builtin>.staticmethod",
+        "<builtin>.classmethod"
+    ],
+    "<builtin>.staticmethod": [],
+    "enum.Enum": [
+        "types.DynamicClassAttribute.__init__",
+        "<builtin>.classmethod"
+    ],
+    "types.DynamicClassAttribute.__init__": [
+        "<builtin>.getattr",
+        "<builtin>.bool"
+    ],
+    "<builtin>.bool": [],
+    "enum.Flag": [
+        "<builtin>.classmethod"
+    ],
+    "enum.IntFlag": [
+        "<builtin>.classmethod"
+    ],
+    "sre_compile": [
+        "<builtin>.tuple"
+    ],
+    "sre_parse": [
+        "<builtin>.frozenset"
+    ],
+    "sre_constants": [
+        "sre_constants._makecodes"
+    ],
+    "sre_constants._makecodes": [
+        "<builtin>.enumerate",
+        "<builtin>.globals",
+        "<str>.strip",
+        "<str>.split"
+    ],
+    "<str>.strip": [],
+    "<str>.split": [],
+    "<builtin>.enumerate": [],
+    "<builtin>.frozenset": [],
+    "sre_parse.State": [
+        "<builtin>.property"
+    ],
+    "sre_parse.Tokenizer": [
+        "<builtin>.property"
+    ],
+    "<builtin>.tuple": [],
+    "functools": [
+        "<builtin>.object",
+        "collections.namedtuple"
+    ],
+    "collections": [],
+    "keyword": [
+        "<builtin>.frozenset"
+    ],
+    "operator": [],
+    "reprlib": [
+        "reprlib.Repr.__init__"
+    ],
+    "reprlib.Repr.__init__": [],
+    "collections.OrderedDict": [
+        "<builtin>.classmethod",
+        "<builtin>.object",
+        "reprlib.recursive_repr",
+        "reprlib.recursive_repr.decorating_function"
+    ],
+    "reprlib.recursive_repr": [],
+    "reprlib.recursive_repr.decorating_function": [
+        "<builtin>.getattr",
+        "<builtin>.set"
+    ],
+    "collections.Counter": [
+        "<builtin>.classmethod"
+    ],
+    "collections.ChainMap": [
+        "<builtin>.classmethod",
+        "reprlib.recursive_repr",
+        "<builtin>.property",
+        "reprlib.recursive_repr.decorating_function"
+    ],
+    "collections.UserDict": [
+        "<builtin>.classmethod"
+    ],
+    "functools.partial": [
+        "reprlib.recursive_repr",
+        "reprlib.recursive_repr.decorating_function"
+    ],
+    "functools.partialmethod": [
+        "<builtin>.property",
+        "<builtin>.classmethod"
+    ],
+    "collections.namedtuple": [
+        "<builtin>.map",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.list",
+        "<builtin>.classmethod",
+        "<builtin>.dict",
+        "<builtin>.tuple",
+        "<builtin>.str",
+        "<str>.replace",
+        "<builtin>.type",
+        "<builtin>.ValueError",
+        "<builtin>.reversed",
+        "<str>.split",
+        "<str>.join",
+        "<builtin>.set",
+        "<builtin>.TypeError",
+        "<builtin>.zip",
+        "<builtin>.enumerate",
+        "<builtin>.eval",
+        "collections.<lambda1>"
+    ],
+    "<builtin>.map": [],
+    "<builtin>.list": [],
+    "<builtin>.str": [],
+    "<builtin>.ValueError": [],
+    "<builtin>.reversed": [],
+    "<builtin>.zip": [],
+    "<builtin>.dict": [],
+    "<str>.join": [],
+    "<builtin>.eval": [],
+    "collections.<lambda1>": [
+        "<builtin>.property",
+        "operator.itemgetter.__init__"
+    ],
+    "operator.itemgetter.__init__": [],
+    "functools.singledispatchmethod": [
+        "<builtin>.property"
+    ],
+    "functools.cached_property": [
+        "<builtin>.classmethod"
+    ],
+    "<builtin>.chr": [],
+    "sre_compile.compile": [
+        "<builtin>.tuple",
+        "sre_compile.isstring",
+        "<builtin>.print",
+        "sre_compile.dis",
+        "<map>.items",
+        "sre_parse.parse",
+        "sre_compile._code"
+    ],
+    "sre_compile.isstring": [
+        "<builtin>.isinstance"
+    ],
+    "sre_parse.parse": [
+        "sre_parse.Tokenizer.seek",
+        "sre_parse.State.__init__",
+        "sre_constants.error.__init__",
+        "sre_parse._parse_sub",
+        "sre_parse.SubPattern.dump",
+        "sre_parse.fix_flags",
+        "sre_parse.Tokenizer.__init__",
+        "sre_parse.Tokenizer.error"
+    ],
+    "sre_parse.Tokenizer.__init__": [
+        "<builtin>.str",
+        "sre_parse.Tokenizer.__next",
+        "<builtin>.isinstance"
+    ],
+    "sre_parse.Tokenizer.__next": [
+        "<builtin>.len",
+        "sre_parse.Tokenizer.error"
+    ],
+    "sre_parse.Tokenizer.error": [
+        "sre_parse.Tokenizer.error",
+        "sre_parse.Tokenizer.tell"
+    ],
+    "sre_parse.Tokenizer.tell": [
+        "<builtin>.len"
+    ],
+    "sre_parse.State.__init__": [],
+    "sre_parse._parse_sub": [
+        "",
+        "extend",
+        "sre_parse.Tokenizer.match",
+        "sre_parse.Tokenizer.tell",
+        "sre_parse.SubPattern.__init__",
+        "append",
+        "<builtin>.len",
+        "sre_parse.SubPattern.append"
+    ],
+    "sre_parse.Tokenizer.match": [
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.SubPattern.__init__": [],
+    "sre_parse.SubPattern.append": [
+        "append"
+    ],
+    "sre_parse.Tokenizer.seek": [
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.fix_flags": [
+        "<builtin>.ValueError",
+        "<builtin>.isinstance"
+    ],
+    "sre_constants.error.__init__": [
+        "<builtin>.super",
+        "<str>.count",
+        "<str>.rfind",
+        "<builtin>.isinstance"
+    ],
+    "<str>.count": [],
+    "<str>.rfind": [],
+    "<builtin>.super": [],
+    "sre_parse.SubPattern.dump": [
+        "<builtin>.print",
+        "<builtin>.str",
+        "<builtin>.enumerate",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.print": [],
+    "sre_compile._code": [
+        "sre_compile._compile",
+        "append",
+        "sre_compile._compile_info"
+    ],
+    "sre_compile._compile_info": [
+        "extend",
+        "",
+        "sre_compile._get_literal_prefix",
+        "sre_compile._compile_charset",
+        "<builtin>.len",
+        "sre_compile._get_charset_prefix",
+        "sre_parse.SubPattern.getwidth",
+        "sre_compile._optimize_charset"
+    ],
+    "sre_parse.SubPattern.getwidth": [
+        "<builtin>.max",
+        "<builtin>.min"
+    ],
+    "<builtin>.min": [],
+    "<builtin>.max": [],
+    "sre_compile._get_literal_prefix": [
+        "extend",
+        "",
+        "sre_compile._combine_flags",
+        "sre_compile._get_literal_prefix",
+        "<builtin>.len",
+        "sre_compile._get_iscased"
+    ],
+    "sre_compile._get_iscased": [],
+    "sre_compile._combine_flags": [],
+    "sre_compile._get_charset_prefix": [
+        "",
+        "sre_compile._combine_flags",
+        "<builtin>.map",
+        "<builtin>.any",
+        "<builtin>.range",
+        "sre_compile._get_iscased"
+    ],
+    "<builtin>.range": [],
+    "<builtin>.any": [],
+    "sre_compile._optimize_charset": [
+        "<builtin>.map",
+        "<builtin>.any",
+        "<builtin>.range",
+        "sre_compile._mk_bitmap",
+        "append",
+        "<builtin>.len",
+        "<builtin>.bytes",
+        "sre_compile._bytes_to_codes",
+        "<builtin>.bytearray"
+    ],
+    "<builtin>.bytearray": [],
+    "sre_compile._mk_bitmap": [
+        "<builtin>.len",
+        "<builtin>.range"
+    ],
+    "<builtin>.bytes": [],
+    "sre_compile._bytes_to_codes": [
+        "<builtin>.memoryview",
+        "<builtin>.len"
+    ],
+    "<builtin>.memoryview": [],
+    "sre_compile._compile_charset": [
+        "",
+        "sre_constants.error.__init__",
+        "extend"
+    ],
+    "sre_compile._compile": [
+        "",
+        "sre_compile._combine_flags",
+        "sre_compile._compile_charset",
+        "sre_constants.error.__init__",
+        "sre_compile._optimize_charset",
+        "sre_compile._simple",
+        "sre_compile._compile"
+    ],
+    "sre_compile._simple": [
+        "<builtin>.len",
+        "sre_compile._simple"
+    ],
+    "sre_compile.dis": [
+        "<builtin>.len",
+        "<builtin>.str",
+        "<builtin>.set",
+        "sre_compile.dis.dis_"
+    ],
+    "sre_compile.dis.dis_": [
+        "sre_compile.dis.dis_.print_",
+        "sre_compile._hex_code",
+        "<builtin>.map",
+        "<builtin>.chr",
+        "<builtin>.ValueError",
+        "<builtin>.range",
+        "<builtin>.bin",
+        "<builtin>.list",
+        "<builtin>.str",
+        "sre_compile.dis.dis_",
+        "sre_compile.dis.dis_.print_2"
+    ],
+    "<builtin>.bin": [],
+    "sre_compile.dis.dis_.print_": [
+        "<builtin>.print"
+    ],
+    "sre_compile.dis.dis_.print_2": [
+        "<builtin>.print"
+    ],
+    "sre_compile._hex_code": [],
+    "<map>.items": [],
+    "functools.lru_cache": [
+        "functools._lru_cache_wrapper",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance",
+        "functools.update_wrapper",
+        "<builtin>.callable"
+    ],
+    "<builtin>.callable": [],
+    "functools._lru_cache_wrapper": [
+        "<builtin>.object"
+    ],
+    "functools.update_wrapper": [
+        "<builtin>.getattr"
+    ],
+    "functools.lru_cache.decorating_function": [
+        "functools.update_wrapper",
+        "functools._lru_cache_wrapper"
+    ],
+    "copyreg": [
+        "<builtin>.type",
+        "copyreg.pickle"
+    ],
+    "copyreg.pickle": [
+        "<builtin>.callable",
+        "copyreg.constructor",
+        "<builtin>.TypeError"
+    ],
+    "copyreg.constructor": [
+        "<builtin>.callable",
+        "<builtin>.TypeError"
+    ],
+    "re.escape": [
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.int": [],
+    "warnings.filterwarnings": [
+        "warnings._add_filter",
+        "re.compile",
+        "<builtin>.issubclass",
+        "<builtin>.isinstance"
+    ],
+    "re.compile": [
+        "re._compile"
+    ],
+    "re._compile": [
+        "sre_compile.isstring",
+        "<builtin>.iter",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.type",
+        "<builtin>.next",
+        "<builtin>.ValueError",
+        "sre_compile.compile"
+    ],
+    "<builtin>.iter": [],
+    "<builtin>.next": [],
+    "warnings._add_filter": [
+        "warnings._filters_mutated",
+        "append",
+        "remove",
+        "insert"
+    ],
+    "remove": [],
+    "insert": [],
+    "warnings._filters_mutated": [],
+    "warnings.simplefilter": [
+        "warnings._add_filter",
+        "<builtin>.isinstance"
+    ],
+    "numpy": [
+        "extend",
+        "numpy.core.getlimits._register_known_types",
+        "<builtin>.int",
+        "numpy._sanity_check",
+        "<map>.update",
+        "<builtin>.RuntimeError",
+        "<builtin>.tuple",
+        "numpy._pytesttester.PytestTester.__init__",
+        "<builtin>.len",
+        "<builtin>.getattr",
+        "<builtin>.str",
+        "remove",
+        "numpy._mac_os_check",
+        "warnings.filterwarnings",
+        "warnings.catch_warnings.__init__",
+        "<builtin>.ImportError"
+    ],
+    "numpy._globals": [
+        "<builtin>.globals",
+        "<builtin>.RuntimeError"
+    ],
+    "<builtin>.RuntimeError": [],
+    "numpy.__config__": [
+        "ntpath.dirname",
+        "posixpath.dirname",
+        "genericpath.isdir",
+        "os.add_dll_directory",
+        "posixpath.join",
+        "ntpath.join"
+    ],
+    "posixpath.dirname": [
+        "<builtin>.len",
+        "posixpath._get_sep",
+        "os._fspath"
+    ],
+    "os._fspath": [
+        "<str>.format",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance",
+        "<builtin>.hasattr",
+        "<builtin>.type"
+    ],
+    "<str>.format": [],
+    "posixpath._get_sep": [
+        "<builtin>.isinstance"
+    ],
+    "ntpath.dirname": [
+        "ntpath.split"
+    ],
+    "ntpath.split": [
+        "<builtin>.len",
+        "ntpath.splitdrive",
+        "os._fspath",
+        "ntpath._get_bothseps"
+    ],
+    "ntpath._get_bothseps": [
+        "<builtin>.isinstance"
+    ],
+    "ntpath.splitdrive": [
+        "<builtin>.len",
+        "os._fspath",
+        "<builtin>.isinstance"
+    ],
+    "posixpath.join": [
+        "genericpath._check_arg_types",
+        "posixpath._get_sep",
+        "<builtin>.map",
+        "os._fspath"
+    ],
+    "genericpath._check_arg_types": [
+        "<builtin>.TypeError",
+        "<builtin>.isinstance"
+    ],
+    "ntpath.join": [
+        "<builtin>.map",
+        "<builtin>.isinstance",
+        "genericpath._check_arg_types",
+        "ntpath.splitdrive",
+        "os._fspath"
+    ],
+    "genericpath.isdir": [
+        "stat.S_ISDIR"
+    ],
+    "stat.S_ISDIR": [
+        "stat.S_IFMT"
+    ],
+    "stat.S_IFMT": [],
+    "os.add_dll_directory": [
+        "os._AddedDllDirectory.__init__"
+    ],
+    "os._AddedDllDirectory.__init__": [],
+    "numpy._distributor_init": [],
+    "numpy.core": [
+        "append",
+        "numpy._pytesttester.PytestTester.__init__",
+        "<builtin>.hasattr",
+        "copyreg.pickle",
+        "<builtin>.type",
+        "<builtin>.ImportError"
+    ],
+    "numpy.version": [
+        "numpy._version.get_versions"
+    ],
+    "__future__": [
+        "__future__._Feature.__init__"
+    ],
+    "__future__._Feature.__init__": [],
+    "numpy._version": [],
+    "json": [],
+    "codecs": [
+        "<builtin>.SystemError"
+    ],
+    "<builtin>.SystemError": [],
+    "encodings": [],
+    "numpy._version.get_versions": [
+        "json.loads"
+    ],
+    "json.loads": [
+        "json.detect_encoding",
+        "<str>.startswith",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance"
+    ],
+    "json.detect_encoding": [
+        "<builtin>.len"
+    ],
+    "<str>.startswith": [],
+    "numpy.core.multiarray": [],
+    "numpy.core.overrides": [
+        "<builtin>.int",
+        "collections.namedtuple",
+        "<builtin>.bool"
+    ],
+    "numpy.compat._inspect": [],
+    "numpy.core.umath": [],
+    "numpy.core.numerictypes": [
+        "<builtin>.tuple",
+        "numpy.core.overrides.set_module",
+        "<builtin>.sorted",
+        "numpy.core.numerictypes._construct_lookups",
+        "<builtin>.globals",
+        "append",
+        "numpy.core.numerictypes._register_types",
+        "<builtin>.len",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numbers": [],
+    "numbers.Complex": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numbers.Real": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numbers.Rational": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numbers.Integral": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numpy.core._string_helpers": [
+        "<builtin>.range",
+        "<builtin>.chr"
+    ],
+    "numpy.core._type_aliases": [
+        "numpy.core._type_aliases._add_aliases",
+        "numpy.core._string_helpers.english_lower",
+        "numpy.core._type_aliases._set_array_types",
+        "numpy.core._type_aliases._set_up_aliases",
+        "numpy.core._type_aliases._add_integer_aliases",
+        "<builtin>.isinstance",
+        "<builtin>.list",
+        "<map>.items",
+        "numpy.core._type_aliases._add_types"
+    ],
+    "numpy.compat": [
+        "extend"
+    ],
+    "numpy.compat._pep440": [
+        "collections.namedtuple",
+        "re.compile"
+    ],
+    "numpy.compat._pep440.LegacyVersion": [
+        "<builtin>.property"
+    ],
+    "numpy.compat._pep440.Version": [
+        "<builtin>.property",
+        "re.compile"
+    ],
+    "numpy.compat.py3k": [],
+    "pathlib": [
+        "functools.lru_cache",
+        "<builtin>.hasattr",
+        "functools.lru_cache.decorating_function"
+    ],
+    "fnmatch": [
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "io": [],
+    "urllib.parse": [
+        "<builtin>.frozenset",
+        "re.compile",
+        "<builtin>.bytes",
+        "collections.namedtuple",
+        "urllib.parse._fix_result_transcoding"
+    ],
+    "urllib.parse._NetlocResultMixinBase": [
+        "<builtin>.property",
+        "<builtin>.classmethod"
+    ],
+    "urllib.parse._NetlocResultMixinStr": [
+        "<builtin>.property"
+    ],
+    "urllib.parse._NetlocResultMixinBytes": [
+        "<builtin>.property"
+    ],
+    "urllib.parse._fix_result_transcoding": [],
+    "pathlib._WindowsFlavour": [
+        "<builtin>.set"
+    ],
+    "pathlib._NormalAccessor": [
+        "<builtin>.staticmethod",
+        "<builtin>.hasattr"
+    ],
+    "pathlib.PurePath": [
+        "<builtin>.property",
+        "operator.attrgetter.__init__",
+        "<builtin>.classmethod"
+    ],
+    "operator.attrgetter.__init__": [
+        "<builtin>.tuple",
+        "<builtin>.map",
+        "<str>.split",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance"
+    ],
+    "pathlib.Path": [
+        "<builtin>.classmethod"
+    ],
+    "pickle": [
+        "extend",
+        "append"
+    ],
+    "struct": [],
+    "_compat_pickle": [
+        "<map>.items",
+        "<builtin>.dict",
+        "<builtin>.len",
+        "<map>.update"
+    ],
+    "<map>.update": [],
+    "pickle._Pickler": [
+        "<builtin>.type"
+    ],
+    "numpy.core._dtype": [],
+    "numpy.core._string_helpers.english_lower": [],
+    "numpy.core._type_aliases._add_types": [
+        "<map>.items"
+    ],
+    "numpy.core._type_aliases._add_aliases": [
+        "<map>.items",
+        "numpy.core._type_aliases.bitname"
+    ],
+    "numpy.core._type_aliases.bitname": [
+        "numpy.core._type_aliases._bits_of",
+        "numpy.core._dtype._kind_name"
+    ],
+    "numpy.core._type_aliases._bits_of": [
+        "<builtin>.ValueError",
+        "<map>.values",
+        "<builtin>.next"
+    ],
+    "<map>.values": [],
+    "numpy.core._dtype._kind_name": [
+        "<builtin>.RuntimeError"
+    ],
+    "numpy.core._type_aliases._add_integer_aliases": [
+        "<builtin>.set",
+        "<builtin>.zip"
+    ],
+    "numpy.core._type_aliases._set_up_aliases": [],
+    "numpy.core._type_aliases._set_array_types": [
+        "<builtin>.len",
+        "numpy.core._type_aliases._add_array_type"
+    ],
+    "numpy.core._type_aliases._add_array_type": [],
+    "numpy.core.overrides.set_module": [],
+    "numpy.core.overrides.set_module.decorator": [],
+    "numpy.core.numerictypes._construct_lookups": [
+        "<builtin>.len"
+    ],
+    "<builtin>.sorted": [],
+    "numpy.core.numerictypes._register_types": [],
+    "numpy.core.numeric": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_array_function_like_doc",
+        "<builtin>.type",
+        "numpy.core.numeric.extend_all",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.core.shape_base": [
+        "<builtin>.getattr"
+    ],
+    "numpy.core.fromnumeric": [],
+    "numpy.core._methods": [
+        "<map>.update"
+    ],
+    "contextlib": [],
+    "contextlib.AbstractContextManager": [
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "contextlib.AbstractAsyncContextManager": [
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "contextlib._BaseExitStack": [
+        "<builtin>.staticmethod"
+    ],
+    "contextlib.AsyncExitStack": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.core._exceptions": [],
+    "numpy.core._exceptions._ArrayMemoryError": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "numpy.core._ufunc_config": [
+        "<map>.items",
+        "numpy.core.overrides.set_module",
+        "numpy.core._ufunc_config._setdef",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "collections.abc": [],
+    "numpy.core._ufunc_config._setdef": [],
+    "numpy.core.overrides.set_array_function_like_doc": [],
+    "numpy.core.arrayprint": [
+        "numpy.core.arrayprint._recursive_guard.decorating_function",
+        "<builtin>.issubclass",
+        "numpy.core.arrayprint._recursive_guard",
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "append",
+        "contextlib.contextmanager",
+        "<builtin>.getattr",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "contextlib.contextmanager": [
+        "functools.wraps"
+    ],
+    "functools.wraps": [],
+    "numpy.core.arrayprint._recursive_guard": [],
+    "numpy.core.arrayprint._recursive_guard.decorating_function": [
+        "<builtin>.set",
+        "functools.wraps"
+    ],
+    "numpy.core.overrides.array_function_dispatch": [],
+    "numpy.core.overrides.array_function_dispatch.decorator": [],
+    "numpy.core.arrayprint.StructuredVoidFormat": [
+        "<builtin>.classmethod"
+    ],
+    "numpy.core._asarray": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.overrides.set_array_function_like_doc",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.core.numeric.extend_all": [
+        "<builtin>.getattr",
+        "<builtin>.set"
+    ],
+    "numpy.core.defchararray": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.core.records": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.core.memmap": [],
+    "numpy.core.function_base": [],
+    "numpy.core._machar": [],
+    "numpy.core.getlimits": [
+        "<builtin>.dict"
+    ],
+    "numpy.core.getlimits.MachArLike": [
+        "<builtin>.property"
+    ],
+    "numpy.core.getlimits.finfo": [
+        "<builtin>.property"
+    ],
+    "numpy.core.getlimits.iinfo": [
+        "<builtin>.property"
+    ],
+    "numpy.core.einsumfunc": [
+        "numpy.core.overrides.array_function_dispatch",
+        "<builtin>.set",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.core._add_newdocs": [
+        "<str>.replace",
+        "numpy.core._add_newdocs.refer_to_array_attribute",
+        "numpy.core.function_base.add_newdoc"
+    ],
+    "numpy.core.function_base.add_newdoc": [
+        "<str>.strip",
+        "<builtin>.__import__",
+        "<builtin>.globals",
+        "<builtin>.isinstance",
+        "numpy.core.function_base._add_docstring",
+        "<builtin>.getattr"
+    ],
+    "numpy.core.function_base._add_docstring": [
+        "warnings.warn",
+        "numpy.core.function_base._needs_add_docstring"
+    ],
+    "numpy.core.function_base._needs_add_docstring": [
+        "<builtin>.isinstance"
+    ],
+    "warnings.warn": [
+        "<builtin>.issubclass",
+        "warnings._next_external_frame",
+        "<builtin>.range",
+        "warnings._is_internal_frame",
+        "warnings.warn_explicit",
+        "<builtin>.TypeError",
+        "<builtin>.isinstance",
+        "<builtin>.type"
+    ],
+    "warnings._is_internal_frame": [],
+    "warnings._next_external_frame": [
+        "warnings._is_internal_frame"
+    ],
+    "warnings.warn_explicit": [
+        "<map>.get",
+        "<builtin>.int",
+        "warnings._showwarnmsg",
+        "<builtin>.issubclass",
+        "<builtin>.RuntimeError",
+        "linecache.getlines",
+        "warnings.WarningMessage.__init__",
+        "<builtin>.isinstance",
+        "<map>.clear",
+        "<builtin>.str",
+        "<str>.lower"
+    ],
+    "<str>.lower": [],
+    "<map>.get": [],
+    "<map>.clear": [],
+    "linecache": [],
+    "tokenize": [
+        "functools.lru_cache",
+        "<builtin>.map",
+        "tokenize.group",
+        "<builtin>.any",
+        "re.compile",
+        "<builtin>.sorted",
+        "<builtin>.set",
+        "tokenize._all_string_prefixes",
+        "collections.namedtuple",
+        "tokenize.maybe"
+    ],
+    "token": [
+        "extend",
+        "<builtin>.globals",
+        "<builtin>.isinstance"
+    ],
+    "<str>.replace": [],
+    "tokenize.TokenInfo": [
+        "<builtin>.property"
+    ],
+    "tokenize.maybe": [
+        "tokenize.group"
+    ],
+    "tokenize.group": [],
+    "tokenize._all_string_prefixes": [],
+    "linecache.getlines": [
+        "<builtin>.len",
+        "linecache.updatecache",
+        "linecache.clearcache"
+    ],
+    "linecache.updatecache": [
+        "posixpath.isabs",
+        "<str>.startswith",
+        "<str>.endswith",
+        "ntpath.isabs",
+        "tokenize.open",
+        "<map>.pop",
+        "<builtin>.len",
+        "linecache.lazycache",
+        "posixpath.join",
+        "ntpath.join"
+    ],
+    "<map>.pop": [],
+    "<str>.endswith": [],
+    "linecache.lazycache": [
+        "<builtin>.len",
+        "<builtin>.getattr",
+        "<str>.endswith",
+        "<str>.startswith"
+    ],
+    "posixpath.isabs": [
+        "posixpath._get_sep",
+        "os._fspath"
+    ],
+    "ntpath.isabs": [
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "ntpath.splitdrive",
+        "ntpath._get_bothseps",
+        "os._fspath"
+    ],
+    "tokenize.open": [
+        "tokenize.detect_encoding"
+    ],
+    "tokenize.detect_encoding": [
+        "tokenize.detect_encoding.read_or_stop",
+        "tokenize.detect_encoding.find_cookie"
+    ],
+    "tokenize.detect_encoding.read_or_stop": [],
+    "tokenize.detect_encoding.find_cookie": [
+        "<builtin>.SyntaxError",
+        "tokenize._get_normal_name"
+    ],
+    "<builtin>.SyntaxError": [],
+    "tokenize._get_normal_name": [],
+    "linecache.clearcache": [
+        "<map>.clear"
+    ],
+    "warnings.WarningMessage.__init__": [],
+    "warnings._showwarnmsg": [
+        "warnings._showwarnmsg_impl"
+    ],
+    "warnings._showwarnmsg_impl": [
+        "warnings._formatwarnmsg"
+    ],
+    "warnings._formatwarnmsg": [
+        "warnings._formatwarnmsg_impl"
+    ],
+    "warnings._formatwarnmsg_impl": [
+        "linecache.getline"
+    ],
+    "linecache.getline": [
+        "linecache.getlines",
+        "<builtin>.len"
+    ],
+    "tracemalloc": [],
+    "tracemalloc.Frame": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Traceback": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Trace": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Filter": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.DomainFilter": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Snapshot": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.core._add_newdocs.refer_to_array_attribute": [],
+    "numpy.core._add_newdocs_scalars": [
+        "numpy.core._add_newdocs_scalars.add_newdoc_for_scalar_type",
+        "numpy.core._add_newdocs_scalars.numeric_type_aliases",
+        "numpy.core.function_base.add_newdoc"
+    ],
+    "platform": [
+        "collections.namedtuple",
+        "re.compile"
+    ],
+    "subprocess": [
+        "<builtin>.getattr",
+        "<builtin>.hasattr",
+        "subprocess._use_posix_spawn"
+    ],
+    "signal": [
+        "<builtin>.globals",
+        "signal._wraps",
+        "signal._wraps.decorator"
+    ],
+    "signal._wraps": [],
+    "signal._wraps.decorator": [],
+    "threading": [
+        "threading.RLock",
+        "<builtin>.set",
+        "append",
+        "_weakrefset.WeakSet.__init__",
+        "<builtin>.hasattr",
+        "collections.namedtuple",
+        "threading._MainThread.__init__"
+    ],
+    "threading.Barrier": [
+        "<builtin>.property"
+    ],
+    "threading.RLock": [
+        "threading._RLock.__init__"
+    ],
+    "threading._RLock.__init__": [],
+    "_weakrefset.WeakSet.__init__": [
+        "<builtin>.set",
+        "_weakrefset.WeakSet.update"
+    ],
+    "_weakrefset.WeakSet.update": [
+        "_weakrefset.WeakSet._commit_removals",
+        "_weakrefset.WeakSet.add"
+    ],
+    "_weakrefset.WeakSet._commit_removals": [],
+    "_weakrefset.WeakSet.add": [
+        "_weakrefset.WeakSet._commit_removals"
+    ],
+    "threading.Thread": [
+        "<builtin>.property"
+    ],
+    "traceback": [],
+    "traceback.FrameSummary": [
+        "<builtin>.property"
+    ],
+    "traceback.StackSummary": [
+        "<builtin>.classmethod"
+    ],
+    "traceback.TracebackException": [
+        "<builtin>.classmethod"
+    ],
+    "threading._MainThread.__init__": [
+        "threading.Thread.__init__",
+        "threading.Thread._set_native_id",
+        "threading.Thread._set_tstate_lock",
+        "threading.Thread._set_ident",
+        "threading.Event.set"
+    ],
+    "threading.Thread.__init__": [
+        "threading.current_thread",
+        "threading._make_invoke_excepthook",
+        "<builtin>.str",
+        "_weakrefset.WeakSet.add",
+        "threading.Event.__init__",
+        "threading._newname"
+    ],
+    "threading._newname": [],
+    "threading.current_thread": [
+        "threading._DummyThread.__init__"
+    ],
+    "threading._DummyThread.__init__": [
+        "threading.Thread._set_native_id",
+        "threading.Thread.__init__",
+        "threading.Thread._set_ident",
+        "threading._newname"
+    ],
+    "threading.Thread._set_ident": [],
+    "threading.Thread._set_native_id": [],
+    "threading.Event.__init__": [
+        "threading.Condition.__init__"
+    ],
+    "threading.Condition.__init__": [
+        "threading.RLock"
+    ],
+    "threading._make_invoke_excepthook": [
+        "<builtin>.RuntimeError"
+    ],
+    "threading.Thread._set_tstate_lock": [],
+    "threading.Event.set": [],
+    "_threading_local": [
+        "contextlib.contextmanager"
+    ],
+    "weakref": [],
+    "weakref.finalize": [
+        "<builtin>.property",
+        "<builtin>.classmethod"
+    ],
+    "selectors": [
+        "<builtin>.hasattr",
+        "collections.namedtuple",
+        "selectors._can_use"
+    ],
+    "selectors.BaseSelector": [
+        "abc.abstractmethod"
+    ],
+    "selectors._can_use": [
+        "<builtin>.getattr"
+    ],
+    "subprocess.CalledProcessError": [
+        "<builtin>.property"
+    ],
+    "subprocess.TimeoutExpired": [
+        "<builtin>.property"
+    ],
+    "subprocess.CompletedProcess": [
+        "<builtin>.classmethod"
+    ],
+    "subprocess._use_posix_spawn": [
+        "<builtin>.len",
+        "<builtin>.tuple",
+        "<builtin>.hasattr",
+        "<builtin>.map"
+    ],
+    "subprocess.Popen": [
+        "<builtin>.property",
+        "<builtin>.classmethod"
+    ],
+    "platform._Processor": [
+        "<builtin>.classmethod"
+    ],
+    "platform.uname_result": [
+        "functools.cached_property.__init__",
+        "<builtin>.classmethod"
+    ],
+    "functools.cached_property.__init__": [],
+    "numpy.core._add_newdocs_scalars.numeric_type_aliases": [
+        "<builtin>.list",
+        "numpy.core._add_newdocs_scalars.numeric_type_aliases.type_aliases_gen"
+    ],
+    "numpy.core._add_newdocs_scalars.numeric_type_aliases.type_aliases_gen": [
+        "<builtin>.getattr"
+    ],
+    "numpy.core._add_newdocs_scalars.add_newdoc_for_scalar_type": [
+        "platform.system",
+        "<str>.strip",
+        "<builtin>.getattr",
+        "platform.machine",
+        "numpy.core.function_base.add_newdoc"
+    ],
+    "platform.system": [
+        "platform.uname"
+    ],
+    "platform.uname": [
+        "<builtin>.map",
+        "<builtin>.any",
+        "platform._node",
+        "platform._syscmd_ver",
+        "platform.java_ver",
+        "platform.win32_ver",
+        "platform._get_machine_win32"
+    ],
+    "platform._node": [],
+    "socket": [
+        "extend",
+        "append",
+        "<builtin>.getattr",
+        "<builtin>.hasattr",
+        "<builtin>.object"
+    ],
+    "socket.socket": [
+        "<builtin>.property",
+        "<builtin>.hasattr"
+    ],
+    "socket.SocketIO": [
+        "<builtin>.property"
+    ],
+    "platform.win32_ver": [
+        "<map>.get",
+        "<builtin>.map",
+        "<str>.split",
+        "platform._syscmd_ver",
+        "<builtin>.getattr"
+    ],
+    "platform._syscmd_ver": [
+        "platform._norm_version",
+        "subprocess.check_output"
+    ],
+    "subprocess.check_output": [
+        "subprocess.run",
+        "<builtin>.ValueError"
+    ],
+    "subprocess.run": [
+        "subprocess.Popen.communicate",
+        "subprocess.CalledProcessError.__init__",
+        "subprocess.Popen.__enter__",
+        "subprocess.Popen.wait",
+        "subprocess.CompletedProcess.__init__",
+        "subprocess.Popen.kill",
+        "subprocess.Popen.__exit__",
+        "subprocess.Popen.poll",
+        "subprocess.Popen.__init__",
+        "<builtin>.ValueError"
+    ],
+    "subprocess.Popen.__init__": [
+        "subprocess.Popen._get_handles",
+        "warnings.warn",
+        "append",
+        "<builtin>.TypeError",
+        "subprocess._cleanup",
+        "<builtin>.isinstance",
+        "<builtin>.hasattr",
+        "<builtin>.bool",
+        "<builtin>.type",
+        "subprocess.Popen._execute_child",
+        "<builtin>.ValueError",
+        "<builtin>.filter"
+    ],
+    "subprocess._cleanup": [
+        "remove"
+    ],
+    "subprocess.Popen._get_handles": [
+        "subprocess.Popen._get_devnull",
+        "<builtin>.hasattr",
+        "<builtin>.isinstance"
+    ],
+    "subprocess.Popen._get_devnull": [
+        "<builtin>.hasattr"
+    ],
+    "subprocess.Popen._execute_child": [
+        "<builtin>.map",
+        "<builtin>.issubclass",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.list",
+        "subprocess.Popen._close_pipe_fds",
+        "ntpath.dirname",
+        "os.get_exec_path",
+        "posixpath.dirname",
+        "<builtin>.tuple",
+        "<builtin>.int",
+        "posixpath.join",
+        "subprocess.Popen._handle_exitstatus",
+        "<builtin>.ValueError",
+        "<builtin>.set",
+        "append",
+        "<builtin>.TypeError",
+        "<builtin>.bytes",
+        "<builtin>.hasattr",
+        "<builtin>.bytearray",
+        "<builtin>.sorted",
+        "subprocess.Popen._posix_spawn",
+        "<builtin>.getattr",
+        "ntpath.join"
+    ],
+    "subprocess.Popen._posix_spawn": [
+        "<builtin>.getattr",
+        "subprocess.Popen._close_pipe_fds",
+        "append"
+    ],
+    "subprocess.Popen._close_pipe_fds": [
+        "<builtin>.getattr"
+    ],
+    "os.get_exec_path": [
+        "warnings.catch_warnings.__init__",
+        "<str>.split"
+    ],
+    "warnings.catch_warnings.__init__": [],
+    "subprocess.Popen._handle_exitstatus": [],
+    "<builtin>.filter": [],
+    "subprocess.Popen.__enter__": [],
+    "subprocess.Popen.__exit__": [],
+    "subprocess.Popen.communicate": [
+        "subprocess.Popen._wait",
+        "subprocess.Popen.wait",
+        "subprocess.Popen._communicate",
+        "subprocess.Popen._stdin_write",
+        "<builtin>.min",
+        "<builtin>.ValueError",
+        "subprocess.Popen._remaining_time"
+    ],
+    "subprocess.Popen._communicate": [
+        "<builtin>.memoryview",
+        "<builtin>.RuntimeError",
+        "subprocess.Popen.wait",
+        "selectors.SelectSelector.__init__",
+        "subprocess.Popen._remaining_time",
+        "subprocess.Popen._save_input",
+        "subprocess.Popen._translate_newlines",
+        "subprocess.Popen._check_timeout"
+    ],
+    "subprocess.Popen._save_input": [],
+    "selectors.SelectSelector.__init__": [
+        "<builtin>.super",
+        "<builtin>.set"
+    ],
+    "subprocess.Popen._remaining_time": [],
+    "subprocess.Popen._check_timeout": [
+        "subprocess.TimeoutExpired.__init__"
+    ],
+    "subprocess.TimeoutExpired.__init__": [],
+    "subprocess.Popen.wait": [
+        "subprocess.Popen._wait",
+        "<builtin>.min",
+        "subprocess.Popen._remaining_time"
+    ],
+    "subprocess.Popen._wait": [
+        "subprocess.Popen._try_wait",
+        "subprocess.TimeoutExpired.__init__",
+        "subprocess.Popen._handle_exitstatus",
+        "<builtin>.min",
+        "subprocess.Popen._remaining_time"
+    ],
+    "subprocess.Popen._try_wait": [],
+    "subprocess.Popen._translate_newlines": [],
+    "subprocess.Popen._stdin_write": [],
+    "subprocess.Popen.kill": [
+        "subprocess.Popen.send_signal"
+    ],
+    "subprocess.Popen.send_signal": [
+        "subprocess.Popen.poll"
+    ],
+    "subprocess.Popen.poll": [
+        "subprocess.Popen._internal_poll"
+    ],
+    "subprocess.Popen._internal_poll": [
+        "subprocess.Popen._handle_exitstatus"
+    ],
+    "subprocess.CalledProcessError.__init__": [],
+    "subprocess.CompletedProcess.__init__": [],
+    "platform._norm_version": [
+        "<builtin>.list",
+        "<builtin>.map",
+        "<str>.split"
+    ],
+    "platform._get_machine_win32": [],
+    "platform.java_ver": [
+        "platform._java_getprop"
+    ],
+    "platform._java_getprop": [],
+    "platform.machine": [
+        "platform.uname"
+    ],
+    "numpy.core._dtype_ctypes": [],
+    "numpy.core._internal": [
+        "platform.python_implementation",
+        "<map>.keys",
+        "re.compile"
+    ],
+    "ast": [
+        "<builtin>.property",
+        "<builtin>.type",
+        "<builtin>.hasattr",
+        "<builtin>.repr"
+    ],
+    "<builtin>.repr": [],
+    "ast._Unparser": [
+        "<builtin>.property",
+        "<builtin>.frozenset",
+        "contextlib.contextmanager"
+    ],
+    "ctypes": [
+        "<builtin>.int",
+        "ctypes._check_size",
+        "ctypes._reset_cache",
+        "<builtin>.Exception",
+        "ctypes.LibraryLoader.__init__",
+        "ctypes.CFUNCTYPE",
+        "ctypes.PYFUNCTYPE"
+    ],
+    "<builtin>.Exception": [],
+    "ctypes._check_size": [
+        "<builtin>.SystemError"
+    ],
+    "ctypes.LibraryLoader": [
+        "<builtin>.classmethod"
+    ],
+    "ctypes.LibraryLoader.__init__": [],
+    "ctypes.CFUNCTYPE": [
+        "<builtin>.ValueError"
+    ],
+    "ctypes.PYFUNCTYPE": [],
+    "ctypes._endian": [
+        "<builtin>.type"
+    ],
+    "ctypes._reset_cache": [
+        "<map>.clear"
+    ],
+    "platform.python_implementation": [
+        "platform._sys_version"
+    ],
+    "platform._sys_version": [
+        "<map>.get",
+        "<builtin>.len",
+        "<builtin>.hasattr",
+        "<builtin>.repr",
+        "<builtin>.ValueError"
+    ],
+    "numpy.core._internal._ctypes": [
+        "<builtin>.property"
+    ],
+    "<map>.keys": [],
+    "numpy.core._internal._Stream": [
+        "<builtin>.property"
+    ],
+    "numpy._pytesttester": [],
+    "numpy._pytesttester.PytestTester.__init__": [],
+    "numpy.lib": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.lib.mixins": [],
+    "numpy.lib.mixins.NDArrayOperatorsMixin": [
+        "numpy.lib.mixins._reflected_binary_method",
+        "numpy.lib.mixins._binary_method",
+        "numpy.lib.mixins._numeric_methods",
+        "numpy.lib.mixins._unary_method"
+    ],
+    "numpy.lib.mixins._binary_method": [],
+    "numpy.lib.mixins._numeric_methods": [
+        "numpy.lib.mixins._reflected_binary_method",
+        "numpy.lib.mixins._binary_method",
+        "numpy.lib.mixins._inplace_binary_method"
+    ],
+    "numpy.lib.mixins._reflected_binary_method": [],
+    "numpy.lib.mixins._inplace_binary_method": [],
+    "numpy.lib.mixins._unary_method": [],
+    "numpy.lib.scimath": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.lib.type_check": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.lib.ufunclike": [
+        "numpy.lib.ufunclike._deprecate_out_named_y",
+        "numpy.lib.ufunclike._fix_and_maybe_deprecate_out_named_y",
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.lib.ufunclike._deprecate_out_named_y": [
+        "functools.wraps"
+    ],
+    "numpy.lib.ufunclike._fix_and_maybe_deprecate_out_named_y": [
+        "numpy.lib.ufunclike._deprecate_out_named_y",
+        "numpy.lib.ufunclike._fix_out_named_y"
+    ],
+    "numpy.lib.ufunclike._fix_out_named_y": [
+        "functools.wraps"
+    ],
+    "numpy.lib.index_tricks": [
+        "numpy.lib.index_tricks.RClass.__init__",
+        "numpy.core.overrides.set_module",
+        "numpy.lib.index_tricks.OGridClass.__init__",
+        "numpy.lib.index_tricks.IndexExpression.__init__",
+        "numpy.lib.index_tricks.MGridClass.__init__",
+        "numpy.lib.index_tricks.CClass.__init__",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.matrixlib": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.matrixlib.defmatrix": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.linalg": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.linalg.linalg": [
+        "numpy.linalg.linalg._determine_error_states"
+    ],
+    "numpy.lib.twodim_base": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_array_function_like_doc",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.getlimits.iinfo.__init__"
+    ],
+    "numpy.lib.stride_tricks": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.core.getlimits.iinfo.__init__": [
+        "<builtin>.type",
+        "<builtin>.ValueError"
+    ],
+    "numpy.linalg.linalg._determine_error_states": [
+        "numpy.core._ufunc_config.errstate.__init__"
+    ],
+    "numpy.core._ufunc_config.errstate.__init__": [],
+    "numpy.matrixlib.defmatrix.matrix": [
+        "<builtin>.property"
+    ],
+    "numpy.lib.function_base": [
+        "<builtin>.dict",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.lib.histograms": [],
+    "numpy.lib.index_tricks.MGridClass.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.lib.index_tricks.OGridClass.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.lib.index_tricks.AxisConcatenator": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.lib.index_tricks.RClass.__init__": [
+        "numpy.lib.index_tricks.AxisConcatenator.__init__"
+    ],
+    "numpy.lib.index_tricks.AxisConcatenator.__init__": [],
+    "numpy.lib.index_tricks.CClass.__init__": [
+        "numpy.lib.index_tricks.AxisConcatenator.__init__"
+    ],
+    "numpy.lib.index_tricks.IndexExpression.__init__": [],
+    "numpy.lib.nanfunctions": [],
+    "numpy.lib.shape_base": [],
+    "numpy.lib.polynomial": [
+        "warnings.simplefilter",
+        "re.compile"
+    ],
+    "numpy.lib.polynomial.poly1d": [
+        "<builtin>.property"
+    ],
+    "numpy.lib.utils": [
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator",
+        "re.compile"
+    ],
+    "textwrap": [
+        "re.compile"
+    ],
+    "textwrap.TextWrapper": [
+        "<builtin>.ord",
+        "re.escape",
+        "re.compile"
+    ],
+    "<builtin>.ord": [],
+    "numpy.lib.arraysetops": [],
+    "numpy.lib.npyio": [
+        "numpy.core.overrides.set_module",
+        "<builtin>.sorted",
+        "numpy.core.overrides.set_array_function_like_doc",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "numpy.lib.format": [
+        "<builtin>.len"
+    ],
+    "numpy.lib._datasource": [
+        "numpy.lib._datasource._FileOpeners.__init__"
+    ],
+    "numpy.lib._datasource._FileOpeners.__init__": [],
+    "numpy.lib._iotools": [],
+    "numpy.lib._iotools.NameValidator": [
+        "<builtin>.set"
+    ],
+    "numpy.lib._iotools.StringConverter": [
+        "extend",
+        "append",
+        "<builtin>.classmethod"
+    ],
+    "numpy.lib.arrayterator": [],
+    "numpy.lib.arrayterator.Arrayterator": [
+        "<builtin>.property"
+    ],
+    "numpy.lib.arraypad": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.lib._version": [],
+    "numpy.fft": [
+        "numpy._pytesttester.PytestTester.__init__",
+        "copy"
+    ],
+    "numpy.fft._pocketfft": [],
+    "numpy.fft.helper": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.overrides.set_module.decorator"
+    ],
+    "copy": [
+        "<builtin>.type",
+        "<builtin>.getattr"
+    ],
+    "numpy.polynomial": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.polynomial.polynomial": [],
+    "numpy.polynomial.polyutils": [],
+    "numpy.polynomial._polybase": [],
+    "numpy.polynomial._polybase.ABCPolyBase": [
+        "<builtin>.property",
+        "<builtin>.staticmethod",
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "numpy.polynomial.polynomial.Polynomial": [
+        "<builtin>.staticmethod",
+        "<builtin>.classmethod"
+    ],
+    "numpy.polynomial.chebyshev": [],
+    "numpy.polynomial.chebyshev.Chebyshev": [
+        "<builtin>.staticmethod",
+        "<builtin>.classmethod"
+    ],
+    "numpy.polynomial.legendre": [],
+    "numpy.polynomial.legendre.Legendre": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.hermite": [],
+    "numpy.polynomial.hermite.Hermite": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.hermite_e": [],
+    "numpy.polynomial.hermite_e.HermiteE": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.laguerre": [],
+    "numpy.polynomial.laguerre.Laguerre": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.random": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.random._pickle": [],
+    "numpy.ctypeslib": [
+        "numpy.core._internal._getintp_ctype",
+        "numpy.ctypeslib._get_scalar_type_map"
+    ],
+    "numpy.core._internal._getintp_ctype": [
+        "numpy.core._internal.dummy_ctype.__init__"
+    ],
+    "numpy.core._internal.dummy_ctype.__init__": [],
+    "numpy.ctypeslib._ndptr": [
+        "<builtin>.classmethod"
+    ],
+    "numpy.ctypeslib._concrete_ndptr": [
+        "<builtin>.property"
+    ],
+    "numpy.ctypeslib._get_scalar_type_map": [],
+    "numpy.ma": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.ma.core": [
+        "numpy.ma.core._DomainCheckInterval.__init__",
+        "numpy.ma.core._DomainTan.__init__",
+        "numpy.ma.core.doc_note",
+        "numpy.ma.core._DomainGreater.__init__",
+        "numpy.ma.core._DomainedBinaryOperation.__init__",
+        "textwrap.dedent",
+        "<builtin>.complex",
+        "numpy.ma.core._extrema_operation.__init__",
+        "numpy.ma.core._MaskedPrintOption.__init__",
+        "numpy.ma.core._frommethod.__init__",
+        "numpy.ma.core._DomainGreaterEqual.__init__",
+        "numpy.ma.core._MaskedBinaryOperation.__init__",
+        "numpy.ma.core._convert2ma.__init__",
+        "<builtin>.dict",
+        "numpy.ma.core._DomainSafeDivide.__init__",
+        "numpy.ma.core._MaskedUnaryOperation.__init__"
+    ],
+    "inspect": [
+        "<builtin>.globals",
+        "<builtin>.hasattr",
+        "collections.namedtuple",
+        "<builtin>.type",
+        "<map>.items",
+        "<builtin>.object"
+    ],
+    "dis": [
+        "collections.namedtuple"
+    ],
+    "opcode": [
+        "opcode.name_op",
+        "<builtin>.range",
+        "append",
+        "opcode.jabs_op",
+        "opcode.def_op",
+        "opcode.jrel_op"
+    ],
+    "opcode.def_op": [],
+    "opcode.name_op": [
+        "append",
+        "opcode.def_op"
+    ],
+    "opcode.jrel_op": [
+        "append",
+        "opcode.def_op"
+    ],
+    "opcode.jabs_op": [
+        "append",
+        "opcode.def_op"
+    ],
+    "dis.Bytecode": [
+        "<builtin>.classmethod"
+    ],
+    "importlib.machinery": [],
+    "inspect._ParameterKind": [
+        "<builtin>.property"
+    ],
+    "inspect.Parameter": [
+        "<builtin>.property"
+    ],
+    "inspect.BoundArguments": [
+        "<builtin>.property"
+    ],
+    "inspect.Signature": [
+        "<builtin>.property",
+        "<builtin>.classmethod"
+    ],
+    "<builtin>.complex": [],
+    "numpy.ma.core._MaskedUnaryOperation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core._DomainGreaterEqual.__init__": [],
+    "numpy.ma.core._DomainGreater.__init__": [],
+    "numpy.ma.core._DomainTan.__init__": [],
+    "numpy.ma.core._DomainCheckInterval.__init__": [],
+    "numpy.ma.core._MaskedBinaryOperation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core._DomainSafeDivide.__init__": [],
+    "numpy.ma.core._DomainedBinaryOperation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core._MaskedPrintOption.__init__": [],
+    "textwrap.dedent": [
+        "<builtin>.zip",
+        "<builtin>.enumerate",
+        "re.sub"
+    ],
+    "re.sub": [
+        "re._compile"
+    ],
+    "numpy.ma.core.MaskedArray": [
+        "<builtin>.property",
+        "numpy.ma.core._arraymethod"
+    ],
+    "numpy.ma.core._arraymethod": [
+        "<builtin>.getattr"
+    ],
+    "numpy.ma.core.mvoid": [
+        "<builtin>.property"
+    ],
+    "numpy.ma.core.MaskedConstant": [
+        "<builtin>.classmethod"
+    ],
+    "numpy.ma.core._frommethod.__init__": [
+        "numpy.ma.core._frommethod.getdoc"
+    ],
+    "numpy.ma.core._frommethod.getdoc": [
+        "<builtin>.getattr",
+        "numpy.ma.core.get_object_signature"
+    ],
+    "numpy.ma.core.get_object_signature": [
+        "numpy.compat._inspect.formatargspec",
+        "numpy.compat._inspect.getargspec"
+    ],
+    "numpy.compat._inspect.getargspec": [
+        "numpy.compat._inspect.ismethod",
+        "numpy.compat._inspect.isfunction",
+        "numpy.compat._inspect.getargs",
+        "<builtin>.TypeError"
+    ],
+    "numpy.compat._inspect.ismethod": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.compat._inspect.isfunction": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.compat._inspect.getargs": [
+        "<builtin>.range",
+        "numpy.compat._inspect.iscode",
+        "<builtin>.list",
+        "<builtin>.TypeError"
+    ],
+    "numpy.compat._inspect.iscode": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.compat._inspect.formatargspec": [
+        "<builtin>.range",
+        "numpy.compat._inspect.<lambda3>",
+        "numpy.compat._inspect.strseq",
+        "append",
+        "<builtin>.len"
+    ],
+    "numpy.compat._inspect.strseq": [
+        "<builtin>.type",
+        "numpy.compat._inspect.strseq",
+        "numpy.compat._inspect.joinseq"
+    ],
+    "numpy.compat._inspect.joinseq": [
+        "<builtin>.len"
+    ],
+    "numpy.compat._inspect.<lambda3>": [
+        "<builtin>.repr"
+    ],
+    "numpy.ma.core._extrema_operation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core.doc_note": [
+        "inspect.cleandoc",
+        "re.split"
+    ],
+    "inspect.cleandoc": [
+        "<str>.expandtabs"
+    ],
+    "re.split": [
+        "re._compile"
+    ],
+    "<str>.expandtabs": [],
+    "numpy.ma.core._convert2ma.__init__": [
+        "<builtin>.getattr",
+        "numpy.ma.core._convert2ma.getdoc"
+    ],
+    "numpy.ma.core._convert2ma.getdoc": [
+        "<builtin>.getattr",
+        "numpy.ma.core._convert2ma._replace_return_type",
+        "numpy.ma.core.get_object_signature"
+    ],
+    "numpy.ma.core._convert2ma._replace_return_type": [
+        "<builtin>.RuntimeError"
+    ],
+    "numpy.ma.extras": [
+        "numpy.ma.extras.mr_class.__init__",
+        "numpy.ma.core.doc_note"
+    ],
+    "numpy.ma.extras.MAxisConcatenator": [
+        "<builtin>.staticmethod",
+        "<builtin>.classmethod"
+    ],
+    "numpy.ma.extras.mr_class.__init__": [
+        "numpy.lib.index_tricks.AxisConcatenator.__init__"
+    ],
+    "numpy.core.getlimits._register_known_types": [
+        "numpy.core.getlimits.MachArLike.__init__",
+        "numpy.core._ufunc_config.errstate.__init__",
+        "numpy.core.getlimits._register_type"
+    ],
+    "numpy.core.getlimits.MachArLike.__init__": [
+        "numpy.core.getlimits.MachArLike._float_to_float",
+        "<builtin>.int",
+        "numpy.core.getlimits.MachArLike._float_to_str",
+        "numpy.core.getlimits.MachArLike._float_conv"
+    ],
+    "numpy.core.getlimits.MachArLike._float_to_float": [
+        "numpy.core.getlimits._fr1",
+        "numpy.core.getlimits.MachArLike._float_conv"
+    ],
+    "numpy.core.getlimits.MachArLike._float_conv": [],
+    "numpy.core.getlimits._fr1": [],
+    "numpy.core.getlimits.MachArLike._float_to_str": [
+        "numpy.core.getlimits._fr0"
+    ],
+    "numpy.core.getlimits._fr0": [],
+    "numpy.core.getlimits._register_type": [],
+    "numpy._sanity_check": [
+        "<builtin>.abs",
+        "<builtin>.AssertionError",
+        "<builtin>.RuntimeError"
+    ],
+    "<builtin>.abs": [],
+    "<builtin>.AssertionError": [],
+    "numpy._mac_os_check": [],
+    "cv2.bootstrap": [
+        "platform.system",
+        "posixpath.abspath",
+        "<builtin>.print",
+        "ntpath.realpath",
+        "importlib.import_module",
+        "<builtin>.filter",
+        "cv2.__collect_extra_submodules",
+        "ntpath.dirname",
+        "<builtin>.setattr",
+        "posixpath.dirname",
+        "<builtin>.locals",
+        "posixpath.realpath",
+        "<builtin>.str",
+        "ntpath.abspath",
+        "cv2.bootstrap.load_first_config",
+        "<builtin>.reversed",
+        "os.add_dll_directory",
+        "<builtin>.globals",
+        "<builtin>.hasattr",
+        "copy.copy",
+        "<builtin>.ImportError",
+        "cv2.__load_extra_py_code_for_module"
+    ],
+    "copy.copy": [
+        "<map>.get",
+        "<builtin>.issubclass",
+        "copy._reconstruct",
+        "<map>",
+        "<builtin>.isinstance",
+        "<builtin>.getattr",
+        "copy._copy_immutable",
+        "<builtin>.type"
+    ],
+    "<map>": [],
+    "copy._copy_immutable": [],
+    "copy._reconstruct": [
+        "<builtin>.setattr",
+        "copy.deepcopy",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.hasattr",
+        "<builtin>.id"
+    ],
+    "copy.deepcopy": [
+        "<map>.get",
+        "<builtin>.issubclass",
+        "copy._reconstruct",
+        "<map>",
+        "<builtin>.isinstance",
+        "<builtin>.getattr",
+        "copy._keep_alive",
+        "copy._deepcopy_atomic",
+        "<builtin>.type",
+        "<builtin>.id"
+    ],
+    "<builtin>.id": [],
+    "copy._deepcopy_atomic": [],
+    "copy._keep_alive": [
+        "<builtin>.id"
+    ],
+    "<builtin>.setattr": [],
+    "posixpath.realpath": [
+        "posixpath.abspath",
+        "posixpath._joinrealpath",
+        "os._fspath"
+    ],
+    "posixpath._joinrealpath": [
+        "posixpath.split",
+        "posixpath._joinrealpath",
+        "posixpath.isabs",
+        "<builtin>.isinstance",
+        "posixpath.join"
+    ],
+    "posixpath.split": [
+        "<builtin>.len",
+        "posixpath._get_sep",
+        "os._fspath"
+    ],
+    "posixpath.abspath": [
+        "posixpath.isabs",
+        "posixpath.normpath",
+        "<builtin>.isinstance",
+        "os._fspath",
+        "posixpath.join"
+    ],
+    "posixpath.normpath": [
+        "pop",
+        "append",
+        "os._fspath",
+        "<builtin>.isinstance"
+    ],
+    "pop": [],
+    "ntpath.realpath": [],
+    "ntpath.abspath": [],
+    "<builtin>.locals": [],
+    "cv2.load_config_py3": [],
+    "cv2.load_config_py2": [],
+    "cv2.bootstrap.load_first_config": [
+        "genericpath.exists",
+        "cv2.load_config_py2.exec_file_wrapper",
+        "<builtin>.print",
+        "cv2.load_config_py3.exec_file_wrapper",
+        "posixpath.join",
+        "ntpath.join",
+        "<builtin>.ImportError"
+    ],
+    "genericpath.exists": [],
+    "cv2.load_config_py2.exec_file_wrapper": [],
+    "cv2.load_config_py3.exec_file_wrapper": [
+        "ntpath.basename",
+        "<builtin>.exec",
+        "posixpath.basename",
+        "<builtin>.compile",
+        "<builtin>.open"
+    ],
+    "<builtin>.open": [],
+    "posixpath.basename": [
+        "posixpath._get_sep",
+        "os._fspath"
+    ],
+    "ntpath.basename": [
+        "ntpath.split"
+    ],
+    "<builtin>.compile": [],
+    "<builtin>.exec": [],
+    "importlib.import_module": [
+        "<builtin>.TypeError",
+        "<str>.startswith"
+    ],
+    "cv2.__collect_extra_submodules": [
+        "ntpath.dirname",
+        "posixpath.dirname",
+        "posixpath.abspath",
+        "<builtin>.print",
+        "ntpath.abspath",
+        "<builtin>.filter"
+    ],
+    "cv2.__load_extra_py_code_for_module": [
+        "<builtin>.setattr",
+        "<builtin>.print",
+        "<builtin>.hasattr",
+        "importlib.import_module",
+        "<builtin>.filter"
+    ],
+    "handler.handle": [
+        "<builtin>.print"
+    ]
+}

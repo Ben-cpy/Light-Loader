@@ -1,0 +1,1 @@
+# test the effect of memory reduction after optimization

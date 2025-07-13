@@ -1,0 +1,1671 @@
+{
+    "handler": [
+        "handler.handle",
+        "pdfminer.high_level",
+        "<builtin>.print"
+    ],
+    "pdfminer.high_level": [
+        "pdfminer.image",
+        "pdfminer.converter",
+        "pdfminer.layout",
+        "pdfminer.pdfexceptions",
+        "pdfminer.pdfinterp",
+        "pdfminer.utils",
+        "pdfminer.pdfdevice",
+        "pdfminer.pdfpage"
+    ],
+    "pdfminer.pdfexceptions": [
+        "pdfminer.pdfexceptions.PDFValueError",
+        "pdfminer.pdfexceptions.PDFException",
+        "pdfminer.pdfexceptions.PDFEOFError",
+        "pdfminer.pdfexceptions.PDFObjectNotFound",
+        "pdfminer.pdfexceptions.PDFIOError",
+        "pdfminer.pdfexceptions.PDFNotImplementedError",
+        "pdfminer.psexceptions",
+        "pdfminer.pdfexceptions.PDFTypeError",
+        "pdfminer.pdfexceptions.PDFKeyError"
+    ],
+    "pdfminer.psexceptions": [
+        "pdfminer.psexceptions.PSValueError",
+        "pdfminer.psexceptions.PSException",
+        "pdfminer.psexceptions.PSTypeError",
+        "pdfminer.psexceptions.PSSyntaxError",
+        "pdfminer.psexceptions.PSEOF"
+    ],
+    "pdfminer.psexceptions.PSException": [],
+    "pdfminer.psexceptions.PSEOF": [],
+    "pdfminer.psexceptions.PSSyntaxError": [],
+    "pdfminer.psexceptions.PSTypeError": [],
+    "pdfminer.psexceptions.PSValueError": [],
+    "pdfminer.pdfexceptions.PDFException": [],
+    "pdfminer.pdfexceptions.PDFTypeError": [],
+    "pdfminer.pdfexceptions.PDFValueError": [],
+    "pdfminer.pdfexceptions.PDFObjectNotFound": [],
+    "pdfminer.pdfexceptions.PDFNotImplementedError": [],
+    "pdfminer.pdfexceptions.PDFKeyError": [],
+    "pdfminer.pdfexceptions.PDFEOFError": [],
+    "pdfminer.pdfexceptions.PDFIOError": [],
+    "pdfminer.converter": [
+        "pdfminer.converter.XMLConverter",
+        "pdfminer.image",
+        "pdfminer.pdftypes",
+        "pdfminer.converter.PDFLayoutAnalyzer",
+        "pdfminer.converter.TextConverter",
+        "pdfminer.layout",
+        "pdfminer.pdffont",
+        "pdfminer.pdfexceptions",
+        "typing.TypeVar",
+        "pdfminer.pdfinterp",
+        "pdfminer.converter.PDFPageAggregator",
+        "pdfminer.converter.PDFConverter",
+        "pdfminer.converter.HTMLConverter",
+        "pdfminer.utils",
+        "pdfminer.pdfcolor",
+        "pdfminer.converter.HOCRConverter",
+        "pdfminer.pdfdevice",
+        "pdfminer.pdfpage"
+    ],
+    "pdfminer.pdfcolor": [
+        "pdfminer.pdfcolor.PDFColorSpace.__init__",
+        "pdfminer.psparser",
+        "pdfminer.psparser.PSSymbolTable.intern",
+        "pdfminer.pdfcolor.PDFColorSpace"
+    ],
+    "pdfminer.psparser": [
+        "pdfminer.settings",
+        "pdfminer.psparser.PSLiteral",
+        "pdfminer.psparser.PSSymbolTable.intern",
+        "pdfminer.psparser.PSSymbolTable",
+        "typing.TypeVar",
+        "pdfminer.psparser.PSKeyword",
+        "pdfminer.psparser.PSObject",
+        "pdfminer.psparser.PSBaseParser",
+        "pdfminer.psparser.PSSymbolTable.__init__",
+        "pdfminer.utils",
+        "pdfminer.psexceptions",
+        "pdfminer.psparser.PSStackParser"
+    ],
+    "pdfminer.settings": [],
+    "pdfminer.utils": [
+        "<builtin>.chr",
+        "pdfminer.utils.Plane",
+        "pdfminer.utils.open_filename",
+        "pdfminer.layout",
+        "typing.TypeVar",
+        "pdfminer.pdfexceptions",
+        "charset_normalizer"
+    ],
+    "pdfminer.layout": [
+        "typing.TypeVar",
+        "pdfminer.pdffont",
+        "pdfminer.layout.LTChar",
+        "pdfminer.pdfinterp",
+        "pdfminer.layout.LTTextBoxHorizontal",
+        "pdfminer.layout.LTTextLine",
+        "pdfminer.layout.LTExpandableContainer",
+        "pdfminer.layout.LTTextGroupTBRL",
+        "pdfminer.layout.LTAnno",
+        "pdfminer.layout.LTCurve",
+        "pdfminer.layout.IndexAssigner",
+        "pdfminer.layout.LTComponent",
+        "pdfminer.layout.LTTextGroupLRTB",
+        "pdfminer.layout.LTItem",
+        "pdfminer.pdfexceptions",
+        "pdfminer.layout.LAParams",
+        "pdfminer.utils",
+        "pdfminer.layout.LTImage",
+        "pdfminer.layout.LTTextBoxVertical",
+        "pdfminer.layout.LTTextLineHorizontal",
+        "pdfminer.layout.LTPage",
+        "pdfminer.layout.LTTextLineVertical",
+        "pdfminer.pdftypes",
+        "pdfminer.layout.LTLine",
+        "pdfminer.layout.LTLayoutContainer",
+        "pdfminer.layout.LTFigure",
+        "pdfminer.layout.LTTextGroup",
+        "pdfminer.layout.LTTextBox",
+        "pdfminer.layout.LTText",
+        "pdfminer.pdfcolor",
+        "pdfminer.layout.LTRect",
+        "pdfminer.layout.LTContainer",
+        "pdfminer.layout.LTTextContainer"
+    ],
+    "pdfminer.pdffont": [
+        "pdfminer.settings",
+        "pdfminer.pdfinterp",
+        "pdfminer.psparser",
+        "pdfminer.pdffont.PDFTrueTypeFont",
+        "pdfminer.pdffont.PDFUnicodeNotDefined",
+        "pdfminer.cmapdb",
+        "pdfminer.pdfexceptions",
+        "pdfminer.utils",
+        "pdfminer.encodingdb",
+        "pdfminer.psexceptions",
+        "pdfminer.pdffont.PDFType3Font",
+        "pdfminer.pdffont.CFFFont",
+        "pdfminer.pdftypes",
+        "pdfminer.pdffont.PDFType1Font",
+        "pdfminer.pdffont.PDFCIDFont",
+        "pdfminer.pdffont.PDFFontError",
+        "pdfminer.pdffont.PDFFont",
+        "pdfminer.pdffont.FontMetricsDB",
+        "pdfminer.fontmetrics",
+        "pdfminer.pdffont.TrueTypeFont",
+        "pdfminer.pdffont.PDFSimpleFont",
+        "pdfminer.pdffont.Type1FontHeaderParser"
+    ],
+    "pdfminer.cmapdb": [
+        "pdfminer.cmapdb.IdentityUnicodeMap",
+        "pdfminer.cmapdb.IdentityCMap",
+        "pdfminer.cmapdb.IdentityCMapByte",
+        "pdfminer.cmapdb.PyUnicodeMap",
+        "pdfminer.pdfexceptions",
+        "pdfminer.cmapdb.CMapBase",
+        "pdfminer.cmapdb.UnicodeMap",
+        "pdfminer.cmapdb.CMapError",
+        "pdfminer.psparser",
+        "pdfminer.cmapdb.PyCMap",
+        "pdfminer.cmapdb.CMapParser",
+        "pdfminer.utils",
+        "pdfminer.encodingdb",
+        "pdfminer.psexceptions",
+        "pdfminer.cmapdb.CMap",
+        "pdfminer.cmapdb.CMapDB",
+        "pdfminer.cmapdb.FileCMap",
+        "pdfminer.cmapdb.FileUnicodeMap"
+    ],
+    "pdfminer.encodingdb": [
+        "pdfminer.encodingdb.EncodingDB",
+        "pdfminer.pdfexceptions",
+        "pdfminer.psparser",
+        "pdfminer.latin_enc",
+        "pdfminer.glyphlist"
+    ],
+    "pdfminer.glyphlist": [],
+    "pdfminer.latin_enc": [],
+    "pdfminer.encodingdb.EncodingDB": [
+        "<builtin>.classmethod",
+        "pdfminer.encodingdb.name2unicode"
+    ],
+    "pdfminer.encodingdb.name2unicode": [
+        "<str>.join",
+        "<builtin>.int",
+        "<builtin>.chr",
+        "<builtin>.type",
+        "pdfminer.encodingdb.raise_key_error_for_invalid_unicode",
+        "<builtin>.range",
+        "<builtin>.len",
+        "<builtin>.isinstance",
+        "<builtin>.map"
+    ],
+    "<builtin>.isinstance": [],
+    "<builtin>.type": [],
+    "<builtin>.len": [],
+    "<builtin>.int": [],
+    "pdfminer.encodingdb.raise_key_error_for_invalid_unicode": [],
+    "<builtin>.chr": [],
+    "<builtin>.range": [],
+    "<builtin>.map": [],
+    "<str>.join": [],
+    "<builtin>.classmethod": [],
+    "pdfminer.cmapdb.CMapError": [],
+    "pdfminer.cmapdb.CMapBase": [],
+    "pdfminer.cmapdb.CMap": [],
+    "pdfminer.cmapdb.IdentityCMap": [],
+    "pdfminer.cmapdb.IdentityCMapByte": [],
+    "pdfminer.cmapdb.UnicodeMap": [],
+    "pdfminer.cmapdb.IdentityUnicodeMap": [],
+    "pdfminer.cmapdb.FileCMap": [],
+    "pdfminer.cmapdb.FileUnicodeMap": [],
+    "pdfminer.cmapdb.PyCMap": [],
+    "pdfminer.cmapdb.PyUnicodeMap": [],
+    "pdfminer.cmapdb.CMapDB": [
+        "<builtin>.classmethod",
+        "pdfminer.cmapdb.CMapDB.CMapNotFound"
+    ],
+    "pdfminer.cmapdb.CMapDB.CMapNotFound": [],
+    "pdfminer.cmapdb.CMapParser": [],
+    "pdfminer.fontmetrics": [],
+    "pdfminer.pdftypes": [
+        "pdfminer.lzw",
+        "pdfminer.settings",
+        "pdfminer.pdftypes.PDFObjRef",
+        "pdfminer.pdfdocument",
+        "pdfminer.pdfexceptions",
+        "pdfminer.ccitt",
+        "pdfminer.pdftypes.PDFObject",
+        "pdfminer.psparser",
+        "pdfminer.runlength",
+        "pdfminer.pdftypes.DecipherCallable",
+        "pdfminer.pdftypes.PDFStream",
+        "pdfminer.utils",
+        "pdfminer.ascii85"
+    ],
+    "pdfminer.ascii85": [],
+    "pdfminer.ccitt": [
+        "pdfminer.ccitt.CCITTFaxDecoder",
+        "pdfminer.pdfexceptions",
+        "pdfminer.ccitt.BitParser",
+        "pdfminer.ccitt.CCITTG4Parser"
+    ],
+    "pdfminer.ccitt.BitParser": [
+        "<builtin>.classmethod"
+    ],
+    "pdfminer.ccitt.CCITTG4Parser": [
+        "pdfminer.ccitt.CCITTG4Parser.InvalidData",
+        "pdfminer.ccitt.CCITTG4Parser.EOFB",
+        "pdfminer.ccitt.CCITTG4Parser.ByteSkip",
+        "pdfminer.ccitt.BitParser.add",
+        "pdfminer.ccitt.CCITTG4Parser.CCITTException"
+    ],
+    "pdfminer.ccitt.BitParser.add": [
+        "<builtin>.len",
+        "<builtin>.range"
+    ],
+    "pdfminer.ccitt.CCITTG4Parser.CCITTException": [],
+    "pdfminer.ccitt.CCITTG4Parser.EOFB": [],
+    "pdfminer.ccitt.CCITTG4Parser.InvalidData": [],
+    "pdfminer.ccitt.CCITTG4Parser.ByteSkip": [],
+    "pdfminer.ccitt.CCITTFaxDecoder": [],
+    "pdfminer.lzw": [
+        "pdfminer.lzw.CorruptDataError",
+        "pdfminer.pdfexceptions",
+        "pdfminer.lzw.LZWDecoder"
+    ],
+    "pdfminer.lzw.CorruptDataError": [],
+    "pdfminer.lzw.LZWDecoder": [],
+    "pdfminer.runlength": [],
+    "pdfminer.pdfdocument": [
+        "pdfminer.pdfdocument.PDFPasswordIncorrect",
+        "pdfminer.settings",
+        "pdfminer.pdfdocument.PDFStandardSecurityHandlerV5",
+        "cryptography.hazmat.primitives.ciphers",
+        "pdfminer.psparser",
+        "pdfminer.pdfdocument.PDFXRef",
+        "pdfminer.pdfparser",
+        "cryptography.hazmat.backends",
+        "pdfminer.pdfdocument.PDFBaseXRef",
+        "cryptography.hazmat.primitives.ciphers.algorithms",
+        "pdfminer.pdfdocument.PDFEncryptionWarning",
+        "pdfminer.pdfdocument.PDFTextExtractionNotAllowedError",
+        "pdfminer.pdfdocument.PDFStandardSecurityHandlerV4",
+        "pdfminer.pdfexceptions",
+        "pdfminer.pdfdocument.PDFTextExtractionNotAllowedWarning",
+        "pdfminer.utils",
+        "pdfminer.psexceptions",
+        "pdfminer.pdfdocument.PDFNoValidXRefWarning",
+        "pdfminer.pdfdocument.PDFNoPageLabels",
+        "pdfminer.pdfdocument.PDFNoValidXRef",
+        "cryptography.hazmat.primitives.ciphers.modes",
+        "pdfminer.pdftypes",
+        "pdfminer.pdfdocument.PDFDocument",
+        "pdfminer.pdfdocument.PDFTextExtractionNotAllowed",
+        "pdfminer.pdfdocument.PDFXRefStream",
+        "pdfminer.pdfdocument.PDFEncryptionError",
+        "pdfminer.pdfdocument.PDFDestinationNotFound",
+        "pdfminer.pdfdocument.PDFStandardSecurityHandler",
+        "pdfminer.pdfdocument.PDFNoOutlines",
+        "pdfminer.pdfdocument.PDFXRefFallback",
+        "pdfminer.arcfour",
+        "pdfminer.data_structures",
+        "pdfminer.pdfdocument.PageLabels"
+    ],
+    "cryptography.hazmat.backends": [],
+    "cryptography.hazmat.primitives.ciphers": [
+        "cryptography.hazmat.primitives._cipheralgorithm",
+        "cryptography.hazmat.primitives.ciphers.base"
+    ],
+    "cryptography.hazmat.primitives._cipheralgorithm": [
+        "cryptography.hazmat.primitives._cipheralgorithm.CipherAlgorithm",
+        "cryptography.hazmat.primitives._cipheralgorithm.BlockCipherAlgorithm",
+        "cryptography.utils"
+    ],
+    "cryptography.utils": [
+        "cryptography.utils.InterfaceNotImplemented",
+        "cryptography.utils._DeprecatedValue",
+        "cryptography.utils.Enum",
+        "cryptography.utils._ModuleWithDeprecations",
+        "cryptography.utils.CryptographyDeprecationWarning"
+    ],
+    "cryptography.utils.CryptographyDeprecationWarning": [],
+    "cryptography.utils.InterfaceNotImplemented": [],
+    "cryptography.utils._DeprecatedValue": [],
+    "cryptography.utils._ModuleWithDeprecations": [],
+    "cryptography.utils.Enum": [],
+    "cryptography.hazmat.primitives._cipheralgorithm.CipherAlgorithm": [
+        "<builtin>.property"
+    ],
+    "<builtin>.property": [],
+    "cryptography.hazmat.primitives._cipheralgorithm.BlockCipherAlgorithm": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.base": [
+        "cryptography.hazmat.primitives.ciphers.base.AEADCipherContext",
+        "cryptography.hazmat.primitives.ciphers.base.AEADDecryptionContext",
+        "cryptography.hazmat.primitives.ciphers.base.Cipher",
+        "cryptography.hazmat.primitives._cipheralgorithm",
+        "cryptography.hazmat.primitives.ciphers.base.AEADEncryptionContext",
+        "cryptography.hazmat.primitives.ciphers.base.CipherContext",
+        "cryptography.hazmat.primitives.ciphers.modes"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes": [
+        "cryptography.hazmat.primitives.ciphers.modes.ModeWithInitializationVector",
+        "cryptography.hazmat.primitives.ciphers.algorithms",
+        "cryptography.hazmat.primitives.ciphers.modes.Mode",
+        "cryptography.hazmat.primitives.ciphers.modes.ModeWithTweak",
+        "cryptography.hazmat.primitives.ciphers.modes.CFB8",
+        "cryptography.hazmat.primitives._cipheralgorithm",
+        "cryptography.exceptions",
+        "cryptography.hazmat.primitives.ciphers.modes.ModeWithAuthenticationTag",
+        "cryptography.hazmat.primitives.ciphers.modes.CBC",
+        "cryptography.hazmat.primitives.ciphers.modes.CTR",
+        "cryptography.hazmat.primitives.ciphers.modes.GCM",
+        "cryptography.hazmat.primitives.ciphers.modes.OFB",
+        "cryptography.hazmat.primitives.ciphers.modes.CFB",
+        "cryptography.hazmat.primitives.ciphers.modes.ModeWithNonce",
+        "cryptography.utils",
+        "cryptography.hazmat.primitives.ciphers.modes.XTS",
+        "cryptography.hazmat.primitives.ciphers.modes.ECB"
+    ],
+    "cryptography.exceptions": [
+        "cryptography.exceptions.UnsupportedAlgorithm",
+        "cryptography.exceptions.InternalError",
+        "cryptography.exceptions.NotYetFinalized",
+        "cryptography.exceptions.InvalidSignature",
+        "cryptography.exceptions.AlreadyFinalized",
+        "cryptography.exceptions.InvalidTag",
+        "cryptography.exceptions.AlreadyUpdated",
+        "cryptography.exceptions.InvalidKey"
+    ],
+    "cryptography.exceptions.UnsupportedAlgorithm": [],
+    "cryptography.exceptions.AlreadyFinalized": [],
+    "cryptography.exceptions.AlreadyUpdated": [],
+    "cryptography.exceptions.NotYetFinalized": [],
+    "cryptography.exceptions.InvalidTag": [],
+    "cryptography.exceptions.InvalidSignature": [],
+    "cryptography.exceptions.InternalError": [],
+    "cryptography.exceptions.InvalidKey": [],
+    "cryptography.hazmat.primitives.ciphers.algorithms": [
+        "cryptography.hazmat.primitives.ciphers.algorithms.AES",
+        "cryptography.hazmat.primitives._cipheralgorithm",
+        "cryptography.utils.deprecated",
+        "cryptography.hazmat.primitives.ciphers",
+        "cryptography.hazmat.primitives.ciphers.algorithms.ChaCha20",
+        "cryptography.hazmat.primitives.ciphers.algorithms.AES128",
+        "cryptography.hazmat.primitives.ciphers.algorithms.SM4",
+        "cryptography.utils",
+        "cryptography.hazmat.primitives.ciphers.algorithms.Camellia",
+        "cryptography.hazmat.primitives.ciphers.algorithms.AES256",
+        "cryptography.hazmat.decrepit.ciphers.algorithms"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms": [
+        "cryptography.hazmat.decrepit.ciphers.algorithms.IDEA",
+        "cryptography.hazmat.primitives._cipheralgorithm",
+        "cryptography.hazmat.decrepit.ciphers.algorithms.Blowfish",
+        "cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES",
+        "cryptography.hazmat.decrepit.ciphers.algorithms.CAST5",
+        "cryptography.hazmat.decrepit.ciphers.algorithms.SEED",
+        "cryptography.hazmat.decrepit.ciphers.algorithms.ARC4",
+        "cryptography.hazmat.decrepit.ciphers.algorithms.RC2"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.ARC4": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "<builtin>.frozenset": [],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.Blowfish": [
+        "<builtin>.property",
+        "<builtin>.range",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.CAST5": [
+        "<builtin>.property",
+        "<builtin>.range",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.SEED": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.IDEA": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.decrepit.ciphers.algorithms.RC2": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.primitives.ciphers.algorithms.AES": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.primitives.ciphers.algorithms.AES128": [
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.primitives.ciphers.algorithms.AES256": [
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.primitives.ciphers.algorithms.Camellia": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.utils.deprecated": [
+        "cryptography.utils._ModuleWithDeprecations.__init__",
+        "<builtin>.setattr",
+        "<builtin>.isinstance",
+        "cryptography.utils._DeprecatedValue.__init__"
+    ],
+    "cryptography.utils._ModuleWithDeprecations.__init__": [
+        "<builtin>.super"
+    ],
+    "<builtin>.super": [],
+    "cryptography.utils._DeprecatedValue.__init__": [],
+    "<builtin>.setattr": [],
+    "cryptography.hazmat.primitives.ciphers.algorithms.ChaCha20": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.primitives.ciphers.algorithms.SM4": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.Mode": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.ModeWithInitializationVector": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.ModeWithTweak": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.ModeWithNonce": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.ModeWithAuthenticationTag": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.CBC": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.XTS": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.ECB": [],
+    "cryptography.hazmat.primitives.ciphers.modes.OFB": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.CFB": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.CFB8": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.CTR": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.modes.GCM": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.base.CipherContext": [],
+    "cryptography.hazmat.primitives.ciphers.base.AEADCipherContext": [],
+    "cryptography.hazmat.primitives.ciphers.base.AEADDecryptionContext": [],
+    "cryptography.hazmat.primitives.ciphers.base.AEADEncryptionContext": [
+        "<builtin>.property"
+    ],
+    "cryptography.hazmat.primitives.ciphers.base.Cipher": [],
+    "pdfminer.arcfour": [
+        "pdfminer.arcfour.Arcfour"
+    ],
+    "pdfminer.arcfour.Arcfour": [],
+    "pdfminer.data_structures": [
+        "pdfminer.data_structures.NumberTree",
+        "pdfminer.pdftypes",
+        "pdfminer.settings",
+        "pdfminer.pdfparser",
+        "pdfminer.utils"
+    ],
+    "pdfminer.pdfparser": [
+        "pdfminer.pdftypes",
+        "pdfminer.settings",
+        "pdfminer.pdfdocument",
+        "pdfminer.pdfexceptions",
+        "pdfminer.pdfparser.PDFParser",
+        "pdfminer.psparser",
+        "pdfminer.pdfparser.PDFStreamParser",
+        "pdfminer.psexceptions",
+        "pdfminer.pdfparser.PDFSyntaxError"
+    ],
+    "pdfminer.pdfparser.PDFSyntaxError": [],
+    "pdfminer.pdfparser.PDFParser": [],
+    "pdfminer.pdfparser.PDFStreamParser": [],
+    "pdfminer.data_structures.NumberTree": [
+        "<builtin>.property"
+    ],
+    "pdfminer.pdfdocument.PDFNoValidXRef": [],
+    "pdfminer.pdfdocument.PDFNoValidXRefWarning": [],
+    "pdfminer.pdfdocument.PDFNoOutlines": [],
+    "pdfminer.pdfdocument.PDFNoPageLabels": [],
+    "pdfminer.pdfdocument.PDFDestinationNotFound": [],
+    "pdfminer.pdfdocument.PDFEncryptionError": [],
+    "pdfminer.pdfdocument.PDFPasswordIncorrect": [],
+    "pdfminer.pdfdocument.PDFEncryptionWarning": [],
+    "pdfminer.pdfdocument.PDFTextExtractionNotAllowedWarning": [],
+    "pdfminer.pdfdocument.PDFTextExtractionNotAllowed": [],
+    "pdfminer.pdfdocument.PDFTextExtractionNotAllowedError": [],
+    "pdfminer.pdfdocument.PDFBaseXRef": [],
+    "pdfminer.pdfdocument.PDFXRef": [],
+    "pdfminer.pdfdocument.PDFXRefFallback": [],
+    "pdfminer.pdfdocument.PDFXRefStream": [],
+    "pdfminer.pdfdocument.PDFStandardSecurityHandler": [],
+    "pdfminer.pdfdocument.PDFStandardSecurityHandlerV4": [],
+    "pdfminer.pdfdocument.PDFStandardSecurityHandlerV5": [
+        "<builtin>.staticmethod"
+    ],
+    "<builtin>.staticmethod": [],
+    "pdfminer.pdfdocument.PDFDocument": [],
+    "pdfminer.pdfdocument.PageLabels": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "pdfminer.pdftypes.DecipherCallable": [],
+    "pdfminer.pdftypes.PDFObject": [],
+    "pdfminer.pdftypes.PDFObjRef": [],
+    "pdfminer.pdftypes.PDFStream": [],
+    "pdfminer.pdfinterp": [
+        "pdfminer.pdfinterp.PDFTextState",
+        "pdfminer.settings",
+        "pdfminer.pdftypes",
+        "pdfminer.pdfdevice",
+        "pdfminer.pdfinterp.PDFInterpreterError",
+        "pdfminer.pdfinterp.PDFResourceManager",
+        "pdfminer.pdffont",
+        "pdfminer.pdfexceptions",
+        "pdfminer.psparser",
+        "pdfminer.pdfinterp.PDFContentParser",
+        "pdfminer.pdfinterp.PDFResourceError",
+        "pdfminer.pdfcolor",
+        "pdfminer.utils",
+        "pdfminer.psexceptions",
+        "pdfminer.pdfinterp.PDFGraphicState",
+        "pdfminer.pdfinterp.PDFPageInterpreter",
+        "pdfminer.cmapdb",
+        "pdfminer.pdfpage"
+    ],
+    "pdfminer.pdfdevice": [
+        "pdfminer.pdftypes",
+        "pdfminer.pdfdevice.TagExtractor",
+        "pdfminer.pdfdevice.PDFDevice",
+        "pdfminer.pdfdevice.PDFTextDevice",
+        "pdfminer.pdffont",
+        "pdfminer.pdfinterp",
+        "pdfminer.psparser",
+        "pdfminer.pdfcolor",
+        "pdfminer.utils",
+        "pdfminer.pdfpage"
+    ],
+    "pdfminer.pdfpage": [
+        "pdfminer.pdftypes",
+        "pdfminer.settings",
+        "pdfminer.pdfdocument",
+        "pdfminer.pdfpage.PDFPage",
+        "pdfminer.pdfexceptions",
+        "pdfminer.psparser",
+        "pdfminer.pdfparser",
+        "pdfminer.utils"
+    ],
+    "pdfminer.pdfpage.PDFPage": [
+        "<builtin>.classmethod"
+    ],
+    "pdfminer.pdfdevice.PDFDevice": [],
+    "pdfminer.pdfdevice.PDFTextDevice": [],
+    "pdfminer.pdfdevice.TagExtractor": [],
+    "pdfminer.pdfinterp.PDFResourceError": [],
+    "pdfminer.pdfinterp.PDFInterpreterError": [],
+    "pdfminer.pdfinterp.PDFTextState": [],
+    "pdfminer.pdfinterp.PDFGraphicState": [],
+    "pdfminer.pdfinterp.PDFResourceManager": [],
+    "pdfminer.pdfinterp.PDFContentParser": [],
+    "pdfminer.pdfinterp.PDFPageInterpreter": [],
+    "pdfminer.pdffont.FontMetricsDB": [
+        "<builtin>.classmethod"
+    ],
+    "pdfminer.pdffont.Type1FontHeaderParser": [],
+    "pdfminer.pdffont.CFFFont": [
+        "pdfminer.pdffont.CFFFont.INDEX"
+    ],
+    "pdfminer.pdffont.CFFFont.INDEX": [],
+    "pdfminer.pdffont.TrueTypeFont": [
+        "pdfminer.pdffont.TrueTypeFont.CMapNotFound"
+    ],
+    "pdfminer.pdffont.TrueTypeFont.CMapNotFound": [],
+    "pdfminer.pdffont.PDFFontError": [],
+    "pdfminer.pdffont.PDFUnicodeNotDefined": [],
+    "pdfminer.pdffont.PDFFont": [],
+    "pdfminer.pdffont.PDFSimpleFont": [],
+    "pdfminer.pdffont.PDFType1Font": [],
+    "pdfminer.pdffont.PDFTrueTypeFont": [],
+    "pdfminer.pdffont.PDFType3Font": [],
+    "pdfminer.pdffont.PDFCIDFont": [
+        "<builtin>.staticmethod"
+    ],
+    "pdfminer.layout.IndexAssigner": [],
+    "pdfminer.layout.LAParams": [],
+    "pdfminer.layout.LTItem": [],
+    "pdfminer.layout.LTText": [],
+    "pdfminer.layout.LTComponent": [],
+    "pdfminer.layout.LTCurve": [],
+    "pdfminer.layout.LTLine": [],
+    "pdfminer.layout.LTRect": [],
+    "pdfminer.layout.LTImage": [],
+    "pdfminer.layout.LTAnno": [],
+    "pdfminer.layout.LTChar": [],
+    "typing.TypeVar": [],
+    "pdfminer.layout.LTContainer": [],
+    "pdfminer.layout.LTExpandableContainer": [],
+    "pdfminer.layout.LTTextContainer": [],
+    "pdfminer.layout.LTTextLine": [],
+    "pdfminer.layout.LTTextLineHorizontal": [],
+    "pdfminer.layout.LTTextLineVertical": [],
+    "pdfminer.layout.LTTextBox": [],
+    "pdfminer.layout.LTTextBoxHorizontal": [],
+    "pdfminer.layout.LTTextBoxVertical": [],
+    "pdfminer.layout.LTTextGroup": [],
+    "pdfminer.layout.LTTextGroupLRTB": [],
+    "pdfminer.layout.LTTextGroupTBRL": [],
+    "pdfminer.layout.LTLayoutContainer": [],
+    "pdfminer.layout.LTFigure": [],
+    "pdfminer.layout.LTPage": [],
+    "charset_normalizer": [
+        "charset_normalizer.legacy",
+        "charset_normalizer.version",
+        "charset_normalizer.models",
+        "charset_normalizer.api",
+        "charset_normalizer.utils"
+    ],
+    "charset_normalizer.api": [
+        "charset_normalizer.models",
+        "charset_normalizer.md",
+        "charset_normalizer.utils",
+        "charset_normalizer.constant",
+        "charset_normalizer.cd"
+    ],
+    "charset_normalizer.cd": [
+        "functools.lru_cache",
+        "charset_normalizer.models",
+        "charset_normalizer.md",
+        "charset_normalizer.utils",
+        "charset_normalizer.constant"
+    ],
+    "charset_normalizer.constant": [
+        "<builtin>.int",
+        "re.compile",
+        "<builtin>.set",
+        "<builtin>.range",
+        "<builtin>.filter",
+        "<builtin>.sorted",
+        "<builtin>.list",
+        "<builtin>.len"
+    ],
+    "re.compile": [],
+    "<builtin>.set": [],
+    "<builtin>.list": [],
+    "<builtin>.filter": [],
+    "<builtin>.sorted": [],
+    "charset_normalizer.md": [
+        "charset_normalizer.md.TooManySymbolOrPunctuationPlugin",
+        "charset_normalizer.md.UnprintablePlugin",
+        "functools.lru_cache",
+        "charset_normalizer.md.TooManyAccentuatedPlugin",
+        "charset_normalizer.md.SuspiciousRange",
+        "charset_normalizer.md.SuspiciousDuplicateAccentPlugin",
+        "charset_normalizer.md.MessDetectorPlugin",
+        "charset_normalizer.md.SuperWeirdWordPlugin",
+        "charset_normalizer.md.CjkInvalidStopPlugin",
+        "charset_normalizer.md.ArabicIsolatedFormPlugin",
+        "charset_normalizer.utils",
+        "charset_normalizer.constant",
+        "charset_normalizer.md.ArchaicUpperLowerPlugin"
+    ],
+    "charset_normalizer.utils": [
+        "functools.lru_cache",
+        "<builtin>.len",
+        "charset_normalizer.constant"
+    ],
+    "functools.lru_cache": [],
+    "charset_normalizer.md.MessDetectorPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.TooManySymbolOrPunctuationPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.TooManyAccentuatedPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.UnprintablePlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.SuspiciousDuplicateAccentPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.SuspiciousRange": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.SuperWeirdWordPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.CjkInvalidStopPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.ArchaicUpperLowerPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.md.ArabicIsolatedFormPlugin": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.models": [
+        "charset_normalizer.models.CharsetMatches",
+        "charset_normalizer.models.CharsetMatch",
+        "charset_normalizer.models.CliDetectionResult",
+        "charset_normalizer.utils",
+        "charset_normalizer.constant"
+    ],
+    "charset_normalizer.models.CharsetMatch": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.models.CharsetMatches": [],
+    "charset_normalizer.models.CliDetectionResult": [
+        "<builtin>.property"
+    ],
+    "charset_normalizer.legacy": [
+        "charset_normalizer.api",
+        "charset_normalizer.constant"
+    ],
+    "charset_normalizer.version": [
+        "<str>.split"
+    ],
+    "<str>.split": [],
+    "pdfminer.utils.open_filename": [],
+    "pdfminer.utils.Plane": [],
+    "pdfminer.psparser.PSObject": [],
+    "pdfminer.psparser.PSLiteral": [],
+    "pdfminer.psparser.PSKeyword": [],
+    "pdfminer.psparser.PSSymbolTable": [],
+    "pdfminer.psparser.PSSymbolTable.__init__": [],
+    "pdfminer.psparser.PSSymbolTable.intern": [],
+    "pdfminer.psparser.PSBaseParser": [],
+    "pdfminer.psparser.PSStackParser": [],
+    "pdfminer.pdfcolor.PDFColorSpace": [],
+    "pdfminer.pdfcolor.PDFColorSpace.__init__": [],
+    "pdfminer.image": [
+        "pdfminer.pdftypes",
+        "pdfminer.image.BMPWriter",
+        "pdfminer.layout",
+        "pdfminer.pdfexceptions",
+        "pdfminer.jbig2",
+        "pdfminer.pdfcolor",
+        "pdfminer.image.ImageWriter"
+    ],
+    "pdfminer.jbig2": [
+        "pdfminer.jbig2.JBIG2StreamReader",
+        "pdfminer.pdfexceptions",
+        "pdfminer.jbig2.JBIG2StreamWriter"
+    ],
+    "pdfminer.jbig2.JBIG2StreamReader": [],
+    "pdfminer.jbig2.JBIG2StreamWriter": [
+        "typing.cast"
+    ],
+    "typing.cast": [],
+    "pdfminer.image.BMPWriter": [],
+    "pdfminer.image.ImageWriter": [
+        "<builtin>.staticmethod"
+    ],
+    "pdfminer.converter.PDFLayoutAnalyzer": [],
+    "pdfminer.converter.PDFPageAggregator": [],
+    "pdfminer.converter.PDFConverter": [
+        "<builtin>.staticmethod"
+    ],
+    "pdfminer.converter.TextConverter": [],
+    "pdfminer.converter.HTMLConverter": [],
+    "pdfminer.converter.XMLConverter": [],
+    "pdfminer.converter.HOCRConverter": [],
+    "handler.handle": [
+        "pdfminer.high_level.extract_text"
+    ],
+    "pdfminer.high_level.extract_text": [
+        "pdfminer.pdfinterp.PDFPageInterpreter.process_page",
+        "typing.cast",
+        "pdfminer.converter.TextConverter.__init__",
+        "io.StringIO",
+        "pdfminer.utils.open_filename.__init__",
+        "pdfminer.pdfinterp.PDFResourceManager.__init__",
+        "pdfminer.pdfpage.PDFPage.get_pages",
+        "pdfminer.pdfinterp.PDFPageInterpreter.__init__",
+        "pdfminer.layout.LAParams.__init__"
+    ],
+    "pdfminer.layout.LAParams.__init__": [
+        "pdfminer.layout.LAParams._validate"
+    ],
+    "pdfminer.layout.LAParams._validate": [
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.utils.open_filename.__init__": [
+        "<builtin>.open",
+        "typing.cast",
+        "<builtin>.type",
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.str": [],
+    "<builtin>.open": [],
+    "io.StringIO": [],
+    "pdfminer.pdfinterp.PDFResourceManager.__init__": [],
+    "pdfminer.converter.TextConverter.__init__": [
+        "<builtin>.super"
+    ],
+    "pdfminer.pdfinterp.PDFPageInterpreter.__init__": [],
+    "pdfminer.pdfpage.PDFPage.get_pages": [
+        "pdfminer.pdfpage.PDFPage.create_pages",
+        "pdfminer.pdfparser.PDFParser.__init__",
+        "pdfminer.pdfdocument.PDFDocument.__init__",
+        "<builtin>.enumerate"
+    ],
+    "pdfminer.pdfparser.PDFParser.__init__": [
+        "pdfminer.psparser.PSStackParser.__init__"
+    ],
+    "pdfminer.psparser.PSStackParser.__init__": [
+        "pdfminer.psparser.PSBaseParser.__init__",
+        "pdfminer.psparser.PSStackParser.reset"
+    ],
+    "pdfminer.psparser.PSBaseParser.__init__": [
+        "pdfminer.psparser.PSStackParser.seek",
+        "pdfminer.psparser.PSBaseParser.seek"
+    ],
+    "pdfminer.psparser.PSBaseParser.seek": [
+        "pdfminer.psparser.PSStackParser.seek"
+    ],
+    "pdfminer.psparser.PSStackParser.reset": [],
+    "pdfminer.pdfdocument.PDFDocument.__init__": [
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.pdfdocument.PDFDocument.read_xref_from",
+        "<map>.get",
+        "pdfminer.pdfdocument.PDFDocument._initialize_password",
+        "pdfminer.pdftypes.dict_value",
+        "pdfminer.pdfdocument.PDFXRefFallback.load",
+        "pdfminer.pdfdocument.PDFDocument.find_xref",
+        "pdfminer.pdfparser.PDFParser.set_document"
+    ],
+    "pdfminer.pdfparser.PDFParser.set_document": [],
+    "pdfminer.pdfdocument.PDFDocument.find_xref": [
+        "<builtin>.int"
+    ],
+    "pdfminer.pdfdocument.PDFDocument.read_xref_from": [
+        "pdfminer.pdfdocument.PDFXRef.__init__",
+        "pdfminer.pdfdocument.PDFXRefStream.__init__",
+        "pdfminer.pdftypes.int_value",
+        "pdfminer.pdfdocument.PDFDocument.read_xref_from",
+        "pdfminer.pdfdocument.PDFXRef.load",
+        "pdfminer.pdfdocument.PDFXRef.get_trailer",
+        "pdfminer.psparser.PSStackParser.reset",
+        "pdfminer.psparser.PSStackParser.seek",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.psparser.PSStackParser.seek": [
+        "pdfminer.psparser.PSBaseParser.seek",
+        "pdfminer.psparser.PSStackParser.reset"
+    ],
+    "pdfminer.pdfdocument.PDFXRef.__init__": [],
+    "pdfminer.pdfdocument.PDFXRef.load": [
+        "<builtin>.int",
+        "<str>.format",
+        "pdfminer.pdfdocument.PDFXRef.load_trailer",
+        "<builtin>.range",
+        "pdfminer.psparser.PSStackParser.seek",
+        "<builtin>.len",
+        "<builtin>.map"
+    ],
+    "<str>.format": [],
+    "pdfminer.pdfdocument.PDFXRef.load_trailer": [
+        "pdfminer.psparser.PSStackParser.nextobject",
+        "pdfminer.psparser.PSStackParser.pop",
+        "<builtin>.str",
+        "pdfminer.pdftypes.dict_value"
+    ],
+    "pdfminer.psparser.PSStackParser.nextobject": [
+        "pdfminer.psparser.PSStackParser.start_type",
+        "pdfminer.psparser.PSStackParser.end_type",
+        "pdfminer.pdfparser.PDFParser.do_keyword",
+        "pdfminer.psparser.PSBaseParser.nexttoken",
+        "pdfminer.psparser.PSStackParser.do_keyword",
+        "pdfminer.utils.choplist",
+        "pdfminer.psparser.PSBaseParser.flush",
+        "<builtin>.len",
+        "pdfminer.psparser.literal_name",
+        "pdfminer.psparser.PSStackParser.push",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.psparser.PSBaseParser.nexttoken": [
+        "pdfminer.psparser.PSBaseParser.fillbuf",
+        "pdfminer.psparser.PSBaseParser._parse_main"
+    ],
+    "pdfminer.psparser.PSBaseParser.fillbuf": [
+        "<builtin>.len",
+        "pdfminer.psparser.PSBaseParser.tell"
+    ],
+    "pdfminer.psparser.PSBaseParser.tell": [],
+    "pdfminer.psparser.PSBaseParser._parse_main": [
+        "<builtin>.len",
+        "pdfminer.psparser.PSBaseParser._add_token",
+        "pdfminer.psparser.PSSymbolTable.intern"
+    ],
+    "pdfminer.psparser.PSBaseParser._add_token": [],
+    "pdfminer.pdfparser.PDFParser.do_keyword": [
+        "<builtin>.int",
+        "pdfminer.pdftypes.int_value",
+        "<builtin>.bytearray",
+        "pdfminer.pdftypes.PDFObjRef.__init__",
+        "pdfminer.pdftypes.dict_value",
+        "<builtin>.len",
+        "pdfminer.pdftypes.PDFStream.__init__",
+        "pdfminer.psparser.PSStackParser.add_results",
+        "pdfminer.psparser.PSStackParser.seek",
+        "pdfminer.psparser.PSStackParser.pop",
+        "pdfminer.psparser.PSStackParser.push",
+        "<builtin>.bytes"
+    ],
+    "pdfminer.psparser.PSStackParser.push": [],
+    "pdfminer.psparser.PSStackParser.pop": [],
+    "pdfminer.pdftypes.dict_value": [
+        "pdfminer.pdftypes.resolve1",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdftypes.resolve1": [
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdftypes.int_value": [
+        "pdfminer.pdftypes.resolve1",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.bytearray": [],
+    "<builtin>.bytes": [],
+    "pdfminer.pdftypes.PDFStream.__init__": [
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "<builtin>.type"
+    ],
+    "pdfminer.pdftypes.PDFObjRef.__init__": [],
+    "pdfminer.psparser.PSStackParser.add_results": [],
+    "pdfminer.psparser.PSStackParser.do_keyword": [],
+    "pdfminer.psparser.PSStackParser.end_type": [],
+    "pdfminer.psparser.PSStackParser.start_type": [],
+    "pdfminer.psparser.literal_name": [
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.utils.choplist": [
+        "<builtin>.len",
+        "<builtin>.tuple",
+        "append"
+    ],
+    "append": [],
+    "<builtin>.tuple": [],
+    "pdfminer.psparser.PSBaseParser.flush": [],
+    "pdfminer.pdfdocument.PDFXRefStream.__init__": [],
+    "pdfminer.pdfdocument.PDFXRef.get_trailer": [],
+    "pdfminer.pdfdocument.PDFXRefFallback.load": [
+        "pdfminer.psparser.PSStackParser.nextobject",
+        "pdfminer.pdfdocument.PDFXRef.load_trailer",
+        "<builtin>.int",
+        "typing.cast",
+        "<builtin>.range",
+        "<builtin>.min",
+        "pdfminer.pdfparser.PDFStreamParser.__init__",
+        "pdfminer.pdftypes.stream_value",
+        "pdfminer.pdftypes.PDFStream.get_data",
+        "pdfminer.psparser.PSStackParser.seek",
+        "<builtin>.len",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdftypes.stream_value": [
+        "pdfminer.pdftypes.PDFStream.__init__",
+        "pdfminer.pdftypes.resolve1",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdftypes.PDFStream.get_data": [
+        "pdfminer.pdftypes.PDFStream.decode"
+    ],
+    "pdfminer.pdftypes.PDFStream.decode": [
+        "pdfminer.pdftypes.int_value",
+        "pdfminer.lzw.lzwdecode",
+        "pdfminer.ccitt.ccittfaxdecode",
+        "<builtin>.str",
+        "pdfminer.pdftypes.PDFStream.get_filters",
+        "pdfminer.ascii85.ascii85decode",
+        "pdfminer.utils.apply_png_predictor",
+        "pdfminer.ascii85.asciihexdecode",
+        "pdfminer.runlength.rldecode",
+        "pdfminer.pdftypes.decompress_corrupted"
+    ],
+    "pdfminer.pdftypes.PDFStream.get_filters": [
+        "pdfminer.pdftypes.resolve1",
+        "pdfminer.pdftypes.PDFStream.get_any",
+        "<builtin>.zip",
+        "<builtin>.len",
+        "<builtin>.list",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdftypes.PDFStream.get_any": [],
+    "<builtin>.zip": [],
+    "pdfminer.ccitt.ccittfaxdecode": [
+        "pdfminer.ccitt.CCITTFaxDecoder.close",
+        "pdfminer.ccitt.CCITTG4Parser.feedbytes",
+        "typing.cast",
+        "pdfminer.ccitt.CCITTFaxDecoder.__init__"
+    ],
+    "pdfminer.ccitt.CCITTFaxDecoder.__init__": [
+        "pdfminer.ccitt.CCITTG4Parser.__init__"
+    ],
+    "pdfminer.ccitt.CCITTG4Parser.__init__": [
+        "pdfminer.ccitt.CCITTG4Parser.reset",
+        "pdfminer.ccitt.BitParser.__init__"
+    ],
+    "pdfminer.ccitt.BitParser.__init__": [],
+    "pdfminer.ccitt.CCITTG4Parser.reset": [
+        "pdfminer.ccitt.CCITTG4Parser._reset_line"
+    ],
+    "pdfminer.ccitt.CCITTG4Parser._reset_line": [],
+    "pdfminer.ccitt.CCITTG4Parser.feedbytes": [
+        "pdfminer.ccitt.BitParser._parse_bit",
+        "pdfminer.ccitt.get_bytes"
+    ],
+    "pdfminer.ccitt.get_bytes": [],
+    "pdfminer.ccitt.BitParser._parse_bit": [
+        "pdfminer.ccitt.CCITTG4Parser._parse_mode",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.ccitt.CCITTG4Parser._parse_mode": [
+        "pdfminer.ccitt.CCITTG4Parser._do_vertical",
+        "pdfminer.ccitt.CCITTG4Parser._do_pass",
+        "<builtin>.isinstance",
+        "pdfminer.ccitt.CCITTG4Parser._flush_line"
+    ],
+    "pdfminer.ccitt.CCITTG4Parser._do_vertical": [
+        "<builtin>.len",
+        "<builtin>.max",
+        "<builtin>.range",
+        "<builtin>.min"
+    ],
+    "<builtin>.max": [],
+    "<builtin>.min": [],
+    "pdfminer.ccitt.CCITTG4Parser._flush_line": [
+        "pdfminer.ccitt.CCITTG4Parser._reset_line",
+        "pdfminer.ccitt.CCITTG4Parser.output_line",
+        "pdfminer.ccitt.CCITTFaxDecoder.output_line"
+    ],
+    "pdfminer.ccitt.CCITTFaxDecoder.output_line": [
+        "<builtin>.len",
+        "<builtin>.enumerate"
+    ],
+    "<builtin>.enumerate": [],
+    "pdfminer.ccitt.CCITTG4Parser.output_line": [
+        "<builtin>.str",
+        "<builtin>.print"
+    ],
+    "<builtin>.print": [],
+    "pdfminer.ccitt.CCITTG4Parser._do_pass": [
+        "<builtin>.len",
+        "<builtin>.range"
+    ],
+    "pdfminer.ccitt.CCITTFaxDecoder.close": [],
+    "pdfminer.runlength.rldecode": [
+        "<builtin>.len",
+        "<builtin>.range",
+        "<builtin>.bytes"
+    ],
+    "pdfminer.ascii85.asciihexdecode": [
+        "pdfminer.ascii85.asciihexdecode.decode"
+    ],
+    "pdfminer.ascii85.asciihexdecode.decode": [
+        "<builtin>.int",
+        "<builtin>.bytes"
+    ],
+    "pdfminer.ascii85.ascii85decode": [
+        "<builtin>.ord",
+        "<builtin>.str",
+        "<builtin>.range",
+        "<builtin>.iter",
+        "<builtin>.bytes"
+    ],
+    "<builtin>.iter": [],
+    "<builtin>.ord": [],
+    "pdfminer.lzw.lzwdecode": [
+        "io.BytesIO",
+        "pdfminer.lzw.LZWDecoder.run",
+        "pdfminer.lzw.LZWDecoder.__init__"
+    ],
+    "io.BytesIO": [],
+    "pdfminer.lzw.LZWDecoder.__init__": [],
+    "pdfminer.lzw.LZWDecoder.run": [
+        "pdfminer.lzw.LZWDecoder.feed",
+        "pdfminer.lzw.LZWDecoder.readbits"
+    ],
+    "pdfminer.lzw.LZWDecoder.readbits": [
+        "<builtin>.ord"
+    ],
+    "pdfminer.lzw.LZWDecoder.feed": [
+        "<builtin>.len",
+        "<builtin>.range",
+        "typing.cast",
+        "<builtin>.bytes"
+    ],
+    "pdfminer.pdftypes.decompress_corrupted": [
+        "<builtin>.len"
+    ],
+    "pdfminer.utils.apply_png_predictor": [
+        "<builtin>.int",
+        "extend",
+        "pdfminer.utils.paeth_predictor",
+        "<builtin>.range",
+        "<builtin>.enumerate",
+        "append",
+        "<builtin>.zip",
+        "<builtin>.len",
+        "<builtin>.list",
+        "<builtin>.bytes"
+    ],
+    "pdfminer.utils.paeth_predictor": [
+        "<builtin>.abs"
+    ],
+    "<builtin>.abs": [],
+    "extend": [],
+    "pdfminer.pdfparser.PDFStreamParser.__init__": [
+        "pdfminer.pdfparser.PDFParser.__init__",
+        "io.BytesIO"
+    ],
+    "pdfminer.pdftypes.list_value": [
+        "pdfminer.pdftypes.resolve1",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdfdocument.PDFDocument._initialize_password": [
+        "pdfminer.pdftypes.int_value",
+        "pdfminer.psparser.literal_name"
+    ],
+    "<map>.get": [],
+    "pdfminer.pdfpage.PDFPage.create_pages": [
+        "pdfminer.pdfdocument.PDFDocument.get_page_labels",
+        "pdfminer.pdfpage.PDFPage.__init__",
+        "<builtin>.isinstance",
+        "pdfminer.pdfdocument.PDFDocument.getobj",
+        "<builtin>.next",
+        "pdfminer.pdfpage.PDFPage.create_pages.search"
+    ],
+    "pdfminer.pdfdocument.PDFDocument.get_page_labels": [],
+    "pdfminer.pdfpage.PDFPage.create_pages.search": [
+        "pdfminer.pdftypes.list_value",
+        "<map>.get",
+        "pdfminer.pdftypes.dict_value",
+        "pdfminer.pdfpage.PDFPage.create_pages.search",
+        "<builtin>.isinstance",
+        "pdfminer.pdfdocument.PDFDocument.getobj",
+        "<map>.copy"
+    ],
+    "<map>.copy": [],
+    "pdfminer.pdfdocument.PDFDocument.getobj": [
+        "pdfminer.pdfdocument.PDFDocument._getobj_objstm",
+        "pdfminer.pdfdocument.PDFDocument._getobj_parse",
+        "pdfminer.pdftypes.decipher_all",
+        "pdfminer.pdftypes.stream_value",
+        "pdfminer.pdfdocument.PDFDocument.getobj",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdfdocument.PDFDocument._getobj_parse": [
+        "pdfminer.psparser.PSStackParser.seek",
+        "pdfminer.psparser.PSStackParser.nextobject",
+        "<builtin>.len",
+        "append"
+    ],
+    "pdfminer.pdftypes.decipher_all": [
+        "<builtin>.len",
+        "<builtin>.isinstance",
+        "pdfminer.pdftypes.decipher_all"
+    ],
+    "pdfminer.pdfdocument.PDFDocument._getobj_objstm": [
+        "pdfminer.pdfdocument.PDFDocument._get_objects"
+    ],
+    "pdfminer.pdfdocument.PDFDocument._get_objects": [
+        "pdfminer.psparser.PSStackParser.nextobject",
+        "typing.cast",
+        "pdfminer.pdftypes.PDFStream.get",
+        "pdfminer.pdftypes.PDFStream.get_data",
+        "pdfminer.pdfparser.PDFStreamParser.__init__",
+        "pdfminer.pdfparser.PDFParser.set_document"
+    ],
+    "pdfminer.pdftypes.PDFStream.get": [
+        "<map>.get"
+    ],
+    "<builtin>.next": [],
+    "pdfminer.pdfpage.PDFPage.__init__": [
+        "pdfminer.pdftypes.resolve1",
+        "pdfminer.pdftypes.int_value",
+        "<map>.get",
+        "pdfminer.pdftypes.dict_value",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdfinterp.PDFPageInterpreter.process_page": [
+        "pdfminer.converter.PDFLayoutAnalyzer.begin_page",
+        "pdfminer.converter.PDFLayoutAnalyzer.end_page",
+        "pdfminer.pdfinterp.PDFPageInterpreter.render_contents"
+    ],
+    "pdfminer.converter.PDFLayoutAnalyzer.begin_page": [
+        "pdfminer.layout.LTPage.__init__",
+        "pdfminer.utils.apply_matrix_pt",
+        "<builtin>.abs"
+    ],
+    "pdfminer.utils.apply_matrix_pt": [],
+    "pdfminer.layout.LTPage.__init__": [
+        "pdfminer.layout.LTLayoutContainer.__init__"
+    ],
+    "pdfminer.layout.LTLayoutContainer.__init__": [
+        "pdfminer.layout.LTContainer.__init__"
+    ],
+    "pdfminer.layout.LTContainer.__init__": [
+        "pdfminer.layout.LTComponent.__init__"
+    ],
+    "pdfminer.layout.LTComponent.__init__": [
+        "pdfminer.layout.LTComponent.set_bbox"
+    ],
+    "pdfminer.layout.LTComponent.set_bbox": [],
+    "pdfminer.pdfinterp.PDFPageInterpreter.render_contents": [
+        "pdfminer.pdfinterp.PDFPageInterpreter.execute",
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.pdfinterp.PDFPageInterpreter.init_resources",
+        "pdfminer.pdfinterp.PDFPageInterpreter.init_state"
+    ],
+    "pdfminer.pdfinterp.PDFPageInterpreter.init_resources": [
+        "pdfminer.pdfinterp.PDFResourceManager.get_font",
+        "pdfminer.pdftypes.resolve1",
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.pdfinterp.PDFResourceManager.get_procset",
+        "<map>.items",
+        "pdfminer.pdftypes.dict_value",
+        "pdfminer.pdfinterp.PDFPageInterpreter.init_resources.get_colorspace",
+        "<builtin>.isinstance"
+    ],
+    "<map>.items": [],
+    "pdfminer.pdfinterp.PDFResourceManager.get_procset": [],
+    "pdfminer.pdfinterp.PDFPageInterpreter.init_resources.get_colorspace": [
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.pdftypes.stream_value",
+        "pdfminer.pdfcolor.PDFColorSpace.__init__",
+        "<builtin>.len",
+        "pdfminer.psparser.literal_name",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdfinterp.PDFResourceManager.get_font": [
+        "pdfminer.pdfinterp.PDFResourceManager.get_font",
+        "pdfminer.pdftypes.resolve1",
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.pdffont.PDFCIDFont.__init__",
+        "pdfminer.pdftypes.dict_value",
+        "pdfminer.pdffont.PDFType3Font.__init__",
+        "pdfminer.pdffont.PDFType1Font.__init__",
+        "pdfminer.psparser.literal_name",
+        "<map>.copy"
+    ],
+    "pdfminer.pdffont.PDFType1Font.__init__": [
+        "pdfminer.pdftypes.int_value",
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.pdftypes.resolve1",
+        "io.BytesIO",
+        "typing.cast",
+        "pdfminer.pdffont.FontMetricsDB.get_metrics",
+        "pdfminer.pdffont.Type1FontHeaderParser.get_encoding",
+        "<map>.get",
+        "pdfminer.pdftypes.dict_value",
+        "<builtin>.enumerate",
+        "pdfminer.pdffont.PDFSimpleFont.__init__",
+        "pdfminer.pdftypes.stream_value",
+        "pdfminer.pdftypes.PDFStream.get_data",
+        "pdfminer.psparser.literal_name",
+        "pdfminer.pdffont.Type1FontHeaderParser.__init__"
+    ],
+    "pdfminer.pdffont.FontMetricsDB.get_metrics": [],
+    "pdfminer.pdffont.PDFSimpleFont.__init__": [
+        "pdfminer.pdftypes.resolve1",
+        "pdfminer.pdftypes.list_value",
+        "io.BytesIO",
+        "pdfminer.cmapdb.CMapParser.run",
+        "<map>.get",
+        "pdfminer.encodingdb.EncodingDB.get_encoding",
+        "pdfminer.cmapdb.CMapParser.__init__",
+        "pdfminer.pdftypes.stream_value",
+        "pdfminer.pdftypes.PDFStream.get_data",
+        "pdfminer.psparser.literal_name",
+        "<builtin>.isinstance",
+        "pdfminer.pdffont.PDFFont.__init__"
+    ],
+    "pdfminer.encodingdb.EncodingDB.get_encoding": [
+        "typing.cast",
+        "pdfminer.encodingdb.name2unicode",
+        "<map>.get",
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "<map>.copy"
+    ],
+    "pdfminer.cmapdb.CMapParser.__init__": [
+        "<builtin>.set",
+        "pdfminer.psparser.PSStackParser.__init__"
+    ],
+    "pdfminer.cmapdb.CMapParser.run": [
+        "pdfminer.psparser.PSStackParser.nextobject"
+    ],
+    "pdfminer.pdffont.PDFFont.__init__": [
+        "pdfminer.pdftypes.int_value",
+        "pdfminer.pdftypes.resolve1",
+        "pdfminer.pdftypes.list_value",
+        "typing.cast",
+        "pdfminer.pdftypes.resolve_all",
+        "pdfminer.psparser.literal_name",
+        "<builtin>.isinstance",
+        "pdfminer.pdftypes.num_value"
+    ],
+    "pdfminer.pdftypes.resolve_all": [
+        "pdfminer.pdftypes.resolve_all",
+        "<builtin>.isinstance",
+        "<map>.items"
+    ],
+    "pdfminer.pdftypes.num_value": [
+        "pdfminer.pdftypes.resolve1",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdffont.Type1FontHeaderParser.__init__": [
+        "pdfminer.psparser.PSStackParser.__init__"
+    ],
+    "pdfminer.pdffont.Type1FontHeaderParser.get_encoding": [
+        "pdfminer.psparser.PSStackParser.nextobject",
+        "<builtin>.str",
+        "typing.cast",
+        "pdfminer.encodingdb.name2unicode"
+    ],
+    "pdfminer.pdffont.PDFCIDFont.__init__": [
+        "pdfminer.pdftypes.resolve1",
+        "io.BytesIO",
+        "pdfminer.cmapdb.CMapParser.run",
+        "pdfminer.pdftypes.dict_value",
+        "pdfminer.pdftypes.stream_value",
+        "pdfminer.pdffont.TrueTypeFont.create_unicode_map",
+        "<builtin>.isinstance",
+        "pdfminer.pdffont.PDFFont.__init__",
+        "pdfminer.pdffont.get_widths",
+        "pdfminer.pdffont.PDFFont.decode",
+        "pdfminer.pdftypes.PDFStream.get_data",
+        "pdfminer.pdffont.get_widths2",
+        "<map>.get",
+        "pdfminer.pdffont.TrueTypeFont.__init__",
+        "pdfminer.pdffont.PDFCIDFont.get_cmap_from_spec",
+        "pdfminer.pdftypes.list_value",
+        "pdfminer.cmapdb.CMapParser.__init__",
+        "pdfminer.cmapdb.CMapDB.get_unicode_map",
+        "pdfminer.psparser.literal_name"
+    ],
+    "pdfminer.pdffont.PDFFont.decode": [
+        "<builtin>.bytearray"
+    ],
+    "pdfminer.pdffont.PDFCIDFont.get_cmap_from_spec": [
+        "pdfminer.cmapdb.CMapDB.get_cmap",
+        "pdfminer.pdffont.PDFCIDFont._get_cmap_name",
+        "pdfminer.cmapdb.CMap.__init__"
+    ],
+    "pdfminer.pdffont.PDFCIDFont._get_cmap_name": [
+        "typing.cast",
+        "<builtin>.type",
+        "<builtin>.hasattr",
+        "<map>.get",
+        "pdfminer.psparser.literal_name"
+    ],
+    "<builtin>.hasattr": [],
+    "pdfminer.cmapdb.CMapDB.get_cmap": [
+        "pdfminer.cmapdb.PyCMap.__init__",
+        "pdfminer.cmapdb.CMapDB._load_data"
+    ],
+    "pdfminer.cmapdb.CMapDB._load_data": [
+        "<str>.replace",
+        "<builtin>.str",
+        "<builtin>.type"
+    ],
+    "pdfminer.cmapdb.PyCMap.__init__": [
+        "<builtin>.super"
+    ],
+    "pdfminer.cmapdb.CMap.__init__": [
+        "pdfminer.cmapdb.CMapBase.__init__"
+    ],
+    "pdfminer.cmapdb.CMapBase.__init__": [],
+    "pdfminer.pdffont.TrueTypeFont.__init__": [
+        "<builtin>.range",
+        "typing.cast"
+    ],
+    "pdfminer.cmapdb.CMapDB.get_unicode_map": [
+        "pdfminer.cmapdb.PyUnicodeMap.__init__",
+        "pdfminer.cmapdb.CMapDB._load_data"
+    ],
+    "<str>.replace": [],
+    "pdfminer.cmapdb.PyUnicodeMap.__init__": [
+        "<builtin>.super"
+    ],
+    "pdfminer.pdffont.TrueTypeFont.create_unicode_map": [
+        "<builtin>.max",
+        "typing.cast",
+        "<builtin>.str",
+        "<builtin>.range",
+        "<builtin>.enumerate",
+        "pdfminer.cmapdb.FileUnicodeMap.add_cid2unichr",
+        "<builtin>.zip"
+    ],
+    "pdfminer.cmapdb.FileUnicodeMap.add_cid2unichr": [
+        "<builtin>.chr",
+        "<builtin>.type",
+        "pdfminer.encodingdb.name2unicode",
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdffont.get_widths": [
+        "typing.cast",
+        "<builtin>.range",
+        "<builtin>.enumerate",
+        "<builtin>.len",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdffont.get_widths2": [
+        "typing.cast",
+        "pdfminer.utils.choplist",
+        "<builtin>.range",
+        "<builtin>.enumerate",
+        "<builtin>.len",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.pdffont.PDFType3Font.__init__": [
+        "pdfminer.pdftypes.int_value",
+        "pdfminer.pdftypes.list_value",
+        "<builtin>.tuple",
+        "typing.cast",
+        "pdfminer.utils.apply_matrix_norm",
+        "<map>.get",
+        "pdfminer.pdftypes.dict_value",
+        "<builtin>.enumerate",
+        "pdfminer.pdffont.PDFSimpleFont.__init__"
+    ],
+    "pdfminer.utils.apply_matrix_norm": [],
+    "pdfminer.pdfinterp.PDFPageInterpreter.init_state": [
+        "pdfminer.pdfinterp.PDFGraphicState.__init__",
+        "pdfminer.pdfinterp.PDFTextState.__init__",
+        "<builtin>.iter",
+        "pdfminer.pdfdevice.PDFDevice.set_ctm",
+        "<builtin>.next"
+    ],
+    "pdfminer.pdfdevice.PDFDevice.set_ctm": [],
+    "pdfminer.pdfinterp.PDFTextState.__init__": [
+        "pdfminer.pdfinterp.PDFTextState.reset"
+    ],
+    "pdfminer.pdfinterp.PDFTextState.reset": [],
+    "pdfminer.pdfinterp.PDFGraphicState.__init__": [],
+    "pdfminer.pdfinterp.PDFPageInterpreter.execute": [
+        "pdfminer.pdfinterp.PDFPageInterpreter.pop",
+        "pdfminer.psparser.PSStackParser.nextobject",
+        "<builtin>.getattr",
+        "<builtin>.hasattr",
+        "pdfminer.pdfinterp.PDFContentParser.__init__",
+        "pdfminer.pdfinterp.PDFPageInterpreter.push",
+        "<builtin>.len",
+        "<builtin>.isinstance",
+        "pdfminer.psparser.keyword_name"
+    ],
+    "pdfminer.pdfinterp.PDFContentParser.__init__": [
+        "pdfminer.psparser.PSStackParser.__init__"
+    ],
+    "pdfminer.pdfinterp.PDFPageInterpreter.push": [],
+    "pdfminer.psparser.keyword_name": [
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.getattr": [],
+    "pdfminer.pdfinterp.PDFPageInterpreter.pop": [],
+    "pdfminer.converter.PDFLayoutAnalyzer.end_page": [
+        "pdfminer.converter.PDFLayoutAnalyzer.receive_layout",
+        "<builtin>.type",
+        "pdfminer.converter.TextConverter.receive_layout",
+        "pdfminer.layout.LTLayoutContainer.analyze",
+        "<builtin>.str",
+        "<builtin>.len",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.layout.LTLayoutContainer.analyze": [
+        "pdfminer.layout.LTLayoutContainer.group_objects",
+        "pdfminer.layout.IndexAssigner.run",
+        "typing.cast",
+        "pdfminer.utils.fsplit",
+        "pdfminer.layout.LTLayoutContainer.group_textboxes",
+        "pdfminer.layout.LTLayoutContainer.group_textlines",
+        "pdfminer.layout.IndexAssigner.__init__",
+        "<builtin>.list"
+    ],
+    "pdfminer.utils.fsplit": [
+        "pdfminer.layout.LTLayoutContainer.analyze.<lambda1>",
+        "pdfminer.layout.LTLayoutContainer.analyze.<lambda2>",
+        "append"
+    ],
+    "pdfminer.layout.LTLayoutContainer.analyze.<lambda1>": [
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.layout.LTLayoutContainer.group_objects": [
+        "pdfminer.layout.LTTextLineVertical.__init__",
+        "<builtin>.max",
+        "pdfminer.layout.LTTextLineHorizontal.add",
+        "pdfminer.layout.LTTextLineHorizontal.__init__",
+        "<builtin>.min",
+        "pdfminer.layout.LTTextLineVertical.add",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.layout.LTTextLineHorizontal.__init__": [
+        "pdfminer.layout.LTTextLine.__init__"
+    ],
+    "pdfminer.layout.LTTextLine.__init__": [
+        "<builtin>.super"
+    ],
+    "pdfminer.layout.LTTextLineHorizontal.add": [
+        "pdfminer.layout.LTAnno.__init__",
+        "<builtin>.max",
+        "pdfminer.layout.LTContainer.add",
+        "<builtin>.super",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.layout.LTAnno.__init__": [],
+    "pdfminer.layout.LTContainer.add": [],
+    "pdfminer.layout.LTTextLineVertical.__init__": [
+        "pdfminer.layout.LTTextLine.__init__"
+    ],
+    "pdfminer.layout.LTTextLineVertical.add": [
+        "pdfminer.layout.LTAnno.__init__",
+        "<builtin>.max",
+        "pdfminer.layout.LTContainer.add",
+        "<builtin>.super",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.layout.LTLayoutContainer.analyze.<lambda2>": [
+        "pdfminer.layout.LTComponent.is_empty"
+    ],
+    "pdfminer.layout.LTComponent.is_empty": [],
+    "pdfminer.layout.LTLayoutContainer.group_textlines": [
+        "pdfminer.utils.uniq",
+        "extend",
+        "pdfminer.utils.Plane.__init__",
+        "<builtin>.set",
+        "pdfminer.layout.LTExpandableContainer.add",
+        "append",
+        "pdfminer.layout.LTComponent.is_empty",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.utils.Plane.__init__": [
+        "<builtin>.set"
+    ],
+    "pdfminer.utils.uniq": [
+        "<builtin>.set"
+    ],
+    "pdfminer.layout.LTExpandableContainer.add": [
+        "<builtin>.max",
+        "typing.cast",
+        "pdfminer.layout.LTContainer.add",
+        "pdfminer.layout.LTComponent.set_bbox",
+        "<builtin>.min"
+    ],
+    "pdfminer.layout.LTLayoutContainer.group_textboxes": [
+        "pdfminer.layout.LTLayoutContainer.group_textboxes.dist",
+        "pdfminer.layout.LTLayoutContainer.group_textboxes.isany",
+        "typing.cast",
+        "<builtin>.id",
+        "pdfminer.utils.Plane.__init__",
+        "<builtin>.set",
+        "<builtin>.range",
+        "<builtin>.len",
+        "<builtin>.list",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.layout.LTLayoutContainer.group_textboxes.dist": [
+        "<builtin>.max",
+        "<builtin>.min"
+    ],
+    "<builtin>.id": [],
+    "pdfminer.layout.LTLayoutContainer.group_textboxes.isany": [
+        "<builtin>.set",
+        "<builtin>.max",
+        "<builtin>.min"
+    ],
+    "pdfminer.layout.IndexAssigner.__init__": [],
+    "pdfminer.layout.IndexAssigner.run": [
+        "pdfminer.layout.IndexAssigner.run",
+        "<builtin>.isinstance"
+    ],
+    "pdfminer.converter.TextConverter.receive_layout": [
+        "pdfminer.converter.TextConverter.write_text",
+        "pdfminer.converter.TextConverter.receive_layout.render"
+    ],
+    "pdfminer.converter.TextConverter.write_text": [
+        "<str>.encode",
+        "pdfminer.utils.compatible_encode_method",
+        "typing.cast"
+    ],
+    "pdfminer.utils.compatible_encode_method": [
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "<builtin>.type"
+    ],
+    "<str>.encode": [],
+    "pdfminer.converter.TextConverter.receive_layout.render": [
+        "pdfminer.converter.TextConverter.write_text",
+        "<builtin>.isinstance",
+        "pdfminer.converter.TextConverter.receive_layout.render"
+    ],
+    "pdfminer.converter.PDFLayoutAnalyzer.receive_layout": []
+}

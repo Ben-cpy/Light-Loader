@@ -1,0 +1,1640 @@
+[33m[0] > Building geopandas.
+[0mClearing temporary build folder: ./build/geopandas/
+Preparing: ./geopandas/ build/geopandas/function
+Building: localhost:5000/geopandas:latest with python3-debian template. Please wait..
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.84kB done
+#1 DONE 0.4s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.5s
+
+#3 [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1
+#3 ...
+
+#4 [internal] load metadata for localhost:5000/python:3.10.5
+#4 DONE 0.3s
+
+#3 [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1
+#3 DONE 0.7s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [watchdog 1/1] FROM ghcr.io/openfaas/classic-watchdog:0.3.1@sha256:6b900e6195e421f3d916499b45af38b65be88f6ac38d6caa744a3c152cc70fc5
+#6 DONE 0.0s
+
+#7 [stage-1  1/24] FROM localhost:5000/python:3.10.5@sha256:f4802f646ed1619dd4795e55d72c1a79ee77e51e3425c8ec1eebb4da08692865
+#7 resolve localhost:5000/python:3.10.5@sha256:f4802f646ed1619dd4795e55d72c1a79ee77e51e3425c8ec1eebb4da08692865
+#7 resolve localhost:5000/python:3.10.5@sha256:f4802f646ed1619dd4795e55d72c1a79ee77e51e3425c8ec1eebb4da08692865 1.1s done
+#7 DONE 1.1s
+
+#5 [internal] load build context
+#5 transferring context: 20.72MB 0.3s done
+#5 DONE 0.5s
+
+#8 [stage-1 19/24] RUN pip install -r requirements.txt --target=/home/app/python
+#8 CACHED
+
+#9 [stage-1 16/24] RUN touch ./function/__init__.py
+#9 CACHED
+
+#10 [stage-1 21/24] COPY function           function
+#10 CACHED
+
+#11 [stage-1 13/24] RUN pip install astroid==3.1.0 astor numpy openai --target=/home/ast
+#11 CACHED
+
+#12 [stage-1 14/24] RUN pip install -r requirements.txt --target=/home/app/python
+#12 CACHED
+
+#13 [stage-1 17/24] WORKDIR /home/app/function/
+#13 CACHED
+
+#14 [stage-1 11/24] RUN mkdir -p /home/ast && chown -R app /home/ast
+#14 CACHED
+
+#15 [stage-1 20/24] WORKDIR /home/app/
+#15 CACHED
+
+#16 [stage-1  3/24] RUN chmod +x /usr/bin/fwatchdog
+#16 CACHED
+
+#17 [stage-1  6/24] WORKDIR /home/app/
+#17 CACHED
+
+#18 [stage-1  5/24] RUN groupadd app && useradd -r -g app app
+#18 CACHED
+
+#19 [stage-1 15/24] RUN mkdir -p function
+#19 CACHED
+
+#20 [stage-1  8/24] COPY requirements.txt   .
+#20 CACHED
+
+#21 [stage-1 18/24] COPY function/requirements.txt	.
+#21 CACHED
+
+#22 [stage-1  2/24] COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
+#22 CACHED
+
+#23 [stage-1 10/24] RUN chown -R app /home/app &&     mkdir -p /home/app/python && chown -R app /home/app
+#23 CACHED
+
+#24 [stage-1  9/24] COPY function/call_graph.json .
+#24 CACHED
+
+#25 [stage-1  7/24] COPY index.py           .
+#25 CACHED
+
+#26 [stage-1 12/24] RUN pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple
+#26 CACHED
+
+#27 [stage-1  4/24] RUN apt-get update     && apt-get install -y ca-certificates ${ADDITIONAL_PACKAGE}     && rm -rf /var/lib/apt/lists/
+#27 CACHED
+
+#28 [stage-1 22/24] RUN chown -R app:app ./ &&     chmod -R 777 /home/app/python
+#28 CACHED
+
+#29 [stage-1 23/24] COPY LightLoader         LightLoader
+#29 DONE 1.9s
+
+#30 [stage-1 24/24] RUN cp ./function/handler.py ./python &&     cd /home/app/LightLoader &&     python ./Light.py &&     cd /home/app/
+#30 2.596 2024-12-28 02:14:46,349 - __main__ - INFO - step 1: remove optional files
+#30 7.858 2024-12-28 02:14:51,611 - __main__ - INFO - step 2: find magic function
+#30 50.19 2024-12-28 02:15:33,941 - __main__ - INFO - step 3: find used function
+#30 50.24 2024-12-28 02:15:33,997 - __main__ - INFO - step 4: find used package
+#30 59.93 2024-12-28 02:15:43,683 - __main__ - INFO - step 5: lazy load package
+#30 60.77 2024-12-28 02:15:44,525 - lazy_load.modify_folder - INFO - Skipped handler: /home/app/copy/handler.py
+#30 60.77 2024-12-28 02:15:44,525 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/six.py
+#30 60.77 2024-12-28 02:15:44,525 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pytz/__init__.py
+#30 60.78 2024-12-28 02:15:44,537 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pytz/exceptions.py
+#30 60.82 2024-12-28 02:15:44,568 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pytz/lazy.py
+#30 60.87 2024-12-28 02:15:44,618 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pytz/tzfile.py
+#30 60.88 2024-12-28 02:15:44,637 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pytz/tzinfo.py
+#30 60.88 2024-12-28 02:15:44,638 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pytz/reference.py
+#30 60.89 2024-12-28 02:15:44,640 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/__init__.py
+#30 60.89 2024-12-28 02:15:44,640 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/__init__.py
+#30 60.89 2024-12-28 02:15:44,640 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Africa/__init__.py
+#30 60.89 2024-12-28 02:15:44,640 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/America/__init__.py
+#30 60.89 2024-12-28 02:15:44,640 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/America/Argentina/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/America/Indiana/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/America/Kentucky/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/America/North_Dakota/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Antarctica/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Arctic/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Asia/__init__.py
+#30 60.89 2024-12-28 02:15:44,641 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Atlantic/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Australia/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Brazil/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Canada/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Chile/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Etc/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Europe/__init__.py
+#30 60.89 2024-12-28 02:15:44,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Indian/__init__.py
+#30 60.89 2024-12-28 02:15:44,643 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Mexico/__init__.py
+#30 60.89 2024-12-28 02:15:44,643 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/Pacific/__init__.py
+#30 60.89 2024-12-28 02:15:44,643 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/tzdata/zoneinfo/US/__init__.py
+#30 60.89 2024-12-28 02:15:44,643 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/packaging/__init__.py
+#30 61.02 2024-12-28 02:15:44,768 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_elffile.py
+#30 61.05 2024-12-28 02:15:44,804 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_musllinux.py
+#30 61.07 2024-12-28 02:15:44,804 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_structures.py
+#30 61.09 2024-12-28 02:15:44,839 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/requirements.py
+#30 61.22 2024-12-28 02:15:44,972 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_manylinux.py
+#30 61.34 2024-12-28 02:15:44,977 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_parser.py
+#30 61.36 2024-12-28 02:15:44,983 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/specifiers.py
+#30 61.38 2024-12-28 02:15:45,013 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/markers.py
+#30 61.38 2024-12-28 02:15:45,049 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/packaging/licenses/__init__.py
+#30 61.39 2024-12-28 02:15:45,054 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_tokenizer.py
+#30 61.40 2024-12-28 02:15:45,076 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/version.py
+#30 61.41 2024-12-28 02:15:45,081 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/utils.py
+#30 61.42 2024-12-28 02:15:45,145 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/tags.py
+#30 61.43 2024-12-28 02:15:45,179 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/__init__.py
+#30 61.50 2024-12-28 02:15:45,253 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/metadata.py
+#30 61.54 2024-12-28 02:15:45,264 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pytesttester.py
+#30 61.56 2024-12-28 02:15:45,291 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/dual.py
+#30 61.57 2024-12-28 02:15:45,298 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_distributor_init.py
+#30 61.57 2024-12-28 02:15:45,309 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/version.py
+#30 61.57 2024-12-28 02:15:45,309 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/matlib.py
+#30 61.57 2024-12-28 02:15:45,321 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_globals.py
+#30 63.17 2024-12-28 02:15:45,325 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/conftest.py
+#30 63.18 2024-12-28 02:15:45,325 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/licenses/_spdx.py
+#30 63.23 2024-12-28 02:15:45,326 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/setup.py
+#30 63.40 2024-12-28 02:15:45,326 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/__config__.py
+#30 63.52 2024-12-28 02:15:45,326 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_version.py
+#30 63.53 2024-12-28 02:15:45,327 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ctypeslib.py
+#30 63.69 2024-12-28 02:15:45,328 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/polynomial/__init__.py
+#30 63.71 2024-12-28 02:15:47,225 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/setup.py
+#30 63.72 2024-12-28 02:15:47,280 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/laguerre.py
+#30 63.72 2024-12-28 02:15:47,280 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/hermite.py
+#30 63.73 2024-12-28 02:15:47,444 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/polyutils.py
+#30 63.73 2024-12-28 02:15:47,455 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/hermite_e.py
+#30 63.73 2024-12-28 02:15:47,472 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/chebyshev.py
+#30 63.73 2024-12-28 02:15:47,472 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/legendre.py
+#30 63.73 2024-12-28 02:15:47,482 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/random/__init__.py
+#30 63.73 2024-12-28 02:15:47,482 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/polynomial.py
+#30 63.75 2024-12-28 02:15:47,483 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/_polybase.py
+#30 63.75 2024-12-28 02:15:47,503 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_pickle.py
+#30 63.75 2024-12-28 02:15:47,504 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/setup.py
+#30 63.76 2024-12-28 02:15:47,514 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/cython/setup.py
+#30 63.76 2024-12-28 02:15:47,514 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/cffi/parse.py
+#30 63.76 2024-12-28 02:15:47,514 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/cffi/extending.py
+#30 63.77 2024-12-28 02:15:47,527 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/numba/extending.py
+#30 63.77 2024-12-28 02:15:47,527 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/lib/npyio.py
+#30 63.78 2024-12-28 02:15:47,527 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/numba/extending_distributions.py
+#30 64.11 2024-12-28 02:15:47,862 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/lib/__init__.py
+#30 64.17 2024-12-28 02:15:47,919 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/scimath.py
+#30 64.45 2024-12-28 02:15:48,079 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/setup.py
+#30 64.47 2024-12-28 02:15:48,080 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/_datasource.py
+#30 64.49 2024-12-28 02:15:48,090 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/stride_tricks.py
+#30 64.52 2024-12-28 02:15:48,113 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/mixins.py
+#30 64.57 2024-12-28 02:15:48,216 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/_iotools.py
+#30 64.79 2024-12-28 02:15:48,216 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/linalg/linalg.py
+#30 64.88 2024-12-28 02:15:48,237 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/_version.py
+#30 64.92 2024-12-28 02:15:48,248 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/format.py
+#30 65.00 2024-12-28 02:15:48,248 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/user_array.py
+#30 65.12 2024-12-28 02:15:48,268 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/arrayterator.py
+#30 65.16 2024-12-28 02:15:48,315 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/ufunclike.py
+#30 65.44 2024-12-28 02:15:48,526 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/histograms.py
+#30 65.73 2024-12-28 02:15:48,551 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/linalg/__init__.py
+#30 65.75 2024-12-28 02:15:48,784 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/type_check.py
+#30 65.80 2024-12-28 02:15:48,794 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/linalg/setup.py
+#30 65.81 2024-12-28 02:15:48,889 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/nanfunctions.py
+#30 65.85 2024-12-28 02:15:48,902 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/arraysetops.py
+#30 65.86 2024-12-28 02:15:48,912 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/twodim_base.py
+#30 65.88 2024-12-28 02:15:48,968 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/arraypad.py
+#30 65.91 2024-12-28 02:15:49,566 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/polynomial.py
+#30 65.93 2024-12-28 02:15:49,577 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/index_tricks.py
+#30 65.94 2024-12-28 02:15:49,626 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/recfunctions.py
+#30 65.95 2024-12-28 02:15:49,642 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/utils.py
+#30 66.02 2024-12-28 02:15:49,653 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/f2py/__init__.py
+#30 66.11 2024-12-28 02:15:49,700 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/shape_base.py
+#30 66.25 2024-12-28 02:15:50,006 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/diagnose.py
+#30 66.96 2024-12-28 02:15:50,711 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/use_rules.py
+#30 66.98 2024-12-28 02:15:50,728 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/__version__.py
+#30 67.61 2024-12-28 02:15:50,738 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/setup.py
+#30 67.75 2024-12-28 02:15:51,503 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/__main__.py
+#30 67.78 2024-12-28 02:15:51,533 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/func2subr.py
+#30 68.02 2024-12-28 02:15:51,776 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/f90mod_rules.py
+#30 68.03 2024-12-28 02:15:51,787 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/array_api/__init__.py
+#30 68.34 2024-12-28 02:15:51,797 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/common_rules.py
+#30 68.38 2024-12-28 02:15:51,832 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/auxfuncs.py
+#30 68.39 2024-12-28 02:15:51,832 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/cfuncs.py
+#30 68.46 2024-12-28 02:15:52,089 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/doc/__init__.py
+#30 68.54 2024-12-28 02:15:52,288 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/capi_maps.py
+#30 68.54 2024-12-28 02:15:52,293 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_searching_functions.py
+#30 68.67 2024-12-28 02:15:52,355 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_statistical_functions.py
+#30 68.75 2024-12-28 02:15:52,387 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_data_type_functions.py
+#30 68.89 2024-12-28 02:15:52,418 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/setup.py
+#30 68.98 2024-12-28 02:15:52,557 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/linalg.py
+#30 69.07 2024-12-28 02:15:52,557 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_utility_functions.py
+#30 69.08 2024-12-28 02:15:52,569 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_constants.py
+#30 69.11 2024-12-28 02:15:52,570 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/_typing/__init__.py
+#30 69.28 2024-12-28 02:15:52,613 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_set_functions.py
+#30 69.42 2024-12-28 02:15:52,638 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_manipulation_functions.py
+#30 69.57 2024-12-28 02:15:52,644 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_dtypes.py
+#30 69.67 2024-12-28 02:15:52,674 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/cb_rules.py
+#30 69.69 2024-12-28 02:15:52,679 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_typing.py
+#30 69.72 2024-12-28 02:15:52,700 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_sorting_functions.py
+#30 69.73 2024-12-28 02:15:52,709 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/f2py2e.py
+#30 69.76 2024-12-28 02:15:52,709 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/doc/ufuncs.py
+#30 69.78 2024-12-28 02:15:52,828 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/doc/constants.py
+#30 69.84 2024-12-28 02:15:52,870 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_creation_functions.py
+#30 69.87 2024-12-28 02:15:53,033 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/symbolic.py
+#30 69.90 2024-12-28 02:15:53,044 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_shape.py
+#30 70.75 2024-12-28 02:15:53,175 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_elementwise_functions.py
+#30 70.78 2024-12-28 02:15:53,274 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_array_like.py
+#30 71.00 2024-12-28 02:15:53,275 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_dtype_like.py
+#30 71.47 2024-12-28 02:15:53,327 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_nbit.py
+#30 71.64 2024-12-28 02:15:53,412 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_array_object.py
+#30 71.82 2024-12-28 02:15:53,443 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_generic_alias.py
+#30 71.89 2024-12-28 02:15:53,483 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_char_codes.py
+#30 72.11 2024-12-28 02:15:53,525 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_extended_precision.py
+#30 72.29 2024-12-28 02:15:53,536 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/setup.py
+#30 72.61 2024-12-28 02:15:53,582 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/distutils/__init__.py
+#30 72.74 2024-12-28 02:15:53,622 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_scalars.py
+#30 72.77 2024-12-28 02:15:53,627 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_add_docstring.py
+#30 72.80 2024-12-28 02:15:53,627 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_nested_sequence.py
+#30 72.84 2024-12-28 02:15:54,541 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/cpuinfo.py
+#30 72.86 2024-12-28 02:15:55,050 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/unixccompiler.py
+#30 72.89 2024-12-28 02:15:55,257 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/core.py
+#30 72.92 2024-12-28 02:15:55,642 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/npy_pkg_config.py
+#30 72.95 2024-12-28 02:15:55,663 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/pathccompiler.py
+#30 72.97 2024-12-28 02:15:55,746 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/lib2def.py
+#30 72.98 2024-12-28 02:15:55,781 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/log.py
+#30 73.03 2024-12-28 02:15:55,854 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/exec_command.py
+#30 73.07 2024-12-28 02:15:55,883 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/numpy_distribution.py
+#30 73.15 2024-12-28 02:15:56,347 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/rules.py
+#30 73.16 2024-12-28 02:15:56,352 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/from_template.py
+#30 73.20 2024-12-28 02:15:56,367 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/ccompiler.py
+#30 73.25 2024-12-28 02:15:56,545 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/_shell_utils.py
+#30 73.41 2024-12-28 02:15:56,602 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/mingw32ccompiler.py
+#30 73.45 2024-12-28 02:15:56,699 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/armccompiler.py
+#30 73.46 2024-12-28 02:15:56,713 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/msvc9compiler.py
+#30 73.83 2024-12-28 02:15:56,719 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/setup.py
+#30 73.94 2024-12-28 02:15:56,729 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/line_endings.py
+#30 73.99 2024-12-28 02:15:56,807 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/intelccompiler.py
+#30 74.00 2024-12-28 02:15:56,899 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/extension.py
+#30 74.01 2024-12-28 02:15:57,012 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/msvccompiler.py
+#30 74.04 2024-12-28 02:15:57,053 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/__config__.py
+#30 74.14 2024-12-28 02:15:57,161 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/distutils/fcompiler/__init__.py
+#30 74.21 2024-12-28 02:15:57,195 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/conv_template.py
+#30 74.22 2024-12-28 02:15:57,698 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/crackfortran.py
+#30 74.27 2024-12-28 02:15:57,698 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/compaq.py
+#30 74.30 2024-12-28 02:15:57,725 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/lahey.py
+#30 74.32 2024-12-28 02:15:57,749 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/gnu.py
+#30 74.39 2024-12-28 02:15:57,749 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/vast.py
+#30 74.40 2024-12-28 02:15:57,783 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/none.py
+#30 74.42 2024-12-28 02:15:57,835 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/hpux.py
+#30 74.87 2024-12-28 02:15:57,894 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/mips.py
+#30 74.97 2024-12-28 02:15:57,958 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/arm.py
+#30 75.02 2024-12-28 02:15:57,965 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/g95.py
+#30 75.03 2024-12-28 02:15:58,030 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/intel.py
+#30 75.05 2024-12-28 02:15:58,035 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/nag.py
+#30 75.08 2024-12-28 02:15:58,053 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/pathf95.py
+#30 75.15 2024-12-28 02:15:58,093 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/pg.py
+#30 75.20 2024-12-28 02:15:58,148 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/environment.py
+#30 75.26 2024-12-28 02:15:58,166 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/nv.py
+#30 75.30 2024-12-28 02:15:58,627 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/fujitsu.py
+#30 75.34 2024-12-28 02:15:58,627 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/absoft.py
+#30 75.35 2024-12-28 02:15:58,714 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/distutils/command/__init__.py
+#30 75.39 2024-12-28 02:15:58,724 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/ccompiler_opt.py
+#30 75.54 2024-12-28 02:15:58,735 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/ibm.py
+#30 75.57 2024-12-28 02:15:58,801 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/sun.py
+#30 75.61 2024-12-28 02:15:58,823 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/bdist_rpm.py
+#30 75.69 2024-12-28 02:15:58,868 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/autodist.py
+#30 75.71 2024-12-28 02:15:58,882 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/egg_info.py
+#30 75.75 2024-12-28 02:15:58,965 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build.py
+#30 75.96 2024-12-28 02:15:58,985 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/sdist.py
+#30 76.00 2024-12-28 02:15:58,985 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/config_compiler.py
+#30 76.03 2024-12-28 02:15:59,110 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install.py
+#30 76.11 2024-12-28 02:15:59,129 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_py.py
+#30 76.14 2024-12-28 02:15:59,134 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_scripts.py
+#30 76.77 2024-12-28 02:15:59,309 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/matrixlib/__init__.py
+#30 76.95 2024-12-28 02:15:59,320 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/develop.py
+#30 76.97 2024-12-28 02:15:59,335 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install_headers.py
+#30 76.98 2024-12-28 02:15:59,346 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install_data.py
+#30 77.00 2024-12-28 02:15:59,646 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install_clib.py
+#30 77.01 2024-12-28 02:15:59,869 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/matrixlib/setup.py
+#30 77.10 2024-12-28 02:16:00,524 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_ext.py
+#30 77.57 2024-12-28 02:16:00,601 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/testing/__init__.py
+#30 77.66 2024-12-28 02:16:00,850 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/config.py
+#30 77.68 2024-12-28 02:16:00,850 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/matrixlib/defmatrix.py
+#30 77.69 2024-12-28 02:16:00,883 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/utils.py
+#30 77.71 2024-12-28 02:16:01,348 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/print_coercion_tables.py
+#30 77.75 2024-12-28 02:16:01,359 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/system_info.py
+#30 77.81 2024-12-28 02:16:01,395 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/setup.py
+#30 77.82 2024-12-28 02:16:01,441 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_src.py
+#30 77.82 2024-12-28 02:16:01,497 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/testing/_private/utils.py
+#30 77.83 2024-12-28 02:16:01,582 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/testing/_private/__init__.py
+#30 77.83 2024-12-28 02:16:01,583 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/misc_util.py
+#30 77.85 2024-12-28 02:16:01,583 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_clib.py
+#30 77.86 2024-12-28 02:16:01,602 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/compat/__init__.py
+#30 78.03 2024-12-28 02:16:01,784 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/setup.py
+#30 78.05 2024-12-28 02:16:01,789 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/_pep440.py
+#30 78.07 2024-12-28 02:16:01,820 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/parameterized.py
+#30 78.08 2024-12-28 02:16:01,832 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/_inspect.py
+#30 78.09 2024-12-28 02:16:01,847 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/decorators.py
+#30 78.12 2024-12-28 02:16:01,858 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/extbuild.py
+#30 78.15 2024-12-28 02:16:01,904 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/py3k.py
+#30 78.22 2024-12-28 02:16:01,968 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/nosetester.py
+#30 78.22 2024-12-28 02:16:01,973 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/noseclasses.py
+#30 78.27 2024-12-28 02:16:02,025 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/fft/__init__.py
+#30 78.34 2024-12-28 02:16:02,091 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/ma/__init__.py
+#30 78.38 2024-12-28 02:16:02,131 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/fft/helper.py
+#30 78.46 2024-12-28 02:16:02,131 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/function_base.py
+#30 78.51 2024-12-28 02:16:02,137 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/typing/__init__.py
+#30 78.54 2024-12-28 02:16:02,142 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/fft/setup.py
+#30 78.75 2024-12-28 02:16:02,219 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/setup.py
+#30 78.80 2024-12-28 02:16:02,259 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/typing/mypy_plugin.py
+#30 78.83 2024-12-28 02:16:02,492 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/bench.py
+#30 79.00 2024-12-28 02:16:02,497 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/timer_comparison.py
+#30 79.03 2024-12-28 02:16:02,508 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/fft/_pocketfft.py
+#30 79.30 2024-12-28 02:16:02,522 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/_pyinstaller/__init__.py
+#30 79.31 2024-12-28 02:16:02,553 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/typing/setup.py
+#30 79.35 2024-12-28 02:16:02,633 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pyinstaller/pyinstaller-smoke.py
+#30 79.36 2024-12-28 02:16:02,750 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pyinstaller/hook-numpy.py
+#30 79.38 2024-12-28 02:16:02,771 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pyinstaller/test_pyinstaller.py
+#30 79.48 2024-12-28 02:16:03,066 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/mrecords.py
+#30 79.50 2024-12-28 02:16:03,201 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/testutils.py
+#30 79.53 2024-12-28 02:16:03,237 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/certifi/__init__.py
+#30 79.65 2024-12-28 02:16:03,406 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/certifi/core.py
+#30 79.72 2024-12-28 02:16:03,473 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/certifi/__main__.py
+#30 79.77 2024-12-28 02:16:03,519 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/shapely/__init__.py
+#30 79.86 2024-12-28 02:16:03,615 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/shapely/algorithms/__init__.py
+#30 79.93 2024-12-28 02:16:03,687 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geos.py
+#30 79.95 2024-12-28 02:16:03,707 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/coordinates.py
+#30 80.04 2024-12-28 02:16:03,789 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/set_operations.py
+#30 80.05 2024-12-28 02:16:03,800 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/io.py
+#30 80.17 2024-12-28 02:16:03,811 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/shapely/geometry/__init__.py
+#30 80.20 2024-12-28 02:16:03,822 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/wkt.py
+#30 80.31 2024-12-28 02:16:03,843 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/strtree.py
+#30 80.33 2024-12-28 02:16:03,934 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/errors.py
+#30 80.35 2024-12-28 02:16:03,945 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/constructive.py
+#30 80.45 2024-12-28 02:16:04,025 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/validation.py
+#30 80.53 2024-12-28 02:16:04,030 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/shapely/vectorized/__init__.py
+#30 80.54 2024-12-28 02:16:04,042 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/wkb.py
+#30 80.58 2024-12-28 02:16:04,042 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/predicates.py
+#30 80.60 2024-12-28 02:16:04,068 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/creation.py
+#30 80.62 2024-12-28 02:16:04,073 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/_version.py
+#30 80.86 2024-12-28 02:16:04,074 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/decorators.py
+#30 80.88 2024-12-28 02:16:04,104 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/linear.py
+#30 80.90 2024-12-28 02:16:04,104 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/speedups.py
+#30 80.91 2024-12-28 02:16:04,125 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/_ragged_array.py
+#30 80.93 2024-12-28 02:16:04,161 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/_enum.py
+#30 81.13 2024-12-28 02:16:04,181 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/coords.py
+#30 81.14 2024-12-28 02:16:04,278 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/_geometry.py
+#30 81.15 2024-12-28 02:16:04,286 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/prepared.py
+#30 81.19 2024-12-28 02:16:04,302 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/measurement.py
+#30 81.20 2024-12-28 02:16:04,307 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/affinity.py
+#30 81.25 2024-12-28 02:16:04,338 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/testing.py
+#30 81.26 2024-12-28 02:16:04,408 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/algorithms/polylabel.py
+#30 81.28 2024-12-28 02:16:04,409 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/plotting.py
+#30 81.29 2024-12-28 02:16:04,566 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/__init__.py
+#30 81.31 2024-12-28 02:16:04,625 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/algorithms/cga.py
+#30 81.32 2024-12-28 02:16:04,637 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/multipoint.py
+#30 81.34 2024-12-28 02:16:04,653 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/ops.py
+#30 81.51 2024-12-28 02:16:04,653 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/algorithms/_oriented_envelope.py
+#30 81.52 2024-12-28 02:16:04,658 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/point.py
+#30 81.54 2024-12-28 02:16:04,658 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/multilinestring.py
+#30 81.59 2024-12-28 02:16:04,882 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/extras.py
+#30 81.66 2024-12-28 02:16:04,903 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/base.py
+#30 81.69 2024-12-28 02:16:04,936 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/linestring.py
+#30 81.75 2024-12-28 02:16:05,012 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/collection.py
+#30 81.77 2024-12-28 02:16:05,012 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/conftest.py
+#30 81.82 2024-12-28 02:16:05,021 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/polygon.py
+#30 81.84 2024-12-28 02:16:05,036 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/geo.py
+#30 81.87 2024-12-28 02:16:05,046 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/shapely/geometry/multipolygon.py
+#30 81.89 2024-12-28 02:16:05,106 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/_common.py
+#30 81.91 2024-12-28 02:16:05,233 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/_version.py
+#30 81.97 2024-12-28 02:16:05,259 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/parser/__init__.py
+#30 81.98 2024-12-28 02:16:05,288 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/utils.py
+#30 82.10 2024-12-28 02:16:05,299 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/easter.py
+#30 82.14 2024-12-28 02:16:05,395 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tzwin.py
+#30 82.18 2024-12-28 02:16:05,497 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/relativedelta.py
+#30 82.21 2024-12-28 02:16:05,815 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/tz/__init__.py
+#30 82.26 2024-12-28 02:16:06,014 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/zoneinfo/__init__.py
+#30 82.40 2024-12-28 02:16:06,153 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyproj/__init__.py
+#30 82.50 2024-12-28 02:16:06,227 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/_factories.py
+#30 82.52 2024-12-28 02:16:06,269 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/_common.py
+#30 82.61 2024-12-28 02:16:06,366 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/parser/isoparser.py
+#30 82.65 2024-12-28 02:16:06,399 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/zoneinfo/rebuild.py
+#30 82.72 2024-12-28 02:16:06,399 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/proj.py
+#30 82.81 2024-12-28 02:16:06,430 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/datadir.py
+#30 82.89 2024-12-28 02:16:06,480 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/aoi.py
+#30 83.04 2024-12-28 02:16:06,581 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/win.py
+#30 83.15 2024-12-28 02:16:06,783 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/__main__.py
+#30 83.32 2024-12-28 02:16:06,849 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/enums.py
+#30 83.37 2024-12-28 02:16:06,971 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/exceptions.py
+#30 83.64 2024-12-28 02:16:07,071 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/utils.py
+#30 83.79 2024-12-28 02:16:07,105 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/geod.py
+#30 83.89 2024-12-28 02:16:07,126 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/_show_versions.py
+#30 84.04 2024-12-28 02:16:07,136 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/network.py
+#30 84.04 2024-12-28 02:16:07,388 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/sync.py
+#30 84.47 2024-12-28 02:16:07,585 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/rrule.py
+#30 84.48 2024-12-28 02:16:07,595 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyproj/crs/__init__.py
+#30 84.51 2024-12-28 02:16:07,646 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/transformer.py
+#30 84.64 2024-12-28 02:16:07,711 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/crs/datum.py
+#30 84.66 2024-12-28 02:16:07,867 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/crs/coordinate_system.py
+#30 84.70 2024-12-28 02:16:08,246 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/crs/_cf1x8.py
+#30 84.74 2024-12-28 02:16:08,266 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/crs/coordinate_operation.py
+#30 84.76 2024-12-28 02:16:08,443 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/crs/enums.py
+#30 84.80 2024-12-28 02:16:08,458 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyogrio/__init__.py
+#30 84.85 2024-12-28 02:16:08,601 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/core.py
+#30 84.91 2024-12-28 02:16:08,606 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/core.py
+#30 84.93 2024-12-28 02:16:08,665 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/_compat.py
+#30 84.94 2024-12-28 02:16:08,691 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/_env.py
+#30 85.05 2024-12-28 02:16:08,807 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/util.py
+#30 85.15 2024-12-28 02:16:08,813 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/errors.py
+#30 85.18 2024-12-28 02:16:08,848 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/_version.py
+#30 85.48 2024-12-28 02:16:09,234 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/raw.py
+#30 85.50 2024-12-28 02:16:09,249 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/tz.py
+#30 85.61 2024-12-28 02:16:09,362 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyogrio/geopandas.py
+#30 85.73 2024-12-28 02:16:09,481 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/parser/_parser.py
+#30 85.73 2024-12-28 02:16:09,482 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyproj/crs/crs.py
+#30 85.73 2024-12-28 02:16:09,483 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/__init__.py
+#30 85.89 2024-12-28 02:16:09,638 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/xml.py
+#30 85.92 2024-12-28 02:16:09,638 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_typing.py
+#30 85.92 2024-12-28 02:16:09,663 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_version_meson.py
+#30 85.92 2024-12-28 02:16:09,663 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/__init__.py
+#30 85.93 2024-12-28 02:16:09,677 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_version.py
+#30 85.94 2024-12-28 02:16:09,683 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/testing.py
+#30 86.64 2024-12-28 02:16:10,389 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/formats/__init__.py
+#30 86.81 2024-12-28 02:16:10,394 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/conftest.py
+#30 87.08 2024-12-28 02:16:10,442 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/api.py
+#30 87.14 2024-12-28 02:16:10,510 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/_util.py
+#30 87.22 2024-12-28 02:16:10,520 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/clipboards.py
+#30 87.25 2024-12-28 02:16:10,530 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/feather_format.py
+#30 87.29 2024-12-28 02:16:10,536 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/pickle.py
+#30 87.63 2024-12-28 02:16:10,551 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/spss.py
+#30 87.81 2024-12-28 02:16:10,552 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/html.py
+#30 87.87 2024-12-28 02:16:10,583 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/orc.py
+#30 88.52 2024-12-28 02:16:10,863 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/gbq.py
+#30 89.29 2024-12-28 02:16:10,932 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/parquet.py
+#30 89.50 2024-12-28 02:16:11,177 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/parsers/__init__.py
+#30 89.55 2024-12-28 02:16:11,364 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/console.py
+#30 90.21 2024-12-28 02:16:11,413 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/printing.py
+#30 90.29 2024-12-28 02:16:11,486 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/_color_data.py
+#30 90.35 2024-12-28 02:16:11,842 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/parsers/arrow_parser_wrapper.py
+#30 90.53 2024-12-28 02:16:12,253 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/css.py
+#30 91.20 2024-12-28 02:16:12,373 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/string.py
+#30 91.79 2024-12-28 02:16:12,414 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/html.py
+#30 92.78 2024-12-28 02:16:12,490 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/info.py
+#30 93.78 2024-12-28 02:16:13,043 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/csvs.py
+#30 94.10 2024-12-28 02:16:13,971 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/xml.py
+#30 94.19 2024-12-28 02:16:14,068 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/excel/__init__.py
+#30 94.85 2024-12-28 02:16:14,178 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/parsers/c_parser_wrapper.py
+#30 95.11 2024-12-28 02:16:15,524 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_xlsxwriter.py
+#30 95.28 2024-12-28 02:16:16,294 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_pyxlsb.py
+#30 95.69 2024-12-28 02:16:16,531 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_util.py
+#30 96.12 2024-12-28 02:16:17,309 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/common.py
+#30 96.15 2024-12-28 02:16:17,938 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_openpyxl.py
+#30 96.21 2024-12-28 02:16:18,055 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_odswriter.py
+#30 96.51 2024-12-28 02:16:18,236 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/style_render.py
+#30 96.53 2024-12-28 02:16:18,590 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/clipboard/__init__.py
+#30 96.61 2024-12-28 02:16:18,606 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_odfreader.py
+#30 96.75 2024-12-28 02:16:18,854 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_calamine.py
+#30 96.78 2024-12-28 02:16:18,871 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_xlrd.py
+#30 96.85 2024-12-28 02:16:19,429 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/excel.py
+#30 96.90 2024-12-28 02:16:19,946 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/format.py
+#30 97.55 2024-12-28 02:16:19,951 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/excel/_base.py
+#30 98.32 2024-12-28 02:16:20,252 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/parsers/readers.py
+#30 98.37 2024-12-28 02:16:20,282 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/parsers/python_parser.py
+#30 98.51 2024-12-28 02:16:20,578 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/sas/__init__.py
+#30 98.53 2024-12-28 02:16:22,075 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/sql.py
+#30 98.72 2024-12-28 02:16:22,124 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/formats/style.py
+#30 98.79 2024-12-28 02:16:22,540 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/sas/sas_xport.py
+#30 98.79 2024-12-28 02:16:22,545 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/io/json/__init__.py
+#30 99.35 2024-12-28 02:16:22,545 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/sas/sasreader.py
+#30 99.38 2024-12-28 02:16:23,134 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/sas/sas_constants.py
+#30 99.40 2024-12-28 02:16:23,155 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/util/__init__.py
+#30 99.45 2024-12-28 02:16:23,206 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/sas/sas7bdat.py
+#30 99.50 2024-12-28 02:16:23,257 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/util/version/__init__.py
+#30 99.64 2024-12-28 02:16:23,396 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/plotting/__init__.py
+#30 99.76 2024-12-28 02:16:23,509 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/parsers/base_parser.py
+#30 99.98 2024-12-28 02:16:23,736 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_print_versions.py
+#30 100.1 2024-12-28 02:16:23,746 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_tester.py
+#30 100.1 2024-12-28 02:16:23,831 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/json/_table_schema.py
+#30 100.2 2024-12-28 02:16:23,842 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_test_decorators.py
+#30 100.3 2024-12-28 02:16:23,889 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_misc.py
+#30 100.4 2024-12-28 02:16:23,895 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_doctools.py
+#30 100.6 2024-12-28 02:16:24,011 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_exceptions.py
+#30 100.6 2024-12-28 02:16:24,011 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_validators.py
+#30 100.7 2024-12-28 02:16:24,056 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/json/_normalize.py
+#30 100.7 2024-12-28 02:16:24,066 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/plotting/_matplotlib/__init__.py
+#30 101.0 2024-12-28 02:16:24,072 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/util/_decorators.py
+#30 101.1 2024-12-28 02:16:24,411 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/groupby.py
+#30 101.2 2024-12-28 02:16:24,462 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_core.py
+#30 101.4 2024-12-28 02:16:24,878 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/tools.py
+#30 101.5 2024-12-28 02:16:25,242 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/timeseries.py
+#30 102.4 2024-12-28 02:16:26,159 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/_testing/__init__.py
+#30 102.4 2024-12-28 02:16:26,185 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/stata.py
+#30 102.4 2024-12-28 02:16:26,201 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/misc.py
+#30 102.5 2024-12-28 02:16:26,247 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/tseries/__init__.py
+#30 102.8 2024-12-28 02:16:26,547 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_testing/_io.py
+#30 102.9 2024-12-28 02:16:26,588 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_testing/_hypothesis.py
+#30 103.5 2024-12-28 02:16:26,598 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/boxplot.py
+#30 103.6 2024-12-28 02:16:26,669 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_testing/contexts.py
+#30 103.6 2024-12-28 02:16:26,685 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/hist.py
+#30 103.6 2024-12-28 02:16:26,846 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/style.py
+#30 103.7 2024-12-28 02:16:26,913 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_testing/compat.py
+#30 103.8 2024-12-28 02:16:26,924 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_testing/_warnings.py
+#30 104.0 2024-12-28 02:16:26,949 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/tseries/offsets.py
+#30 104.0 2024-12-28 02:16:27,271 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/json/_json.py
+#30 104.1 2024-12-28 02:16:27,383 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/tseries/api.py
+#30 104.3 2024-12-28 02:16:27,454 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/_config/__init__.py
+#30 104.4 2024-12-28 02:16:27,766 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/tseries/holiday.py
+#30 104.4 2024-12-28 02:16:27,782 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_config/dates.py
+#30 104.5 2024-12-28 02:16:28,093 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_config/display.py
+#30 104.5 2024-12-28 02:16:28,187 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/tseries/frequencies.py
+#30 104.6 2024-12-28 02:16:28,243 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_config/localization.py
+#30 104.8 2024-12-28 02:16:28,547 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_config/config.py
+#30 104.8 2024-12-28 02:16:28,558 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/converter.py
+#30 105.0 2024-12-28 02:16:28,727 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/arrays/__init__.py
+#30 105.6 2024-12-28 02:16:29,361 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/api/__init__.py
+#30 105.7 2024-12-28 02:16:29,454 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/api/indexers/__init__.py
+#30 105.7 2024-12-28 02:16:29,478 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/_testing/asserters.py
+#30 105.8 2024-12-28 02:16:29,586 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/api/types/__init__.py
+#30 105.9 2024-12-28 02:16:29,627 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/api/extensions/__init__.py
+#30 105.9 2024-12-28 02:16:29,663 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/api/interchange/__init__.py
+#30 105.9 2024-12-28 02:16:29,694 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/api/typing/__init__.py
+#30 106.0 2024-12-28 02:16:29,756 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/errors/__init__.py
+#30 106.4 2024-12-28 02:16:30,177 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/_libs/__init__.py
+#30 106.5 2024-12-28 02:16:30,254 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/_libs/window/__init__.py
+#30 106.8 2024-12-28 02:16:30,541 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/_libs/tslibs/__init__.py
+#30 106.9 2024-12-28 02:16:30,608 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/compat/__init__.py
+#30 107.3 2024-12-28 02:16:31,079 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pandas/compat/numpy/__init__.py
+#30 107.4 2024-12-28 02:16:31,114 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/compat/compressors.py
+#30 107.4 2024-12-28 02:16:31,163 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/compat/pyarrow.py
+#30 107.4 2024-12-28 02:16:31,197 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/compat/pickle_compat.py
+#30 107.5 2024-12-28 02:16:31,242 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/compat/_optional.py
+#30 107.5 2024-12-28 02:16:31,247 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/compat/numpy/function.py
+#30 107.6 2024-12-28 02:16:31,309 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/geopandas/__init__.py
+#30 107.6 2024-12-28 02:16:31,309 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/compat/_constants.py
+#30 107.6 2024-12-28 02:16:31,402 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/geopandas/datasets/__init__.py
+#30 108.1 2024-12-28 02:16:31,858 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/_compat.py
+#30 108.2 2024-12-28 02:16:31,933 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/_version.py
+#30 108.2 2024-12-28 02:16:31,943 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/_config.py
+#30 108.2 2024-12-28 02:16:31,968 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/_decorator.py
+#30 108.5 2024-12-28 02:16:31,984 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/geopandas/io/__init__.py
+#30 108.6 2024-12-28 02:16:32,380 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/conftest.py
+#30 108.7 2024-12-28 02:16:32,438 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/geopandas/tools/__init__.py
+#30 108.9 2024-12-28 02:16:32,678 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/explore.py
+#30 109.1 2024-12-28 02:16:32,855 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/plotting.py
+#30 109.2 2024-12-28 02:16:32,950 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/testing.py
+#30 109.2 2024-12-28 02:16:32,976 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/plotting/_matplotlib/core.py
+#30 109.3 2024-12-28 02:16:33,007 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/io/_pyarrow_hotfix.py
+#30 109.7 2024-12-28 02:16:33,068 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/_show_versions.py
+#30 109.8 2024-12-28 02:16:33,085 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/array.py
+#30 109.8 2024-12-28 02:16:33,239 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/sindex.py
+#30 109.8 2024-12-28 02:16:33,332 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/base.py
+#30 109.9 2024-12-28 02:16:33,545 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/io/util.py
+#30 110.0 2024-12-28 02:16:33,561 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/geocoding.py
+#30 110.0 2024-12-28 02:16:33,577 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/geoseries.py
+#30 110.0 2024-12-28 02:16:33,629 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/sjoin.py
+#30 110.3 2024-12-28 02:16:33,654 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/_random.py
+#30 110.3 2024-12-28 02:16:33,670 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/io/sql.py
+#30 110.4 2024-12-28 02:16:33,724 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/util.py
+#30 110.4 2024-12-28 02:16:33,746 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/hilbert_curve.py
+#30 110.5 2024-12-28 02:16:34,164 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/overlay.py
+#30 110.6 2024-12-28 02:16:34,169 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/tools/clip.py
+#30 110.6 2024-12-28 02:16:34,279 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/io/arrow.py
+#30 111.0 2024-12-28 02:16:34,777 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/io/_geoarrow.py
+#30 111.1 2024-12-28 02:16:34,804 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/io/file.py
+#30 111.1 2024-12-28 02:16:34,810 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/geopandas/geodataframe.py
+#30 111.1 2024-12-28 02:16:34,896 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pandas/io/pytables.py
+#30 113.3 2024-12-28 02:16:37,079 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 113.3 2024-12-28 02:16:37,079 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 113.3   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 113.3     import geopandas as gpd
+#30 113.3   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 113.3     from geopandas.geoseries import GeoSeries
+#30 113.3   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 113.3     from pandas import Series
+#30 113.3   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 113.3     __import__(_dependency)
+#30 113.3   File "/home/app/copy/numpy/__init__.py", line 140, in <module>
+#30 113.3     from . import core
+#30 113.3   File "/home/app/copy/numpy/core/__init__.py", line 23, in <module>
+#30 113.3     from . import multiarray
+#30 113.3   File "/home/app/copy/numpy/core/multiarray.py", line 10, in <module>
+#30 113.3     from . import overrides
+#30 113.3   File "/home/app/copy/numpy/core/overrides.py", line 8, in <module>
+#30 113.3     from numpy.compat._inspect import getargspec
+#30 113.3   File "/home/app/copy/numpy/compat/__init__.py", line 15, in <module>
+#30 113.3     from .py3k import *
+#30 113.3 AttributeError: module 'numpy.compat.py3k' has no attribute 'Path'
+#30 113.3 
+#30 113.3 2024-12-28 02:16:37,082 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/compat/py3k.py
+#30 113.3 2024-12-28 02:16:37,082 - lazy_load.repair_the_folder - INFO - Added import for Path to /home/app/copy/numpy/compat/py3k.py
+#30 113.9 2024-12-28 02:16:37,616 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 113.9 2024-12-28 02:16:37,616 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 113.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 113.9     import geopandas as gpd
+#30 113.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 113.9     from geopandas.geoseries import GeoSeries
+#30 113.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 113.9     from pandas import Series
+#30 113.9   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 113.9     __import__(_dependency)
+#30 113.9   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 113.9     from . import lib
+#30 113.9   File "/home/app/copy/numpy/lib/__init__.py", line 25, in <module>
+#30 113.9     from .index_tricks import *
+#30 113.9 AttributeError: module 'numpy.lib.index_tricks' has no attribute 'ravel_multi_index'
+#30 113.9 
+#30 113.9 2024-12-28 02:16:37,627 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/index_tricks.py
+#30 113.9 2024-12-28 02:16:37,627 - lazy_load.repair_the_folder - INFO - Added import for ravel_multi_index to /home/app/copy/numpy/lib/index_tricks.py
+#30 114.2 2024-12-28 02:16:37,994 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 114.2 2024-12-28 02:16:37,994 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 114.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 114.2     import geopandas as gpd
+#30 114.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 114.2     from geopandas.geoseries import GeoSeries
+#30 114.2   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 114.2     from pandas import Series
+#30 114.2   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 114.2     __import__(_dependency)
+#30 114.2   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 114.2     from . import lib
+#30 114.2   File "/home/app/copy/numpy/lib/__init__.py", line 25, in <module>
+#30 114.2     from .index_tricks import *
+#30 114.2 AttributeError: module 'numpy.lib.index_tricks' has no attribute 'unravel_index'
+#30 114.2 
+#30 114.3 2024-12-28 02:16:38,016 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/index_tricks.py
+#30 114.3 2024-12-28 02:16:38,017 - lazy_load.repair_the_folder - INFO - Added import for unravel_index to /home/app/copy/numpy/lib/index_tricks.py
+#30 114.7 2024-12-28 02:16:38,415 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 114.7 2024-12-28 02:16:38,416 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 114.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 114.7     import geopandas as gpd
+#30 114.7   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 114.7     from geopandas.geoseries import GeoSeries
+#30 114.7   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 114.7     from pandas import Series
+#30 114.7   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 114.7     __import__(_dependency)
+#30 114.7   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 114.7     from . import lib
+#30 114.7   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 114.7     from .function_base import *
+#30 114.7   File "/home/app/copy/numpy/lib/function_base.py", line 698, in <module>
+#30 114.7     def unwrap(p, discont=None, axis=-1, *, period=2 * pi):
+#30 114.7 NameError: name 'pi' is not defined
+#30 114.7 
+#30 116.1 2024-12-28 02:16:39,845 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/function_base.py
+#30 116.5 2024-12-28 02:16:40,260 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 116.5 2024-12-28 02:16:40,261 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 116.5   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 116.5     import geopandas as gpd
+#30 116.5   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 116.5     from geopandas.geoseries import GeoSeries
+#30 116.5   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 116.5     from pandas import Series
+#30 116.5   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 116.5     __import__(_dependency)
+#30 116.5   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 116.5     from . import lib
+#30 116.5   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 116.5     from .function_base import *
+#30 116.5 AttributeError: module 'numpy.lib.function_base' has no attribute 'bincount'
+#30 116.5 
+#30 116.6 2024-12-28 02:16:40,316 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/function_base.py
+#30 116.6 2024-12-28 02:16:40,319 - lazy_load.repair_the_folder - INFO - Added import for bincount to /home/app/copy/numpy/lib/function_base.py
+#30 117.0 2024-12-28 02:16:40,733 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 117.0 2024-12-28 02:16:40,733 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 117.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 117.0     import geopandas as gpd
+#30 117.0   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 117.0     from geopandas.geoseries import GeoSeries
+#30 117.0   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 117.0     from pandas import Series
+#30 117.0   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 117.0     __import__(_dependency)
+#30 117.0   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 117.0     from . import lib
+#30 117.0   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 117.0     from .function_base import *
+#30 117.0 AttributeError: module 'numpy.lib.function_base' has no attribute 'add_newdoc'
+#30 117.0 
+#30 117.1 2024-12-28 02:16:40,813 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/function_base.py
+#30 117.1 2024-12-28 02:16:40,817 - lazy_load.repair_the_folder - INFO - Added import for add_newdoc to /home/app/copy/numpy/lib/function_base.py
+#30 117.5 2024-12-28 02:16:41,211 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 117.5 2024-12-28 02:16:41,211 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 117.5   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 117.5     import geopandas as gpd
+#30 117.5   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 117.5     from geopandas.geoseries import GeoSeries
+#30 117.5   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 117.5     from pandas import Series
+#30 117.5   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 117.5     __import__(_dependency)
+#30 117.5   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 117.5     from . import lib
+#30 117.5   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 117.5     from .function_base import *
+#30 117.5 AttributeError: module 'numpy.lib.function_base' has no attribute 'add_docstring'
+#30 117.5 
+#30 117.6 2024-12-28 02:16:41,318 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/function_base.py
+#30 117.6 2024-12-28 02:16:41,322 - lazy_load.repair_the_folder - INFO - Added import for add_docstring to /home/app/copy/numpy/lib/function_base.py
+#30 118.0 2024-12-28 02:16:41,711 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 118.0 2024-12-28 02:16:41,711 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 118.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 118.0     import geopandas as gpd
+#30 118.0   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 118.0     from geopandas.geoseries import GeoSeries
+#30 118.0   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 118.0     from pandas import Series
+#30 118.0   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 118.0     __import__(_dependency)
+#30 118.0   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 118.0     from . import lib
+#30 118.0   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 118.0     from .function_base import *
+#30 118.0 AttributeError: module 'numpy.lib.function_base' has no attribute 'add_newdoc_ufunc'
+#30 118.0 
+#30 118.1 2024-12-28 02:16:41,821 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/function_base.py
+#30 118.1 2024-12-28 02:16:41,825 - lazy_load.repair_the_folder - INFO - Added import for add_newdoc_ufunc to /home/app/copy/numpy/lib/function_base.py
+#30 118.5 2024-12-28 02:16:42,293 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 118.5 2024-12-28 02:16:42,293 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 118.5   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 118.5     import geopandas as gpd
+#30 118.5   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 118.5     from geopandas.geoseries import GeoSeries
+#30 118.5   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 118.5     from pandas import Series
+#30 118.5   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 118.5     __import__(_dependency)
+#30 118.5   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 118.5     from . import lib
+#30 118.5   File "/home/app/copy/numpy/lib/__init__.py", line 34, in <module>
+#30 118.5     from .polynomial import *
+#30 118.5   File "/home/app/copy/numpy/lib/polynomial.py", line 986, in <module>
+#30 118.5     warnings.simplefilter('always', RankWarning)
+#30 118.5 NameError: name 'warnings' is not defined. Did you mean: 'Warning'?
+#30 118.5 
+#30 118.6 2024-12-28 02:16:42,324 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/polynomial.py
+#30 119.0 2024-12-28 02:16:42,721 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 119.0 2024-12-28 02:16:42,721 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 119.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 119.0     import geopandas as gpd
+#30 119.0   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 119.0     from geopandas.geoseries import GeoSeries
+#30 119.0   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 119.0     from pandas import Series
+#30 119.0   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 119.0     __import__(_dependency)
+#30 119.0   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 119.0     from . import lib
+#30 119.0   File "/home/app/copy/numpy/lib/__init__.py", line 35, in <module>
+#30 119.0     from .utils import *
+#30 119.0 AttributeError: module 'numpy.lib.utils' has no attribute 'issubclass_'
+#30 119.0 
+#30 119.0 2024-12-28 02:16:42,746 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/utils.py
+#30 119.0 2024-12-28 02:16:42,748 - lazy_load.repair_the_folder - INFO - Added import for issubclass_ to /home/app/copy/numpy/lib/utils.py
+#30 119.4 2024-12-28 02:16:43,112 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 119.4 2024-12-28 02:16:43,112 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 119.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 119.4     import geopandas as gpd
+#30 119.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 119.4     from geopandas.geoseries import GeoSeries
+#30 119.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 119.4     from pandas import Series
+#30 119.4   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 119.4     __import__(_dependency)
+#30 119.4   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 119.4     from . import lib
+#30 119.4   File "/home/app/copy/numpy/lib/__init__.py", line 35, in <module>
+#30 119.4     from .utils import *
+#30 119.4 AttributeError: module 'numpy.lib.utils' has no attribute 'issubsctype'
+#30 119.4 
+#30 119.4 2024-12-28 02:16:43,161 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/utils.py
+#30 119.4 2024-12-28 02:16:43,162 - lazy_load.repair_the_folder - INFO - Added import for issubsctype to /home/app/copy/numpy/lib/utils.py
+#30 119.9 2024-12-28 02:16:43,624 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 119.9 2024-12-28 02:16:43,624 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 119.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 119.9     import geopandas as gpd
+#30 119.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 119.9     from geopandas.geoseries import GeoSeries
+#30 119.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 119.9     from pandas import Series
+#30 119.9   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 119.9     __import__(_dependency)
+#30 119.9   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 119.9     from . import lib
+#30 119.9   File "/home/app/copy/numpy/lib/__init__.py", line 35, in <module>
+#30 119.9     from .utils import *
+#30 119.9 AttributeError: module 'numpy.lib.utils' has no attribute 'issubdtype'. Did you mean: 'issubsctype'?
+#30 119.9 
+#30 119.9 2024-12-28 02:16:43,660 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/utils.py
+#30 119.9 2024-12-28 02:16:43,661 - lazy_load.repair_the_folder - INFO - Added import for issubdtype to /home/app/copy/numpy/lib/utils.py
+#30 120.5 2024-12-28 02:16:44,252 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 120.5 2024-12-28 02:16:44,253 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 120.5   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 120.5     import geopandas as gpd
+#30 120.5   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 120.5     from geopandas.geoseries import GeoSeries
+#30 120.5   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 120.5     from pandas import Series
+#30 120.5   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 120.5     __import__(_dependency)
+#30 120.5   File "/home/app/copy/numpy/__init__.py", line 153, in <module>
+#30 120.5     from . import ma
+#30 120.5   File "/home/app/copy/numpy/ma/__init__.py", line 43, in <module>
+#30 120.5     from .core import *
+#30 120.5 AttributeError: module 'numpy.ma.core' has no attribute 'expand_dims'
+#30 120.5 
+#30 120.7 2024-12-28 02:16:44,415 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/ma/core.py
+#30 120.7 2024-12-28 02:16:44,420 - lazy_load.repair_the_folder - INFO - Added import for expand_dims to /home/app/copy/numpy/ma/core.py
+#30 121.2 2024-12-28 02:16:44,930 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 121.2 2024-12-28 02:16:44,930 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 121.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 121.2     import geopandas as gpd
+#30 121.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 121.2     from geopandas.geoseries import GeoSeries
+#30 121.2   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 121.2     from pandas import Series
+#30 121.2   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 121.2     __import__(_dependency)
+#30 121.2   File "/home/app/copy/numpy/__init__.py", line 153, in <module>
+#30 121.2     from . import ma
+#30 121.2   File "/home/app/copy/numpy/ma/__init__.py", line 46, in <module>
+#30 121.2     from .extras import *
+#30 121.2 AttributeError: module 'numpy.ma.extras' has no attribute 'dot'
+#30 121.2 
+#30 121.2 2024-12-28 02:16:44,959 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/ma/extras.py
+#30 121.2 2024-12-28 02:16:44,961 - lazy_load.repair_the_folder - INFO - Added import for dot to /home/app/copy/numpy/ma/extras.py
+#30 121.7 2024-12-28 02:16:45,440 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 121.7 2024-12-28 02:16:45,440 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 121.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 121.7     import geopandas as gpd
+#30 121.7   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 121.7     from geopandas.geoseries import GeoSeries
+#30 121.7   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 121.7     from pandas import Series
+#30 121.7   File "/home/app/copy/pandas/__init__.py", line 14, in <module>
+#30 121.7     __import__(_dependency)
+#30 121.7   File "/home/app/copy/numpy/__init__.py", line 153, in <module>
+#30 121.7     from . import ma
+#30 121.7   File "/home/app/copy/numpy/ma/__init__.py", line 46, in <module>
+#30 121.7     from .extras import *
+#30 121.7 AttributeError: module 'numpy.ma.extras' has no attribute 'mask_rowcols'. Did you mean: 'mask_cols'?
+#30 121.7 
+#30 121.7 2024-12-28 02:16:45,494 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/ma/extras.py
+#30 121.7 2024-12-28 02:16:45,497 - lazy_load.repair_the_folder - INFO - Added import for mask_rowcols to /home/app/copy/numpy/ma/extras.py
+#30 122.3 2024-12-28 02:16:46,087 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 122.3 2024-12-28 02:16:46,087 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 122.3   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 122.3     import geopandas as gpd
+#30 122.3   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 122.3     from geopandas.geoseries import GeoSeries
+#30 122.3   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 122.3     from pandas import Series
+#30 122.3   File "/home/app/copy/pandas/__init__.py", line 37, in <module>
+#30 122.3     from pandas._config import (
+#30 122.3   File "/home/app/copy/pandas/_config/__init__.py", line 21, in <module>
+#30 122.3     from pandas._config import dates  # pyright: ignore[reportUnusedImport]  # noqa: F401
+#30 122.3   File "/home/app/copy/pandas/_config/dates.py", line 5, in <module>
+#30 122.3     with cf.config_prefix('display'):
+#30 122.3 NameError: name 'cf' is not defined
+#30 122.3 
+#30 122.3 2024-12-28 02:16:46,088 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/_config/dates.py
+#30 122.8 2024-12-28 02:16:46,601 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 122.8 2024-12-28 02:16:46,601 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 122.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 122.8     import geopandas as gpd
+#30 122.8   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 122.8     from geopandas.geoseries import GeoSeries
+#30 122.8   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 122.8     from pandas import Series
+#30 122.8   File "/home/app/copy/pandas/__init__.py", line 37, in <module>
+#30 122.8     from pandas._config import (
+#30 122.8   File "/home/app/copy/pandas/_config/__init__.py", line 31, in <module>
+#30 122.8     from pandas._config.display import detect_console_encoding
+#30 122.8   File "/home/app/copy/pandas/_config/display.py", line 36, in <module>
+#30 122.8     with cf.config_prefix('display'):
+#30 122.8 NameError: name 'cf' is not defined
+#30 122.8 
+#30 122.9 2024-12-28 02:16:46,604 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/_config/display.py
+#30 123.6 2024-12-28 02:16:47,381 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 123.6 2024-12-28 02:16:47,381 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 123.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 123.6     import geopandas as gpd
+#30 123.6   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 123.6     from geopandas.geoseries import GeoSeries
+#30 123.6   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 123.6     from pandas import Series
+#30 123.6   File "/home/app/copy/pandas/__init__.py", line 49, in <module>
+#30 123.6     from pandas.core.api import (
+#30 123.6   File "/home/app/copy/pandas/core/api.py", line 28, in <module>
+#30 123.6     from pandas.core.arrays import Categorical
+#30 123.6   File "/home/app/copy/pandas/core/arrays/__init__.py", line 1, in <module>
+#30 123.6     from pandas.core.arrays.arrow import ArrowExtensionArray
+#30 123.6   File "/home/app/copy/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+#30 123.6     from pandas.core.arrays.arrow.array import ArrowExtensionArray
+#30 123.6   File "/home/app/copy/pandas/core/arrays/arrow/array.py", line 60, in <module>
+#30 123.6     from pandas.core.arrays.base import (
+#30 123.6   File "/home/app/copy/pandas/core/arrays/base.py", line 32, in <module>
+#30 123.6     from pandas.util._decorators import (
+#30 123.6 ImportError: cannot import name 'cache_readonly' from 'pandas.util._decorators' (/home/app/copy/pandas/util/_decorators.py)
+#30 123.6 
+#30 123.6 2024-12-28 02:16:47,388 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/util/_decorators.py
+#30 124.4 2024-12-28 02:16:48,165 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 124.4 2024-12-28 02:16:48,165 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 124.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 124.4     import geopandas as gpd
+#30 124.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 124.4     from geopandas.geoseries import GeoSeries
+#30 124.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 124.4     from pandas import Series
+#30 124.4   File "/home/app/copy/pandas/__init__.py", line 49, in <module>
+#30 124.4     from pandas.core.api import (
+#30 124.4   File "/home/app/copy/pandas/core/api.py", line 28, in <module>
+#30 124.4     from pandas.core.arrays import Categorical
+#30 124.4   File "/home/app/copy/pandas/core/arrays/__init__.py", line 1, in <module>
+#30 124.4     from pandas.core.arrays.arrow import ArrowExtensionArray
+#30 124.4   File "/home/app/copy/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+#30 124.4     from pandas.core.arrays.arrow.array import ArrowExtensionArray
+#30 124.4   File "/home/app/copy/pandas/core/arrays/arrow/array.py", line 75, in <module>
+#30 124.4     from pandas.tseries.frequencies import to_offset
+#30 124.4 ImportError: cannot import name 'to_offset' from 'pandas.tseries.frequencies' (/home/app/copy/pandas/tseries/frequencies.py)
+#30 124.4 
+#30 124.4 2024-12-28 02:16:48,176 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/tseries/frequencies.py
+#30 125.2 2024-12-28 02:16:48,931 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 125.2 2024-12-28 02:16:48,931 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 125.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 125.2     import geopandas as gpd
+#30 125.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 125.2     from geopandas.geoseries import GeoSeries
+#30 125.2   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 125.2     from pandas import Series
+#30 125.2   File "/home/app/copy/pandas/__init__.py", line 49, in <module>
+#30 125.2     from pandas.core.api import (
+#30 125.2   File "/home/app/copy/pandas/core/api.py", line 28, in <module>
+#30 125.2     from pandas.core.arrays import Categorical
+#30 125.2   File "/home/app/copy/pandas/core/arrays/__init__.py", line 9, in <module>
+#30 125.2     from pandas.core.arrays.datetimes import DatetimeArray
+#30 125.2   File "/home/app/copy/pandas/core/arrays/datetimes.py", line 67, in <module>
+#30 125.2     from pandas.tseries.offsets import (
+#30 125.2 ImportError: cannot import name 'Day' from 'pandas.tseries.offsets' (/home/app/copy/pandas/tseries/offsets.py)
+#30 125.2 
+#30 125.2 2024-12-28 02:16:48,932 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/tseries/offsets.py
+#30 125.8 2024-12-28 02:16:49,546 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 125.8 2024-12-28 02:16:49,546 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 125.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 125.8     import geopandas as gpd
+#30 125.8   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 125.8     from geopandas.geoseries import GeoSeries
+#30 125.8   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 125.8     from pandas import Series
+#30 125.8   File "/home/app/copy/pandas/__init__.py", line 49, in <module>
+#30 125.8     from pandas.core.api import (
+#30 125.8   File "/home/app/copy/pandas/core/api.py", line 28, in <module>
+#30 125.8     from pandas.core.arrays import Categorical
+#30 125.8   File "/home/app/copy/pandas/core/arrays/__init__.py", line 9, in <module>
+#30 125.8     from pandas.core.arrays.datetimes import DatetimeArray
+#30 125.8   File "/home/app/copy/pandas/core/arrays/datetimes.py", line 67, in <module>
+#30 125.8     from pandas.tseries.offsets import (
+#30 125.8 ImportError: cannot import name 'Tick' from 'pandas.tseries.offsets' (/home/app/copy/pandas/tseries/offsets.py)
+#30 125.8 
+#30 125.8 2024-12-28 02:16:49,547 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/tseries/offsets.py
+#30 126.9 2024-12-28 02:16:50,689 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 126.9 2024-12-28 02:16:50,689 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 126.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 126.9     import geopandas as gpd
+#30 126.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 126.9     from geopandas.geoseries import GeoSeries
+#30 126.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 126.9     from pandas import Series
+#30 126.9   File "/home/app/copy/pandas/__init__.py", line 49, in <module>
+#30 126.9     from pandas.core.api import (
+#30 126.9   File "/home/app/copy/pandas/core/api.py", line 47, in <module>
+#30 126.9     from pandas.core.groupby import (
+#30 126.9   File "/home/app/copy/pandas/core/groupby/__init__.py", line 1, in <module>
+#30 126.9     from pandas.core.groupby.generic import (
+#30 126.9   File "/home/app/copy/pandas/core/groupby/generic.py", line 68, in <module>
+#30 126.9     from pandas.core.frame import DataFrame
+#30 126.9   File "/home/app/copy/pandas/core/frame.py", line 149, in <module>
+#30 126.9     from pandas.core.generic import (
+#30 126.9   File "/home/app/copy/pandas/core/generic.py", line 193, in <module>
+#30 126.9     from pandas.core.window import (
+#30 126.9   File "/home/app/copy/pandas/core/window/__init__.py", line 1, in <module>
+#30 126.9     from pandas.core.window.ewm import (
+#30 126.9   File "/home/app/copy/pandas/core/window/ewm.py", line 24, in <module>
+#30 126.9     from pandas.core.indexers.objects import (
+#30 126.9   File "/home/app/copy/pandas/core/indexers/objects.py", line 16, in <module>
+#30 126.9     from pandas.tseries.offsets import Nano
+#30 126.9 ImportError: cannot import name 'Nano' from 'pandas.tseries.offsets' (/home/app/copy/pandas/tseries/offsets.py)
+#30 126.9 
+#30 126.9 2024-12-28 02:16:50,690 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/tseries/offsets.py
+#30 127.9 2024-12-28 02:16:51,603 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 127.9 2024-12-28 02:16:51,603 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 127.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 127.9     import geopandas as gpd
+#30 127.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 127.9     from geopandas.geoseries import GeoSeries
+#30 127.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 127.9     from pandas import Series
+#30 127.9   File "/home/app/copy/pandas/__init__.py", line 49, in <module>
+#30 127.9     from pandas.core.api import (
+#30 127.9   File "/home/app/copy/pandas/core/api.py", line 78, in <module>
+#30 127.9     from pandas.tseries.offsets import DateOffset
+#30 127.9 ImportError: cannot import name 'DateOffset' from 'pandas.tseries.offsets' (/home/app/copy/pandas/tseries/offsets.py)
+#30 127.9 
+#30 127.9 2024-12-28 02:16:51,605 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/tseries/offsets.py
+#30 128.6 2024-12-28 02:16:52,400 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 128.6 2024-12-28 02:16:52,401 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 128.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 128.6     import geopandas as gpd
+#30 128.6   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 128.6     from geopandas.geoseries import GeoSeries
+#30 128.6   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 128.6     from pandas import Series
+#30 128.6   File "/home/app/copy/pandas/__init__.py", line 116, in <module>
+#30 128.6     from pandas.tseries.api import infer_freq
+#30 128.6 ImportError: cannot import name 'infer_freq' from 'pandas.tseries.api' (/home/app/copy/pandas/tseries/api.py)
+#30 128.6 
+#30 128.6 2024-12-28 02:16:52,401 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/tseries/api.py
+#30 129.7 2024-12-28 02:16:53,487 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 129.7 2024-12-28 02:16:53,487 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 129.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 129.7     import geopandas as gpd
+#30 129.7   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 129.7     from geopandas.geoseries import GeoSeries
+#30 129.7   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 129.7     from pandas import Series
+#30 129.7   File "/home/app/copy/pandas/__init__.py", line 138, in <module>
+#30 129.7     from pandas import api, arrays, errors, io, plotting, tseries
+#30 129.7   File "/home/app/copy/pandas/api/__init__.py", line 2, in <module>
+#30 129.7     from pandas.api import (
+#30 129.7   File "/home/app/copy/pandas/api/typing/__init__.py", line 31, in <module>
+#30 129.7     from pandas.io.json._json import JsonReader
+#30 129.7   File "/home/app/copy/pandas/io/json/__init__.py", line 1, in <module>
+#30 129.7     from pandas.io.json._json import (
+#30 129.7 ImportError: cannot import name 'ujson_dumps' from 'pandas.io.json._json' (/home/app/copy/pandas/io/json/_json.py)
+#30 129.7 
+#30 129.8 2024-12-28 02:16:53,522 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/json/_json.py
+#30 130.6 2024-12-28 02:16:54,354 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 130.6 2024-12-28 02:16:54,354 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 130.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 130.6     import geopandas as gpd
+#30 130.6   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 130.6     from geopandas.geoseries import GeoSeries
+#30 130.6   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 130.6     from pandas import Series
+#30 130.6   File "/home/app/copy/pandas/__init__.py", line 138, in <module>
+#30 130.6     from pandas import api, arrays, errors, io, plotting, tseries
+#30 130.6   File "/home/app/copy/pandas/api/__init__.py", line 2, in <module>
+#30 130.6     from pandas.api import (
+#30 130.6   File "/home/app/copy/pandas/api/typing/__init__.py", line 31, in <module>
+#30 130.6     from pandas.io.json._json import JsonReader
+#30 130.6   File "/home/app/copy/pandas/io/json/__init__.py", line 1, in <module>
+#30 130.6     from pandas.io.json._json import (
+#30 130.6 ImportError: cannot import name 'ujson_loads' from 'pandas.io.json._json' (/home/app/copy/pandas/io/json/_json.py)
+#30 130.6 
+#30 130.6 2024-12-28 02:16:54,399 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/json/_json.py
+#30 131.5 2024-12-28 02:16:55,262 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 131.5 2024-12-28 02:16:55,262 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 131.5   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 131.5     import geopandas as gpd
+#30 131.5   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 131.5     from geopandas.geoseries import GeoSeries
+#30 131.5   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 131.5     from pandas import Series
+#30 131.5   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 131.5     from pandas.io.api import (
+#30 131.5 ImportError: cannot import name 'ExcelFile' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 131.5 
+#30 131.5 2024-12-28 02:16:55,263 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 132.4 2024-12-28 02:16:56,130 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 132.4 2024-12-28 02:16:56,130 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 132.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 132.4     import geopandas as gpd
+#30 132.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 132.4     from geopandas.geoseries import GeoSeries
+#30 132.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 132.4     from pandas import Series
+#30 132.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 132.4     from pandas.io.api import (
+#30 132.4 ImportError: cannot import name 'ExcelWriter' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 132.4 
+#30 132.4 2024-12-28 02:16:56,131 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 133.2 2024-12-28 02:16:56,968 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 133.2 2024-12-28 02:16:56,969 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 133.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 133.2     import geopandas as gpd
+#30 133.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 133.2     from geopandas.geoseries import GeoSeries
+#30 133.2   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 133.2     from pandas import Series
+#30 133.2   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 133.2     from pandas.io.api import (
+#30 133.2 ImportError: cannot import name 'read_excel' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 133.2 
+#30 133.2 2024-12-28 02:16:56,971 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 134.1 2024-12-28 02:16:57,803 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 134.1 2024-12-28 02:16:57,803 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 134.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 134.1     import geopandas as gpd
+#30 134.1   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 134.1     from geopandas.geoseries import GeoSeries
+#30 134.1   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 134.1     from pandas import Series
+#30 134.1   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 134.1     from pandas.io.api import (
+#30 134.1 ImportError: cannot import name 'read_csv' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 134.1 
+#30 134.1 2024-12-28 02:16:57,805 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 134.9 2024-12-28 02:16:58,675 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 134.9 2024-12-28 02:16:58,676 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 134.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 134.9     import geopandas as gpd
+#30 134.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 134.9     from geopandas.geoseries import GeoSeries
+#30 134.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 134.9     from pandas import Series
+#30 134.9   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 134.9     from pandas.io.api import (
+#30 134.9 ImportError: cannot import name 'read_fwf' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 134.9 
+#30 134.9 2024-12-28 02:16:58,678 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 135.8 2024-12-28 02:16:59,539 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 135.8 2024-12-28 02:16:59,539 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 135.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 135.8     import geopandas as gpd
+#30 135.8   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 135.8     from geopandas.geoseries import GeoSeries
+#30 135.8   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 135.8     from pandas import Series
+#30 135.8   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 135.8     from pandas.io.api import (
+#30 135.8 ImportError: cannot import name 'read_table' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 135.8 
+#30 135.8 2024-12-28 02:16:59,540 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 136.7 2024-12-28 02:17:00,436 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 136.7 2024-12-28 02:17:00,436 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 136.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 136.7     import geopandas as gpd
+#30 136.7   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 136.7     from geopandas.geoseries import GeoSeries
+#30 136.7   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 136.7     from pandas import Series
+#30 136.7   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 136.7     from pandas.io.api import (
+#30 136.7 ImportError: cannot import name 'read_pickle' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 136.7 
+#30 136.7 2024-12-28 02:17:00,437 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 137.6 2024-12-28 02:17:01,335 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 137.6 2024-12-28 02:17:01,336 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 137.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 137.6     import geopandas as gpd
+#30 137.6   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 137.6     from geopandas.geoseries import GeoSeries
+#30 137.6   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 137.6     from pandas import Series
+#30 137.6   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 137.6     from pandas.io.api import (
+#30 137.6 ImportError: cannot import name 'to_pickle' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 137.6 
+#30 137.6 2024-12-28 02:17:01,337 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 138.4 2024-12-28 02:17:02,169 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 138.4 2024-12-28 02:17:02,169 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 138.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 138.4     import geopandas as gpd
+#30 138.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 138.4     from geopandas.geoseries import GeoSeries
+#30 138.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 138.4     from pandas import Series
+#30 138.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 138.4     from pandas.io.api import (
+#30 138.4 ImportError: cannot import name 'HDFStore' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 138.4 
+#30 138.4 2024-12-28 02:17:02,170 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 139.4 2024-12-28 02:17:03,103 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 139.4 2024-12-28 02:17:03,103 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 139.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 139.4     import geopandas as gpd
+#30 139.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 139.4     from geopandas.geoseries import GeoSeries
+#30 139.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 139.4     from pandas import Series
+#30 139.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 139.4     from pandas.io.api import (
+#30 139.4   File "/home/app/copy/pandas/io/api.py", line 1, in <module>
+#30 139.4     from pandas.io.pytables import HDFStore
+#30 139.4   File "/home/app/copy/pandas/io/pytables.py", line 66, in <module>
+#30 139.4     with config.config_prefix('io.hdf'):
+#30 139.4 NameError: name 'config' is not defined
+#30 139.4 
+#30 139.5 2024-12-28 02:17:03,227 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/pytables.py
+#30 140.4 2024-12-28 02:17:04,117 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 140.4 2024-12-28 02:17:04,117 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 140.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 140.4     import geopandas as gpd
+#30 140.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 140.4     from geopandas.geoseries import GeoSeries
+#30 140.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 140.4     from pandas import Series
+#30 140.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 140.4     from pandas.io.api import (
+#30 140.4 ImportError: cannot import name 'read_hdf' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 140.4 
+#30 140.4 2024-12-28 02:17:04,119 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 141.2 2024-12-28 02:17:04,997 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 141.2 2024-12-28 02:17:04,997 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 141.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 141.2     import geopandas as gpd
+#30 141.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 141.2     from geopandas.geoseries import GeoSeries
+#30 141.2   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 141.2     from pandas import Series
+#30 141.2   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 141.2     from pandas.io.api import (
+#30 141.2 ImportError: cannot import name 'read_sql' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 141.2 
+#30 141.2 2024-12-28 02:17:04,998 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 142.1 2024-12-28 02:17:05,900 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 142.1 2024-12-28 02:17:05,900 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 142.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 142.1     import geopandas as gpd
+#30 142.1   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 142.1     from geopandas.geoseries import GeoSeries
+#30 142.1   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 142.1     from pandas import Series
+#30 142.1   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 142.1     from pandas.io.api import (
+#30 142.1 ImportError: cannot import name 'read_sql_query' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 142.1 
+#30 142.1 2024-12-28 02:17:05,902 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 143.0 2024-12-28 02:17:06,765 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 143.0 2024-12-28 02:17:06,765 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 143.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 143.0     import geopandas as gpd
+#30 143.0   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 143.0     from geopandas.geoseries import GeoSeries
+#30 143.0   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 143.0     from pandas import Series
+#30 143.0   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 143.0     from pandas.io.api import (
+#30 143.0 ImportError: cannot import name 'read_sql_table' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 143.0 
+#30 143.0 2024-12-28 02:17:06,766 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/pandas/io/api.py
+#30 143.9 2024-12-28 02:17:07,603 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 143.9 2024-12-28 02:17:07,603 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 143.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 143.9     import geopandas as gpd
+#30 143.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 143.9     from geopandas.geoseries import GeoSeries
+#30 143.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 143.9     from pandas import Series
+#30 143.9   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 143.9     from pandas.io.api import (
+#30 143.9 ImportError: cannot import name 'read_clipboard' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 143.9 
+#30 143.9 2024-12-28 02:17:07,605 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 144.7 2024-12-28 02:17:08,432 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 144.7 2024-12-28 02:17:08,432 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 144.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 144.7     import geopandas as gpd
+#30 144.7   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 144.7     from geopandas.geoseries import GeoSeries
+#30 144.7   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 144.7     from pandas import Series
+#30 144.7   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 144.7     from pandas.io.api import (
+#30 144.7 ImportError: cannot import name 'read_parquet' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 144.7 
+#30 144.7 2024-12-28 02:17:08,434 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 145.6 2024-12-28 02:17:09,320 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 145.6 2024-12-28 02:17:09,321 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 145.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 145.6     import geopandas as gpd
+#30 145.6   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 145.6     from geopandas.geoseries import GeoSeries
+#30 145.6   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 145.6     from pandas import Series
+#30 145.6   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 145.6     from pandas.io.api import (
+#30 145.6 ImportError: cannot import name 'read_orc' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 145.6 
+#30 145.6 2024-12-28 02:17:09,322 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 146.4 2024-12-28 02:17:10,186 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 146.4 2024-12-28 02:17:10,186 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 146.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 146.4     import geopandas as gpd
+#30 146.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 146.4     from geopandas.geoseries import GeoSeries
+#30 146.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 146.4     from pandas import Series
+#30 146.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 146.4     from pandas.io.api import (
+#30 146.4 ImportError: cannot import name 'read_feather' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 146.4 
+#30 146.4 2024-12-28 02:17:10,187 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 147.4 2024-12-28 02:17:11,121 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 147.4 2024-12-28 02:17:11,121 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 147.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 147.4     import geopandas as gpd
+#30 147.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 147.4     from geopandas.geoseries import GeoSeries
+#30 147.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 147.4     from pandas import Series
+#30 147.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 147.4     from pandas.io.api import (
+#30 147.4 ImportError: cannot import name 'read_gbq' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 147.4 
+#30 147.4 2024-12-28 02:17:11,122 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 148.2 2024-12-28 02:17:11,947 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 148.2 2024-12-28 02:17:11,948 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 148.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 148.2     import geopandas as gpd
+#30 148.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 148.2     from geopandas.geoseries import GeoSeries
+#30 148.2   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 148.2     from pandas import Series
+#30 148.2   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 148.2     from pandas.io.api import (
+#30 148.2 ImportError: cannot import name 'read_html' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 148.2 
+#30 148.2 2024-12-28 02:17:11,950 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 149.0 2024-12-28 02:17:12,774 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 149.0 2024-12-28 02:17:12,774 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 149.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 149.0     import geopandas as gpd
+#30 149.0   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 149.0     from geopandas.geoseries import GeoSeries
+#30 149.0   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 149.0     from pandas import Series
+#30 149.0   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 149.0     from pandas.io.api import (
+#30 149.0   File "/home/app/copy/pandas/io/api.py", line 1, in <module>
+#30 149.0     from pandas.io.html import read_html
+#30 149.0   File "/home/app/copy/pandas/io/html.py", line 730, in <module>
+#30 149.0     def read_html(io: FilePath | ReadBuffer[str], *, match: str | Pattern='.+', flavor: HTMLFlavors | Sequence[HTMLFlavors] | None=None, header: int | Sequence[int] | None=None, index_col: int | Sequence[int] | None=None, skiprows: int | Sequence[int] | slice | None=None, attrs: dict[str, str] | None=None, parse_dates: bool=False, thousands: str | None=',', encoding: str | None=None, decimal: str='.', converters: dict | None=None, na_values: Iterable[object] | None=None, keep_default_na: bool=True, displayed_only: bool=True, extract_links: Literal[None, 'header', 'footer', 'body', 'all']=None, dtype_backend: DtypeBackend | lib.NoDefault=lib.no_default, storage_options: StorageOptions=None) -> list[DataFrame]:
+#30 149.0 NameError: name 'lib' is not defined
+#30 149.0 
+#30 149.0 2024-12-28 02:17:12,787 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/html.py
+#30 149.9 2024-12-28 02:17:13,655 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 149.9 2024-12-28 02:17:13,655 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 149.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 149.9     import geopandas as gpd
+#30 149.9   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 149.9     from geopandas.geoseries import GeoSeries
+#30 149.9   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 149.9     from pandas import Series
+#30 149.9   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 149.9     from pandas.io.api import (
+#30 149.9 ImportError: cannot import name 'read_xml' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 149.9 
+#30 149.9 2024-12-28 02:17:13,656 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 150.8 2024-12-28 02:17:14,511 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 150.8 2024-12-28 02:17:14,511 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 150.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 150.8     import geopandas as gpd
+#30 150.8   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 150.8     from geopandas.geoseries import GeoSeries
+#30 150.8   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 150.8     from pandas import Series
+#30 150.8   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 150.8     from pandas.io.api import (
+#30 150.8   File "/home/app/copy/pandas/io/api.py", line 1, in <module>
+#30 150.8     from pandas.io.xml import read_xml
+#30 150.8   File "/home/app/copy/pandas/io/xml.py", line 30, in <module>
+#30 150.8     from pandas.io.common import (
+#30 150.8 ImportError: cannot import name 'is_file_like' from 'pandas.io.common' (/home/app/copy/pandas/io/common.py)
+#30 150.8 
+#30 150.8 2024-12-28 02:17:14,540 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/common.py
+#30 151.6 2024-12-28 02:17:15,358 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 151.6 2024-12-28 02:17:15,358 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 151.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 151.6     import geopandas as gpd
+#30 151.6   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 151.6     from geopandas.geoseries import GeoSeries
+#30 151.6   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 151.6     from pandas import Series
+#30 151.6   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 151.6     from pandas.io.api import (
+#30 151.6 ImportError: cannot import name 'read_json' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 151.6 
+#30 151.6 2024-12-28 02:17:15,359 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 152.4 2024-12-28 02:17:16,201 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 152.4 2024-12-28 02:17:16,201 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 152.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 152.4     import geopandas as gpd
+#30 152.4   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 152.4     from geopandas.geoseries import GeoSeries
+#30 152.4   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 152.4     from pandas import Series
+#30 152.4   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 152.4     from pandas.io.api import (
+#30 152.4 ImportError: cannot import name 'read_stata' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 152.4 
+#30 152.4 2024-12-28 02:17:16,203 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 153.3 2024-12-28 02:17:17,031 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 153.3 2024-12-28 02:17:17,031 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 153.3   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 153.3     import geopandas as gpd
+#30 153.3   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 153.3     from geopandas.geoseries import GeoSeries
+#30 153.3   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 153.3     from pandas import Series
+#30 153.3   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 153.3     from pandas.io.api import (
+#30 153.3 ImportError: cannot import name 'read_sas' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 153.3 
+#30 153.3 2024-12-28 02:17:17,033 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 154.1 2024-12-28 02:17:17,896 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 154.1 2024-12-28 02:17:17,897 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 154.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 154.1     import geopandas as gpd
+#30 154.1   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 154.1     from geopandas.geoseries import GeoSeries
+#30 154.1   File "/home/app/copy/geopandas/geoseries.py", line 2, in <module>
+#30 154.1     from pandas import Series
+#30 154.1   File "/home/app/copy/pandas/__init__.py", line 142, in <module>
+#30 154.1     from pandas.io.api import (
+#30 154.1 ImportError: cannot import name 'read_spss' from 'pandas.io.api' (/home/app/copy/pandas/io/api.py)
+#30 154.1 
+#30 154.1 2024-12-28 02:17:17,898 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/pandas/io/api.py
+#30 155.2 2024-12-28 02:17:18,949 - lazy_load.repair_the_folder - INFO - Import Error:
+#30 155.2 2024-12-28 02:17:18,950 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 155.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 155.2     import geopandas as gpd
+#30 155.2   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 155.2     from geopandas.geoseries import GeoSeries
+#30 155.2   File "/home/app/copy/geopandas/geoseries.py", line 6, in <module>
+#30 155.2     from . import _compat as compat
+#30 155.2   File "/home/app/copy/geopandas/_compat.py", line 24, in <module>
+#30 155.2     import shapely
+#30 155.2   File "/home/app/copy/shapely/__init__.py", line 14, in <module>
+#30 155.2     from shapely.strtree import *  # NOQA
+#30 155.2   File "/home/app/copy/shapely/strtree.py", line 3, in <module>
+#30 155.2     from shapely.decorators import requires_geos, UnsupportedGEOSVersionError
+#30 155.2 ImportError: cannot import name 'UnsupportedGEOSVersionError' from 'shapely.decorators' (/home/app/copy/shapely/decorators.py)
+#30 155.2 
+#30 155.2 2024-12-28 02:17:18,953 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/shapely/decorators.py
+#30 156.1 2024-12-28 02:17:19,854 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 156.1 2024-12-28 02:17:19,854 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 156.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 156.1     import geopandas as gpd
+#30 156.1   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 156.1     from geopandas.geoseries import GeoSeries
+#30 156.1   File "/home/app/copy/geopandas/geoseries.py", line 6, in <module>
+#30 156.1     from . import _compat as compat
+#30 156.1   File "/home/app/copy/geopandas/_compat.py", line 24, in <module>
+#30 156.1     import shapely
+#30 156.1   File "/home/app/copy/shapely/__init__.py", line 15, in <module>
+#30 156.1     from shapely.io import *  # NOQA
+#30 156.1 AttributeError: module 'shapely.io' has no attribute 'from_ragged_array'
+#30 156.1 
+#30 156.1 2024-12-28 02:17:19,858 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/shapely/io.py
+#30 156.1 2024-12-28 02:17:19,858 - lazy_load.repair_the_folder - INFO - Added import for from_ragged_array to /home/app/copy/shapely/io.py
+#30 157.0 2024-12-28 02:17:20,752 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 157.0 2024-12-28 02:17:20,752 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 157.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 157.0     import geopandas as gpd
+#30 157.0   File "/home/app/copy/geopandas/__init__.py", line 3, in <module>
+#30 157.0     from geopandas.geoseries import GeoSeries
+#30 157.0   File "/home/app/copy/geopandas/geoseries.py", line 6, in <module>
+#30 157.0     from . import _compat as compat
+#30 157.0   File "/home/app/copy/geopandas/_compat.py", line 24, in <module>
+#30 157.0     import shapely
+#30 157.0   File "/home/app/copy/shapely/__init__.py", line 15, in <module>
+#30 157.0     from shapely.io import *  # NOQA
+#30 157.0 AttributeError: module 'shapely.io' has no attribute 'to_ragged_array'. Did you mean: 'from_ragged_array'?
+#30 157.0 
+#30 157.0 2024-12-28 02:17:20,762 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/shapely/io.py
+#30 157.0 2024-12-28 02:17:20,763 - lazy_load.repair_the_folder - INFO - Added import for to_ragged_array to /home/app/copy/shapely/io.py
+#30 158.1 2024-12-28 02:17:21,857 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 158.1 2024-12-28 02:17:21,857 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 158.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 158.1     import geopandas as gpd
+#30 158.1   File "/home/app/copy/geopandas/__init__.py", line 4, in <module>
+#30 158.1     from geopandas.geodataframe import GeoDataFrame
+#30 158.1   File "/home/app/copy/geopandas/geodataframe.py", line 87, in <module>
+#30 158.1     class GeoDataFrame(GeoPandasBase, DataFrame):
+#30 158.1   File "/home/app/copy/geopandas/geodataframe.py", line 1591, in GeoDataFrame
+#30 158.1     plot = Accessor('plot', geopandas.plotting.GeoplotAccessor)
+#30 158.1 NameError: name 'geopandas' is not defined
+#30 158.1 
+#30 158.2 2024-12-28 02:17:21,905 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/geopandas/geodataframe.py
+#30 159.3 2024-12-28 02:17:23,056 - lazy_load.repair_the_folder - INFO - {'NameError': 7, 'ImportError': 35, 'AttributeError': 15, 'OtherError': 0}
+#30 162.9 2024-12-28 02:17:26,608 - __main__ - INFO - step 6: rewrite the code
+#30 221.1 2024-12-28 02:18:24,883 - __main__ - INFO - step 7: eliminate the dynamic function load
+#30 DONE 234.5s
+
+#31 exporting to image
+#31 exporting layers
+#31 exporting layers 3.0s done
+#31 writing image sha256:61ed2f56926a122dd20cb6eb062f51fae5d4363c90fbfe95c78bf78524f5259b 0.0s done
+#31 naming to localhost:5000/geopandas:latest
+#31 naming to localhost:5000/geopandas:latest 0.2s done
+#31 DONE 3.3s
+Image: localhost:5000/geopandas:latest built.
+[33m[0] < Building geopandas done in 244.04s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 244.04s[0m
+
+[33m[0] > Pushing geopandas [localhost:5000/geopandas:latest].
+[0mThe push refers to repository [localhost:5000/geopandas]
+4c32151000ff: Preparing
+eca8b4efcff8: Preparing
+ad9206d974a7: Preparing
+3d42c5e2eec8: Preparing
+5f70bf18a086: Preparing
+b931f40f820d: Preparing
+abc9b3c21fe0: Preparing
+5f70bf18a086: Preparing
+8a6fa922068d: Preparing
+6c851f09d75c: Preparing
+926648323247: Preparing
+aa9810de4178: Preparing
+8b79bf355d75: Preparing
+55f492699f87: Preparing
+fe771c8c13c8: Preparing
+6dc8d2d13c70: Preparing
+926648323247: Waiting
+956b55b70206: Preparing
+e7de60d143ac: Preparing
+6c851f09d75c: Waiting
+f5b3c216aae5: Preparing
+fe771c8c13c8: Waiting
+aa9810de4178: Waiting
+6dc8d2d13c70: Waiting
+8b79bf355d75: Waiting
+1c0f6e3efc92: Preparing
+55f492699f87: Waiting
+7e6b10e97524: Preparing
+956b55b70206: Waiting
+25b7ac7c2745: Preparing
+e7de60d143ac: Waiting
+c1537681ddab: Preparing
+8a6fa922068d: Waiting
+1c0f6e3efc92: Waiting
+7e6b10e97524: Waiting
+c4c2f1c63c2f: Preparing
+25b7ac7c2745: Waiting
+abc9b3c21fe0: Waiting
+c1537681ddab: Waiting
+4be7fe848f91: Preparing
+c4c2f1c63c2f: Waiting
+6a3d7465dae1: Preparing
+b931f40f820d: Waiting
+4be7fe848f91: Waiting
+2143381c9922: Preparing
+6a3d7465dae1: Waiting
+12228ba7a3b1: Preparing
+9b55156abf26: Preparing
+293d5db30c9f: Preparing
+03127cdb479b: Preparing
+2143381c9922: Waiting
+9c742cd6c7a5: Preparing
+12228ba7a3b1: Waiting
+293d5db30c9f: Waiting
+9b55156abf26: Waiting
+03127cdb479b: Waiting
+9c742cd6c7a5: Waiting
+3d42c5e2eec8: Layer already exists
+ad9206d974a7: Layer already exists
+5f70bf18a086: Layer already exists
+b931f40f820d: Layer already exists
+abc9b3c21fe0: Layer already exists
+8a6fa922068d: Layer already exists
+6c851f09d75c: Layer already exists
+926648323247: Layer already exists
+8b79bf355d75: Layer already exists
+aa9810de4178: Layer already exists
+55f492699f87: Layer already exists
+fe771c8c13c8: Layer already exists
+6dc8d2d13c70: Layer already exists
+956b55b70206: Layer already exists
+e7de60d143ac: Layer already exists
+f5b3c216aae5: Layer already exists
+1c0f6e3efc92: Layer already exists
+7e6b10e97524: Layer already exists
+25b7ac7c2745: Layer already exists
+c1537681ddab: Layer already exists
+c4c2f1c63c2f: Layer already exists
+4be7fe848f91: Layer already exists
+6a3d7465dae1: Layer already exists
+2143381c9922: Layer already exists
+12228ba7a3b1: Layer already exists
+9b55156abf26: Layer already exists
+293d5db30c9f: Layer already exists
+03127cdb479b: Layer already exists
+9c742cd6c7a5: Layer already exists
+eca8b4efcff8: Pushed
+4c32151000ff: Pushed
+latest: digest: sha256:640f946baad905bae620e618f90520d161828d51e1e90353d4714b91e4e5e21c size: 7022
+[33m[0] < Pushing geopandas [localhost:5000/geopandas:latest] done.
+[0m[33m[0] Worker done.
+[0m
+Deploying: geopandas.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/geopandas
+

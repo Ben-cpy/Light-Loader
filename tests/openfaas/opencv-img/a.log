@@ -1,0 +1,89 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building opencv-img.
+[0mClearing temporary build folder: ./build/opencv-img/
+Preparing: ./opencv-img/ build/opencv-img/function
+Building: localhost:5000/opencv-img:latest with python3-debian template. Please wait..
+opencv-img shrink-wrapped to ./build/opencv-img/
+[33m[0] < Building opencv-img done in 0.31s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.31s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='' image-build-engine='internal' target.type='image' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:f4e1a348c4a26dac0d56ca1e8fc33b004b68274f718d45bb1b3c62e39c6ac8e3' size.bytes='1587620618' size.human='1.6 GB' 
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='fat-img:latest' id='sha256:f4e1a348c4a26dac0d56ca1e8fc33b004b68274f718d45bb1b3c62e39c6ac8e3' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_157938_20241213072123' id='e86d972042e08d870220038f877e89187ec95b5a9944d5c4616e57f169f1ca33' 
+cmd=build info=container status='running' name='slimk_157938_20241213072123' id='e86d972042e08d870220038f877e89187ec95b5a9944d5c4616e57f169f1ca33' 
+cmd=build info=container ip='172.17.0.7' message='obtained IP address' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_157938_20241213072123' id='e86d972042e08d870220038f877e89187ec95b5a9944d5c4616e57f169f1ca33' target.port.list='33125' target.port.info='8080/tcp => 0.0.0.0:33125' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='33125' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call error='none' time='2024-12-13T07:21:36Z' status='500' method='GET' target='http://127.0.0.1:33125/' attempt='1' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:33125/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:33125/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='6.19X' size.original='1.6 GB' size.optimized='257 MB' 
+cmd=build info=results image.name='fat-img.slim' image.size='257 MB' image.id='sha256:a02dc516469970243cc47d81acf5c0e967396dfb6f29e6b98659538c1e45c22e' image.digest='sha256:92164c2ae28400a61f2fddd48c9cbfa7301ae4205d64478093cca3bfe2a09964' has.data='true' image-build-engine='internal' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/f4e1a348c4a26dac0d56ca1e8fc33b004b68274f718d45bb1b3c62e39c6ac8e3/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='fat-img-seccomp.json' 
+cmd=build info=results artifacts.apparmor='fat-img-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Step 5: Renaming the slimmed image...
+Step 6: Pushing the slimmed image to the registry...
+The push refers to repository [localhost:5000/opencv-img]
+4575aa740b01: Preparing
+4575aa740b01: Pushed
+latest: digest: sha256:68d65c98e72d3e9b5626ca43249f5362460dcc2b69a6e08b504d16150bd15172 size: 529
+Step 7: Checking if function is already deployed...
+Fri Dec 13 15:22:21 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:23 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:25 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:27 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:30 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:32 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:34 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:37 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:39 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:41 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:43 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:45 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:47 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:49 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:51 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Fri Dec 13 15:22:53 CST 2024 - Function 'opencv-img' is already deployed. Waiting...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: opencv-img.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/opencv-img
+
+Deployment complete!

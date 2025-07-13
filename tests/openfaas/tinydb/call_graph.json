@@ -1,0 +1,668 @@
+{
+    "handler": [
+        "handler.handle",
+        "<builtin>.print"
+    ],
+    "tinydb": [],
+    "tinydb.queries": [],
+    "re": [
+        "<builtin>.type",
+        "copyreg.pickle",
+        "<builtin>.chr",
+        "functools.lru_cache.decorating_function",
+        "sre_compile.compile",
+        "functools.lru_cache",
+        "<builtin>.globals"
+    ],
+    "enum": [
+        "<builtin>.object"
+    ],
+    "types": [
+        "<builtin>.type",
+        "<builtin>.object",
+        "types._cell_factory",
+        "types._g",
+        "types._c",
+        "types._ag",
+        "<builtin>.globals"
+    ],
+    "<builtin>.type": [],
+    "types._cell_factory": [],
+    "types._g": [],
+    "types._c": [],
+    "types._ag": [],
+    "<builtin>.object": [],
+    "types._GeneratorWrapper": [
+        "<builtin>.property"
+    ],
+    "<builtin>.property": [],
+    "<builtin>.globals": [],
+    "enum.EnumMeta": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "<builtin>.classmethod": [],
+    "<builtin>.staticmethod": [],
+    "enum.Enum": [
+        "<builtin>.classmethod",
+        "types.DynamicClassAttribute.__init__"
+    ],
+    "types.DynamicClassAttribute.__init__": [
+        "<builtin>.getattr",
+        "<builtin>.bool"
+    ],
+    "<builtin>.getattr": [],
+    "<builtin>.bool": [],
+    "enum.Flag": [
+        "<builtin>.classmethod"
+    ],
+    "enum.IntFlag": [
+        "<builtin>.classmethod"
+    ],
+    "sre_compile": [
+        "<builtin>.tuple"
+    ],
+    "sre_parse": [
+        "<builtin>.frozenset"
+    ],
+    "sre_constants": [
+        "sre_constants._makecodes"
+    ],
+    "sre_constants._makecodes": [
+        "<builtin>.globals",
+        "<str>.split",
+        "<builtin>.enumerate",
+        "<str>.strip"
+    ],
+    "<str>.strip": [],
+    "<str>.split": [],
+    "<builtin>.enumerate": [],
+    "<builtin>.frozenset": [],
+    "sre_parse.State": [
+        "<builtin>.property"
+    ],
+    "sre_parse.Tokenizer": [
+        "<builtin>.property"
+    ],
+    "<builtin>.tuple": [],
+    "functools": [
+        "<builtin>.object",
+        "collections.namedtuple"
+    ],
+    "abc": [],
+    "_py_abc": [],
+    "_weakrefset": [],
+    "_weakrefset.WeakSet": [
+        "<builtin>.classmethod"
+    ],
+    "collections": [],
+    "keyword": [
+        "<builtin>.frozenset"
+    ],
+    "operator": [],
+    "reprlib": [
+        "reprlib.Repr.__init__"
+    ],
+    "reprlib.Repr.__init__": [],
+    "collections.OrderedDict": [
+        "<builtin>.object",
+        "reprlib.recursive_repr",
+        "reprlib.recursive_repr.decorating_function",
+        "<builtin>.classmethod"
+    ],
+    "reprlib.recursive_repr": [],
+    "reprlib.recursive_repr.decorating_function": [
+        "<builtin>.getattr",
+        "<builtin>.set"
+    ],
+    "<builtin>.set": [],
+    "collections.Counter": [
+        "<builtin>.classmethod"
+    ],
+    "collections.ChainMap": [
+        "<builtin>.property",
+        "<builtin>.classmethod",
+        "reprlib.recursive_repr",
+        "reprlib.recursive_repr.decorating_function"
+    ],
+    "collections.UserDict": [
+        "<builtin>.classmethod"
+    ],
+    "functools.partial": [
+        "reprlib.recursive_repr",
+        "reprlib.recursive_repr.decorating_function"
+    ],
+    "functools.partialmethod": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "collections.namedtuple": [
+        "<builtin>.list",
+        "<builtin>.type",
+        "<builtin>.map",
+        "<builtin>.len",
+        "<builtin>.eval",
+        "<builtin>.tuple",
+        "<builtin>.isinstance",
+        "<builtin>.enumerate",
+        "collections.<lambda1>",
+        "<builtin>.str",
+        "<builtin>.ValueError",
+        "<builtin>.TypeError",
+        "<builtin>.reversed",
+        "<builtin>.zip",
+        "<builtin>.classmethod",
+        "<str>.join",
+        "<builtin>.dict",
+        "<builtin>.set"
+    ],
+    "<builtin>.isinstance": [],
+    "<builtin>.map": [],
+    "<builtin>.list": [],
+    "<builtin>.str": [],
+    "<builtin>.TypeError": [],
+    "<builtin>.ValueError": [],
+    "<builtin>.len": [],
+    "<builtin>.reversed": [],
+    "<builtin>.zip": [],
+    "<builtin>.dict": [],
+    "<str>.join": [],
+    "<builtin>.eval": [],
+    "collections.<lambda1>": [
+        "<builtin>.property",
+        "operator.itemgetter.__init__"
+    ],
+    "operator.itemgetter.__init__": [],
+    "functools.singledispatchmethod": [
+        "<builtin>.property"
+    ],
+    "functools.cached_property": [
+        "<builtin>.classmethod"
+    ],
+    "<builtin>.chr": [],
+    "sre_compile.compile": [
+        "sre_compile.isstring",
+        "<map>.items",
+        "sre_parse.parse",
+        "sre_compile.dis",
+        "sre_compile._code",
+        "<builtin>.print",
+        "<builtin>.tuple"
+    ],
+    "sre_compile.isstring": [
+        "<builtin>.isinstance"
+    ],
+    "sre_parse.parse": [
+        "sre_parse.fix_flags",
+        "sre_parse.State.__init__",
+        "sre_parse._parse_sub",
+        "sre_parse.Tokenizer.__init__",
+        "sre_parse.SubPattern.dump",
+        "sre_parse.Tokenizer.seek",
+        "sre_parse.Tokenizer.error",
+        "sre_constants.error.__init__"
+    ],
+    "sre_parse.Tokenizer.__init__": [
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.Tokenizer.__next": [
+        "sre_parse.Tokenizer.error",
+        "<builtin>.len"
+    ],
+    "sre_parse.Tokenizer.error": [
+        "sre_parse.Tokenizer.tell",
+        "sre_parse.Tokenizer.error"
+    ],
+    "sre_parse.Tokenizer.tell": [
+        "<builtin>.len"
+    ],
+    "sre_parse.State.__init__": [],
+    "sre_parse._parse_sub": [
+        "",
+        "append",
+        "<builtin>.len",
+        "sre_parse.Tokenizer.tell",
+        "sre_parse.SubPattern.__init__",
+        "extend",
+        "sre_parse.SubPattern.append",
+        "sre_parse.Tokenizer.match"
+    ],
+    "sre_parse.Tokenizer.match": [
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.SubPattern.__init__": [],
+    "extend": [],
+    "append": [],
+    "sre_parse.SubPattern.append": [
+        "append"
+    ],
+    "sre_parse.Tokenizer.seek": [
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.fix_flags": [
+        "<builtin>.ValueError",
+        "<builtin>.isinstance"
+    ],
+    "sre_constants.error.__init__": [
+        "<str>.count",
+        "<builtin>.isinstance",
+        "<str>.rfind",
+        "<builtin>.super"
+    ],
+    "<str>.count": [],
+    "<str>.rfind": [],
+    "<builtin>.super": [],
+    "sre_parse.SubPattern.dump": [
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "<builtin>.enumerate",
+        "<builtin>.print"
+    ],
+    "<builtin>.print": [],
+    "sre_compile._code": [
+        "sre_compile._compile",
+        "sre_compile._compile_info",
+        "append"
+    ],
+    "sre_compile._compile_info": [
+        "",
+        "sre_parse.SubPattern.getwidth",
+        "<builtin>.len",
+        "sre_compile._compile_charset",
+        "sre_compile._optimize_charset",
+        "sre_compile._get_literal_prefix",
+        "extend",
+        "sre_compile._get_charset_prefix"
+    ],
+    "sre_parse.SubPattern.getwidth": [
+        "<builtin>.min",
+        "<builtin>.max"
+    ],
+    "<builtin>.min": [],
+    "<builtin>.max": [],
+    "sre_compile._get_literal_prefix": [
+        "",
+        "<builtin>.len",
+        "sre_compile._combine_flags",
+        "sre_compile._get_literal_prefix",
+        "extend",
+        "sre_compile._get_iscased"
+    ],
+    "sre_compile._get_iscased": [],
+    "sre_compile._combine_flags": [],
+    "sre_compile._get_charset_prefix": [
+        "",
+        "<builtin>.map",
+        "sre_compile._combine_flags",
+        "<builtin>.range",
+        "<builtin>.any",
+        "sre_compile._get_iscased"
+    ],
+    "<builtin>.range": [],
+    "<builtin>.any": [],
+    "sre_compile._optimize_charset": [
+        "<builtin>.bytes",
+        "append",
+        "<builtin>.map",
+        "<builtin>.len",
+        "<builtin>.range",
+        "<builtin>.any",
+        "sre_compile._mk_bitmap",
+        "sre_compile._bytes_to_codes",
+        "<builtin>.bytearray"
+    ],
+    "<builtin>.bytearray": [],
+    "sre_compile._mk_bitmap": [
+        "<builtin>.range",
+        "<builtin>.len"
+    ],
+    "<builtin>.bytes": [],
+    "sre_compile._bytes_to_codes": [
+        "<builtin>.len",
+        "<builtin>.memoryview"
+    ],
+    "<builtin>.memoryview": [],
+    "sre_compile._compile_charset": [
+        "",
+        "sre_constants.error.__init__",
+        "extend"
+    ],
+    "sre_compile._compile": [
+        "",
+        "sre_compile._compile_charset",
+        "sre_compile._combine_flags",
+        "sre_compile._simple",
+        "sre_compile._optimize_charset",
+        "sre_compile._compile",
+        "sre_constants.error.__init__"
+    ],
+    "sre_compile._simple": [
+        "sre_compile._simple",
+        "<builtin>.len"
+    ],
+    "sre_compile.dis": [
+        "<builtin>.str",
+        "sre_compile.dis.dis_",
+        "<builtin>.len",
+        "<builtin>.set"
+    ],
+    "sre_compile.dis.dis_": [
+        "<builtin>.list",
+        "sre_compile.dis.dis_.print_",
+        "sre_compile.dis.dis_.print_2",
+        "<builtin>.map",
+        "<builtin>.range",
+        "<builtin>.bin",
+        "<builtin>.chr",
+        "<builtin>.ValueError",
+        "sre_compile.dis.dis_",
+        "<builtin>.str",
+        "sre_compile._hex_code"
+    ],
+    "<builtin>.bin": [],
+    "sre_compile.dis.dis_.print_": [
+        "<builtin>.print"
+    ],
+    "sre_compile.dis.dis_.print_2": [
+        "<builtin>.print"
+    ],
+    "sre_compile._hex_code": [],
+    "<map>.items": [],
+    "functools.lru_cache": [
+        "<builtin>.callable",
+        "<builtin>.isinstance",
+        "functools._lru_cache_wrapper",
+        "<builtin>.TypeError",
+        "functools.update_wrapper"
+    ],
+    "<builtin>.callable": [],
+    "functools._lru_cache_wrapper": [
+        "<builtin>.object"
+    ],
+    "functools.update_wrapper": [
+        "<builtin>.getattr"
+    ],
+    "functools.lru_cache.decorating_function": [
+        "functools.update_wrapper",
+        "functools._lru_cache_wrapper"
+    ],
+    "copyreg": [
+        "copyreg.pickle",
+        "<builtin>.type"
+    ],
+    "copyreg.pickle": [
+        "<builtin>.callable",
+        "<builtin>.TypeError",
+        "copyreg.constructor"
+    ],
+    "copyreg.constructor": [
+        "<builtin>.callable",
+        "<builtin>.TypeError"
+    ],
+    "typing": [
+        "typing.TypeVar.__init__",
+        "typing._tp_cache",
+        "typing._tp_cache.decorator",
+        "<builtin>.frozenset",
+        "typing._SpecialGenericAlias.__init__",
+        "typing._SpecialForm.__init__"
+    ],
+    "collections.abc": [],
+    "contextlib": [],
+    "contextlib.AbstractContextManager": [
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "abc.abstractmethod": [],
+    "contextlib.AbstractAsyncContextManager": [
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "contextlib._BaseExitStack": [
+        "<builtin>.staticmethod"
+    ],
+    "contextlib.AsyncExitStack": [
+        "<builtin>.staticmethod"
+    ],
+    "typing._SpecialForm": [
+        "typing._tp_cache"
+    ],
+    "typing._tp_cache": [
+        "typing._tp_cache.decorator"
+    ],
+    "typing._tp_cache.decorator": [
+        "functools.wraps",
+        "append",
+        "functools.lru_cache.decorating_function",
+        "functools.lru_cache"
+    ],
+    "functools.wraps": [],
+    "typing._SpecialForm.__init__": [],
+    "typing.ParamSpec": [
+        "<builtin>.property"
+    ],
+    "typing._GenericAlias": [
+        "typing._tp_cache"
+    ],
+    "typing._SpecialGenericAlias": [
+        "typing._tp_cache"
+    ],
+    "typing._CallableType": [
+        "typing._tp_cache"
+    ],
+    "typing._TupleType": [
+        "typing._tp_cache"
+    ],
+    "typing.Generic": [
+        "typing._tp_cache"
+    ],
+    "typing.Annotated": [
+        "typing._tp_cache"
+    ],
+    "typing.TypeVar.__init__": [
+        "<builtin>.len",
+        "<builtin>.TypeError",
+        "<builtin>.super",
+        "typing._type_check",
+        "<builtin>.tuple"
+    ],
+    "typing._type_check": [
+        "<builtin>.TypeError",
+        "<builtin>.callable",
+        "typing._type_convert",
+        "<builtin>.isinstance"
+    ],
+    "typing._type_convert": [
+        "typing.ForwardRef.__init__",
+        "<builtin>.isinstance",
+        "<builtin>.type"
+    ],
+    "typing.ForwardRef.__init__": [
+        "<builtin>.TypeError",
+        "<builtin>.compile",
+        "<builtin>.isinstance",
+        "<builtin>.SyntaxError"
+    ],
+    "<builtin>.compile": [],
+    "<builtin>.SyntaxError": [],
+    "typing._SpecialGenericAlias.__init__": [
+        "<builtin>.super"
+    ],
+    "typing.SupportsInt": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsFloat": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsComplex": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsBytes": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsIndex": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsAbs": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsRound": [
+        "abc.abstractmethod"
+    ],
+    "typing.IO": [
+        "abc.abstractmethod",
+        "<builtin>.property"
+    ],
+    "typing.BinaryIO": [
+        "abc.abstractmethod"
+    ],
+    "typing.TextIO": [
+        "abc.abstractmethod",
+        "<builtin>.property"
+    ],
+    "tinydb.utils": [
+        "typing.TypeVar.__init__"
+    ],
+    "tinydb.utils.LRUCache": [
+        "<builtin>.property"
+    ],
+    "tinydb.storages": [],
+    "io": [],
+    "json": [],
+    "codecs": [
+        "<builtin>.SystemError"
+    ],
+    "<builtin>.SystemError": [],
+    "encodings": [],
+    "os": [
+        "<builtin>.set",
+        "append",
+        "<builtin>.type",
+        "os._createenviron",
+        "<builtin>.ImportError",
+        "extend",
+        "os._exists",
+        "os._add",
+        "os._Environ.__init__",
+        "os._fscodec",
+        "<builtin>.globals"
+    ],
+    "stat": [],
+    "<builtin>.ImportError": [],
+    "ntpath": [
+        "<builtin>.hasattr"
+    ],
+    "genericpath": [],
+    "<builtin>.hasattr": [],
+    "posixpath": [],
+    "os._exists": [
+        "<builtin>.globals"
+    ],
+    "os._add": [],
+    "os._createenviron": [
+        "os._createenviron.encodekey",
+        "os._Environ.__init__"
+    ],
+    "os._createenviron.encodekey": [
+        "os._createenviron.encode"
+    ],
+    "os._createenviron.encode": [
+        "<builtin>.TypeError",
+        "<builtin>.isinstance",
+        "<builtin>.type"
+    ],
+    "os._Environ.__init__": [],
+    "os._fscodec": [],
+    "os.PathLike": [
+        "abc.abstractmethod",
+        "<builtin>.classmethod"
+    ],
+    "warnings": [
+        "warnings._processoptions",
+        "<builtin>.hasattr",
+        "warnings.filterwarnings",
+        "warnings.simplefilter"
+    ],
+    "warnings._processoptions": [
+        "warnings._setoption",
+        "<builtin>.print"
+    ],
+    "warnings._setoption": [
+        "warnings.filterwarnings",
+        "<builtin>.len",
+        "warnings._getaction",
+        "warnings._getcategory",
+        "re.escape",
+        "<builtin>.int"
+    ],
+    "warnings._getaction": [],
+    "warnings._getcategory": [
+        "<builtin>.getattr",
+        "<builtin>.__import__",
+        "<builtin>.issubclass"
+    ],
+    "<builtin>.__import__": [],
+    "<builtin>.issubclass": [],
+    "re.escape": [
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.int": [],
+    "warnings.filterwarnings": [
+        "<builtin>.isinstance",
+        "re.compile",
+        "<builtin>.issubclass",
+        "warnings._add_filter"
+    ],
+    "re.compile": [
+        "re._compile"
+    ],
+    "re._compile": [
+        "<builtin>.type",
+        "sre_compile.isstring",
+        "<builtin>.len",
+        "<builtin>.isinstance",
+        "sre_compile.compile",
+        "<builtin>.ValueError",
+        "<builtin>.iter",
+        "<builtin>.TypeError",
+        "<builtin>.next"
+    ],
+    "<builtin>.iter": [],
+    "<builtin>.next": [],
+    "warnings._add_filter": [
+        "append",
+        "insert",
+        "remove",
+        "warnings._filters_mutated"
+    ],
+    "remove": [],
+    "insert": [],
+    "warnings._filters_mutated": [],
+    "warnings.simplefilter": [
+        "<builtin>.isinstance",
+        "warnings._add_filter"
+    ],
+    "tinydb.storages.Storage": [
+        "abc.abstractmethod"
+    ],
+    "tinydb.database": [
+        "tinydb.utils.with_typehint"
+    ],
+    "tinydb.table": [],
+    "tinydb.table.Table": [
+        "<builtin>.property"
+    ],
+    "tinydb.utils.with_typehint": [],
+    "tinydb.database.TinyDB": [
+        "<builtin>.property"
+    ],
+    "tinydb.version": [],
+    "handler.handle": [
+        "tinydb.database.TinyDB.__init__"
+    ],
+    "tinydb.database.TinyDB.__init__": []
+}

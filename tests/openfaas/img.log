@@ -1,0 +1,613 @@
+Processing tinydb...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.type='image' target.image='localhost:5000/tinydb' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='localhost:5000/tinydb-slim' image-build-engine='internal' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:8fb5a9d56a9655b257381c98a5bbed9e99d5911864b93959f7086665caf7473f' size.bytes='1460545084' size.human='1.5 GB' 
+time="2025-02-26T15:29:27+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:29:27+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:29:27+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:29:27+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack id='sha256:8fb5a9d56a9655b257381c98a5bbed9e99d5911864b93959f7086665caf7473f' index='0' name='localhost:5000/tinydb:latest' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container id='0a274075a725e34a68f3f59528ff4227826d35fa91174a33a8548869cdd9f666' status='created' name='slimk_5005_20250226072927' 
+cmd=build info=container status='running' name='slimk_5005_20250226072927' id='0a274075a725e34a68f3f59528ff4227826d35fa91174a33a8548869cdd9f666' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_5005_20250226072927' id='0a274075a725e34a68f3f59528ff4227826d35fa91174a33a8548869cdd9f666' target.port.list='32944' target.port.info='8080/tcp => 0.0.0.0:32944' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32944' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call status='200' method='GET' target='http://127.0.0.1:32944/' attempt='1' error='none' time='2025-02-26T07:29:39Z' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32944/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32944/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results by='30.60X' size.original='1.5 GB' size.optimized='48 MB' status='MINIFIED' 
+cmd=build info=results image.size='48 MB' image.id='sha256:cb4fa377198bf04173052acd9c49d5213f78e0f49fa212a06785bd7133541dd5' image.digest='sha256:6d861ca76c7970eafa81d960970e0b7574613c91ddc2bd32a1dc8a2959365228' has.data='true' image-build-engine='internal' image.name='localhost:5000/tinydb-slim' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/8fb5a9d56a9655b257381c98a5bbed9e99d5911864b93959f7086665caf7473f/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/tinydb-slim:latest
+Deleted: sha256:cb4fa377198bf04173052acd9c49d5213f78e0f49fa212a06785bd7133541dd5
+Deleted: sha256:302e83496e8016a642422db9656fc782af9bd1f841b1ed42a3dcb6230e630c3f
+Processing formatter...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.image='localhost:5000/formatter' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='localhost:5000/formatter-slim' image-build-engine='internal' target.type='image' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:264683b3e722bb9809e774b70949977e4e23108555f58a739f3a076b7ccd6100' size.bytes='1492696216' size.human='1.5 GB' 
+time="2025-02-26T15:29:48+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:29:48+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:29:48+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:29:48+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='localhost:5000/formatter:latest' id='sha256:264683b3e722bb9809e774b70949977e4e23108555f58a739f3a076b7ccd6100' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container name='slimk_6775_20250226072948' id='f432c59e7571edae0c52c44660b08df1357e727804f2559357a5a1a50b67afb0' status='created' 
+cmd=build info=container status='running' name='slimk_6775_20250226072948' id='f432c59e7571edae0c52c44660b08df1357e727804f2559357a5a1a50b67afb0' 
+cmd=build info=container ip='172.17.0.3' message='obtained IP address' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container target.port.list='32947' target.port.info='8080/tcp => 0.0.0.0:32947' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_6775_20250226072948' id='f432c59e7571edae0c52c44660b08df1357e727804f2559357a5a1a50b67afb0' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports targets='32947' count='1' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:32947/' attempt='1' error='none' time='2025-02-26T07:30:00Z' status='200' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32947/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32947/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results by='26.90X' size.original='1.5 GB' size.optimized='56 MB' status='MINIFIED' 
+cmd=build info=results image.digest='sha256:ebcc0de18161b82538289ac9d6bcc38af5d155fbc1dc51c3b92cfb5c24c94809' has.data='true' image-build-engine='internal' image.name='localhost:5000/formatter-slim' image.size='56 MB' image.id='sha256:5bd3d203a744b0c2ef7664b12b10de36ea4569e8dd3323978e4fc5a9d5f08c6e' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/264683b3e722bb9809e774b70949977e4e23108555f58a739f3a076b7ccd6100/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/formatter-slim:latest
+Deleted: sha256:5bd3d203a744b0c2ef7664b12b10de36ea4569e8dd3323978e4fc5a9d5f08c6e
+Deleted: sha256:1b5c605bbc44defdfdf25b3f91dbb5e84f26356e7a2512de252b0ad091fdd8bf
+Processing crypto...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params keep.perms='true' tags='localhost:5000/crypto-slim' image-build-engine='internal' target.type='image' target.image='localhost:5000/crypto' continue.mode='probe' rt.as.user='true' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.bytes='1528381349' size.human='1.5 GB' id='sha256:14a06b5bbb0b2f954e2f1e124d1131f1877ebc50cb09e86c58adcc227104b608' 
+time="2025-02-26T15:30:10+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:30:10+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:30:10+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:30:10+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='localhost:5000/crypto:latest' id='sha256:14a06b5bbb0b2f954e2f1e124d1131f1877ebc50cb09e86c58adcc227104b608' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container name='slimk_8676_20250226073010' id='845e7a1fd1bb077c516e61ae178820b06a28454a11780ae7b381b7ae92c915da' status='created' 
+cmd=build info=container name='slimk_8676_20250226073010' id='845e7a1fd1bb077c516e61ae178820b06a28454a11780ae7b381b7ae92c915da' status='running' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_8676_20250226073010' id='845e7a1fd1bb077c516e61ae178820b06a28454a11780ae7b381b7ae92c915da' target.port.list='32950' target.port.info='8080/tcp => 0.0.0.0:32950' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after message='no input required, execution will resume when HTTP probing is completed' mode='probe' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32950' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32950/' attempt='1' error='Get "http://127.0.0.1:32950/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:30:50Z' 
+cmd=build info=http.probe.call attempt='2' error='Get "http://127.0.0.1:32950/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:31:28Z' status='error' method='GET' target='http://127.0.0.1:32950/' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32950/' attempt='3' error='Get "http://127.0.0.1:32950/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:32:06Z' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32950/' attempt='4' error='Get "http://127.0.0.1:32950/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:32:44Z' 
+cmd=build info=http.probe.call attempt='5' error='Get "http://127.0.0.1:32950/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:33:22Z' status='error' method='GET' target='http://127.0.0.1:32950/' 
+cmd=build info=http.probe.summary total='5' failures='5' successful='0' 
+cmd=build state=http.probe.done warning=no.successful.calls 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build error=probe.error message='no.successful.calls'
+slim: container stdout:
+slim: container stderr:
+2025/02/26 07:30:11 Version: 0.3.1	SHA: d15a1e53fcef8d23c7557b39e5fcae6c9c0f65b9
+2025/02/26 07:30:11 Timeouts: read: 30s write: 30s hard: 0s health: 30s.
+2025/02/26 07:30:11 Listening on port: 8080
+2025/02/26 07:30:11 Writing lock-file to: /tmp/.lock
+2025/02/26 07:30:11 Metrics listening on port: 8081
+2025/02/26 07:30:20 Forking fprocess.
+slim: end of container logs =============
+cmd=build state=exited code=-1
+cmd=build info=container.inspector.cleanup name='slimk_8676_20250226073010' id='845e7a1fd1bb077c516e61ae178820b06a28454a11780ae7b381b7ae92c915da' 
+cmd=build state=container.target.shutdown.start
+cmd=build state=container.target.shutdown.done
+cmd=build info=report file='slim.report.json' 
+cmd=build info=exit code='-1' version='linux/amd64|Transformer|1.40.11|1b271555882eacdfb4e6598d6d0552e9b9b1449b|2024-02-02_01:36:22PM' location='/usr/local/bin' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Runtime error (func=(main), adr=17): Divide by zero
+Error response from daemon: No such image: localhost:5000/crypto-slim:latest
+Processing psutil...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params tags='localhost:5000/psutil-slim' image-build-engine='internal' target.type='image' target.image='localhost:5000/psutil' continue.mode='probe' rt.as.user='true' keep.perms='true' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:c2d03a2ede915ef9f7f23611ee8cd48cc8cfc526c7877f26568cb6b4e5136be0' size.bytes='1465090049' size.human='1.5 GB' 
+time="2025-02-26T15:33:34+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:33:34+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:33:34+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:33:34+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='localhost:5000/psutil:latest' id='sha256:c2d03a2ede915ef9f7f23611ee8cd48cc8cfc526c7877f26568cb6b4e5136be0' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_18147_20250226073334' id='41901b317994acd1c822f2d95c05134dc313053158b5ebac08c069cb95a10364' 
+cmd=build info=container status='running' name='slimk_18147_20250226073334' id='41901b317994acd1c822f2d95c05134dc313053158b5ebac08c069cb95a10364' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_18147_20250226073334' id='41901b317994acd1c822f2d95c05134dc313053158b5ebac08c069cb95a10364' target.port.list='32953' target.port.info='8080/tcp => 0.0.0.0:32953' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32953' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call target='http://127.0.0.1:32953/' attempt='1' error='none' time='2025-02-26T07:33:45Z' status='200' method='GET' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32953/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32953/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='30.91X' size.original='1.5 GB' size.optimized='47 MB' 
+cmd=build info=results image.id='sha256:83e35252ed0c43b18ebe3e3a00f2a52e5d6fd4bf4133be226ea12f848eac1053' image.digest='sha256:112b7696e02216f7a0ff5861d6d52f2eebe84611e39e3652d6711fd3a777d410' has.data='true' image-build-engine='internal' image.name='localhost:5000/psutil-slim' image.size='47 MB' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/c2d03a2ede915ef9f7f23611ee8cd48cc8cfc526c7877f26568cb6b4e5136be0/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/psutil-slim:latest
+Deleted: sha256:83e35252ed0c43b18ebe3e3a00f2a52e5d6fd4bf4133be226ea12f848eac1053
+Deleted: sha256:33f70506450eb0df16047dd9d03e3908591d8cced2574a49f8d676ec1b092615
+Processing pdfminer...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params continue.mode='probe' rt.as.user='true' keep.perms='true' tags='localhost:5000/pdfminer-slim' image-build-engine='internal' target.type='image' target.image='localhost:5000/pdfminer' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:0e164522ecf0b64e9d3ffa9242a5f873ed9877a0a808a6323453ae547328f717' size.bytes='1572944965' size.human='1.6 GB' 
+time="2025-02-26T15:33:53+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:33:53+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:33:53+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:33:53+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='localhost:5000/pdfminer:latest' id='sha256:0e164522ecf0b64e9d3ffa9242a5f873ed9877a0a808a6323453ae547328f717' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container name='slimk_20440_20250226073353' id='04bc6300ed477b70b05a8806edb7866120dd276db5c1d53f193c0cdf72eda98f' status='created' 
+cmd=build info=container status='running' name='slimk_20440_20250226073353' id='04bc6300ed477b70b05a8806edb7866120dd276db5c1d53f193c0cdf72eda98f' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container target.port.list='32956' target.port.info='8080/tcp => 0.0.0.0:32956' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_20440_20250226073353' id='04bc6300ed477b70b05a8806edb7866120dd276db5c1d53f193c0cdf72eda98f' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32956' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:32956/' attempt='1' error='Get "http://127.0.0.1:32956/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:34:34Z' status='error' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32956/' attempt='2' error='Get "http://127.0.0.1:32956/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:35:12Z' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:32956/' attempt='3' error='Get "http://127.0.0.1:32956/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:35:50Z' status='error' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32956/' attempt='4' error='Get "http://127.0.0.1:32956/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:36:28Z' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32956/' attempt='5' error='Get "http://127.0.0.1:32956/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:37:06Z' 
+cmd=build info=http.probe.summary successful='0' total='5' failures='5' 
+cmd=build state=http.probe.done warning=no.successful.calls 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build error=probe.error message='no.successful.calls'
+slim: container stdout:
+slim: container stderr:
+2025/02/26 07:33:55 Version: 0.3.1	SHA: d15a1e53fcef8d23c7557b39e5fcae6c9c0f65b9
+2025/02/26 07:33:55 Timeouts: read: 30s write: 30s hard: 0s health: 30s.
+2025/02/26 07:33:55 Listening on port: 8080
+2025/02/26 07:33:55 Writing lock-file to: /tmp/.lock
+2025/02/26 07:33:55 Metrics listening on port: 8081
+2025/02/26 07:34:04 Forking fprocess.
+slim: end of container logs =============
+cmd=build state=exited code=-1
+cmd=build info=container.inspector.cleanup id='04bc6300ed477b70b05a8806edb7866120dd276db5c1d53f193c0cdf72eda98f' name='slimk_20440_20250226073353' 
+cmd=build state=container.target.shutdown.start
+cmd=build state=container.target.shutdown.done
+cmd=build info=report file='slim.report.json' 
+cmd=build info=exit version='linux/amd64|Transformer|1.40.11|1b271555882eacdfb4e6598d6d0552e9b9b1449b|2024-02-02_01:36:22PM' location='/usr/local/bin' code='-1' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Runtime error (func=(main), adr=17): Divide by zero
+Error response from daemon: No such image: localhost:5000/pdfminer-slim:latest
+Processing bidict...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params rt.as.user='true' keep.perms='true' tags='localhost:5000/bidict-slim' image-build-engine='internal' target.type='image' target.image='localhost:5000/bidict' continue.mode='probe' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.human='1.5 GB' id='sha256:4b1e0c0bdb435446fe1448b60d1080ceadee8c3b1c8a4c71dd4de05af009c2d0' size.bytes='1460568748' 
+time="2025-02-26T15:37:18+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:37:18+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:37:18+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:37:18+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack id='sha256:4b1e0c0bdb435446fe1448b60d1080ceadee8c3b1c8a4c71dd4de05af009c2d0' index='0' name='localhost:5000/bidict:latest' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container name='slimk_29702_20250226073718' id='a4907136a426812338a775aaf92793ac2c5d2742ba4b7c8dea80d72eef34c18b' status='created' 
+cmd=build info=container status='running' name='slimk_29702_20250226073718' id='a4907136a426812338a775aaf92793ac2c5d2742ba4b7c8dea80d72eef34c18b' 
+cmd=build info=container ip='172.17.0.3' message='obtained IP address' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_29702_20250226073718' id='a4907136a426812338a775aaf92793ac2c5d2742ba4b7c8dea80d72eef34c18b' target.port.list='32959' target.port.info='8080/tcp => 0.0.0.0:32959' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32959' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call status='200' method='GET' target='http://127.0.0.1:32959/' attempt='1' error='none' time='2025-02-26T07:37:30Z' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32959/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32959/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='30.68X' size.original='1.5 GB' size.optimized='48 MB' 
+cmd=build info=results image-build-engine='internal' image.name='localhost:5000/bidict-slim' image.size='48 MB' image.id='sha256:6722883283034a4790e4a5f7b41554f073c2c4b14f91221de70acfcd56375918' image.digest='sha256:7694633f4ba8235d6558066a85b3ef553b73d30b89b48a78bd45562a208c1df3' has.data='true' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/4b1e0c0bdb435446fe1448b60d1080ceadee8c3b1c8a4c71dd4de05af009c2d0/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/bidict-slim:latest
+Deleted: sha256:6722883283034a4790e4a5f7b41554f073c2c4b14f91221de70acfcd56375918
+Deleted: sha256:f4c958307e95178c9c93eac3f5775e458bbfa14e0a8351c607d9ed9777ee8b39
+Processing formatter...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params tags='localhost:5000/formatter-slim' image-build-engine='internal' target.type='image' target.image='localhost:5000/formatter' continue.mode='probe' rt.as.user='true' keep.perms='true' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.human='1.5 GB' id='sha256:264683b3e722bb9809e774b70949977e4e23108555f58a739f3a076b7ccd6100' size.bytes='1492696216' 
+time="2025-02-26T15:37:39+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:37:39+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:37:39+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:37:39+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack name='localhost:5000/formatter:latest' id='sha256:264683b3e722bb9809e774b70949977e4e23108555f58a739f3a076b7ccd6100' index='0' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_31233_20250226073739' id='e6a3dc9c93611f4a82086013fae20b92fb30d2d7953b91bb834a1aa5e299cab4' 
+cmd=build info=container status='running' name='slimk_31233_20250226073739' id='e6a3dc9c93611f4a82086013fae20b92fb30d2d7953b91bb834a1aa5e299cab4' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container target.port.info='8080/tcp => 0.0.0.0:32962' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_31233_20250226073739' id='e6a3dc9c93611f4a82086013fae20b92fb30d2d7953b91bb834a1aa5e299cab4' target.port.list='32962' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32962' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:32962/' attempt='1' error='none' time='2025-02-26T07:37:51Z' status='200' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32962/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32962/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='26.90X' size.original='1.5 GB' size.optimized='56 MB' 
+cmd=build info=results image.digest='sha256:6c2530901246f7357165dfefbdeba6514f33540079b178fda6b349624398d02f' has.data='true' image-build-engine='internal' image.name='localhost:5000/formatter-slim' image.size='56 MB' image.id='sha256:1db486dfc41feed856cc1f05d93112e3b69ced7c9c3a9df562633340de4db0d8' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/264683b3e722bb9809e774b70949977e4e23108555f58a739f3a076b7ccd6100/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/formatter-slim:latest
+Deleted: sha256:1db486dfc41feed856cc1f05d93112e3b69ced7c9c3a9df562633340de4db0d8
+Deleted: sha256:9ba91cb03b92b1e7d4c56b0e333c5d3a14afb43b7f07b820736d0bf8ff254d88
+Processing cli-application...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.type='image' target.image='localhost:5000/cli-application' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='localhost:5000/cli-application-slim' image-build-engine='internal' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:1cc1b860a4b5440401875315542c2fd3193af654fb1acfaf5aef0e9ba4177e5e' size.bytes='1463104947' size.human='1.5 GB' 
+time="2025-02-26T15:38:01+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:38:01+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:38:01+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:38:01+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack id='sha256:1cc1b860a4b5440401875315542c2fd3193af654fb1acfaf5aef0e9ba4177e5e' index='0' name='localhost:5000/cli-application:latest' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_32882_20250226073801' id='3f18ee5368ac14d292921edc1eda06dd27691cf178a1e6cebd4fcc6539d5c68c' 
+cmd=build info=container status='running' name='slimk_32882_20250226073801' id='3f18ee5368ac14d292921edc1eda06dd27691cf178a1e6cebd4fcc6539d5c68c' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_32882_20250226073801' id='3f18ee5368ac14d292921edc1eda06dd27691cf178a1e6cebd4fcc6539d5c68c' target.port.list='32965' target.port.info='8080/tcp => 0.0.0.0:32965' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports targets='32965' count='1' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:32965/' attempt='1' error='none' time='2025-02-26T07:38:13Z' status='200' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32965/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32965/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='30.13X' size.original='1.5 GB' size.optimized='49 MB' 
+cmd=build info=results image-build-engine='internal' image.name='localhost:5000/cli-application-slim' image.size='49 MB' image.id='sha256:f1157c747165bf948d1d12711f3f2b2d15265ee36912956bb8855a8bea200614' image.digest='sha256:3a76a57f733e187a7dceddec2db08176f27701c0af3aba562e540708ede716c0' has.data='true' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/1cc1b860a4b5440401875315542c2fd3193af654fb1acfaf5aef0e9ba4177e5e/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/cli-application-slim:latest
+Deleted: sha256:f1157c747165bf948d1d12711f3f2b2d15265ee36912956bb8855a8bea200614
+Deleted: sha256:e42e0a8ba482d09c668d114306632e6fe65529daa4434ff18fbdfb30dc659de8
+Processing crypto...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params image-build-engine='internal' target.type='image' target.image='localhost:5000/crypto' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='localhost:5000/crypto-slim' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:14a06b5bbb0b2f954e2f1e124d1131f1877ebc50cb09e86c58adcc227104b608' size.bytes='1528381349' size.human='1.5 GB' 
+time="2025-02-26T15:38:22+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:38:22+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:38:22+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:38:22+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='localhost:5000/crypto:latest' id='sha256:14a06b5bbb0b2f954e2f1e124d1131f1877ebc50cb09e86c58adcc227104b608' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_34455_20250226073822' id='0f36bf39670bb03741a206576253c36f47714c279099bc043362c705d5987793' 
+cmd=build info=container status='running' name='slimk_34455_20250226073822' id='0f36bf39670bb03741a206576253c36f47714c279099bc043362c705d5987793' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_34455_20250226073822' id='0f36bf39670bb03741a206576253c36f47714c279099bc043362c705d5987793' target.port.list='32968' target.port.info='8080/tcp => 0.0.0.0:32968' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32968' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:32968/' attempt='1' error='Get "http://127.0.0.1:32968/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:39:02Z' status='error' 
+cmd=build info=http.probe.call time='2025-02-26T07:39:40Z' status='error' method='GET' target='http://127.0.0.1:32968/' attempt='2' error='Get "http://127.0.0.1:32968/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' 
+cmd=build info=http.probe.call target='http://127.0.0.1:32968/' attempt='3' error='Get "http://127.0.0.1:32968/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:40:18Z' status='error' method='GET' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32968/' attempt='4' error='Get "http://127.0.0.1:32968/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:40:56Z' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:32968/' attempt='5' error='Get "http://127.0.0.1:32968/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2025-02-26T07:41:34Z' 
+cmd=build info=http.probe.summary total='5' failures='5' successful='0' 
+cmd=build state=http.probe.done warning=no.successful.calls 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build error=probe.error message='no.successful.calls'
+slim: container stdout:
+slim: container stderr:
+2025/02/26 07:38:23 Version: 0.3.1	SHA: d15a1e53fcef8d23c7557b39e5fcae6c9c0f65b9
+2025/02/26 07:38:23 Timeouts: read: 30s write: 30s hard: 0s health: 30s.
+2025/02/26 07:38:23 Listening on port: 8080
+2025/02/26 07:38:23 Writing lock-file to: /tmp/.lock
+2025/02/26 07:38:23 Metrics listening on port: 8081
+2025/02/26 07:38:32 Forking fprocess.
+slim: end of container logs =============
+cmd=build state=exited code=-1
+cmd=build info=container.inspector.cleanup name='slimk_34455_20250226073822' id='0f36bf39670bb03741a206576253c36f47714c279099bc043362c705d5987793' 
+cmd=build state=container.target.shutdown.start
+cmd=build state=container.target.shutdown.done
+cmd=build info=report file='slim.report.json' 
+cmd=build info=exit code='-1' version='linux/amd64|Transformer|1.40.11|1b271555882eacdfb4e6598d6d0552e9b9b1449b|2024-02-02_01:36:22PM' location='/usr/local/bin' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Runtime error (func=(main), adr=17): Divide by zero
+Error response from daemon: No such image: localhost:5000/crypto-slim:latest
+Processing type-check...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params rt.as.user='true' keep.perms='true' tags='localhost:5000/type-check-slim' image-build-engine='internal' target.type='image' target.image='localhost:5000/type-check' continue.mode='probe' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:6cc23628797578c87504d53dd7a1a10a09970bbd9dd97d9bcf7e41e3a501f5f1' size.bytes='1457788020' size.human='1.5 GB' 
+time="2025-02-26T15:41:46+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:41:46+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:41:46+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:41:46+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack id='sha256:6cc23628797578c87504d53dd7a1a10a09970bbd9dd97d9bcf7e41e3a501f5f1' index='0' name='localhost:5000/type-check:latest' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container name='slimk_43491_20250226074146' id='02b81ff9fe8ec2e3205f0b61987c40b7019218ba2faf1af39044f802889e4362' status='created' 
+cmd=build info=container status='running' name='slimk_43491_20250226074146' id='02b81ff9fe8ec2e3205f0b61987c40b7019218ba2faf1af39044f802889e4362' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_43491_20250226074146' id='02b81ff9fe8ec2e3205f0b61987c40b7019218ba2faf1af39044f802889e4362' target.port.list='32971' target.port.info='8080/tcp => 0.0.0.0:32971' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32971' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call status='200' method='GET' target='http://127.0.0.1:32971/' attempt='1' error='none' time='2025-02-26T07:41:58Z' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32971/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32971/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results size.original='1.5 GB' size.optimized='42 MB' status='MINIFIED' by='34.78X' 
+cmd=build info=results image-build-engine='internal' image.name='localhost:5000/type-check-slim' image.size='42 MB' image.id='sha256:e6dba5134bc78842cbb700566eb519aae22cd82b8d4e7664e22b4fdb7e012428' image.digest='sha256:65e7b3ba71a8ea70d595c2f0374a576569818d664526da14ccea432cf6ecc749' has.data='true' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/6cc23628797578c87504d53dd7a1a10a09970bbd9dd97d9bcf7e41e3a501f5f1/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/type-check-slim:latest
+Deleted: sha256:e6dba5134bc78842cbb700566eb519aae22cd82b8d4e7664e22b4fdb7e012428
+Deleted: sha256:b432d68b4d3882f02b777c607b2dca7752a956a8c3954aaa6c4a79127c777f27
+Processing psutil...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.image='localhost:5000/psutil' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='localhost:5000/psutil-slim' image-build-engine='internal' target.type='image' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:c2d03a2ede915ef9f7f23611ee8cd48cc8cfc526c7877f26568cb6b4e5136be0' size.bytes='1465090049' size.human='1.5 GB' 
+time="2025-02-26T15:42:06+08:00" level=error msg="[||] config.Interval err = time: invalid duration \"||\""
+time="2025-02-26T15:42:06+08:00" level=error msg="[exit] config.Timeout err = time: invalid duration \"exit\""
+time="2025-02-26T15:42:06+08:00" level=error msg="[1\"]] config.StartPeriod err = time: unknown unit \"\\\"]\" in duration \"1\\\"]\""
+time="2025-02-26T15:42:06+08:00" level=error msg="[3s\" \"0s\" \"0s\" '\\x00] config.Retries err = strconv.ParseInt: parsing \"3s\\\" \\\"0s\\\" \\\"0s\\\" '\\\\x00\": invalid syntax"
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='localhost:5000/psutil:latest' id='sha256:c2d03a2ede915ef9f7f23611ee8cd48cc8cfc526c7877f26568cb6b4e5136be0' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_44887_20250226074206' id='f058cb74b0b6adf89272257ec41b4ff2b022af3c6395a32f89a80a8a29864dd6' 
+cmd=build info=container status='running' name='slimk_44887_20250226074206' id='f058cb74b0b6adf89272257ec41b4ff2b022af3c6395a32f89a80a8a29864dd6' 
+cmd=build info=container ip='172.17.0.3' message='obtained IP address' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container target.port.list='32974' target.port.info='8080/tcp => 0.0.0.0:32974' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_44887_20250226074206' id='f058cb74b0b6adf89272257ec41b4ff2b022af3c6395a32f89a80a8a29864dd6' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='32974' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call status='200' method='GET' target='http://127.0.0.1:32974/' attempt='1' error='none' time='2025-02-26T07:42:17Z' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:32974/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:32974/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results by='30.91X' size.original='1.5 GB' size.optimized='47 MB' status='MINIFIED' 
+cmd=build info=results image.id='sha256:29b6507bcba6c1a003c44571c898c0f8267676e1456f09832811536fa0aef757' image.digest='sha256:c7dbff3536335d9a84412d320944b2d7f781d1453457d83d4a8384cf35ed64ea' has.data='true' image-build-engine='internal' image.name='localhost:5000/psutil-slim' image.size='47 MB' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/c2d03a2ede915ef9f7f23611ee8cd48cc8cfc526c7877f26568cb6b4e5136be0/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='localhost-seccomp.json' 
+cmd=build info=results artifacts.apparmor='localhost-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Untagged: localhost:5000/psutil-slim:latest
+Deleted: sha256:29b6507bcba6c1a003c44571c898c0f8267676e1456f09832811536fa0aef757
+Deleted: sha256:9128f5ee00d1eb08678577a5749e3ea0caad16a82993c633316c7376e36fd5d9
+./test_image_reduce.sh: line 83: unexpected EOF while looking for matching `"'
+./test_image_reduce.sh: line 84: syntax error: unexpected end of file

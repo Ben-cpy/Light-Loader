@@ -1,0 +1,60 @@
+Docker-slim optimization results - Wed Feb 26 16:03:45 CST 2025
+----------------------------------------
+Processing app9...
+Original size: 2.69GB
+Running docker-slim on localhost:5000/app9...
+Optimized size: 236MB
+Reduction ratio: 11.67x
+----------------------------------------
+Removed slimmed image localhost:5000/app9-slim
+Processing cat-dot...
+Image localhost:5000/cat-dot not found, skipping...
+Processing nlp-ner...
+Original size: 2.49GB
+Running docker-slim on localhost:5000/nlp-ner...
+Optimized size: 270MB
+Reduction ratio: 9.44x
+----------------------------------------
+Removed slimmed image localhost:5000/nlp-ner-slim
+Processing audio...
+Original size: 1.76GB
+Running docker-slim on localhost:5000/audio...
+Optimized size: 304MB
+Reduction ratio: 5.92x
+----------------------------------------
+Removed slimmed image localhost:5000/audio-slim
+Processing opencv-img...
+Original size: 2.34GB
+Running docker-slim on localhost:5000/opencv-img...
+Optimized size: 265MB
+Reduction ratio: 9.04x
+----------------------------------------
+Removed slimmed image localhost:5000/opencv-img-slim
+Processing pdfminer...
+Original size: 1.57GB
+Running docker-slim on localhost:5000/pdfminer...
+Optimized size: 
+Reduction ratio: x
+----------------------------------------
+Removed slimmed image localhost:5000/pdfminer-slim
+Processing app5...
+Original size: 1.53GB
+Running docker-slim on localhost:5000/app5...
+Optimized size: 55.6MB
+Reduction ratio: 28.17x
+----------------------------------------
+Removed slimmed image localhost:5000/app5-slim
+Processing app10...
+Original size: 2.34GB
+Running docker-slim on localhost:5000/app10...
+Optimized size: 214MB
+Reduction ratio: 11.19x
+----------------------------------------
+Removed slimmed image localhost:5000/app10-slim
+Processing geopandas...
+Original size: 2.34GB
+Running docker-slim on localhost:5000/geopandas...
+Optimized size: 257MB
+Reduction ratio: 9.32x
+----------------------------------------
+Removed slimmed image localhost:5000/geopandas-slim

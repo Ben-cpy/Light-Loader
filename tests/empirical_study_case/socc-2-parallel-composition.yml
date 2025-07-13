@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  socc-2-parallel-composition:
+    lang: python3-debian
+    handler: ./socc-2-parallel-composition
+    image: localhost:5001/socc-2-parallel-composition:latest
+    constraints:
+    - "performance=high"
+    limits:
+      cpu: 1000m
+      memory: 500Mi
+

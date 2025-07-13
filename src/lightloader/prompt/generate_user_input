@@ -1,0 +1,12 @@
+You are an expert Python developer and software engineer. Your task is to analyze the provided `handler` function and generate a Python list containing 3 valid function call expressions to this function, each using a different input. 
+
+===== HANDLER FUNCTION =====
+{handler_function}
+
+===== SPECIFIC INSTRUCTIONS =====
+1. The list should contain only valid Python expressions for calling the `handler` function with different inputs.
+2. Do not include any extra text, comments, or delimiters within the list.
+3. The list itself should follow valid Python syntax.
+4. **Return the generated list as a JSON formatted string.**
+
+===== BEGIN OUTPUT =====

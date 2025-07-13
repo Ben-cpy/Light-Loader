@@ -1,0 +1,33 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building app11.
+[0mClearing temporary build folder: ./build/app11/
+Preparing: ./app11/ build/app11/function
+Building: localhost:5000/app11:latest with python3-debian template. Please wait..
+app11 shrink-wrapped to ./build/app11/
+[33m[0] < Building app11 done in 0.17s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.17s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='' image-build-engine='internal' target.type='image' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.bytes='1098505744' size.human='1.1 GB' id='sha256:91cdd627638e30b39d0a06fb1be13bf2077f54be10ef283f9d39efa83060d126' 
+cmd=build info=image.users all='app,root,app' exe='app' 
+cmd=build info=image.stack index='0' name='fat-img:latest' id='sha256:91cdd627638e30b39d0a06fb1be13bf2077f54be10ef283f9d39efa83060d126' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_230694_20241210082510' id='628d2299cc4fd474c19b0b6ee021b38c1f9c6fb295d9af366115ff5120f0599f' 
+cmd=build info=container status='running' name='slimk_230694_20241210082510' id='628d2299cc4fd474c19b0b6ee021b38c1f9c6fb295d9af366115ff5120f0599f' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.6' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container target.port.info='8080/tcp => 0.0.0.0:33017' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='slimk_230694_20241210082510' id='628d2299cc4fd474c19b0b6ee021b38c1f9c6fb295d9af366115ff5120f0599f' target.port.list='33017' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='33017' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 

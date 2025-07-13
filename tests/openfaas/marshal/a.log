@@ -1,0 +1,73 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building marshal.
+[0mClearing temporary build folder: ./build/marshal/
+Preparing: ./marshal/ build/marshal/function
+Building: localhost:5000/marshal:latest with python3-debian template. Please wait..
+marshal shrink-wrapped to ./build/marshal/
+[33m[0] < Building marshal done in 0.15s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.15s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.type='image' target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='' image-build-engine='internal' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.bytes='1068080583' size.human='1.1 GB' id='sha256:8d8843e1cb1bb3724c07089a8c0bff3cb53ed9e2bd489fc4bd209ea7b8984988' 
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='fat-img:latest' id='sha256:8d8843e1cb1bb3724c07089a8c0bff3cb53ed9e2bd489fc4bd209ea7b8984988' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_103935_20241211074312' id='e00de5ea7c32749c74aea7a1657d8c353b1f98603b78627af7efc9dfcdc7838d' 
+cmd=build info=container status='running' name='slimk_103935_20241211074312' id='e00de5ea7c32749c74aea7a1657d8c353b1f98603b78627af7efc9dfcdc7838d' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.3' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_103935_20241211074312' id='e00de5ea7c32749c74aea7a1657d8c353b1f98603b78627af7efc9dfcdc7838d' target.port.list='33097' target.port.info='8080/tcp => 0.0.0.0:33097' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='33097' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call time='2024-12-11T07:43:24Z' status='200' method='GET' target='http://127.0.0.1:33097/' attempt='1' error='none' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:33097/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:33097/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='23.79X' size.original='1.1 GB' size.optimized='45 MB' 
+cmd=build info=results image-build-engine='internal' image.name='fat-img.slim' image.size='45 MB' image.id='sha256:fec1a03d72e52f9078ab0576d639d2f64881f6d49ccf10a2f27485ef38cf7339' image.digest='sha256:370056eea965e7cb064012af342961d3ad04fdc4d39294d8e6f9c11d759eff32' has.data='true' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/8d8843e1cb1bb3724c07089a8c0bff3cb53ed9e2bd489fc4bd209ea7b8984988/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='fat-img-seccomp.json' 
+cmd=build info=results artifacts.apparmor='fat-img-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Step 5: Renaming the slimmed image...
+Step 6: Pushing the slimmed image to the registry...
+The push refers to repository [localhost:5000/marshal]
+413eb9c7e1e8: Preparing
+413eb9c7e1e8: Pushed
+latest: digest: sha256:a32095a0dfe9a191f31d77f4be831c6bb0b676c32c58c003f26488e198e22aba size: 529
+Step 7: Checking if function is already deployed...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: marshal.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/marshal
+
+Deployment complete!

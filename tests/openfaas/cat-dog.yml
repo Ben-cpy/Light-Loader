@@ -1,0 +1,20 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  cat-dog:
+    lang: python3-debian
+    handler: ./cat-dog
+    image: localhost:5000/cat-dog:latest
+    constraints:
+    - "performance=high"
+    limits:
+      memory: 2000Mi
+      cpu: 1000m
+    requests:
+      memory: 1000Mi
+      cpu: 500m
+configuration:
+  copy:
+    - ./cat-dog/cat.jpg

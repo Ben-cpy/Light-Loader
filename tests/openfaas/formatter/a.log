@@ -1,0 +1,21 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building formatter.
+[0mClearing temporary build folder: ./build/formatter/
+Preparing: ./formatter/ build/formatter/function
+Building: localhost:5000/formatter:latest with python3-debian template. Please wait..
+formatter shrink-wrapped to ./build/formatter/
+[33m[0] < Building formatter done in 0.23s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.23s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params tags='' image-build-engine='internal' target.type='image' target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:91cdd627638e30b39d0a06fb1be13bf2077f54be10ef283f9d39efa83060d126' size.bytes='1098505744' size.human='1.1 GB' 
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack index='0' name='fat-img:latest' id='sha256:91cdd627638e30b39d0a06fb1be13bf2077f54be10ef283f9d39efa83060d126' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start

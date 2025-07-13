@@ -1,0 +1,22 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  opencv-img:
+    lang: python3-debian
+    handler: ./opencv-img
+    image: localhost:5000/opencv-img:latest
+    build_args:
+      ADDITIONAL_PACKAGE: libgl1
+    constraints:
+    - "performance=high"
+    limits:
+      memory: 500Mi
+      cpu: 1000m
+    requests:
+      memory: 300Mi
+      cpu: 500m
+configuration:
+  copy:
+    - ./opencv-img/cat.jpg

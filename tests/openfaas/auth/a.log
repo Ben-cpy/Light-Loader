@@ -1,0 +1,10 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building auth.
+[0mClearing temporary build folder: ./build/auth/
+Preparing: ./auth/ build/auth/function
+Building: localhost:5000/auth:latest with python3-debian template. Please wait..
+auth shrink-wrapped to ./build/auth/
+[33m[0] < Building auth done in 0.28s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.28s[0m

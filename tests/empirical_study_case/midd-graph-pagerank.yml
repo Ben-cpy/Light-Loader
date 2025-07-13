@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  midd-graph-pagerank:
+    lang: python3-debian
+    handler: ./midd-graph-pagerank
+    image: localhost:5001/midd-graph-pagerank:latest
+    constraints:
+    - "performance=high"
+    limits:
+      cpu: 1000m
+      memory: 500Mi
+

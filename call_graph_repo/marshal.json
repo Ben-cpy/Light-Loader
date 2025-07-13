@@ -1,0 +1,274 @@
+{
+    "handler": [
+        "marshmallow.fields",
+        "marshmallow",
+        "handler.ArtistSchema",
+        "<builtin>.print",
+        "handler.AlbumSchema",
+        "handler.handle"
+    ],
+    "marshmallow": [
+        "marshmallow.fields",
+        "marshmallow.decorators",
+        "marshmallow.schema",
+        "marshmallow.utils",
+        "marshmallow.exceptions"
+    ],
+    "marshmallow.decorators": [
+        "marshmallow.decorators.MarshmallowHook"
+    ],
+    "marshmallow.decorators.MarshmallowHook": [],
+    "marshmallow.exceptions": [
+        "marshmallow.exceptions.StringNotCollectionError",
+        "marshmallow.exceptions.RegistryError",
+        "marshmallow.exceptions.FieldInstanceResolutionError",
+        "marshmallow.exceptions.MarshmallowError",
+        "marshmallow.exceptions.ValidationError"
+    ],
+    "marshmallow.exceptions.MarshmallowError": [],
+    "marshmallow.exceptions.ValidationError": [
+        "<builtin>.property"
+    ],
+    "<builtin>.property": [],
+    "marshmallow.exceptions.RegistryError": [],
+    "marshmallow.exceptions.StringNotCollectionError": [],
+    "marshmallow.exceptions.FieldInstanceResolutionError": [],
+    "marshmallow.schema": [
+        "marshmallow.fields",
+        "marshmallow.warnings",
+        "marshmallow.decorators",
+        "marshmallow.error_store",
+        "marshmallow.base",
+        "marshmallow.schema.SchemaOpts",
+        "marshmallow.schema.SchemaMeta",
+        "marshmallow.class_registry",
+        "marshmallow.types",
+        "marshmallow.utils",
+        "marshmallow.orderedset",
+        "marshmallow.exceptions",
+        "marshmallow.schema.Schema"
+    ],
+    "marshmallow.base": [
+        "marshmallow.base.FieldABC",
+        "marshmallow.base.SchemaABC"
+    ],
+    "marshmallow.base.FieldABC": [
+        "abc.abstractmethod"
+    ],
+    "abc.abstractmethod": [],
+    "marshmallow.base.SchemaABC": [
+        "abc.abstractmethod"
+    ],
+    "marshmallow.class_registry": [
+        "marshmallow",
+        "marshmallow.exceptions"
+    ],
+    "marshmallow.types": [],
+    "marshmallow.fields": [
+        "marshmallow.fields.Dict",
+        "marshmallow.fields.Float",
+        "marshmallow.fields.IPInterface",
+        "marshmallow.fields.DateTime",
+        "marshmallow.fields.Constant",
+        "marshmallow.fields.IP",
+        "marshmallow.fields.IPv4",
+        "marshmallow.validate",
+        "marshmallow.fields.Decimal",
+        "marshmallow.fields.Enum",
+        "marshmallow.fields.IPv6Interface",
+        "marshmallow.fields.IPv4Interface",
+        "marshmallow.fields.Pluck",
+        "marshmallow.fields.List",
+        "marshmallow.fields.Email",
+        "marshmallow.types",
+        "marshmallow.fields.TimeDelta",
+        "marshmallow.fields.IPv6",
+        "marshmallow.warnings",
+        "marshmallow.utils",
+        "marshmallow.fields.String",
+        "marshmallow.fields.Mapping",
+        "marshmallow.fields.UUID",
+        "marshmallow.fields.AwareDateTime",
+        "marshmallow.fields.Number",
+        "marshmallow.fields.NaiveDateTime",
+        "marshmallow.fields.Nested",
+        "marshmallow.fields.Date",
+        "marshmallow.class_registry",
+        "marshmallow.fields.Inferred",
+        "marshmallow.fields.Method",
+        "marshmallow.fields.Url",
+        "marshmallow.fields.Function",
+        "marshmallow.fields.Raw",
+        "marshmallow.fields.Boolean",
+        "marshmallow.fields.Time",
+        "marshmallow.base",
+        "marshmallow.fields.Field",
+        "marshmallow.fields.Tuple",
+        "marshmallow.exceptions",
+        "marshmallow.fields.Integer"
+    ],
+    "marshmallow.utils": [
+        "marshmallow.utils._Missing",
+        "marshmallow.exceptions",
+        "marshmallow.base",
+        "marshmallow.warnings"
+    ],
+    "marshmallow.warnings": [
+        "marshmallow.warnings.RemovedInMarshmallow4Warning"
+    ],
+    "marshmallow.warnings.RemovedInMarshmallow4Warning": [],
+    "marshmallow.utils._Missing": [],
+    "marshmallow.validate": [
+        "marshmallow.validate.OneOf",
+        "marshmallow.validate.Equal",
+        "marshmallow.validate.URL",
+        "marshmallow.validate.Range",
+        "marshmallow.validate.And",
+        "marshmallow.types",
+        "marshmallow.validate.Email",
+        "marshmallow.validate.Length",
+        "marshmallow.validate.NoneOf",
+        "marshmallow.exceptions",
+        "marshmallow.validate.Predicate",
+        "marshmallow.validate.Regexp",
+        "marshmallow.validate.ContainsOnly",
+        "marshmallow.validate.Validator",
+        "marshmallow.validate.ContainsNoneOf"
+    ],
+    "marshmallow.validate.Validator": [
+        "abc.abstractmethod"
+    ],
+    "marshmallow.validate.And": [],
+    "marshmallow.validate.URL": [
+        "marshmallow.validate.URL.RegexMemoizer.__init__",
+        "marshmallow.validate.URL.RegexMemoizer"
+    ],
+    "marshmallow.validate.URL.RegexMemoizer": [],
+    "marshmallow.validate.URL.RegexMemoizer.__init__": [],
+    "marshmallow.validate.Email": [],
+    "marshmallow.validate.Range": [],
+    "marshmallow.validate.Length": [],
+    "marshmallow.validate.Equal": [],
+    "marshmallow.validate.Regexp": [],
+    "marshmallow.validate.Predicate": [],
+    "marshmallow.validate.NoneOf": [],
+    "marshmallow.validate.OneOf": [],
+    "marshmallow.validate.ContainsOnly": [],
+    "marshmallow.validate.ContainsNoneOf": [],
+    "marshmallow.fields.Field": [
+        "<builtin>.property"
+    ],
+    "marshmallow.fields.Raw": [],
+    "marshmallow.fields.Nested": [
+        "<builtin>.property"
+    ],
+    "marshmallow.fields.Pluck": [
+        "<builtin>.property"
+    ],
+    "marshmallow.fields.List": [],
+    "marshmallow.fields.Tuple": [],
+    "marshmallow.fields.String": [],
+    "marshmallow.fields.UUID": [],
+    "marshmallow.fields.Number": [],
+    "marshmallow.fields.Integer": [],
+    "marshmallow.fields.Float": [],
+    "marshmallow.fields.Decimal": [],
+    "marshmallow.fields.Boolean": [],
+    "marshmallow.fields.DateTime": [
+        "<builtin>.staticmethod"
+    ],
+    "<builtin>.staticmethod": [],
+    "marshmallow.fields.NaiveDateTime": [],
+    "marshmallow.fields.AwareDateTime": [],
+    "marshmallow.fields.Time": [
+        "<builtin>.staticmethod"
+    ],
+    "marshmallow.fields.Date": [
+        "<builtin>.staticmethod"
+    ],
+    "marshmallow.fields.TimeDelta": [],
+    "marshmallow.fields.Mapping": [],
+    "marshmallow.fields.Dict": [],
+    "marshmallow.fields.Url": [],
+    "marshmallow.fields.Email": [],
+    "marshmallow.fields.IP": [],
+    "marshmallow.fields.IPv4": [],
+    "marshmallow.fields.IPv6": [],
+    "marshmallow.fields.IPInterface": [],
+    "marshmallow.fields.IPv4Interface": [],
+    "marshmallow.fields.IPv6Interface": [],
+    "marshmallow.fields.Enum": [],
+    "marshmallow.fields.Method": [],
+    "marshmallow.fields.Function": [],
+    "marshmallow.fields.Constant": [],
+    "marshmallow.fields.Inferred": [],
+    "marshmallow.error_store": [
+        "marshmallow.exceptions",
+        "marshmallow.error_store.ErrorStore"
+    ],
+    "marshmallow.error_store.ErrorStore": [],
+    "marshmallow.orderedset": [
+        "marshmallow.orderedset.OrderedSet"
+    ],
+    "marshmallow.orderedset.OrderedSet": [],
+    "marshmallow.schema.SchemaMeta": [
+        "<builtin>.classmethod"
+    ],
+    "<builtin>.classmethod": [],
+    "marshmallow.schema.SchemaOpts": [],
+    "marshmallow.schema.Schema": [
+        "<builtin>.property",
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod",
+        "marshmallow.schema.Schema.Meta"
+    ],
+    "marshmallow.schema.Schema.Meta": [],
+    "handler.ArtistSchema": [],
+    "handler.AlbumSchema": [
+        "marshmallow.fields.Nested.__init__"
+    ],
+    "marshmallow.fields.Nested.__init__": [
+        "<builtin>.super",
+        "marshmallow.utils.is_collection"
+    ],
+    "marshmallow.utils.is_collection": [
+        "<builtin>.isinstance",
+        "marshmallow.utils.is_iterable_but_not_string"
+    ],
+    "marshmallow.utils.is_iterable_but_not_string": [
+        "marshmallow.utils.is_generator",
+        "<builtin>.hasattr"
+    ],
+    "<builtin>.hasattr": [],
+    "marshmallow.utils.is_generator": [],
+    "<builtin>.isinstance": [],
+    "<builtin>.super": [],
+    "handler.handle": [
+        "<builtin>.dict",
+        "marshmallow.schema.Schema.dump",
+        "datetime.date"
+    ],
+    "<builtin>.dict": [],
+    "datetime.date": [],
+    "marshmallow.schema.Schema.dump": [
+        "marshmallow.schema.Schema._invoke_dump_processors",
+        "<builtin>.bool",
+        "marshmallow.schema.Schema._serialize"
+    ],
+    "<builtin>.bool": [],
+    "marshmallow.schema.Schema._invoke_dump_processors": [
+        "marshmallow.schema.Schema._invoke_processors"
+    ],
+    "marshmallow.schema.Schema._invoke_processors": [
+        "<builtin>.getattr",
+        "<builtin>.zip"
+    ],
+    "<builtin>.getattr": [],
+    "<builtin>.zip": [],
+    "marshmallow.schema.Schema._serialize": [
+        "marshmallow.schema.Schema._serialize",
+        "marshmallow.schema.Schema.dict_class"
+    ],
+    "marshmallow.schema.Schema.dict_class": [],
+    "<builtin>.print": []
+}

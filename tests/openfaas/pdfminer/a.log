@@ -1,0 +1,37 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building pdfminer.
+[0mClearing temporary build folder: ./build/pdfminer/
+Preparing: ./pdfminer/ build/pdfminer/function
+Building: localhost:5000/pdfminer:latest with python3-debian template. Please wait..
+pdfminer shrink-wrapped to ./build/pdfminer/
+[33m[0] < Building pdfminer done in 0.09s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.09s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params target.type='image' target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='' image-build-engine='internal' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:2527741623c276c1e958481ad649aab91f93e50a6d76c1ad6b90142cbc38bd74' size.bytes='1178300663' size.human='1.2 GB' 
+cmd=build info=image.users all='app,root,app' exe='app' 
+cmd=build info=image.stack index='0' name='fat-img:latest' id='sha256:2527741623c276c1e958481ad649aab91f93e50a6d76c1ad6b90142cbc38bd74' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_79006_20241210074732' id='76538163315e188fd57fff46a34943c7f3ed95b2d5f9ad5fabf05074607264c1' 
+cmd=build info=container status='running' name='slimk_79006_20241210074732' id='76538163315e188fd57fff46a34943c7f3ed95b2d5f9ad5fabf05074607264c1' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.5' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_79006_20241210074732' id='76538163315e188fd57fff46a34943c7f3ed95b2d5f9ad5fabf05074607264c1' target.port.list='33011' target.port.info='8080/tcp => 0.0.0.0:33011' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after message='no input required, execution will resume when HTTP probing is completed' mode='probe' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='33011' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:33011/' attempt='1' error='Get "http://127.0.0.1:33011/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2024-12-10T07:48:14Z' 
+cmd=build info=http.probe.call error='Get "http://127.0.0.1:33011/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2024-12-10T07:48:52Z' status='error' method='GET' target='http://127.0.0.1:33011/' attempt='2' 
+cmd=build info=http.probe.call target='http://127.0.0.1:33011/' attempt='3' error='Get "http://127.0.0.1:33011/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2024-12-10T07:49:30Z' status='error' method='GET' 
+cmd=build info=http.probe.call attempt='4' error='Get "http://127.0.0.1:33011/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)' time='2024-12-10T07:50:08Z' status='error' method='GET' target='http://127.0.0.1:33011/' 

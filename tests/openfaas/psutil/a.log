@@ -1,0 +1,157 @@
+Using regular OpenFaaS workflow...
+Step 1: Building the function...
+[33m[0] > Building psutil.
+[0mClearing temporary build folder: ./build/psutil/
+Preparing: ./psutil/ build/psutil/function
+Building: localhost:5000/psutil:latest with python3-debian template. Please wait..
+[33m[0] < Building psutil done in 6.39s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 6.39s[0m
+[31mErrors received during build:
+- [psutil] received non-zero exit code from build, error: #0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.09kB done
+#1 ...
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.2s
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.3s
+
+#3 [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1
+#3 ...
+
+#4 [internal] load metadata for localhost:5000/python:3.10.5
+#4 DONE 0.3s
+
+#3 [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1
+#3 ERROR: failed to authorize: failed to fetch anonymous token: Get "https://ghcr.io/token?scope=repository%3Aopenfaas%2Fclassic-watchdog%3Apull&service=ghcr.io": read tcp 127.0.0.1:58886->127.0.0.1:7890: read: connection reset by peer
+------
+ > [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1:
+------
+Dockerfile:2
+--------------------
+   1 |     ARG PYTHON_VERSION=3.10.5
+   2 | >>> FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/openfaas/classic-watchdog:0.3.1 AS watchdog
+   3 |     FROM --platform=${TARGETPLATFORM:-linux/amd64} localhost:5000/python:${PYTHON_VERSION}
+   4 |     
+--------------------
+ERROR: failed to solve: ghcr.io/openfaas/classic-watchdog:0.3.1: failed to authorize: failed to fetch anonymous token: Get "https://ghcr.io/token?scope=repository%3Aopenfaas%2Fclassic-watchdog%3Apull&service=ghcr.io": read tcp 127.0.0.1:58886->127.0.0.1:7890: read: connection reset by peer
+
+[0m
+Step 2: Pushing to registry...
+[33m[0] > Pushing psutil [localhost:5000/psutil:latest].
+[0mThe push refers to repository [localhost:5000/psutil]
+29395e3d47a5: Preparing
+e3fa7044ba00: Preparing
+abf8e3c08aaf: Preparing
+0b8356e55fe0: Preparing
+5f70bf18a086: Preparing
+e9b74ac68315: Preparing
+e0c84b90e35b: Preparing
+5f70bf18a086: Preparing
+3d0cecc5a798: Preparing
+8e1037be2414: Preparing
+9fdd584abb14: Preparing
+889a3e78c322: Preparing
+c0c861345cc2: Preparing
+ef2f0b9dffd5: Preparing
+305a15a266b8: Preparing
+dc2e33b8a45e: Preparing
+9fdd584abb14: Waiting
+f1011ad616ce: Preparing
+e9b74ac68315: Waiting
+c6b89608d737: Preparing
+889a3e78c322: Waiting
+e0c84b90e35b: Waiting
+0d9e4c33e011: Preparing
+59de3390a451: Preparing
+3d0cecc5a798: Waiting
+e729c4134cc3: Preparing
+c0c861345cc2: Waiting
+8e1037be2414: Waiting
+25b7ac7c2745: Preparing
+ef2f0b9dffd5: Waiting
+c1537681ddab: Preparing
+305a15a266b8: Waiting
+c4c2f1c63c2f: Preparing
+4be7fe848f91: Preparing
+dc2e33b8a45e: Waiting
+6a3d7465dae1: Preparing
+2143381c9922: Preparing
+12228ba7a3b1: Preparing
+59de3390a451: Waiting
+25b7ac7c2745: Waiting
+f1011ad616ce: Waiting
+e729c4134cc3: Waiting
+9b55156abf26: Preparing
+c6b89608d737: Waiting
+293d5db30c9f: Preparing
+03127cdb479b: Preparing
+0d9e4c33e011: Waiting
+9c742cd6c7a5: Preparing
+4be7fe848f91: Waiting
+6a3d7465dae1: Waiting
+12228ba7a3b1: Waiting
+9b55156abf26: Waiting
+2143381c9922: Waiting
+c4c2f1c63c2f: Waiting
+293d5db30c9f: Waiting
+9c742cd6c7a5: Waiting
+03127cdb479b: Waiting
+0b8356e55fe0: Layer already exists
+e3fa7044ba00: Layer already exists
+29395e3d47a5: Layer already exists
+abf8e3c08aaf: Layer already exists
+5f70bf18a086: Layer already exists
+e9b74ac68315: Layer already exists
+8e1037be2414: Layer already exists
+3d0cecc5a798: Layer already exists
+e0c84b90e35b: Layer already exists
+9fdd584abb14: Layer already exists
+889a3e78c322: Layer already exists
+c0c861345cc2: Layer already exists
+305a15a266b8: Layer already exists
+ef2f0b9dffd5: Layer already exists
+dc2e33b8a45e: Layer already exists
+f1011ad616ce: Layer already exists
+c6b89608d737: Layer already exists
+0d9e4c33e011: Layer already exists
+59de3390a451: Layer already exists
+25b7ac7c2745: Layer already exists
+c1537681ddab: Layer already exists
+e729c4134cc3: Layer already exists
+c4c2f1c63c2f: Layer already exists
+4be7fe848f91: Layer already exists
+2143381c9922: Layer already exists
+6a3d7465dae1: Layer already exists
+12228ba7a3b1: Layer already exists
+9b55156abf26: Layer already exists
+293d5db30c9f: Layer already exists
+03127cdb479b: Layer already exists
+9c742cd6c7a5: Layer already exists
+latest: digest: sha256:35d100b679aa0f5b277a0bc922b8c025f8f29631d2a52b844e25b973801ca376 size: 7015
+[33m[0] < Pushing psutil [localhost:5000/psutil:latest] done.
+[0m[33m[0] Worker done.
+[0mStep 7: Checking if function is already deployed...
+Thu Feb 20 21:01:21 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:23 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:25 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:28 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:30 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:32 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:34 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:36 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Thu Feb 20 21:01:38 CST 2025 - Function 'psutil' is already deployed. Waiting...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: psutil.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/psutil
+
+Deployment complete!

@@ -1,0 +1,13 @@
+探究容器启动时间, 结果是容器创建时间很长>1s, 不理解为什么
+
+---
+[root@cloud-node container_init_time]# python3 test_docker_time.py 
+Testing Docker container creation time...
+Pulling image test-container...
+Error pulling image: 404 Client Error for http+docker://localhost/v1.43/images/create?tag=latest&fromImage=test-container: Not Found ("pull access denied for test-container, repository does not exist or may require 'docker login': denied: requested access to the resource is denied")
+Image pull time: 3.30 seconds
+Creating and starting container from image test-container...
+Container start time: 1.28 seconds
+Container removed.
+Total time: 4.57 seconds
+---

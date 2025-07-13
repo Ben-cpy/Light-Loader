@@ -1,0 +1,1811 @@
+[33m[0] > Building matplotlib.
+[0mClearing temporary build folder: ./build/matplotlib/
+Preparing: ./matplotlib/ build/matplotlib/function
+Building: localhost:5000/matplotlib:latest with python3-debian template. Please wait..
+#0 building with "default" instance using docker driver
+
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.3s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 2.84kB done
+#2 DONE 0.4s
+
+#3 [internal] load metadata for localhost:5000/python:3.10.5
+#3 DONE 0.4s
+
+#4 [internal] load metadata for ghcr.io/openfaas/classic-watchdog:0.3.1
+#4 DONE 1.5s
+
+#5 [watchdog 1/1] FROM ghcr.io/openfaas/classic-watchdog:0.3.1@sha256:6b900e6195e421f3d916499b45af38b65be88f6ac38d6caa744a3c152cc70fc5
+#5 DONE 0.0s
+
+#6 [stage-1  1/23] FROM localhost:5000/python:3.10.5@sha256:f4802f646ed1619dd4795e55d72c1a79ee77e51e3425c8ec1eebb4da08692865
+#6 resolve localhost:5000/python:3.10.5@sha256:f4802f646ed1619dd4795e55d72c1a79ee77e51e3425c8ec1eebb4da08692865 0.3s done
+#6 DONE 0.3s
+
+#7 [internal] load build context
+#7 transferring context: 1.54MB 0.0s done
+#7 DONE 0.5s
+
+#8 [stage-1 13/24] RUN pip install astroid==3.1.0 astor numpy openai --target=/home/ast
+#8 CACHED
+
+#9 [stage-1  9/24] COPY function/call_graph.json .
+#9 CACHED
+
+#10 [stage-1  5/24] RUN groupadd app && useradd -r -g app app
+#10 CACHED
+
+#11 [stage-1 15/24] RUN mkdir -p function
+#11 CACHED
+
+#12 [stage-1  6/24] WORKDIR /home/app/
+#12 CACHED
+
+#13 [stage-1 12/24] RUN pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple
+#13 CACHED
+
+#14 [stage-1 18/24] COPY function/requirements.txt	.
+#14 CACHED
+
+#15 [stage-1  3/23] RUN chmod +x /usr/bin/fwatchdog
+#15 CACHED
+
+#16 [stage-1 10/24] RUN chown -R app /home/app &&     mkdir -p /home/app/python && chown -R app /home/app
+#16 CACHED
+
+#17 [stage-1 16/24] RUN touch ./function/__init__.py
+#17 CACHED
+
+#18 [stage-1  8/24] COPY requirements.txt   .
+#18 CACHED
+
+#19 [stage-1  2/23] COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
+#19 CACHED
+
+#20 [stage-1  4/24] RUN apt-get update     && apt-get install -y ca-certificates  ${ADDITIONAL_PACKAGE}     && rm -rf /var/lib/apt/lists/
+#20 CACHED
+
+#21 [stage-1 11/24] RUN mkdir -p /home/ast && chown -R app /home/ast
+#21 CACHED
+
+#22 [stage-1 14/24] RUN pip install -r requirements.txt --target=/home/app/python
+#22 CACHED
+
+#23 [stage-1 17/24] WORKDIR /home/app/function/
+#23 CACHED
+
+#24 [stage-1 19/24] RUN pip install -r requirements.txt --target=/home/app/python
+#24 CACHED
+
+#25 [stage-1  7/24] COPY index.py           .
+#25 CACHED
+
+#26 [stage-1 20/24] WORKDIR /home/app/
+#26 CACHED
+
+#27 [stage-1 21/24] COPY function           function
+#27 DONE 1.7s
+
+#28 [stage-1 22/24] RUN chown -R app:app ./ &&     chmod -R 777 /home/app/python
+#28 DONE 144.3s
+
+#29 [stage-1 23/24] COPY LightLoader         LightLoader
+#29 DONE 1.6s
+
+#30 [stage-1 24/24] RUN cp ./function/handler.py ./python &&     cd /home/app/LightLoader &&     python ./Light.py &&     cd /home/app/
+#30 5.037 2024-12-18 03:32:09,345 - __main__ - INFO - step 1
+#30 5.779 2024-12-18 03:32:10,087 - __main__ - INFO - step 3
+#30 58.76 2024-12-18 03:33:03,069 - __main__ - INFO - step 4
+#30 58.76 2024-12-18 03:33:03,069 - __main__ - INFO - step 5
+#30 58.82 2024-12-18 03:33:03,129 - __main__ - INFO - step 6
+#30 90.53 2024-12-18 03:33:34,833 - __main__ - INFO - step 7
+#30 90.82 2024-12-18 03:33:35,128 - lazy_load.modify_folder - INFO - Skipped handler: /home/app/copy/handler.py
+#30 90.82 2024-12-18 03:33:35,129 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/six.py
+#30 90.82 2024-12-18 03:33:35,129 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyparsing/__init__.py
+#30 90.82 2024-12-18 03:33:35,130 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyparsing/core.py
+#30 90.82 2024-12-18 03:33:35,131 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pylab.py
+#30 90.86 2024-12-18 03:33:35,168 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/actions.py
+#30 90.87 2024-12-18 03:33:35,168 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/common.py
+#30 90.88 2024-12-18 03:33:35,174 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyparsing/util.py
+#30 90.95 2024-12-18 03:33:35,259 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/pyparsing/diagram/__init__.py
+#30 90.98 2024-12-18 03:33:35,285 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/unicode.py
+#30 91.00 2024-12-18 03:33:35,312 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/exceptions.py
+#30 91.12 2024-12-18 03:33:35,433 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/testing.py
+#30 91.23 2024-12-18 03:33:35,534 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/results.py
+#30 91.25 2024-12-18 03:33:35,558 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/pyparsing/helpers.py
+#30 91.32 2024-12-18 03:33:35,629 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageChops.py
+#30 91.55 2024-12-18 03:33:35,861 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageQt.py
+#30 91.59 2024-12-18 03:33:35,893 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageFont.py
+#30 91.63 2024-12-18 03:33:35,893 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/IcoImagePlugin.py
+#30 91.71 2024-12-18 03:33:35,915 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/GribStubImagePlugin.py
+#30 91.79 2024-12-18 03:33:35,922 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/FpxImagePlugin.py
+#30 91.90 2024-12-18 03:33:35,922 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/report.py
+#30 91.97 2024-12-18 03:33:35,967 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageMode.py
+#30 92.01 2024-12-18 03:33:35,972 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageColor.py
+#30 92.14 2024-12-18 03:33:35,989 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/WalImageFile.py
+#30 92.28 2024-12-18 03:33:36,026 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/GdImageFile.py
+#30 92.48 2024-12-18 03:33:36,033 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/GimpPaletteFile.py
+#30 92.50 2024-12-18 03:33:36,067 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageEnhance.py
+#30 92.52 2024-12-18 03:33:36,203 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/TarIO.py
+#30 92.53 2024-12-18 03:33:36,219 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/SgiImagePlugin.py
+#30 92.57 2024-12-18 03:33:36,219 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/DdsImagePlugin.py
+#30 92.59 2024-12-18 03:33:36,272 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageDraw2.py
+#30 92.64 2024-12-18 03:33:36,321 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PcxImagePlugin.py
+#30 92.66 2024-12-18 03:33:36,419 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/PIL/__init__.py
+#30 92.68 2024-12-18 03:33:36,434 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/IptcImagePlugin.py
+#30 92.92 2024-12-18 03:33:36,559 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageMath.py
+#30 93.03 2024-12-18 03:33:36,574 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PdfImagePlugin.py
+#30 93.05 2024-12-18 03:33:36,717 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageOps.py
+#30 93.08 2024-12-18 03:33:36,747 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageFilter.py
+#30 93.10 2024-12-18 03:33:36,806 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/_typing.py
+#30 93.11 2024-12-18 03:33:36,812 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/FitsImagePlugin.py
+#30 93.15 2024-12-18 03:33:36,817 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageCms.py
+#30 93.16 2024-12-18 03:33:36,851 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/FliImagePlugin.py
+#30 93.18 2024-12-18 03:33:36,898 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/WebPImagePlugin.py
+#30 93.39 2024-12-18 03:33:36,983 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImtImagePlugin.py
+#30 93.40 2024-12-18 03:33:37,032 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageTransform.py
+#30 93.42 2024-12-18 03:33:37,089 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ExifTags.py
+#30 93.44 2024-12-18 03:33:37,165 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImImagePlugin.py
+#30 93.53 2024-12-18 03:33:37,181 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageMorph.py
+#30 93.56 2024-12-18 03:33:37,237 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/_util.py
+#30 93.60 2024-12-18 03:33:37,324 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/packaging/__init__.py
+#30 93.64 2024-12-18 03:33:37,335 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PSDraw.py
+#30 93.67 2024-12-18 03:33:37,346 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/FtexImagePlugin.py
+#30 93.81 2024-12-18 03:33:37,405 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PdfParser.py
+#30 93.91 2024-12-18 03:33:37,658 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/McIdasImagePlugin.py
+#30 93.95 2024-12-18 03:33:37,723 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/BufrStubImagePlugin.py
+#30 94.07 2024-12-18 03:33:37,781 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/SpiderImagePlugin.py
+#30 94.14 2024-12-18 03:33:37,798 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageDraw.py
+#30 94.38 2024-12-18 03:33:37,844 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/TiffTags.py
+#30 94.47 2024-12-18 03:33:37,895 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/BmpImagePlugin.py
+#30 94.61 2024-12-18 03:33:37,895 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PcdImagePlugin.py
+#30 94.62 2024-12-18 03:33:37,923 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/SunImagePlugin.py
+#30 94.63 2024-12-18 03:33:37,956 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/MpoImagePlugin.py
+#30 94.68 2024-12-18 03:33:37,980 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/JpegPresets.py
+#30 94.86 2024-12-18 03:33:38,049 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/_tkinter_finder.py
+#30 94.87 2024-12-18 03:33:38,069 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/Hdf5StubImagePlugin.py
+#30 94.91 2024-12-18 03:33:38,131 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/packaging/licenses/__init__.py
+#30 94.93 2024-12-18 03:33:38,381 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/BlpImagePlugin.py
+#30 94.95 2024-12-18 03:33:38,424 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageShow.py
+#30 94.99 2024-12-18 03:33:38,445 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/WmfImagePlugin.py
+#30 95.08 2024-12-18 03:33:38,473 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/MpegImagePlugin.py
+#30 95.12 2024-12-18 03:33:38,706 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/GbrImagePlugin.py
+#30 95.14 2024-12-18 03:33:38,814 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/MspImagePlugin.py
+#30 95.16 2024-12-18 03:33:38,960 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PpmImagePlugin.py
+#30 95.21 2024-12-18 03:33:38,966 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/Jpeg2KImagePlugin.py
+#30 95.50 2024-12-18 03:33:39,226 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/GifImagePlugin.py
+#30 95.56 2024-12-18 03:33:39,242 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/XVThumbImagePlugin.py
+#30 95.62 2024-12-18 03:33:39,242 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImagePalette.py
+#30 95.63 2024-12-18 03:33:39,242 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/FontFile.py
+#30 95.64 2024-12-18 03:33:39,406 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageWin.py
+#30 95.68 2024-12-18 03:33:39,412 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/MicImagePlugin.py
+#30 95.72 2024-12-18 03:33:39,432 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/QoiImagePlugin.py
+#30 95.74 2024-12-18 03:33:39,432 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/DcxImagePlugin.py
+#30 95.77 2024-12-18 03:33:39,433 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/TgaImagePlugin.py
+#30 95.81 2024-12-18 03:33:39,438 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ContainerIO.py
+#30 95.93 2024-12-18 03:33:39,457 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/_binary.py
+#30 95.96 2024-12-18 03:33:39,471 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PalmImagePlugin.py
+#30 96.01 2024-12-18 03:33:39,471 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/_version.py
+#30 96.03 2024-12-18 03:33:39,472 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/BdfFontFile.py
+#30 96.06 2024-12-18 03:33:39,492 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/_deprecate.py
+#30 96.09 2024-12-18 03:33:39,503 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/__init__.py
+#30 96.12 2024-12-18 03:33:39,890 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageFile.py
+#30 96.16 2024-12-18 03:33:39,890 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PngImagePlugin.py
+#30 96.18 2024-12-18 03:33:39,930 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PcfFontFile.py
+#30 96.21 2024-12-18 03:33:39,973 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/__main__.py
+#30 96.28 2024-12-18 03:33:40,188 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/EpsImagePlugin.py
+#30 96.32 2024-12-18 03:33:40,212 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/GimpGradientFile.py
+#30 96.38 2024-12-18 03:33:40,212 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageGrab.py
+#30 96.45 2024-12-18 03:33:40,241 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageTk.py
+#30 96.51 2024-12-18 03:33:40,312 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PaletteFile.py
+#30 96.55 2024-12-18 03:33:40,325 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/XpmImagePlugin.py
+#30 96.58 2024-12-18 03:33:40,431 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/features.py
+#30 96.63 2024-12-18 03:33:40,454 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/CurImagePlugin.py
+#30 96.66 2024-12-18 03:33:40,522 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImagePath.py
+#30 96.67 2024-12-18 03:33:40,532 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/XbmImagePlugin.py
+#30 96.86 2024-12-18 03:33:40,587 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageSequence.py
+#30 96.87 2024-12-18 03:33:40,614 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PsdImagePlugin.py
+#30 96.88 2024-12-18 03:33:40,673 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/PixarImagePlugin.py
+#30 96.95 2024-12-18 03:33:40,706 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_musllinux.py
+#30 97.00 2024-12-18 03:33:40,723 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/polynomial/__init__.py
+#30 97.09 2024-12-18 03:33:40,775 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/ImageStat.py
+#30 97.13 2024-12-18 03:33:40,789 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_elffile.py
+#30 97.16 2024-12-18 03:33:40,834 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_manylinux.py
+#30 97.24 2024-12-18 03:33:40,835 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/IcnsImagePlugin.py
+#30 97.32 2024-12-18 03:33:40,850 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_parser.py
+#30 97.44 2024-12-18 03:33:40,887 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_structures.py
+#30 97.51 2024-12-18 03:33:40,974 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/requirements.py
+#30 97.53 2024-12-18 03:33:41,186 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/_tokenizer.py
+#30 97.60 2024-12-18 03:33:41,233 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/specifiers.py
+#30 97.62 2024-12-18 03:33:41,273 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/markers.py
+#30 97.64 2024-12-18 03:33:41,305 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/utils.py
+#30 97.78 2024-12-18 03:33:41,420 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/dual.py
+#30 97.86 2024-12-18 03:33:41,505 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_globals.py
+#30 97.87 2024-12-18 03:33:41,634 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/version.py
+#30 97.96 2024-12-18 03:33:41,777 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/tags.py
+#30 98.05 2024-12-18 03:33:41,783 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/random/__init__.py
+#30 98.05 2024-12-18 03:33:41,818 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/licenses/_spdx.py
+#30 98.23 2024-12-18 03:33:41,823 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/matlib.py
+#30 98.23 2024-12-18 03:33:41,836 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ctypeslib.py
+#30 98.24 2024-12-18 03:33:41,867 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_distributor_init.py
+#30 98.41 2024-12-18 03:33:41,879 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pytesttester.py
+#30 98.54 2024-12-18 03:33:41,889 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/setup.py
+#30 98.58 2024-12-18 03:33:41,910 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/conftest.py
+#30 98.66 2024-12-18 03:33:42,056 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/__config__.py
+#30 98.68 2024-12-18 03:33:42,081 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_version.py
+#30 98.73 2024-12-18 03:33:42,087 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/JpegImagePlugin.py
+#30 98.75 2024-12-18 03:33:42,174 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/packaging/metadata.py
+#30 98.76 2024-12-18 03:33:42,185 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/version.py
+#30 98.78 2024-12-18 03:33:42,243 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/polyutils.py
+#30 98.81 2024-12-18 03:33:42,299 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/_polybase.py
+#30 98.84 2024-12-18 03:33:42,335 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/setup.py
+#30 98.85 2024-12-18 03:33:42,540 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/hermite.py
+#30 99.00 2024-12-18 03:33:42,811 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/hermite_e.py
+#30 99.01 2024-12-18 03:33:42,854 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/legendre.py
+#30 99.25 2024-12-18 03:33:42,868 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/polynomial.py
+#30 99.25 2024-12-18 03:33:42,898 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_pickle.py
+#30 99.25 2024-12-18 03:33:42,939 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/laguerre.py
+#30 99.25 2024-12-18 03:33:42,981 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/setup.py
+#30 99.25 2024-12-18 03:33:43,093 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/cffi/parse.py
+#30 99.25 2024-12-18 03:33:43,129 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/polynomial/chebyshev.py
+#30 99.26 2024-12-18 03:33:43,161 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/cython/setup.py
+#30 99.26 2024-12-18 03:33:43,564 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/lib/npyio.py
+#30 99.26 2024-12-18 03:33:43,324 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/numba/extending_distributions.py
+#30 99.29 2024-12-18 03:33:43,334 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/numba/extending.py
+#30 99.32 2024-12-18 03:33:43,279 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/random/_examples/cffi/extending.py
+#30 99.35 2024-12-18 03:33:43,566 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/lib/__init__.py
+#30 99.69 2024-12-18 03:33:43,998 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/stride_tricks.py
+#30 99.72 2024-12-18 03:33:44,024 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/linalg/linalg.py
+#30 99.72 2024-12-18 03:33:44,029 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/linalg/__init__.py
+#30 99.74 2024-12-18 03:33:44,050 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/_datasource.py
+#30 99.84 2024-12-18 03:33:44,144 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/scimath.py
+#30 100.1 2024-12-18 03:33:44,361 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/setup.py
+#30 100.3 2024-12-18 03:33:44,372 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/arrayterator.py
+#30 100.9 2024-12-18 03:33:44,377 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/format.py
+#30 101.3 2024-12-18 03:33:44,616 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/user_array.py
+#30 101.7 2024-12-18 03:33:44,646 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/f2py/__init__.py
+#30 101.7 2024-12-18 03:33:45,015 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/arraysetops.py
+#30 101.8 2024-12-18 03:33:45,190 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/histograms.py
+#30 101.9 2024-12-18 03:33:45,235 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/arraypad.py
+#30 102.4 2024-12-18 03:33:45,261 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/mixins.py
+#30 102.6 2024-12-18 03:33:45,352 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/_version.py
+#30 102.6 2024-12-18 03:33:45,367 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/ufunclike.py
+#30 102.6 2024-12-18 03:33:45,421 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/nanfunctions.py
+#30 103.0 2024-12-18 03:33:45,518 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/twodim_base.py
+#30 103.4 2024-12-18 03:33:45,604 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/index_tricks.py
+#30 103.4 2024-12-18 03:33:45,732 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/recfunctions.py
+#30 103.6 2024-12-18 03:33:46,076 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/_iotools.py
+#30 104.0 2024-12-18 03:33:46,146 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/utils.py
+#30 104.0 2024-12-18 03:33:46,211 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/diagnose.py
+#30 104.2 2024-12-18 03:33:46,631 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/linalg/setup.py
+#30 104.6 2024-12-18 03:33:46,904 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/array_api/__init__.py
+#30 104.7 2024-12-18 03:33:46,925 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/polynomial.py
+#30 104.8 2024-12-18 03:33:47,345 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/type_check.py
+#30 104.8 2024-12-18 03:33:47,684 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/shape_base.py
+#30 104.9 2024-12-18 03:33:47,948 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/use_rules.py
+#30 105.2 2024-12-18 03:33:48,011 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/TiffImagePlugin.py
+#30 105.3 2024-12-18 03:33:48,057 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/setup.py
+#30 105.4 2024-12-18 03:33:48,296 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/capi_maps.py
+#30 105.6 2024-12-18 03:33:48,397 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/__version__.py
+#30 105.7 2024-12-18 03:33:48,911 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/common_rules.py
+#30 106.1 2024-12-18 03:33:49,246 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/auxfuncs.py
+#30 106.2 2024-12-18 03:33:49,262 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/cfuncs.py
+#30 106.2 2024-12-18 03:33:49,318 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/f90mod_rules.py
+#30 106.3 2024-12-18 03:33:49,328 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/func2subr.py
+#30 106.3 2024-12-18 03:33:49,355 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/doc/__init__.py
+#30 106.4 2024-12-18 03:33:49,370 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_utility_functions.py
+#30 106.4 2024-12-18 03:33:49,531 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_data_type_functions.py
+#30 106.4 2024-12-18 03:33:49,544 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/__main__.py
+#30 106.4 2024-12-18 03:33:49,567 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/PIL/Image.py
+#30 106.5 2024-12-18 03:33:49,649 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/symbolic.py
+#30 106.5 2024-12-18 03:33:49,660 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_searching_functions.py
+#30 106.5 2024-12-18 03:33:49,731 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/cb_rules.py
+#30 106.5 2024-12-18 03:33:49,964 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/f2py2e.py
+#30 106.6 2024-12-18 03:33:50,000 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/setup.py
+#30 106.6 2024-12-18 03:33:50,011 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_constants.py
+#30 106.6 2024-12-18 03:33:50,127 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_statistical_functions.py
+#30 106.7 2024-12-18 03:33:50,572 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_array_object.py
+#30 106.7 2024-12-18 03:33:50,582 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_manipulation_functions.py
+#30 106.7 2024-12-18 03:33:50,671 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_creation_functions.py
+#30 106.7 2024-12-18 03:33:50,734 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/linalg.py
+#30 106.8 2024-12-18 03:33:50,830 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_typing.py
+#30 106.8 2024-12-18 03:33:50,881 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/_typing/__init__.py
+#30 107.0 2024-12-18 03:33:50,908 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_sorting_functions.py
+#30 107.1 2024-12-18 03:33:50,918 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_dtypes.py
+#30 107.8 2024-12-18 03:33:50,954 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_set_functions.py
+#30 107.8 2024-12-18 03:33:50,954 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/doc/constants.py
+#30 107.9 2024-12-18 03:33:50,981 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/doc/ufuncs.py
+#30 107.9 2024-12-18 03:33:50,996 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/array_api/_elementwise_functions.py
+#30 107.9 2024-12-18 03:33:51,112 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_nbit.py
+#30 108.0 2024-12-18 03:33:51,316 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_shape.py
+#30 108.0 2024-12-18 03:33:51,336 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_char_codes.py
+#30 108.0 2024-12-18 03:33:51,346 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_extended_precision.py
+#30 108.2 2024-12-18 03:33:51,395 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_nested_sequence.py
+#30 108.7 2024-12-18 03:33:51,395 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/setup.py
+#30 108.8 2024-12-18 03:33:51,416 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_scalars.py
+#30 108.9 2024-12-18 03:33:51,421 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_array_like.py
+#30 109.0 2024-12-18 03:33:52,061 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_generic_alias.py
+#30 109.1 2024-12-18 03:33:52,163 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_add_docstring.py
+#30 109.2 2024-12-18 03:33:52,163 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_typing/_dtype_like.py
+#30 109.3 2024-12-18 03:33:52,241 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/distutils/__init__.py
+#30 109.3 2024-12-18 03:33:52,335 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/rules.py
+#30 109.4 2024-12-18 03:33:53,070 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/log.py
+#30 109.4 2024-12-18 03:33:53,176 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/f2py/crackfortran.py
+#30 109.4 2024-12-18 03:33:53,198 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/from_template.py
+#30 109.4 2024-12-18 03:33:53,219 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/unixccompiler.py
+#30 109.4 2024-12-18 03:33:53,230 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/pathccompiler.py
+#30 109.5 2024-12-18 03:33:53,280 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/lib2def.py
+#30 109.5 2024-12-18 03:33:53,351 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/exec_command.py
+#30 111.7 2024-12-18 03:33:53,407 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/numpy_distribution.py
+#30 111.9 2024-12-18 03:33:53,433 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/line_endings.py
+#30 112.0 2024-12-18 03:33:53,678 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/npy_pkg_config.py
+#30 112.0 2024-12-18 03:33:53,710 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/cpuinfo.py
+#30 112.1 2024-12-18 03:33:53,710 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/_shell_utils.py
+#30 112.2 2024-12-18 03:33:53,721 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/extension.py
+#30 112.3 2024-12-18 03:33:53,796 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/msvc9compiler.py
+#30 112.4 2024-12-18 03:33:53,829 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/msvccompiler.py
+#30 112.5 2024-12-18 03:33:56,031 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/intelccompiler.py
+#30 112.5 2024-12-18 03:33:56,169 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/setup.py
+#30 112.5 2024-12-18 03:33:56,224 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/armccompiler.py
+#30 112.6 2024-12-18 03:33:56,254 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/core.py
+#30 112.6 2024-12-18 03:33:56,277 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/conv_template.py
+#30 112.7 2024-12-18 03:33:56,330 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/__config__.py
+#30 113.0 2024-12-18 03:33:56,390 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/mingw32ccompiler.py
+#30 113.1 2024-12-18 03:33:56,682 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/distutils/fcompiler/__init__.py
+#30 113.2 2024-12-18 03:33:56,995 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/vast.py
+#30 113.3 2024-12-18 03:33:57,271 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/compaq.py
+#30 113.3 2024-12-18 03:33:57,373 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/g95.py
+#30 113.3 2024-12-18 03:33:57,378 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/mips.py
+#30 113.4 2024-12-18 03:33:57,394 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/none.py
+#30 113.4 2024-12-18 03:33:57,451 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/nv.py
+#30 113.5 2024-12-18 03:33:57,492 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/ccompiler.py
+#30 113.5 2024-12-18 03:33:57,600 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/nag.py
+#30 113.5 2024-12-18 03:33:57,652 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/intel.py
+#30 113.6 2024-12-18 03:33:57,684 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/pg.py
+#30 113.6 2024-12-18 03:33:57,694 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/arm.py
+#30 113.6 2024-12-18 03:33:57,706 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/hpux.py
+#30 113.7 2024-12-18 03:33:57,726 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/ccompiler_opt.py
+#30 113.8 2024-12-18 03:33:57,731 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/pathf95.py
+#30 113.8 2024-12-18 03:33:57,738 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/lahey.py
+#30 113.9 2024-12-18 03:33:57,773 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/absoft.py
+#30 113.9 2024-12-18 03:33:57,799 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/fujitsu.py
+#30 113.9 2024-12-18 03:33:57,855 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/environment.py
+#30 113.9 2024-12-18 03:33:57,865 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/sun.py
+#30 113.9 2024-12-18 03:33:57,955 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/ibm.py
+#30 114.3 2024-12-18 03:33:58,073 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/distutils/command/__init__.py
+#30 114.4 2024-12-18 03:33:58,151 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/fcompiler/gnu.py
+#30 114.9 2024-12-18 03:33:58,240 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/config_compiler.py
+#30 114.9 2024-12-18 03:33:58,279 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/egg_info.py
+#30 115.0 2024-12-18 03:33:58,316 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install_data.py
+#30 115.1 2024-12-18 03:33:58,336 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/autodist.py
+#30 115.2 2024-12-18 03:33:58,642 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build.py
+#30 115.2 2024-12-18 03:33:58,653 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/develop.py
+#30 115.4 2024-12-18 03:33:58,662 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/bdist_rpm.py
+#30 115.6 2024-12-18 03:33:58,667 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install.py
+#30 115.9 2024-12-18 03:33:58,692 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/sdist.py
+#30 116.0 2024-12-18 03:33:58,718 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install_clib.py
+#30 116.1 2024-12-18 03:33:59,147 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_scripts.py
+#30 116.2 2024-12-18 03:33:59,227 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/install_headers.py
+#30 116.3 2024-12-18 03:33:59,243 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/matrixlib/__init__.py
+#30 116.3 2024-12-18 03:33:59,243 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_py.py
+#30 116.3 2024-12-18 03:33:59,268 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_clib.py
+#30 116.3 2024-12-18 03:33:59,474 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/matrixlib/defmatrix.py
+#30 116.3 2024-12-18 03:33:59,495 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/matrixlib/setup.py
+#30 116.3 2024-12-18 03:33:59,736 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_ext.py
+#30 116.3 2024-12-18 03:33:59,767 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/config.py
+#30 116.4 2024-12-18 03:34:00,571 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/lib/function_base.py
+#30 116.4 2024-12-18 03:34:00,587 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/command/build_src.py
+#30 116.4 2024-12-18 03:34:00,618 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/misc_util.py
+#30 116.4 2024-12-18 03:34:00,644 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/testing/__init__.py
+#30 116.4 2024-12-18 03:34:00,697 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/utils.py
+#30 116.4 2024-12-18 03:34:00,739 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/print_coercion_tables.py
+#30 116.4 2024-12-18 03:34:00,744 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/setup.py
+#30 116.5 2024-12-18 03:34:00,745 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/testing/_private/__init__.py
+#30 116.5 2024-12-18 03:34:00,803 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/compat/__init__.py
+#30 116.7 2024-12-18 03:34:00,963 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/extbuild.py
+#30 116.7 2024-12-18 03:34:01,000 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/noseclasses.py
+#30 116.8 2024-12-18 03:34:01,072 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/_inspect.py
+#30 116.9 2024-12-18 03:34:01,162 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/decorators.py
+#30 116.9 2024-12-18 03:34:01,204 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/nosetester.py
+#30 117.0 2024-12-18 03:34:01,204 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/setup.py
+#30 117.0 2024-12-18 03:34:01,250 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/parameterized.py
+#30 117.0 2024-12-18 03:34:01,307 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/_pep440.py
+#30 117.0 2024-12-18 03:34:01,317 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/compat/py3k.py
+#30 117.1 2024-12-18 03:34:01,338 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/distutils/system_info.py
+#30 117.1 2024-12-18 03:34:01,395 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/fft/__init__.py
+#30 117.2 2024-12-18 03:34:01,487 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/ma/__init__.py
+#30 117.2 2024-12-18 03:34:01,547 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/fft/setup.py
+#30 117.3 2024-12-18 03:34:01,579 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/fft/helper.py
+#30 117.3 2024-12-18 03:34:01,590 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/fft/_pocketfft.py
+#30 117.5 2024-12-18 03:34:01,637 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/typing/__init__.py
+#30 117.6 2024-12-18 03:34:01,806 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/setup.py
+#30 117.7 2024-12-18 03:34:01,826 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/typing/setup.py
+#30 117.8 2024-12-18 03:34:02,024 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/timer_comparison.py
+#30 117.9 2024-12-18 03:34:02,040 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/bench.py
+#30 118.0 2024-12-18 03:34:02,086 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/numpy/_pyinstaller/__init__.py
+#30 118.7 2024-12-18 03:34:02,121 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/typing/mypy_plugin.py
+#30 118.8 2024-12-18 03:34:02,330 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pyinstaller/pyinstaller-smoke.py
+#30 118.8 2024-12-18 03:34:02,345 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pyinstaller/hook-numpy.py
+#30 118.9 2024-12-18 03:34:02,350 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/testutils.py
+#30 118.9 2024-12-18 03:34:02,370 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/_pyinstaller/test_pyinstaller.py
+#30 118.9 2024-12-18 03:34:03,181 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/testing/_private/utils.py
+#30 119.0 2024-12-18 03:34:03,182 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/kiwisolver/__init__.py
+#30 119.1 2024-12-18 03:34:03,423 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/kiwisolver/exceptions.py
+#30 119.1 2024-12-18 03:34:03,438 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/mrecords.py
+#30 119.8 2024-12-18 03:34:04,062 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/__init__.py
+#30 119.9 2024-12-18 03:34:04,214 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/colorLib/__init__.py
+#30 120.0 2024-12-18 03:34:04,302 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/t1Lib/__init__.py
+#30 120.1 2024-12-18 03:34:04,302 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/agl.py
+#30 120.1 2024-12-18 03:34:04,317 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/__main__.py
+#30 120.2 2024-12-18 03:34:04,476 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/colorLib/unbuilder.py
+#30 120.2 2024-12-18 03:34:04,481 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/colorLib/errors.py
+#30 120.2 2024-12-18 03:34:04,486 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/tfmLib.py
+#30 120.2 2024-12-18 03:34:04,501 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/unicode.py
+#30 120.2 2024-12-18 03:34:04,501 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/extras.py
+#30 120.2 2024-12-18 03:34:04,512 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/colorLib/geometry.py
+#30 120.2 2024-12-18 03:34:04,517 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/help.py
+#30 120.3 2024-12-18 03:34:04,517 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/qu2cu/__init__.py
+#30 120.3 2024-12-18 03:34:04,644 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/afmLib.py
+#30 120.4 2024-12-18 03:34:04,731 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/colorLib/table_builder.py
+#30 120.4 2024-12-18 03:34:04,747 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/qu2cu/benchmark.py
+#30 120.5 2024-12-18 03:34:04,781 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/merge/__init__.py
+#30 120.5 2024-12-18 03:34:04,817 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/qu2cu/cli.py
+#30 120.6 2024-12-18 03:34:04,915 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/qu2cu/__main__.py
+#30 120.7 2024-12-18 03:34:04,966 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttx.py
+#30 120.7 2024-12-18 03:34:04,982 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/unicode.py
+#30 120.7 2024-12-18 03:34:04,982 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/qu2cu/qu2cu.py
+#30 120.7 2024-12-18 03:34:05,024 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/util.py
+#30 120.7 2024-12-18 03:34:05,050 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/fontBuilder.py
+#30 120.8 2024-12-18 03:34:05,050 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/__main__.py
+#30 120.9 2024-12-18 03:34:05,081 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/options.py
+#30 120.9 2024-12-18 03:34:05,147 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/cmap.py
+#30 120.9 2024-12-18 03:34:05,152 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/base.py
+#30 120.9 2024-12-18 03:34:05,255 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/pens/__init__.py
+#30 121.0 2024-12-18 03:34:05,267 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/colorLib/builder.py
+#30 121.1 2024-12-18 03:34:05,367 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/tables.py
+#30 121.2 2024-12-18 03:34:05,430 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/cffLib/__init__.py
+#30 121.2 2024-12-18 03:34:05,439 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/recordingPen.py
+#30 121.2 2024-12-18 03:34:05,509 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/merge/layout.py
+#30 121.3 2024-12-18 03:34:05,513 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/qu2cuPen.py
+#30 121.4 2024-12-18 03:34:05,577 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/t2CharStringPen.py
+#30 121.5 2024-12-18 03:34:05,588 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/perimeterPen.py
+#30 121.6 2024-12-18 03:34:05,602 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/basePen.py
+#30 121.6 2024-12-18 03:34:05,618 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/reportLabPen.py
+#30 121.7 2024-12-18 03:34:05,618 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/svgPathPen.py
+#30 121.7 2024-12-18 03:34:05,618 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/explicitClosingLinePen.py
+#30 121.7 2024-12-18 03:34:05,644 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/subset/__init__.py
+#30 121.7 2024-12-18 03:34:05,656 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/areaPen.py
+#30 121.9 2024-12-18 03:34:05,690 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/qtPen.py
+#30 121.9 2024-12-18 03:34:05,706 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/statisticsPen.py
+#30 121.9 2024-12-18 03:34:05,796 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/cocoaPen.py
+#30 122.0 2024-12-18 03:34:05,805 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/teePen.py
+#30 122.0 2024-12-18 03:34:05,848 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/hashPointPen.py
+#30 122.0 2024-12-18 03:34:05,859 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/pointInsidePen.py
+#30 122.0 2024-12-18 03:34:05,901 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/filterPen.py
+#30 122.1 2024-12-18 03:34:05,912 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/reverseContourPen.py
+#30 122.1 2024-12-18 03:34:06,009 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/cairoPen.py
+#30 122.3 2024-12-18 03:34:06,022 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/pointPen.py
+#30 122.4 2024-12-18 03:34:06,035 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/ttGlyphPen.py
+#30 122.4 2024-12-18 03:34:06,071 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/roundingPen.py
+#30 122.4 2024-12-18 03:34:06,090 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/momentsPen.py
+#30 122.5 2024-12-18 03:34:06,209 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/quartzPen.py
+#30 122.5 2024-12-18 03:34:06,220 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/boundsPen.py
+#30 122.5 2024-12-18 03:34:06,225 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/designspaceLib/__init__.py
+#30 122.5 2024-12-18 03:34:06,263 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/transformPen.py
+#30 122.5 2024-12-18 03:34:06,291 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/cu2quPen.py
+#30 122.5 2024-12-18 03:34:06,291 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/wxPen.py
+#30 122.6 2024-12-18 03:34:06,320 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/pens/freetypePen.py
+#30 122.9 2024-12-18 03:34:06,543 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/subset/util.py
+#30 122.9 2024-12-18 03:34:06,558 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cffLib/width.py
+#30 122.9 2024-12-18 03:34:06,564 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/subset/__main__.py
+#30 122.9 2024-12-18 03:34:06,579 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cffLib/transforms.py
+#30 123.0 2024-12-18 03:34:06,642 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cffLib/specializer.py
+#30 123.0 2024-12-18 03:34:06,673 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cffLib/CFF2ToCFF.py
+#30 123.0 2024-12-18 03:34:06,738 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/subset/cff.py
+#30 123.0 2024-12-18 03:34:06,748 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cffLib/CFFToCFF2.py
+#30 123.0 2024-12-18 03:34:06,807 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/subset/svg.py
+#30 123.0 2024-12-18 03:34:06,862 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/svgLib/__init__.py
+#30 123.1 2024-12-18 03:34:07,195 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/designspaceLib/statNames.py
+#30 123.1 2024-12-18 03:34:07,218 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/designspaceLib/__main__.py
+#30 123.1 2024-12-18 03:34:07,276 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/designspaceLib/split.py
+#30 123.1 2024-12-18 03:34:07,323 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/designspaceLib/types.py
+#30 123.1 2024-12-18 03:34:07,392 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/svgLib/path/__init__.py
+#30 123.1 2024-12-18 03:34:07,393 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/numpy/ma/core.py
+#30 123.1 2024-12-18 03:34:07,435 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/config/__init__.py
+#30 123.1 2024-12-18 03:34:07,451 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/svgLib/path/shapes.py
+#30 123.2 2024-12-18 03:34:07,462 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/encodings/__init__.py
+#30 123.2 2024-12-18 03:34:07,462 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/svgLib/path/parser.py
+#30 123.2 2024-12-18 03:34:07,463 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/svgLib/path/arc.py
+#30 123.2 2024-12-18 03:34:07,475 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/otlLib/__init__.py
+#30 123.2 2024-12-18 03:34:07,476 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/encodings/codecs.py
+#30 123.2 2024-12-18 03:34:07,476 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/encodings/MacRoman.py
+#30 123.2 2024-12-18 03:34:07,477 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/otlLib/optimize/__init__.py
+#30 123.2 2024-12-18 03:34:07,482 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/encodings/StandardEncoding.py
+#30 123.2 2024-12-18 03:34:07,502 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/otlLib/error.py
+#30 123.2 2024-12-18 03:34:07,508 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/otlLib/maxContextCalc.py
+#30 123.3 2024-12-18 03:34:07,570 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/cu2qu/__init__.py
+#30 123.4 2024-12-18 03:34:07,684 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/unicodedata/__init__.py
+#30 123.4 2024-12-18 03:34:07,726 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/otlLib/optimize/__main__.py
+#30 123.4 2024-12-18 03:34:07,748 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cu2qu/benchmark.py
+#30 123.5 2024-12-18 03:34:07,763 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/mtiLib/__init__.py
+#30 123.6 2024-12-18 03:34:07,774 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cu2qu/errors.py
+#30 123.6 2024-12-18 03:34:07,820 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/unicodedata/OTTags.py
+#30 123.6 2024-12-18 03:34:07,820 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cu2qu/__main__.py
+#30 123.6 2024-12-18 03:34:07,882 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/unicodedata/Scripts.py
+#30 123.6 2024-12-18 03:34:07,901 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cu2qu/cu2qu.py
+#30 123.7 2024-12-18 03:34:07,912 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/unicodedata/Blocks.py
+#30 123.7 2024-12-18 03:34:07,922 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/unicodedata/ScriptExtensions.py
+#30 124.1 2024-12-18 03:34:07,932 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cu2qu/cli.py
+#30 124.2 2024-12-18 03:34:07,959 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/otlLib/optimize/gpos.py
+#30 124.2 2024-12-18 03:34:07,959 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/cu2qu/ufo.py
+#30 124.3 2024-12-18 03:34:07,970 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/ttLib/__init__.py
+#30 124.3 2024-12-18 03:34:07,980 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/mtiLib/__main__.py
+#30 124.3 2024-12-18 03:34:08,522 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/scaleUpem.py
+#30 124.4 2024-12-18 03:34:08,609 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/macUtils.py
+#30 125.5 2024-12-18 03:34:08,609 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/ttCollection.py
+#30 125.5 2024-12-18 03:34:08,767 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/ttVisitor.py
+#30 125.6 2024-12-18 03:34:08,895 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/__main__.py
+#30 125.7 2024-12-18 03:34:08,905 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/standardGlyphOrder.py
+#30 125.7 2024-12-18 03:34:09,007 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/reorderGlyphs.py
+#30 125.8 2024-12-18 03:34:09,077 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/sfnt.py
+#30 125.8 2024-12-18 03:34:09,937 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/removeOverlaps.py
+#30 125.8 2024-12-18 03:34:09,937 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/ttGlyphSet.py
+#30 125.8 2024-12-18 03:34:10,070 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/otlLib/builder.py
+#30 126.1 2024-12-18 03:34:10,446 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/ttFont.py
+#30 126.2 2024-12-18 03:34:10,466 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/ttLib/tables/__init__.py
+#30 126.2 2024-12-18 03:34:10,469 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/woff2.py
+#30 126.3 2024-12-18 03:34:10,584 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_V_.py
+#30 126.4 2024-12-18 03:34:10,746 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/V_V_A_R_.py
+#30 126.4 2024-12-18 03:34:10,746 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_c_i_d_g.py
+#30 126.5 2024-12-18 03:34:10,752 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/S_I_N_G_.py
+#30 126.5 2024-12-18 03:34:10,778 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I__0.py
+#30 126.6 2024-12-18 03:34:10,794 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/sbixStrike.py
+#30 126.7 2024-12-18 03:34:10,800 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_D_.py
+#30 126.7 2024-12-18 03:34:10,806 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G__l_o_c.py
+#30 126.8 2024-12-18 03:34:10,834 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_f_p_g_m.py
+#30 126.9 2024-12-18 03:34:10,855 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/S__i_l_l.py
+#30 127.0 2024-12-18 03:34:10,855 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G_S_U_B_.py
+#30 127.1 2024-12-18 03:34:10,865 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/F__e_a_t.py
+#30 127.1 2024-12-18 03:34:10,905 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G_P_O_S_.py
+#30 127.1 2024-12-18 03:34:10,926 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_B_.py
+#30 127.2 2024-12-18 03:34:10,987 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_v_m_t_x.py
+#30 127.3 2024-12-18 03:34:11,029 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/misc/__init__.py
+#30 127.5 2024-12-18 03:34:11,159 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/M_V_A_R_.py
+#30 127.6 2024-12-18 03:34:11,164 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_g_a_s_p.py
+#30 127.6 2024-12-18 03:34:11,180 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/grUtils.py
+#30 127.6 2024-12-18 03:34:11,268 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/V_O_R_G_.py
+#30 127.8 2024-12-18 03:34:11,361 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_h_h_e_a.py
+#30 127.9 2024-12-18 03:34:11,397 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_l_t_a_g.py
+#30 127.9 2024-12-18 03:34:11,444 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_k_e_r_n.py
+#30 127.9 2024-12-18 03:34:11,603 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_P_.py
+#30 127.9 2024-12-18 03:34:11,619 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_m_a_x_p.py
+#30 127.9 2024-12-18 03:34:11,625 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_c_v_a_r.py
+#30 127.9 2024-12-18 03:34:11,634 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/S_V_G_.py
+#30 128.0 2024-12-18 03:34:11,829 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/F_F_T_M_.py
+#30 128.0 2024-12-18 03:34:11,880 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G_M_A_P_.py
+#30 128.0 2024-12-18 03:34:11,880 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_m_o_r_t.py
+#30 128.0 2024-12-18 03:34:11,895 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/E_B_L_C_.py
+#30 128.0 2024-12-18 03:34:11,895 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/O_S_2f_2.py
+#30 128.5 2024-12-18 03:34:11,910 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/misc/plistlib/__init__.py
+#30 128.6 2024-12-18 03:34:12,130 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G_D_E_F_.py
+#30 128.6 2024-12-18 03:34:12,155 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_g_v_a_r.py
+#30 128.7 2024-12-18 03:34:12,166 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_f_e_a_t.py
+#30 128.7 2024-12-18 03:34:12,215 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/E_B_D_T_.py
+#30 128.8 2024-12-18 03:34:12,226 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/S__i_l_f.py
+#30 128.9 2024-12-18 03:34:12,246 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/M_A_T_H_.py
+#30 129.0 2024-12-18 03:34:12,276 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/H_V_A_R_.py
+#30 129.0 2024-12-18 03:34:12,276 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/B_A_S_E_.py
+#30 129.0 2024-12-18 03:34:12,317 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_T_F_A_.py
+#30 129.3 2024-12-18 03:34:12,353 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_g_c_i_d.py
+#30 129.4 2024-12-18 03:34:12,857 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/TupleVariation.py
+#30 129.4 2024-12-18 03:34:12,915 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/C_F_F__2.py
+#30 129.4 2024-12-18 03:34:12,966 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/C_B_D_T_.py
+#30 129.4 2024-12-18 03:34:12,971 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_p_r_o_p.py
+#30 129.5 2024-12-18 03:34:13,011 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_m_e_t_a.py
+#30 129.5 2024-12-18 03:34:13,016 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_m_o_r_x.py
+#30 129.5 2024-12-18 03:34:13,146 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/sbixGlyph.py
+#30 129.5 2024-12-18 03:34:13,285 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I__2.py
+#30 129.5 2024-12-18 03:34:13,824 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_o_p_b_d.py
+#30 129.6 2024-12-18 03:34:13,699 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/S_T_A_T_.py
+#30 129.6 2024-12-18 03:34:13,699 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I__3.py
+#30 129.7 2024-12-18 03:34:13,704 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/otData.py
+#30 129.7 2024-12-18 03:34:13,714 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_p_o_s_t.py
+#30 129.8 2024-12-18 03:34:13,776 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_h_d_m_x.py
+#30 129.9 2024-12-18 03:34:13,776 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_f_v_a_r.py
+#30 130.0 2024-12-18 03:34:13,808 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I__5.py
+#30 130.0 2024-12-18 03:34:13,813 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_a_n_k_r.py
+#30 130.1 2024-12-18 03:34:13,623 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/varLib/__init__.py
+#30 130.2 2024-12-18 03:34:13,880 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/J_S_T_F_.py
+#30 130.3 2024-12-18 03:34:13,926 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/C_F_F_.py
+#30 130.3 2024-12-18 03:34:14,010 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G_P_K_G_.py
+#30 130.4 2024-12-18 03:34:14,052 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/L_T_S_H_.py
+#30 130.5 2024-12-18 03:34:14,073 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_S_.py
+#30 130.5 2024-12-18 03:34:14,145 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/V_D_M_X_.py
+#30 130.9 2024-12-18 03:34:14,223 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/D__e_b_g.py
+#30 131.2 2024-12-18 03:34:14,260 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/C_O_L_R_.py
+#30 131.2 2024-12-18 03:34:14,291 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/M_E_T_A_.py
+#30 131.2 2024-12-18 03:34:14,291 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_h_e_a_d.py
+#30 131.2 2024-12-18 03:34:14,291 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_l_c_a_r.py
+#30 131.3 2024-12-18 03:34:14,491 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_C_.py
+#30 131.9 2024-12-18 03:34:14,527 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/D_S_I_G_.py
+#30 131.9 2024-12-18 03:34:14,533 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/C_P_A_L_.py
+#30 132.0 2024-12-18 03:34:14,564 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_a_v_a_r.py
+#30 132.0 2024-12-18 03:34:14,579 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/varLib/instancer/__init__.py
+#30 132.0 2024-12-18 03:34:14,631 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/otBase.py
+#30 132.1 2024-12-18 03:34:14,651 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_c_v_t.py
+#30 132.1 2024-12-18 03:34:14,796 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_l_o_c_a.py
+#30 132.1 2024-12-18 03:34:15,149 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_b_s_l_n.py
+#30 132.2 2024-12-18 03:34:15,423 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/asciiTable.py
+#30 132.3 2024-12-18 03:34:15,483 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/BitmapGlyphMetrics.py
+#30 132.3 2024-12-18 03:34:15,514 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/otTraverse.py
+#30 132.3 2024-12-18 03:34:15,581 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_n_a_m_e.py
+#30 132.4 2024-12-18 03:34:16,215 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I_J_.py
+#30 132.4 2024-12-18 03:34:16,221 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/T_S_I__1.py
+#30 132.4 2024-12-18 03:34:16,272 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_p_r_e_p.py
+#30 132.8 2024-12-18 03:34:16,277 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/C_B_L_C_.py
+#30 132.8 2024-12-18 03:34:16,309 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/G__l_a_t.py
+#30 133.2 2024-12-18 03:34:16,360 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_s_b_i_x.py
+#30 133.2 2024-12-18 03:34:16,386 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/DefaultTable.py
+#30 133.2 2024-12-18 03:34:16,595 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/otConverters.py
+#30 133.3 2024-12-18 03:34:16,631 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/V_A_R_C_.py
+#30 133.3 2024-12-18 03:34:16,642 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/ufoLib/__init__.py
+#30 133.4 2024-12-18 03:34:16,642 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_h_m_t_x.py
+#30 133.5 2024-12-18 03:34:16,653 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_v_h_e_a.py
+#30 133.5 2024-12-18 03:34:16,669 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_t_r_a_k.py
+#30 133.6 2024-12-18 03:34:17,070 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/bezierTools.py
+#30 133.7 2024-12-18 03:34:17,076 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/classifyTools.py
+#30 133.7 2024-12-18 03:34:17,481 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/py23.py
+#30 133.7 2024-12-18 03:34:17,515 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/ttProgram.py
+#30 133.7 2024-12-18 03:34:17,531 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/arrayTools.py
+#30 133.8 2024-12-18 03:34:17,570 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/filenames.py
+#30 133.8 2024-12-18 03:34:17,575 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/eexec.py
+#30 133.9 2024-12-18 03:34:17,602 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/dictTools.py
+#30 133.9 2024-12-18 03:34:17,643 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/iterTools.py
+#30 134.1 2024-12-18 03:34:17,669 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/etree.py
+#30 134.2 2024-12-18 03:34:17,744 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/voltLib/__init__.py
+#30 134.3 2024-12-18 03:34:17,777 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/psOperators.py
+#30 134.3 2024-12-18 03:34:17,976 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/cliTools.py
+#30 134.3 2024-12-18 03:34:17,992 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/treeTools.py
+#30 134.3 2024-12-18 03:34:17,998 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/sstruct.py
+#30 134.4 2024-12-18 03:34:18,059 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/xmlWriter.py
+#30 134.4 2024-12-18 03:34:18,140 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/cython.py
+#30 134.4 2024-12-18 03:34:18,187 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/lazyTools.py
+#30 134.6 2024-12-18 03:34:18,246 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/textTools.py
+#30 134.6 2024-12-18 03:34:18,419 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/encodingTools.py
+#30 134.7 2024-12-18 03:34:18,435 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/testTools.py
+#30 135.0 2024-12-18 03:34:18,477 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/psLib.py
+#30 135.0 2024-12-18 03:34:18,504 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/symfont.py
+#30 135.3 2024-12-18 03:34:18,610 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_c_m_a_p.py
+#30 135.4 2024-12-18 03:34:18,629 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/roundTools.py
+#30 135.4 2024-12-18 03:34:18,650 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/macCreatorType.py
+#30 135.4 2024-12-18 03:34:18,737 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/visitor.py
+#30 135.7 2024-12-18 03:34:18,763 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/fontTools/feaLib/__init__.py
+#30 135.7 2024-12-18 03:34:18,836 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/configTools.py
+#30 135.7 2024-12-18 03:34:18,868 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/transform.py
+#30 135.8 2024-12-18 03:34:19,283 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/loggingTools.py
+#30 135.8 2024-12-18 03:34:19,294 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/macRes.py
+#30 135.9 2024-12-18 03:34:19,318 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/fixedTools.py
+#30 136.3 2024-12-18 03:34:19,323 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/xmlReader.py
+#30 136.7 2024-12-18 03:34:19,335 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/timeTools.py
+#30 136.7 2024-12-18 03:34:19,350 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/avarPlanner.py
+#30 136.8 2024-12-18 03:34:19,381 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/intTools.py
+#30 137.1 2024-12-18 03:34:19,381 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/psCharStrings.py
+#30 137.1 2024-12-18 03:34:19,667 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/errors.py
+#30 137.5 2024-12-18 03:34:19,703 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/misc/vector.py
+#30 137.5 2024-12-18 03:34:20,001 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/interpolatableTestStartingPoint.py
+#30 137.7 2024-12-18 03:34:20,062 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/cycler/__init__.py
+#30 137.8 2024-12-18 03:34:20,245 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/interpolate_layout.py
+#30 137.9 2024-12-18 03:34:20,961 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/stat.py
+#30 138.2 2024-12-18 03:34:21,007 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/iup.py
+#30 138.2 2024-12-18 03:34:21,007 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/interpolatableHelpers.py
+#30 138.2 2024-12-18 03:34:21,053 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/models.py
+#30 138.3 2024-12-18 03:34:21,104 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/__main__.py
+#30 138.4 2024-12-18 03:34:21,421 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/featureVars.py
+#30 138.5 2024-12-18 03:34:21,431 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/cff.py
+#30 138.5 2024-12-18 03:34:21,450 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/mutator.py
+#30 138.5 2024-12-18 03:34:21,629 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/interpolatableTestContourOrder.py
+#30 138.6 2024-12-18 03:34:21,852 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/plot.py
+#30 138.6 2024-12-18 03:34:22,523 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/multiVarStore.py
+#30 138.6 2024-12-18 03:34:22,523 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/mvar.py
+#30 138.8 2024-12-18 03:34:22,529 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/builder.py
+#30 138.8 2024-12-18 03:34:22,697 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/_g_l_y_f.py
+#30 138.8 2024-12-18 03:34:22,769 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/__init__.py
+#30 138.8 2024-12-18 03:34:22,785 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/instancer/names.py
+#30 139.3 2024-12-18 03:34:22,801 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/errors.py
+#30 139.3 2024-12-18 03:34:22,835 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/varStore.py
+#30 139.4 2024-12-18 03:34:22,897 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/instancer/__main__.py
+#30 140.3 2024-12-18 03:34:22,911 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/plistlib.py
+#30 140.5 2024-12-18 03:34:23,053 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/instancer/featureVars.py
+#30 140.6 2024-12-18 03:34:23,081 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/utils.py
+#30 140.6 2024-12-18 03:34:23,136 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/avar.py
+#30 140.6 2024-12-18 03:34:23,136 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/pointPen.py
+#30 140.7 2024-12-18 03:34:23,136 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/instancer/solver.py
+#30 140.8 2024-12-18 03:34:23,161 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/etree.py
+#30 140.8 2024-12-18 03:34:23,607 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/kerning.py
+#30 141.0 2024-12-18 03:34:23,693 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/parser/__init__.py
+#30 141.0 2024-12-18 03:34:23,721 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/filenames.py
+#30 141.1 2024-12-18 03:34:24,593 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/converters.py
+#30 141.2 2024-12-18 03:34:24,776 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/voltLib/error.py
+#30 141.7 2024-12-18 03:34:24,827 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/voltLib/ast.py
+#30 141.7 2024-12-18 03:34:24,827 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/interpolatablePlot.py
+#30 141.7 2024-12-18 03:34:24,946 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/voltLib/lexer.py
+#30 141.8 2024-12-18 03:34:25,060 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/validators.py
+#30 142.1 2024-12-18 03:34:25,065 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/error.py
+#30 142.3 2024-12-18 03:34:25,076 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/location.py
+#30 142.5 2024-12-18 03:34:25,418 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/voltLib/parser.py
+#30 142.5 2024-12-18 03:34:25,429 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/__main__.py
+#30 142.5 2024-12-18 03:34:25,459 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/tz/__init__.py
+#30 142.7 2024-12-18 03:34:25,490 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/variableScalar.py
+#30 142.8 2024-12-18 03:34:25,535 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/lookupDebugInfo.py
+#30 143.3 2024-12-18 03:34:25,995 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ttLib/tables/otTables.py
+#30 143.4 2024-12-18 03:34:26,376 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/easter.py
+#30 143.5 2024-12-18 03:34:26,418 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/voltLib/voltToFea.py
+#30 143.6 2024-12-18 03:34:26,418 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/_common.py
+#30 143.6 2024-12-18 03:34:26,475 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/lexer.py
+#30 143.9 2024-12-18 03:34:26,642 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/relativedelta.py
+#30 144.0 2024-12-18 03:34:26,648 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/_version.py
+#30 144.1 2024-12-18 03:34:26,722 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/utils.py
+#30 144.2 2024-12-18 03:34:27,027 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tzwin.py
+#30 144.3 2024-12-18 03:34:27,539 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/parser/isoparser.py
+#30 144.5 2024-12-18 03:34:27,569 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/interpolatable.py
+#30 144.6 2024-12-18 03:34:27,664 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/dateutil/zoneinfo/__init__.py
+#30 144.6 2024-12-18 03:34:27,689 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/_common.py
+#30 144.7 2024-12-18 03:34:27,739 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/_factories.py
+#30 144.7 2024-12-18 03:34:28,425 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/win.py
+#30 144.8 2024-12-18 03:34:28,909 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/ast.py
+#30 145.0 2024-12-18 03:34:29,262 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/zoneinfo/rebuild.py
+#30 145.6 2024-12-18 03:34:29,262 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/contourpy/__init__.py
+#30 145.6 2024-12-18 03:34:29,938 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/varLib/merger.py
+#30 145.8 2024-12-18 03:34:30,072 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/types.py
+#30 146.1 2024-12-18 03:34:30,099 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/contourpy/util/__init__.py
+#30 146.3 2024-12-18 03:34:30,375 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/chunk.py
+#30 146.5 2024-12-18 03:34:30,623 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/bokeh_util.py
+#30 146.5 2024-12-18 03:34:30,785 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/typecheck.py
+#30 146.5 2024-12-18 03:34:30,801 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/dechunk.py
+#30 146.6 2024-12-18 03:34:30,942 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/_version.py
+#30 146.7 2024-12-18 03:34:31,028 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/_build_config.py
+#30 146.8 2024-12-18 03:34:31,124 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/array.py
+#30 147.0 2024-12-18 03:34:31,178 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/data.py
+#30 147.1 2024-12-18 03:34:31,197 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/bokeh_renderer.py
+#30 147.3 2024-12-18 03:34:31,262 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/renderer.py
+#30 147.3 2024-12-18 03:34:31,278 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/enum_util.py
+#30 147.6 2024-12-18 03:34:31,395 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/mpl_util.py
+#30 147.6 2024-12-18 03:34:31,406 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/rrule.py
+#30 147.6 2024-12-18 03:34:31,451 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/tz/tz.py
+#30 147.7 2024-12-18 03:34:32,015 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/util/mpl_renderer.py
+#30 147.8 2024-12-18 03:34:32,036 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/dateutil/parser/_parser.py
+#30 147.8 2024-12-18 03:34:32,126 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/ufoLib/glifLib.py
+#30 148.0 2024-12-18 03:34:32,293 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/contourpy/convert.py
+#30 148.1 2024-12-18 03:34:32,381 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/backend_tools.py
+#30 148.1 2024-12-18 03:34:32,387 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/pyplot.py
+#30 148.1 2024-12-18 03:34:32,393 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/__init__.py
+#30 148.4 2024-12-18 03:34:32,663 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/parser.py
+#30 148.4 2024-12-18 03:34:32,711 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_docstring.py
+#30 149.1 2024-12-18 03:34:33,382 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/markers.py
+#30 149.6 2024-12-18 03:34:33,464 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_type1font.py
+#30 150.1 2024-12-18 03:34:34,451 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/textpath.py
+#30 150.2 2024-12-18 03:34:34,487 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/gridspec.py
+#30 151.4 2024-12-18 03:34:35,672 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/table.py
+#30 151.7 2024-12-18 03:34:35,678 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_color_data.py
+#30 152.3 2024-12-18 03:34:35,969 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/units.py
+#30 152.5 2024-12-18 03:34:35,994 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_mathtext_data.py
+#30 153.3 2024-12-18 03:34:36,030 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/artist.py
+#30 153.4 2024-12-18 03:34:36,579 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/mlab.py
+#30 153.9 2024-12-18 03:34:37,456 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/sankey.py
+#30 155.4 2024-12-18 03:34:37,711 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/patheffects.py
+#30 155.8 2024-12-18 03:34:37,721 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/quiver.py
+#30 156.1 2024-12-18 03:34:38,202 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/scale.py
+#30 156.1 2024-12-18 03:34:39,551 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/pylab.py
+#30 156.6 2024-12-18 03:34:39,967 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/image.py
+#30 156.9 2024-12-18 03:34:39,993 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_enums.py
+#30 157.0 2024-12-18 03:34:40,094 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/typing.py
+#30 157.2 2024-12-18 03:34:40,948 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/legend.py
+#30 157.4 2024-12-18 03:34:41,348 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/text.py
+#30 157.6 2024-12-18 03:34:41,461 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_text_helpers.py
+#30 157.9 2024-12-18 03:34:41,683 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_fontconfig_pattern.py
+#30 157.9 2024-12-18 03:34:41,741 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/path.py
+#30 158.5 2024-12-18 03:34:41,874 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/cbook.py
+#30 158.5 2024-12-18 03:34:41,884 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/dviread.py
+#30 158.6 2024-12-18 03:34:41,941 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/colorbar.py
+#30 159.8 2024-12-18 03:34:42,262 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/ticker.py
+#30 160.3 2024-12-18 03:34:42,333 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/category.py
+#30 160.6 2024-12-18 03:34:42,374 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/cm.py
+#30 161.2 2024-12-18 03:34:42,802 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/colors.py
+#30 161.4 2024-12-18 03:34:42,869 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/axis.py
+#30 161.4 2024-12-18 03:34:42,874 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/stackplot.py
+#30 161.5 2024-12-18 03:34:42,906 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/container.py
+#30 161.7 2024-12-18 03:34:42,918 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_animation_data.py
+#30 162.2 2024-12-18 03:34:43,153 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_tight_bbox.py
+#30 162.3 2024-12-18 03:34:44,578 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_pylab_helpers.py
+#30 163.0 2024-12-18 03:34:45,285 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/transforms.py
+#30 163.5 2024-12-18 03:34:45,518 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/texmanager.py
+#30 163.8 2024-12-18 03:34:45,998 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/fontTools/feaLib/builder.py
+#30 164.2 2024-12-18 03:34:46,020 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/dates.py
+#30 164.2 2024-12-18 03:34:46,112 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/layout_engine.py
+#30 164.5 2024-12-18 03:34:46,587 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_blocking_input.py
+#30 164.5 2024-12-18 03:34:47,045 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/collections.py
+#30 164.5 2024-12-18 03:34:47,320 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_cm.py
+#30 164.5 2024-12-18 03:34:47,504 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_cm_listed.py
+#30 165.3 2024-12-18 03:34:48,002 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/contour.py
+#30 166.0 2024-12-18 03:34:48,012 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_version.py
+#30 166.2 2024-12-18 03:34:48,155 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/streamplot.py
+#30 166.2 2024-12-18 03:34:48,412 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/spines.py
+#30 166.5 2024-12-18 03:34:48,462 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/legend_handler.py
+#30 166.8 2024-12-18 03:34:48,477 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/offsetbox.py
+#30 167.2 2024-12-18 03:34:48,518 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_constrained_layout.py
+#30 167.2 2024-12-18 03:34:48,803 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backend_managers.py
+#30 170.7 2024-12-18 03:34:48,860 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_afm.py
+#30 170.7 2024-12-18 03:34:49,324 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/hatch.py
+#30 170.9 2024-12-18 03:34:49,556 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/rcsetup.py
+#30 171.1 2024-12-18 03:34:49,935 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_layoutgrid.py
+#30 171.1 2024-12-18 03:34:50,259 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/animation.py
+#30 171.5 2024-12-18 03:34:50,489 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/axes/__init__.py
+#30 172.7 2024-12-18 03:34:50,704 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backend_bases.py
+#30 172.8 2024-12-18 03:34:50,748 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_internal_utils.py
+#30 173.0 2024-12-18 03:34:51,133 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/mathtext.py
+#30 173.0 2024-12-18 03:34:51,149 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_tight_layout.py
+#30 173.1 2024-12-18 03:34:51,501 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/bezier.py
+#30 173.1 2024-12-18 03:34:54,448 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/patches.py
+#30 173.2 2024-12-18 03:34:55,031 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/font_manager.py
+#30 173.2 2024-12-18 03:34:55,056 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/axes/_secondary_axes.py
+#30 173.4 2024-12-18 03:34:57,108 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/figure.py
+#30 173.5 2024-12-18 03:34:57,144 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/tri/__init__.py
+#30 173.5 2024-12-18 03:34:57,215 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/lines.py
+#30 173.8 2024-12-18 03:34:57,383 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_trirefine.py
+#30 173.8 2024-12-18 03:34:57,515 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_tritools.py
+#30 173.9 2024-12-18 03:34:57,594 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_triplot.py
+#30 173.9 2024-12-18 03:34:57,664 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_tripcolor.py
+#30 173.9 2024-12-18 03:34:57,688 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_tricontour.py
+#30 174.0 2024-12-18 03:34:57,696 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/widgets.py
+#30 174.0 2024-12-18 03:34:57,728 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_trifinder.py
+#30 174.0 2024-12-18 03:34:57,769 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_triangulation.py
+#30 174.0 2024-12-18 03:34:58,106 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/style/__init__.py
+#30 174.1 2024-12-18 03:34:58,142 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_mathtext.py
+#30 174.2 2024-12-18 03:34:58,226 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/tri/_triinterpolate.py
+#30 174.3 2024-12-18 03:34:58,336 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/style/core.py
+#30 174.6 2024-12-18 03:34:58,876 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/backends/__init__.py
+#30 175.1 2024-12-18 03:34:59,443 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_webagg_core.py
+#30 175.2 2024-12-18 03:34:59,522 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_wxcairo.py
+#30 175.3 2024-12-18 03:34:59,563 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_qtcairo.py
+#30 175.4 2024-12-18 03:34:59,686 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_gtk3agg.py
+#30 175.5 2024-12-18 03:34:59,856 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/backends/qt_editor/__init__.py
+#30 175.7 2024-12-18 03:34:59,890 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_tkagg.py
+#30 175.8 2024-12-18 03:34:59,905 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/qt_compat.py
+#30 176.8 2024-12-18 03:34:59,918 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_qt5agg.py
+#30 178.0 2024-12-18 03:34:59,987 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_gtk4agg.py
+#30 178.0 2024-12-18 03:34:59,987 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/_backend_gtk.py
+#30 178.1 2024-12-18 03:35:00,019 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_tkcairo.py
+#30 178.4 2024-12-18 03:35:00,029 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_qt5cairo.py
+#30 178.8 2024-12-18 03:35:00,069 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_wxagg.py
+#30 180.0 2024-12-18 03:35:01,044 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_qtagg.py
+#30 180.1 2024-12-18 03:35:01,520 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_gtk4cairo.py
+#30 180.3 2024-12-18 03:35:02,227 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_nbagg.py
+#30 180.4 2024-12-18 03:35:02,288 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/testing/__init__.py
+#30 181.0 2024-12-18 03:35:02,439 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_macosx.py
+#30 181.8 2024-12-18 03:35:02,638 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/_backend_pdf_ps.py
+#30 182.0 2024-12-18 03:35:02,664 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_qt5.py
+#30 182.1 2024-12-18 03:35:03,032 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_cairo.py
+#30 182.6 2024-12-18 03:35:03,199 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_mixed.py
+#30 182.7 2024-12-18 03:35:04,312 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_agg.py
+#30 182.8 2024-12-18 03:35:04,415 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_qt.py
+#30 182.9 2024-12-18 03:35:04,437 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/registry.py
+#30 183.5 2024-12-18 03:35:04,691 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_webagg.py
+#30 183.6 2024-12-18 03:35:05,279 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_template.py
+#30 183.7 2024-12-18 03:35:05,336 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/testing/jpl_units/__init__.py
+#30 183.8 2024-12-18 03:35:06,324 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_gtk4.py
+#30 184.0 2024-12-18 03:35:06,433 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_pgf.py
+#30 184.1 2024-12-18 03:35:06,467 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_gtk3cairo.py
+#30 184.1 2024-12-18 03:35:06,858 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_svg.py
+#30 184.1 2024-12-18 03:35:06,879 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/_backend_tk.py
+#30 184.2 2024-12-18 03:35:07,218 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_gtk3.py
+#30 184.2 2024-12-18 03:35:07,218 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/conftest.py
+#30 184.3 2024-12-18 03:35:07,807 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/exceptions.py
+#30 184.4 2024-12-18 03:35:07,983 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/widgets.py
+#30 184.6 2024-12-18 03:35:08,077 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/_markers.py
+#30 184.6 2024-12-18 03:35:08,087 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/Duration.py
+#30 184.6 2024-12-18 03:35:08,093 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/projections/__init__.py
+#30 184.7 2024-12-18 03:35:08,133 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/qt_editor/figureoptions.py
+#30 184.7 2024-12-18 03:35:08,288 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/compare.py
+#30 184.7 2024-12-18 03:35:08,369 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_ps.py
+#30 184.8 2024-12-18 03:35:08,391 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/decorators.py
+#30 184.9 2024-12-18 03:35:08,561 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/UnitDbl.py
+#30 184.9 2024-12-18 03:35:08,609 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/EpochConverter.py
+#30 184.9 2024-12-18 03:35:08,662 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/StrConverter.py
+#30 185.0 2024-12-18 03:35:08,667 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/UnitDblConverter.py
+#30 185.2 2024-12-18 03:35:08,873 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/Epoch.py
+#30 185.4 2024-12-18 03:35:08,888 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/qt_editor/_formlayout.py
+#30 185.4 2024-12-18 03:35:08,949 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_wx.py
+#30 185.5 2024-12-18 03:35:08,990 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/testing/jpl_units/UnitDblFormatter.py
+#30 185.6 2024-12-18 03:35:09,209 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/sphinxext/__init__.py
+#30 185.9 2024-12-18 03:35:09,330 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/projections/geo.py
+#30 186.0 2024-12-18 03:35:09,355 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/sphinxext/roles.py
+#30 186.0 2024-12-18 03:35:09,457 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/sphinxext/mathmpl.py
+#30 186.1 2024-12-18 03:35:10,225 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/matplotlib/_api/__init__.py
+#30 186.1 2024-12-18 03:35:10,306 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/sphinxext/figmpl_directive.py
+#30 186.1 2024-12-18 03:35:10,383 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/axes/_base.py
+#30 186.5 2024-12-18 03:35:10,764 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/sphinxext/plot_directive.py
+#30 186.5 2024-12-18 03:35:10,856 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/mpl_toolkits/axisartist/__init__.py
+#30 186.6 2024-12-18 03:35:10,894 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/_api/deprecation.py
+#30 186.7 2024-12-18 03:35:11,028 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/mpl_toolkits/axes_grid1/__init__.py
+#30 186.9 2024-12-18 03:35:11,163 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/angle_helper.py
+#30 187.1 2024-12-18 03:35:11,163 - lazy_load.modify_folder - INFO - Skipped file: /home/app/copy/mpl_toolkits/mplot3d/__init__.py
+#30 187.2 2024-12-18 03:35:11,190 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/axes_grid.py
+#30 187.6 2024-12-18 03:35:11,367 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/projections/polar.py
+#30 187.6 2024-12-18 03:35:11,404 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/grid_finder.py
+#30 187.7 2024-12-18 03:35:11,434 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/axes_rgb.py
+#30 187.7 2024-12-18 03:35:11,434 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/parasite_axes.py
+#30 187.8 2024-12-18 03:35:11,531 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/axisline_style.py
+#30 187.8 2024-12-18 03:35:11,558 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/anchored_artists.py
+#30 187.8 2024-12-18 03:35:11,567 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/grid_helper_curvelinear.py
+#30 187.8 2024-12-18 03:35:11,573 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/floating_axes.py
+#30 188.0 2024-12-18 03:35:11,573 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/axes_divider.py
+#30 188.7 2024-12-18 03:35:11,866 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/mpl_axes.py
+#30 189.0 2024-12-18 03:35:11,905 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/axislines.py
+#30 189.1 2024-12-18 03:35:11,914 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/parasite_axes.py
+#30 189.3 2024-12-18 03:35:11,920 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/axes_rgb.py
+#30 189.4 2024-12-18 03:35:11,945 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/inset_locator.py
+#30 189.6 2024-12-18 03:35:12,098 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axisartist/axis_artist.py
+#30 189.7 2024-12-18 03:35:12,959 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/mplot3d/proj3d.py
+#30 190.2 2024-12-18 03:35:13,109 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/axes_grid.py
+#30 190.6 2024-12-18 03:35:13,387 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/axes_size.py
+#30 190.6 2024-12-18 03:35:13,562 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/mplot3d/axis3d.py
+#30 190.6 2024-12-18 03:35:13,623 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/axes_grid1/axes_divider.py
+#30 190.7 2024-12-18 03:35:14,903 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/mplot3d/art3d.py
+#30 191.2 2024-12-18 03:35:15,461 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/backends/backend_pdf.py
+#30 191.7 2024-12-18 03:35:16,040 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/matplotlib/axes/_axes.py
+#30 191.7 2024-12-18 03:35:16,041 - lazy_load.modify_folder - INFO - Processed and modified: /home/app/copy/mpl_toolkits/mplot3d/axes3d.py
+#30 195.2 2024-12-18 03:35:19,526 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 195.2 2024-12-18 03:35:19,526 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 195.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 195.2     import matplotlib
+#30 195.2   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 195.2     from . import _api, _version, cbook, _docstring, rcsetup
+#30 195.2   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 195.2     from numpy.exceptions import VisibleDeprecationWarning
+#30 195.2   File "/home/app/copy/numpy/__init__.py", line 140, in <module>
+#30 195.2     from . import core
+#30 195.2   File "/home/app/copy/numpy/core/__init__.py", line 23, in <module>
+#30 195.2     from . import multiarray
+#30 195.2   File "/home/app/copy/numpy/core/multiarray.py", line 10, in <module>
+#30 195.2     from . import overrides
+#30 195.2   File "/home/app/copy/numpy/core/overrides.py", line 8, in <module>
+#30 195.2     from numpy.compat._inspect import getargspec
+#30 195.2   File "/home/app/copy/numpy/compat/__init__.py", line 15, in <module>
+#30 195.2     from .py3k import *
+#30 195.2 AttributeError: module 'numpy.compat.py3k' has no attribute 'Path'
+#30 195.2 
+#30 195.2 2024-12-18 03:35:19,530 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/compat/py3k.py
+#30 195.2 2024-12-18 03:35:19,530 - lazy_load.repair_the_folder - INFO - Added import for Path to /home/app/copy/numpy/compat/py3k.py
+#30 195.8 2024-12-18 03:35:20,112 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 195.8 2024-12-18 03:35:20,113 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 195.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 195.8     import matplotlib
+#30 195.8   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 195.8     from . import _api, _version, cbook, _docstring, rcsetup
+#30 195.8   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 195.8     from numpy.exceptions import VisibleDeprecationWarning
+#30 195.8   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 195.8     from . import lib
+#30 195.8   File "/home/app/copy/numpy/lib/__init__.py", line 25, in <module>
+#30 195.8     from .index_tricks import *
+#30 195.8 AttributeError: module 'numpy.lib.index_tricks' has no attribute 'ravel_multi_index'
+#30 195.8 
+#30 195.8 2024-12-18 03:35:20,126 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/index_tricks.py
+#30 195.8 2024-12-18 03:35:20,127 - lazy_load.repair_the_folder - INFO - Added import for ravel_multi_index to /home/app/copy/numpy/lib/index_tricks.py
+#30 196.3 2024-12-18 03:35:20,618 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 196.3 2024-12-18 03:35:20,618 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 196.3   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 196.3     import matplotlib
+#30 196.3   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 196.3     from . import _api, _version, cbook, _docstring, rcsetup
+#30 196.3   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 196.3     from numpy.exceptions import VisibleDeprecationWarning
+#30 196.3   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 196.3     from . import lib
+#30 196.3   File "/home/app/copy/numpy/lib/__init__.py", line 25, in <module>
+#30 196.3     from .index_tricks import *
+#30 196.3 AttributeError: module 'numpy.lib.index_tricks' has no attribute 'unravel_index'
+#30 196.3 
+#30 196.3 2024-12-18 03:35:20,638 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/index_tricks.py
+#30 196.3 2024-12-18 03:35:20,639 - lazy_load.repair_the_folder - INFO - Added import for unravel_index to /home/app/copy/numpy/lib/index_tricks.py
+#30 196.9 2024-12-18 03:35:21,180 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 196.9 2024-12-18 03:35:21,180 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 196.9   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 196.9     import matplotlib
+#30 196.9   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 196.9     from . import _api, _version, cbook, _docstring, rcsetup
+#30 196.9   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 196.9     from numpy.exceptions import VisibleDeprecationWarning
+#30 196.9   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 196.9     from . import lib
+#30 196.9   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 196.9     from .function_base import *
+#30 196.9   File "/home/app/copy/numpy/lib/function_base.py", line 698, in <module>
+#30 196.9     def unwrap(p, discont=None, axis=-1, *, period=2 * pi):
+#30 196.9 NameError: name 'pi' is not defined
+#30 196.9 
+#30 196.9 2024-12-18 03:35:21,237 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/function_base.py
+#30 197.5 2024-12-18 03:35:21,773 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 197.5 2024-12-18 03:35:21,773 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 197.5   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 197.5     import matplotlib
+#30 197.5   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 197.5     from . import _api, _version, cbook, _docstring, rcsetup
+#30 197.5   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 197.5     from numpy.exceptions import VisibleDeprecationWarning
+#30 197.5   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 197.5     from . import lib
+#30 197.5   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 197.5     from .function_base import *
+#30 197.5 AttributeError: module 'numpy.lib.function_base' has no attribute 'bincount'
+#30 197.5 
+#30 197.5 2024-12-18 03:35:21,830 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/function_base.py
+#30 197.5 2024-12-18 03:35:21,834 - lazy_load.repair_the_folder - INFO - Added import for bincount to /home/app/copy/numpy/lib/function_base.py
+#30 198.0 2024-12-18 03:35:22,353 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 198.0 2024-12-18 03:35:22,354 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 198.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 198.0     import matplotlib
+#30 198.0   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 198.0     from . import _api, _version, cbook, _docstring, rcsetup
+#30 198.0   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 198.0     from numpy.exceptions import VisibleDeprecationWarning
+#30 198.0   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 198.0     from . import lib
+#30 198.0   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 198.0     from .function_base import *
+#30 198.0 AttributeError: module 'numpy.lib.function_base' has no attribute 'add_newdoc'
+#30 198.0 
+#30 198.1 2024-12-18 03:35:22,413 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/function_base.py
+#30 198.1 2024-12-18 03:35:22,417 - lazy_load.repair_the_folder - INFO - Added import for add_newdoc to /home/app/copy/numpy/lib/function_base.py
+#30 198.7 2024-12-18 03:35:22,989 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 198.7 2024-12-18 03:35:22,989 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 198.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 198.7     import matplotlib
+#30 198.7   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 198.7     from . import _api, _version, cbook, _docstring, rcsetup
+#30 198.7   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 198.7     from numpy.exceptions import VisibleDeprecationWarning
+#30 198.7   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 198.7     from . import lib
+#30 198.7   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 198.7     from .function_base import *
+#30 198.7 AttributeError: module 'numpy.lib.function_base' has no attribute 'add_docstring'
+#30 198.7 
+#30 198.8 2024-12-18 03:35:23,102 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/function_base.py
+#30 198.8 2024-12-18 03:35:23,105 - lazy_load.repair_the_folder - INFO - Added import for add_docstring to /home/app/copy/numpy/lib/function_base.py
+#30 199.3 2024-12-18 03:35:23,647 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 199.3 2024-12-18 03:35:23,647 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 199.3   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 199.3     import matplotlib
+#30 199.3   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 199.3     from . import _api, _version, cbook, _docstring, rcsetup
+#30 199.3   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 199.3     from numpy.exceptions import VisibleDeprecationWarning
+#30 199.3   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 199.3     from . import lib
+#30 199.3   File "/home/app/copy/numpy/lib/__init__.py", line 26, in <module>
+#30 199.3     from .function_base import *
+#30 199.3 AttributeError: module 'numpy.lib.function_base' has no attribute 'add_newdoc_ufunc'
+#30 199.3 
+#30 199.4 2024-12-18 03:35:23,756 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/function_base.py
+#30 199.5 2024-12-18 03:35:23,760 - lazy_load.repair_the_folder - INFO - Added import for add_newdoc_ufunc to /home/app/copy/numpy/lib/function_base.py
+#30 200.1 2024-12-18 03:35:24,395 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 200.1 2024-12-18 03:35:24,395 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 200.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 200.1     import matplotlib
+#30 200.1   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 200.1     from . import _api, _version, cbook, _docstring, rcsetup
+#30 200.1   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 200.1     from numpy.exceptions import VisibleDeprecationWarning
+#30 200.1   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 200.1     from . import lib
+#30 200.1   File "/home/app/copy/numpy/lib/__init__.py", line 34, in <module>
+#30 200.1     from .polynomial import *
+#30 200.1   File "/home/app/copy/numpy/lib/polynomial.py", line 986, in <module>
+#30 200.1     warnings.simplefilter('always', RankWarning)
+#30 200.1 NameError: name 'warnings' is not defined. Did you mean: 'Warning'?
+#30 200.1 
+#30 200.1 2024-12-18 03:35:24,424 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/polynomial.py
+#30 200.6 2024-12-18 03:35:24,938 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 200.6 2024-12-18 03:35:24,938 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 200.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 200.6     import matplotlib
+#30 200.6   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 200.6     from . import _api, _version, cbook, _docstring, rcsetup
+#30 200.6   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 200.6     from numpy.exceptions import VisibleDeprecationWarning
+#30 200.6   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 200.6     from . import lib
+#30 200.6   File "/home/app/copy/numpy/lib/__init__.py", line 35, in <module>
+#30 200.6     from .utils import *
+#30 200.6 AttributeError: module 'numpy.lib.utils' has no attribute 'issubclass_'
+#30 200.6 
+#30 200.6 2024-12-18 03:35:24,953 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/lib/utils.py
+#30 200.6 2024-12-18 03:35:24,954 - lazy_load.repair_the_folder - INFO - Added import for issubclass_ to /home/app/copy/numpy/lib/utils.py
+#30 201.1 2024-12-18 03:35:25,455 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 201.1 2024-12-18 03:35:25,456 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 201.1   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 201.1     import matplotlib
+#30 201.1   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 201.1     from . import _api, _version, cbook, _docstring, rcsetup
+#30 201.1   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 201.1     from numpy.exceptions import VisibleDeprecationWarning
+#30 201.1   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 201.1     from . import lib
+#30 201.1   File "/home/app/copy/numpy/lib/__init__.py", line 35, in <module>
+#30 201.1     from .utils import *
+#30 201.1 AttributeError: module 'numpy.lib.utils' has no attribute 'issubsctype'
+#30 201.1 
+#30 201.2 2024-12-18 03:35:25,484 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/utils.py
+#30 201.2 2024-12-18 03:35:25,484 - lazy_load.repair_the_folder - INFO - Added import for issubsctype to /home/app/copy/numpy/lib/utils.py
+#30 201.7 2024-12-18 03:35:25,995 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 201.7 2024-12-18 03:35:25,995 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 201.7   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 201.7     import matplotlib
+#30 201.7   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 201.7     from . import _api, _version, cbook, _docstring, rcsetup
+#30 201.7   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 201.7     from numpy.exceptions import VisibleDeprecationWarning
+#30 201.7   File "/home/app/copy/numpy/__init__.py", line 143, in <module>
+#30 201.7     from . import lib
+#30 201.7   File "/home/app/copy/numpy/lib/__init__.py", line 35, in <module>
+#30 201.7     from .utils import *
+#30 201.7 AttributeError: module 'numpy.lib.utils' has no attribute 'issubdtype'. Did you mean: 'issubsctype'?
+#30 201.7 
+#30 201.7 2024-12-18 03:35:26,023 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/lib/utils.py
+#30 201.7 2024-12-18 03:35:26,024 - lazy_load.repair_the_folder - INFO - Added import for issubdtype to /home/app/copy/numpy/lib/utils.py
+#30 202.4 2024-12-18 03:35:26,706 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 202.4 2024-12-18 03:35:26,706 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 202.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 202.4     import matplotlib
+#30 202.4   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 202.4     from . import _api, _version, cbook, _docstring, rcsetup
+#30 202.4   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 202.4     from numpy.exceptions import VisibleDeprecationWarning
+#30 202.4   File "/home/app/copy/numpy/__init__.py", line 153, in <module>
+#30 202.4     from . import ma
+#30 202.4   File "/home/app/copy/numpy/ma/__init__.py", line 43, in <module>
+#30 202.4     from .core import *
+#30 202.4 AttributeError: module 'numpy.ma.core' has no attribute 'expand_dims'
+#30 202.4 
+#30 202.6 2024-12-18 03:35:26,879 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/ma/core.py
+#30 202.6 2024-12-18 03:35:26,884 - lazy_load.repair_the_folder - INFO - Added import for expand_dims to /home/app/copy/numpy/ma/core.py
+#30 203.2 2024-12-18 03:35:27,541 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 203.2 2024-12-18 03:35:27,542 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 203.2   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 203.2     import matplotlib
+#30 203.2   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 203.2     from . import _api, _version, cbook, _docstring, rcsetup
+#30 203.2   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 203.2     from numpy.exceptions import VisibleDeprecationWarning
+#30 203.2   File "/home/app/copy/numpy/__init__.py", line 153, in <module>
+#30 203.2     from . import ma
+#30 203.2   File "/home/app/copy/numpy/ma/__init__.py", line 46, in <module>
+#30 203.2     from .extras import *
+#30 203.2 AttributeError: module 'numpy.ma.extras' has no attribute 'dot'
+#30 203.2 
+#30 203.3 2024-12-18 03:35:27,570 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/numpy/ma/extras.py
+#30 203.3 2024-12-18 03:35:27,572 - lazy_load.repair_the_folder - INFO - Added import for dot to /home/app/copy/numpy/ma/extras.py
+#30 203.8 2024-12-18 03:35:28,143 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 203.8 2024-12-18 03:35:28,143 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 203.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 203.8     import matplotlib
+#30 203.8   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 203.8     from . import _api, _version, cbook, _docstring, rcsetup
+#30 203.8   File "/home/app/copy/matplotlib/cbook.py", line 9, in <module>
+#30 203.8     from numpy.exceptions import VisibleDeprecationWarning
+#30 203.8   File "/home/app/copy/numpy/__init__.py", line 153, in <module>
+#30 203.8     from . import ma
+#30 203.8   File "/home/app/copy/numpy/ma/__init__.py", line 46, in <module>
+#30 203.8     from .extras import *
+#30 203.8 AttributeError: module 'numpy.ma.extras' has no attribute 'mask_rowcols'. Did you mean: 'mask_cols'?
+#30 203.8 
+#30 203.9 2024-12-18 03:35:28,195 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/numpy/ma/extras.py
+#30 203.9 2024-12-18 03:35:28,197 - lazy_load.repair_the_folder - INFO - Added import for mask_rowcols to /home/app/copy/numpy/ma/extras.py
+#30 204.4 2024-12-18 03:35:28,748 - lazy_load.repair_the_folder - INFO - Other Error
+#30 204.4 2024-12-18 03:35:28,748 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 204.4   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 204.4     import matplotlib
+#30 204.4   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 204.4     from . import _api, _version, cbook, _docstring, rcsetup
+#30 204.4   File "/home/app/copy/matplotlib/cbook.py", line 748, in <module>
+#30 204.4     class Grouper:
+#30 204.4   File "/home/app/copy/matplotlib/cbook.py", line 806, in Grouper
+#30 204.4     def clean(self):
+#30 204.4   File "/home/app/copy/matplotlib/_api/deprecation.py", line 165, in deprecate
+#30 204.4     old_doc = inspect.cleandoc(old_doc or '').strip('\n')
+#30 204.4 UnboundLocalError: local variable 'old_doc' referenced before assignment
+#30 204.4 
+#30 205.0 2024-12-18 03:35:29,317 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 205.0 2024-12-18 03:35:29,317 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 205.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 205.0     import matplotlib
+#30 205.0   File "/home/app/copy/matplotlib/__init__.py", line 159, in <module>
+#30 205.0     from . import _api, _version, cbook, _docstring, rcsetup
+#30 205.0   File "/home/app/copy/matplotlib/rcsetup.py", line 577, in <module>
+#30 205.0     from matplotlib._enums import JoinStyle, CapStyle
+#30 205.0   File "/home/app/copy/matplotlib/_enums.py", line 72, in <module>
+#30 205.0     _docstring.interpd.update({'JoinStyle': JoinStyle.input_description, 'CapStyle': CapStyle.input_description})
+#30 205.0 NameError: name '_docstring' is not defined
+#30 205.0 
+#30 205.0 2024-12-18 03:35:29,319 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/matplotlib/_enums.py
+#30 205.8 2024-12-18 03:35:30,110 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 205.8 2024-12-18 03:35:30,110 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 205.8   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 205.8     import matplotlib
+#30 205.8   File "/home/app/copy/matplotlib/__init__.py", line 967, in <module>
+#30 205.8     rcParamsDefault = _rc_params_in_file(
+#30 205.8   File "/home/app/copy/matplotlib/__init__.py", line 901, in _rc_params_in_file
+#30 205.8     config[key] = val  # try to convert to proper type or raise
+#30 205.8   File "/home/app/copy/matplotlib/__init__.py", line 736, in __setitem__
+#30 205.8     cval = self.validate[key](val)
+#30 205.8   File "/home/app/copy/matplotlib/rcsetup.py", line 299, in validate_color
+#30 205.8     from matplotlib.colors import Colormap, is_color_like
+#30 205.8   File "/home/app/copy/matplotlib/colors.py", line 21, in <module>
+#30 205.8     _colors_full_map.update(XKCD_COLORS)
+#30 205.8 NameError: name 'XKCD_COLORS' is not defined
+#30 205.8 
+#30 205.8 2024-12-18 03:35:30,148 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/matplotlib/colors.py
+#30 206.6 2024-12-18 03:35:30,885 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 206.6 2024-12-18 03:35:30,885 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 206.6   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 206.6     import matplotlib
+#30 206.6   File "/home/app/copy/matplotlib/__init__.py", line 967, in <module>
+#30 206.6     rcParamsDefault = _rc_params_in_file(
+#30 206.6   File "/home/app/copy/matplotlib/__init__.py", line 901, in _rc_params_in_file
+#30 206.6     config[key] = val  # try to convert to proper type or raise
+#30 206.6   File "/home/app/copy/matplotlib/__init__.py", line 736, in __setitem__
+#30 206.6     cval = self.validate[key](val)
+#30 206.6   File "/home/app/copy/matplotlib/rcsetup.py", line 299, in validate_color
+#30 206.6     from matplotlib.colors import Colormap, is_color_like
+#30 206.6   File "/home/app/copy/matplotlib/colors.py", line 24, in <module>
+#30 206.6     _colors_full_map.update(CSS4_COLORS)
+#30 206.6 NameError: name 'CSS4_COLORS' is not defined. Did you mean: 'XKCD_COLORS'?
+#30 206.6 
+#30 206.7 2024-12-18 03:35:30,963 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/colors.py
+#30 207.3 2024-12-18 03:35:31,603 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 207.3 2024-12-18 03:35:31,604 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 207.3   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 207.3     import matplotlib
+#30 207.3   File "/home/app/copy/matplotlib/__init__.py", line 967, in <module>
+#30 207.3     rcParamsDefault = _rc_params_in_file(
+#30 207.3   File "/home/app/copy/matplotlib/__init__.py", line 901, in _rc_params_in_file
+#30 207.3     config[key] = val  # try to convert to proper type or raise
+#30 207.3   File "/home/app/copy/matplotlib/__init__.py", line 736, in __setitem__
+#30 207.3     cval = self.validate[key](val)
+#30 207.3   File "/home/app/copy/matplotlib/rcsetup.py", line 299, in validate_color
+#30 207.3     from matplotlib.colors import Colormap, is_color_like
+#30 207.3   File "/home/app/copy/matplotlib/colors.py", line 25, in <module>
+#30 207.3     _colors_full_map.update(TABLEAU_COLORS)
+#30 207.3 NameError: name 'TABLEAU_COLORS' is not defined
+#30 207.3 
+#30 207.4 2024-12-18 03:35:31,683 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/colors.py
+#30 208.0 2024-12-18 03:35:32,323 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 208.0 2024-12-18 03:35:32,324 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 208.0   File "/home/app/copy/handler_copy.py", line 3, in <module>
+#30 208.0     import matplotlib
+#30 208.0   File "/home/app/copy/matplotlib/__init__.py", line 967, in <module>
+#30 208.0     rcParamsDefault = _rc_params_in_file(
+#30 208.0   File "/home/app/copy/matplotlib/__init__.py", line 901, in _rc_params_in_file
+#30 208.0     config[key] = val  # try to convert to proper type or raise
+#30 208.0   File "/home/app/copy/matplotlib/__init__.py", line 736, in __setitem__
+#30 208.0     cval = self.validate[key](val)
+#30 208.0   File "/home/app/copy/matplotlib/rcsetup.py", line 299, in validate_color
+#30 208.0     from matplotlib.colors import Colormap, is_color_like
+#30 208.0   File "/home/app/copy/matplotlib/colors.py", line 27, in <module>
+#30 208.0     _colors_full_map.update(BASE_COLORS)
+#30 208.0 NameError: name 'BASE_COLORS' is not defined. Did you mean: 'CSS4_COLORS'?
+#30 208.0 
+#30 208.1 2024-12-18 03:35:32,401 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/colors.py
+#30 208.9 2024-12-18 03:35:33,251 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 208.9 2024-12-18 03:35:33,251 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 208.9   File "/home/app/copy/handler_copy.py", line 4, in <module>
+#30 208.9     import matplotlib.pyplot as plt
+#30 208.9   File "/home/app/copy/matplotlib/pyplot.py", line 55, in <module>
+#30 208.9     import matplotlib.colorbar
+#30 208.9   File "/home/app/copy/matplotlib/colorbar.py", line 2, in <module>
+#30 208.9     import matplotlib.spines as mspines
+#30 208.9   File "/home/app/copy/matplotlib/spines.py", line 3, in <module>
+#30 208.9     import matplotlib.patches as mpatches
+#30 208.9   File "/home/app/copy/matplotlib/patches.py", line 1305, in <module>
+#30 208.9     _docstring.interpd.update(FancyArrow='\n'.join((inspect.getdoc(FancyArrow.__init__) or '').splitlines()[2:]))
+#30 208.9 NameError: name 'inspect' is not defined
+#30 208.9 
+#30 209.0 2024-12-18 03:35:33,322 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/matplotlib/patches.py
+#30 209.8 2024-12-18 03:35:34,155 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 209.8 2024-12-18 03:35:34,155 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 209.8   File "/home/app/copy/handler_copy.py", line 4, in <module>
+#30 209.8     import matplotlib.pyplot as plt
+#30 209.8   File "/home/app/copy/matplotlib/pyplot.py", line 60, in <module>
+#30 209.8     from matplotlib import _pylab_helpers
+#30 209.8   File "/home/app/copy/matplotlib/_pylab_helpers.py", line 107, in <module>
+#30 209.8     atexit.register(Gcf.destroy_all)
+#30 209.8 NameError: name 'atexit' is not defined. Did you mean: 'anext'?
+#30 209.8 
+#30 209.8 2024-12-18 03:35:34,158 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/matplotlib/_pylab_helpers.py
+#30 211.2 2024-12-18 03:35:35,545 - lazy_load.repair_the_folder - INFO - Other Error
+#30 211.2 2024-12-18 03:35:35,545 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 211.2   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 211.2     handle('First call')
+#30 211.2   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 211.2     plt.plot(x, y, label='Line 1')
+#30 211.2   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 211.2     return gca().plot(
+#30 211.2   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 211.2     return gcf().gca()
+#30 211.2   File "/home/app/copy/matplotlib/figure.py", line 938, in gca
+#30 211.2     return ax if ax is not None else self.add_subplot()
+#30 211.2   File "/home/app/copy/matplotlib/figure.py", line 423, in add_subplot
+#30 211.2     return self._add_axes_internal(ax, key)
+#30 211.2 UnboundLocalError: local variable 'ax' referenced before assignment
+#30 211.2 
+#30 212.3 2024-12-18 03:35:36,627 - lazy_load.repair_the_folder - INFO - Other Error
+#30 212.3 2024-12-18 03:35:36,628 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 212.3   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 212.3     handle('First call')
+#30 212.3   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 212.3     plt.plot(x, y, label='Line 1')
+#30 212.3   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 212.3     return gca().plot(
+#30 212.3   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 212.3     return gcf().gca()
+#30 212.3   File "/home/app/copy/matplotlib/figure.py", line 1657, in gca
+#30 212.3     return ax if ax is not None else self.add_subplot()
+#30 212.3   File "/home/app/copy/matplotlib/figure.py", line 710, in add_subplot
+#30 212.3     ax = projection_class(self, *args, **pkw)
+#30 212.3   File "/home/app/copy/matplotlib/axes/_base.py", line 601, in __init__
+#30 212.3     subplotspec = SubplotSpec._from_subplot_args(fig, args)
+#30 212.3   File "/home/app/copy/matplotlib/gridspec.py", line 488, in _from_subplot_args
+#30 212.3     return gs[i - 1:j]
+#30 212.3 UnboundLocalError: local variable 'i' referenced before assignment
+#30 212.3 
+#30 213.8 2024-12-18 03:35:38,139 - lazy_load.repair_the_folder - INFO - Other Error
+#30 213.8 2024-12-18 03:35:38,139 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 213.8   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 213.8     handle('First call')
+#30 213.8   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 213.8     plt.plot(x, y, label='Line 1')
+#30 213.8   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 213.8     return gca().plot(
+#30 213.8   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 213.8     return gcf().gca()
+#30 213.8   File "/home/app/copy/matplotlib/figure.py", line 1657, in gca
+#30 213.8     return ax if ax is not None else self.add_subplot()
+#30 213.8   File "/home/app/copy/matplotlib/figure.py", line 710, in add_subplot
+#30 213.8     ax = projection_class(self, *args, **pkw)
+#30 213.8   File "/home/app/copy/matplotlib/axes/_base.py", line 659, in __init__
+#30 213.8     self.clear()
+#30 213.8   File "/home/app/copy/matplotlib/axes/_base.py", line 1230, in clear
+#30 213.8     self.__clear()
+#30 213.8   File "/home/app/copy/matplotlib/axes/_base.py", line 1118, in __clear
+#30 213.8     self._get_lines = _process_plot_var_args()
+#30 213.8   File "/home/app/copy/matplotlib/axes/_base.py", line 230, in __init__
+#30 213.8     self.set_prop_cycle(None)
+#30 213.8   File "/home/app/copy/matplotlib/axes/_base.py", line 241, in set_prop_cycle
+#30 213.8     self._cycler_items = [*cycler]
+#30 213.8 TypeError: Value after * must be an iterable, not function
+#30 213.8 
+#30 215.1 2024-12-18 03:35:39,366 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 215.1 2024-12-18 03:35:39,366 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 215.1   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 215.1     handle('First call')
+#30 215.1   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 215.1     plt.plot(x, y, label='Line 1')
+#30 215.1   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 215.1     return gca().plot(
+#30 215.1   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 215.1     return gcf().gca()
+#30 215.1   File "/home/app/copy/matplotlib/figure.py", line 1657, in gca
+#30 215.1     return ax if ax is not None else self.add_subplot()
+#30 215.1   File "/home/app/copy/matplotlib/figure.py", line 710, in add_subplot
+#30 215.1     ax = projection_class(self, *args, **pkw)
+#30 215.1   File "/home/app/copy/matplotlib/axes/_base.py", line 681, in __init__
+#30 215.1     self.clear()
+#30 215.1   File "/home/app/copy/matplotlib/axes/_base.py", line 1391, in clear
+#30 215.1     self.__clear()
+#30 215.1   File "/home/app/copy/matplotlib/axes/_base.py", line 1307, in __clear
+#30 215.1     self.grid(False)  # Disable grid on init to use rcParameter
+#30 215.1   File "/home/app/copy/matplotlib/axes/_base.py", line 3268, in grid
+#30 215.1     self.xaxis.grid(visible, which=which, **kwargs)
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 1429, in grid
+#30 215.1     self.set_tick_params(which='major', **gridkw)
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 859, in set_tick_params
+#30 215.1     for tick in self.majorTicks:
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 531, in __get__
+#30 215.1     tick = instance._get_tick(major=True)
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 1312, in _get_tick
+#30 215.1     return self._tick_class(self.axes, 0, major=major, **tick_kw)
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 390, in __init__
+#30 215.1     super().__init__(*args, **kwargs)
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 189, in __init__
+#30 215.1     self._apply_tickdir(tickdir)
+#30 215.1   File "/home/app/copy/matplotlib/axis.py", line 409, in _apply_tickdir
+#30 215.1     (mark1, mark2) = {'out': (mlines.TICKDOWN, mlines.TICKUP), 'in': (mlines.TICKUP, mlines.TICKDOWN), 'inout': ('|', '|')}[self._tickdir]
+#30 215.1 AttributeError: module 'matplotlib.lines' has no attribute 'TICKDOWN'
+#30 215.1 
+#30 215.1 2024-12-18 03:35:39,415 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/lines.py
+#30 215.1 2024-12-18 03:35:39,417 - lazy_load.repair_the_folder - INFO - Added import for TICKDOWN to /home/app/copy/matplotlib/lines.py
+#30 216.2 2024-12-18 03:35:40,544 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 216.2 2024-12-18 03:35:40,544 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 216.2   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 216.2     handle('First call')
+#30 216.2   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 216.2     plt.plot(x, y, label='Line 1')
+#30 216.2   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 216.2     return gca().plot(
+#30 216.2   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 216.2     return gcf().gca()
+#30 216.2   File "/home/app/copy/matplotlib/figure.py", line 1657, in gca
+#30 216.2     return ax if ax is not None else self.add_subplot()
+#30 216.2   File "/home/app/copy/matplotlib/figure.py", line 710, in add_subplot
+#30 216.2     ax = projection_class(self, *args, **pkw)
+#30 216.2   File "/home/app/copy/matplotlib/axes/_base.py", line 681, in __init__
+#30 216.2     self.clear()
+#30 216.2   File "/home/app/copy/matplotlib/axes/_base.py", line 1391, in clear
+#30 216.2     self.__clear()
+#30 216.2   File "/home/app/copy/matplotlib/axes/_base.py", line 1307, in __clear
+#30 216.2     self.grid(False)  # Disable grid on init to use rcParameter
+#30 216.2   File "/home/app/copy/matplotlib/axes/_base.py", line 3268, in grid
+#30 216.2     self.xaxis.grid(visible, which=which, **kwargs)
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 1429, in grid
+#30 216.2     self.set_tick_params(which='major', **gridkw)
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 859, in set_tick_params
+#30 216.2     for tick in self.majorTicks:
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 531, in __get__
+#30 216.2     tick = instance._get_tick(major=True)
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 1312, in _get_tick
+#30 216.2     return self._tick_class(self.axes, 0, major=major, **tick_kw)
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 390, in __init__
+#30 216.2     super().__init__(*args, **kwargs)
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 189, in __init__
+#30 216.2     self._apply_tickdir(tickdir)
+#30 216.2   File "/home/app/copy/matplotlib/axis.py", line 409, in _apply_tickdir
+#30 216.2     (mark1, mark2) = {'out': (mlines.TICKDOWN, mlines.TICKUP), 'in': (mlines.TICKUP, mlines.TICKDOWN), 'inout': ('|', '|')}[self._tickdir]
+#30 216.2 AttributeError: module 'matplotlib.lines' has no attribute 'TICKUP'
+#30 216.2 
+#30 216.3 2024-12-18 03:35:40,591 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/lines.py
+#30 216.3 2024-12-18 03:35:40,592 - lazy_load.repair_the_folder - INFO - Added import for TICKUP to /home/app/copy/matplotlib/lines.py
+#30 217.3 2024-12-18 03:35:41,653 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 217.3 2024-12-18 03:35:41,653 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 217.3   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 217.3     handle('First call')
+#30 217.3   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 217.3     plt.plot(x, y, label='Line 1')
+#30 217.3   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 217.3     return gca().plot(
+#30 217.3   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 217.3     return gcf().gca()
+#30 217.3   File "/home/app/copy/matplotlib/figure.py", line 1657, in gca
+#30 217.3     return ax if ax is not None else self.add_subplot()
+#30 217.3   File "/home/app/copy/matplotlib/figure.py", line 710, in add_subplot
+#30 217.3     ax = projection_class(self, *args, **pkw)
+#30 217.3   File "/home/app/copy/matplotlib/axes/_base.py", line 681, in __init__
+#30 217.3     self.clear()
+#30 217.3   File "/home/app/copy/matplotlib/axes/_base.py", line 1391, in clear
+#30 217.3     self.__clear()
+#30 217.3   File "/home/app/copy/matplotlib/axes/_base.py", line 1307, in __clear
+#30 217.3     self.grid(False)  # Disable grid on init to use rcParameter
+#30 217.3   File "/home/app/copy/matplotlib/axes/_base.py", line 3270, in grid
+#30 217.3     self.yaxis.grid(visible, which=which, **kwargs)
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 1429, in grid
+#30 217.3     self.set_tick_params(which='major', **gridkw)
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 859, in set_tick_params
+#30 217.3     for tick in self.majorTicks:
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 531, in __get__
+#30 217.3     tick = instance._get_tick(major=True)
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 1312, in _get_tick
+#30 217.3     return self._tick_class(self.axes, 0, major=major, **tick_kw)
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 434, in __init__
+#30 217.3     super().__init__(*args, **kwargs)
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 189, in __init__
+#30 217.3     self._apply_tickdir(tickdir)
+#30 217.3   File "/home/app/copy/matplotlib/axis.py", line 453, in _apply_tickdir
+#30 217.3     (mark1, mark2) = {'out': (mlines.TICKLEFT, mlines.TICKRIGHT), 'in': (mlines.TICKRIGHT, mlines.TICKLEFT), 'inout': ('_', '_')}[self._tickdir]
+#30 217.3 AttributeError: module 'matplotlib.lines' has no attribute 'TICKLEFT'
+#30 217.3 
+#30 217.4 2024-12-18 03:35:41,699 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/lines.py
+#30 217.4 2024-12-18 03:35:41,701 - lazy_load.repair_the_folder - INFO - Added import for TICKLEFT to /home/app/copy/matplotlib/lines.py
+#30 218.4 2024-12-18 03:35:42,711 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 218.4 2024-12-18 03:35:42,712 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 218.4   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 218.4     handle('First call')
+#30 218.4   File "/home/app/copy/handler_copy.py", line 14, in handle
+#30 218.4     plt.plot(x, y, label='Line 1')
+#30 218.4   File "/home/app/copy/matplotlib/pyplot.py", line 3794, in plot
+#30 218.4     return gca().plot(
+#30 218.4   File "/home/app/copy/matplotlib/pyplot.py", line 2742, in gca
+#30 218.4     return gcf().gca()
+#30 218.4   File "/home/app/copy/matplotlib/figure.py", line 1657, in gca
+#30 218.4     return ax if ax is not None else self.add_subplot()
+#30 218.4   File "/home/app/copy/matplotlib/figure.py", line 710, in add_subplot
+#30 218.4     ax = projection_class(self, *args, **pkw)
+#30 218.4   File "/home/app/copy/matplotlib/axes/_base.py", line 681, in __init__
+#30 218.4     self.clear()
+#30 218.4   File "/home/app/copy/matplotlib/axes/_base.py", line 1391, in clear
+#30 218.4     self.__clear()
+#30 218.4   File "/home/app/copy/matplotlib/axes/_base.py", line 1307, in __clear
+#30 218.4     self.grid(False)  # Disable grid on init to use rcParameter
+#30 218.4   File "/home/app/copy/matplotlib/axes/_base.py", line 3270, in grid
+#30 218.4     self.yaxis.grid(visible, which=which, **kwargs)
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 1429, in grid
+#30 218.4     self.set_tick_params(which='major', **gridkw)
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 859, in set_tick_params
+#30 218.4     for tick in self.majorTicks:
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 531, in __get__
+#30 218.4     tick = instance._get_tick(major=True)
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 1312, in _get_tick
+#30 218.4     return self._tick_class(self.axes, 0, major=major, **tick_kw)
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 434, in __init__
+#30 218.4     super().__init__(*args, **kwargs)
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 189, in __init__
+#30 218.4     self._apply_tickdir(tickdir)
+#30 218.4   File "/home/app/copy/matplotlib/axis.py", line 453, in _apply_tickdir
+#30 218.4     (mark1, mark2) = {'out': (mlines.TICKLEFT, mlines.TICKRIGHT), 'in': (mlines.TICKRIGHT, mlines.TICKLEFT), 'inout': ('_', '_')}[self._tickdir]
+#30 218.4 AttributeError: module 'matplotlib.lines' has no attribute 'TICKRIGHT'
+#30 218.4 
+#30 218.5 2024-12-18 03:35:42,782 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/lines.py
+#30 218.5 2024-12-18 03:35:42,783 - lazy_load.repair_the_folder - INFO - Added import for TICKRIGHT to /home/app/copy/matplotlib/lines.py
+#30 219.6 2024-12-18 03:35:43,937 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 219.6 2024-12-18 03:35:43,937 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 219.6   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 219.6     handle('First call')
+#30 219.6   File "/home/app/copy/handler_copy.py", line 25, in handle
+#30 219.6     plt.savefig('plot.png')  # Saves as a PNG file in the current directory
+#30 219.6   File "/home/app/copy/matplotlib/pyplot.py", line 1228, in savefig
+#30 219.6     res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+#30 219.6   File "/home/app/copy/matplotlib/figure.py", line 3395, in savefig
+#30 219.6     self.canvas.print_figure(fname, **kwargs)
+#30 219.6   File "/home/app/copy/matplotlib/backend_bases.py", line 1847, in print_figure
+#30 219.6     result = print_method(filename, facecolor=facecolor, edgecolor=edgecolor, orientation=orientation, bbox_inches_restore=_bbox_inches_restore, **kwargs)
+#30 219.6   File "/home/app/copy/matplotlib/backend_bases.py", line 1669, in <lambda>
+#30 219.6     print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(*args, **{k: v for (k, v) in kwargs.items() if k not in skip}))
+#30 219.6   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 403, in print_png
+#30 219.6     self._print_pil(filename_or_obj, 'png', pil_kwargs, metadata)
+#30 219.6   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 354, in _print_pil
+#30 219.6     FigureCanvasAgg.draw(self)
+#30 219.6   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 295, in draw
+#30 219.6     self.renderer = self.get_renderer()
+#30 219.6   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 307, in get_renderer
+#30 219.6     self.renderer = RendererAgg(w, h, self.figure.dpi)
+#30 219.6   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 20, in __init__
+#30 219.6     from matplotlib.mathtext import MathTextParser
+#30 219.6   File "/home/app/copy/matplotlib/mathtext.py", line 5, in <module>
+#30 219.6     from ._mathtext import RasterParse, VectorParse, get_unicode_index
+#30 219.6   File "/home/app/copy/matplotlib/_mathtext.py", line 1485, in <module>
+#30 219.6     class Parser:
+#30 219.6   File "/home/app/copy/matplotlib/_mathtext.py", line 1511, in Parser
+#30 219.6     _small_greek = set([unicodedata.name(chr(i)).split()[-1].lower() for i in range(ord('α'), ord('ω') + 1)])
+#30 219.6   File "/home/app/copy/matplotlib/_mathtext.py", line 1511, in <listcomp>
+#30 219.6     _small_greek = set([unicodedata.name(chr(i)).split()[-1].lower() for i in range(ord('α'), ord('ω') + 1)])
+#30 219.6 NameError: name 'unicodedata' is not defined
+#30 219.6 
+#30 219.8 2024-12-18 03:35:44,073 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/matplotlib/_mathtext.py
+#30 220.8 2024-12-18 03:35:45,157 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 220.8 2024-12-18 03:35:45,157 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 220.8   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 220.8     handle('First call')
+#30 220.8   File "/home/app/copy/handler_copy.py", line 25, in handle
+#30 220.8     plt.savefig('plot.png')  # Saves as a PNG file in the current directory
+#30 220.8   File "/home/app/copy/matplotlib/pyplot.py", line 1228, in savefig
+#30 220.8     res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+#30 220.8   File "/home/app/copy/matplotlib/figure.py", line 3395, in savefig
+#30 220.8     self.canvas.print_figure(fname, **kwargs)
+#30 220.8   File "/home/app/copy/matplotlib/backend_bases.py", line 1847, in print_figure
+#30 220.8     result = print_method(filename, facecolor=facecolor, edgecolor=edgecolor, orientation=orientation, bbox_inches_restore=_bbox_inches_restore, **kwargs)
+#30 220.8   File "/home/app/copy/matplotlib/backend_bases.py", line 1669, in <lambda>
+#30 220.8     print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(*args, **{k: v for (k, v) in kwargs.items() if k not in skip}))
+#30 220.8   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 403, in print_png
+#30 220.8     self._print_pil(filename_or_obj, 'png', pil_kwargs, metadata)
+#30 220.8   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 354, in _print_pil
+#30 220.8     FigureCanvasAgg.draw(self)
+#30 220.8   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 295, in draw
+#30 220.8     self.renderer = self.get_renderer()
+#30 220.8   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 307, in get_renderer
+#30 220.8     self.renderer = RendererAgg(w, h, self.figure.dpi)
+#30 220.8   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 21, in __init__
+#30 220.8     super().__init__()
+#30 220.8   File "/home/app/copy/matplotlib/backend_bases.py", line 68, in __init__
+#30 220.8     self._text2path = text.TextToPath()
+#30 220.8 AttributeError: module 'matplotlib.text' has no attribute 'TextToPath'
+#30 220.8 
+#30 220.9 2024-12-18 03:35:45,187 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/matplotlib/text.py
+#30 220.9 2024-12-18 03:35:45,188 - lazy_load.repair_the_folder - INFO - Added import for TextToPath to /home/app/copy/matplotlib/text.py
+#30 222.0 2024-12-18 03:35:46,286 - lazy_load.repair_the_folder - INFO - Attribute Error:
+#30 222.0 2024-12-18 03:35:46,287 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 222.0   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 222.0     handle('First call')
+#30 222.0   File "/home/app/copy/handler_copy.py", line 25, in handle
+#30 222.0     plt.savefig('plot.png')  # Saves as a PNG file in the current directory
+#30 222.0   File "/home/app/copy/matplotlib/pyplot.py", line 1228, in savefig
+#30 222.0     res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+#30 222.0   File "/home/app/copy/matplotlib/figure.py", line 3395, in savefig
+#30 222.0     self.canvas.print_figure(fname, **kwargs)
+#30 222.0   File "/home/app/copy/matplotlib/backend_bases.py", line 1847, in print_figure
+#30 222.0     result = print_method(filename, facecolor=facecolor, edgecolor=edgecolor, orientation=orientation, bbox_inches_restore=_bbox_inches_restore, **kwargs)
+#30 222.0   File "/home/app/copy/matplotlib/backend_bases.py", line 1669, in <lambda>
+#30 222.0     print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(*args, **{k: v for (k, v) in kwargs.items() if k not in skip}))
+#30 222.0   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 403, in print_png
+#30 222.0     self._print_pil(filename_or_obj, 'png', pil_kwargs, metadata)
+#30 222.0   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 354, in _print_pil
+#30 222.0     FigureCanvasAgg.draw(self)
+#30 222.0   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 299, in draw
+#30 222.0     self.figure.draw(self.renderer)
+#30 222.0   File "/home/app/copy/matplotlib/artist.py", line 60, in draw_wrapper
+#30 222.0     result = draw(artist, renderer, *args, **kwargs)
+#30 222.0   File "/home/app/copy/matplotlib/artist.py", line 40, in draw_wrapper
+#30 222.0     return draw(artist, renderer)
+#30 222.0   File "/home/app/copy/matplotlib/figure.py", line 3162, in draw
+#30 222.0     mimage._draw_list_compositing_images(
+#30 222.0   File "/home/app/copy/matplotlib/image.py", line 64, in _draw_list_compositing_images
+#30 222.0     a.draw(renderer)
+#30 222.0   File "/home/app/copy/matplotlib/artist.py", line 40, in draw_wrapper
+#30 222.0     return draw(artist, renderer)
+#30 222.0   File "/home/app/copy/matplotlib/axes/_base.py", line 3101, in draw
+#30 222.0     self._update_title_position(renderer)
+#30 222.0   File "/home/app/copy/matplotlib/axes/_base.py", line 3036, in _update_title_position
+#30 222.0     bb = ax.xaxis.get_tightbbox(renderer)
+#30 222.0   File "/home/app/copy/matplotlib/axis.py", line 1113, in get_tightbbox
+#30 222.0     ticks_to_draw = self._update_ticks()
+#30 222.0   File "/home/app/copy/matplotlib/axis.py", line 1044, in _update_ticks
+#30 222.0     major_locs = self.get_majorticklocs()
+#30 222.0   File "/home/app/copy/matplotlib/axis.py", line 1260, in get_majorticklocs
+#30 222.0     return self.major.locator()
+#30 222.0   File "/home/app/copy/matplotlib/ticker.py", line 1994, in __call__
+#30 222.0     return self.tick_values(vmin, vmax)
+#30 222.0   File "/home/app/copy/matplotlib/ticker.py", line 2003, in tick_values
+#30 222.0     locs = self._raw_ticks(vmin, vmax)
+#30 222.0   File "/home/app/copy/matplotlib/ticker.py", line 1933, in _raw_ticks
+#30 222.0     nbins = np.clip(self.axis.get_tick_space(), max(1, self._min_n_ticks - 1), 9)
+#30 222.0   File "/home/app/copy/matplotlib/axis.py", line 2136, in get_tick_space
+#30 222.0     size = self._get_tick_label_size('x') * 3
+#30 222.0   File "/home/app/copy/matplotlib/axis.py", line 1320, in _get_tick_label_size
+#30 222.0     return mtext.FontProperties(size=size).get_size_in_points()
+#30 222.0 AttributeError: module 'matplotlib.text' has no attribute 'FontProperties'
+#30 222.0 
+#30 222.0 2024-12-18 03:35:46,333 - lazy_load.repair_the_folder - INFO - Inserted new import into /home/app/copy/matplotlib/text.py
+#30 222.0 2024-12-18 03:35:46,334 - lazy_load.repair_the_folder - INFO - Added import for FontProperties to /home/app/copy/matplotlib/text.py
+#30 223.3 2024-12-18 03:35:47,644 - lazy_load.repair_the_folder - INFO - Name Error:
+#30 223.3 2024-12-18 03:35:47,644 - lazy_load.repair_the_folder - INFO - Traceback (most recent call last):
+#30 223.3   File "/home/app/copy/handler_copy.py", line 29, in <module>
+#30 223.3     handle('First call')
+#30 223.3   File "/home/app/copy/handler_copy.py", line 25, in handle
+#30 223.3     plt.savefig('plot.png')  # Saves as a PNG file in the current directory
+#30 223.3   File "/home/app/copy/matplotlib/pyplot.py", line 1228, in savefig
+#30 223.3     res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+#30 223.3   File "/home/app/copy/matplotlib/figure.py", line 3395, in savefig
+#30 223.3     self.canvas.print_figure(fname, **kwargs)
+#30 223.3   File "/home/app/copy/matplotlib/backend_bases.py", line 1847, in print_figure
+#30 223.3     result = print_method(filename, facecolor=facecolor, edgecolor=edgecolor, orientation=orientation, bbox_inches_restore=_bbox_inches_restore, **kwargs)
+#30 223.3   File "/home/app/copy/matplotlib/backend_bases.py", line 1669, in <lambda>
+#30 223.3     print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(*args, **{k: v for (k, v) in kwargs.items() if k not in skip}))
+#30 223.3   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 403, in print_png
+#30 223.3     self._print_pil(filename_or_obj, 'png', pil_kwargs, metadata)
+#30 223.3   File "/home/app/copy/matplotlib/backends/backend_agg.py", line 355, in _print_pil
+#30 223.3     mpl.image.imsave(filename_or_obj, self.buffer_rgba(), format=fmt, origin='upper', dpi=self.figure.dpi, metadata=metadata, pil_kwargs=pil_kwargs)
+#30 223.3   File "/home/app/copy/matplotlib/image.py", line 1300, in imsave
+#30 223.3     import PIL.Image
+#30 223.3   File "/home/app/copy/PIL/Image.py", line 3061, in <module>
+#30 223.3     atexit.register(core.clear_cache)
+#30 223.3 NameError: name 'atexit' is not defined. Did you mean: 'anext'?
+#30 223.3 
+#30 223.5 2024-12-18 03:35:47,788 - lazy_load.repair_the_folder - INFO - Updated existing import in /home/app/copy/PIL/Image.py
+#30 225.4 2024-12-18 03:35:49,743 - lazy_load.repair_the_folder - INFO - {'NameError': 11, 'ImportError': 0, 'AttributeError': 19, 'OtherError': 4}
+#30 226.6 2024-12-18 03:35:50,867 - __main__ - INFO - step 8
+#30 226.6 2024-12-18 03:35:50,867 - __main__ - INFO - step 9
+#30 DONE 239.8s
+
+#31 exporting to image
+#31 exporting layers
+#31 exporting layers 2.4s done
+#31 writing image sha256:54bc6c025760e30c8a54acfb02f8fa0c3e076fa1f6cb64eb94af4a5628440b98 0.0s done
+#31 naming to localhost:5000/matplotlib:latest 0.1s done
+#31 DONE 2.5s
+Image: localhost:5000/matplotlib:latest built.
+[33m[0] < Building matplotlib done in 394.93s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 394.93s[0m
+
+[33m[0] > Pushing matplotlib [localhost:5000/matplotlib:latest].
+[0mThe push refers to repository [localhost:5000/matplotlib]
+1ab9241b8879: Preparing
+31c4ba75d17d: Preparing
+92a24304619b: Preparing
+556b34600654: Preparing
+5f70bf18a086: Preparing
+be81094197f3: Preparing
+91b7d6d44291: Preparing
+5f70bf18a086: Preparing
+73f8327db317: Preparing
+3823b453b68f: Preparing
+c506f755699e: Preparing
+ecb466505921: Preparing
+70e0b1d64328: Preparing
+3ad58f695010: Preparing
+7fd3877a5467: Preparing
+52429d61b94c: Preparing
+596bc6d320f9: Preparing
+91b7d6d44291: Waiting
+f08b48973ae3: Preparing
+2387e0fb79ff: Preparing
+73f8327db317: Waiting
+c4b4ddc484ac: Preparing
+3823b453b68f: Waiting
+2d996df50cb7: Preparing
+be81094197f3: Waiting
+25b7ac7c2745: Preparing
+c506f755699e: Waiting
+c1537681ddab: Preparing
+3ad58f695010: Waiting
+ecb466505921: Waiting
+c4c2f1c63c2f: Preparing
+7fd3877a5467: Waiting
+70e0b1d64328: Waiting
+4be7fe848f91: Preparing
+f08b48973ae3: Waiting
+596bc6d320f9: Waiting
+52429d61b94c: Waiting
+6a3d7465dae1: Preparing
+2387e0fb79ff: Waiting
+c4b4ddc484ac: Waiting
+2d996df50cb7: Waiting
+2143381c9922: Preparing
+25b7ac7c2745: Waiting
+c1537681ddab: Waiting
+4be7fe848f91: Waiting
+c4c2f1c63c2f: Waiting
+6a3d7465dae1: Waiting
+12228ba7a3b1: Preparing
+9b55156abf26: Preparing
+293d5db30c9f: Preparing
+03127cdb479b: Preparing
+2143381c9922: Waiting
+9c742cd6c7a5: Preparing
+9b55156abf26: Waiting
+03127cdb479b: Waiting
+12228ba7a3b1: Waiting
+9c742cd6c7a5: Waiting
+5f70bf18a086: Layer already exists
+be81094197f3: Layer already exists
+91b7d6d44291: Layer already exists
+73f8327db317: Layer already exists
+3823b453b68f: Layer already exists
+c506f755699e: Layer already exists
+556b34600654: Pushed
+ecb466505921: Layer already exists
+70e0b1d64328: Layer already exists
+7fd3877a5467: Layer already exists
+3ad58f695010: Layer already exists
+52429d61b94c: Layer already exists
+f08b48973ae3: Layer already exists
+2387e0fb79ff: Layer already exists
+c4b4ddc484ac: Layer already exists
+31c4ba75d17d: Pushed
+596bc6d320f9: Layer already exists
+2d996df50cb7: Layer already exists
+25b7ac7c2745: Layer already exists
+c1537681ddab: Layer already exists
+6a3d7465dae1: Layer already exists
+2143381c9922: Layer already exists
+c4c2f1c63c2f: Layer already exists
+4be7fe848f91: Layer already exists
+12228ba7a3b1: Layer already exists
+293d5db30c9f: Layer already exists
+03127cdb479b: Layer already exists
+9b55156abf26: Layer already exists
+9c742cd6c7a5: Layer already exists
+1ab9241b8879: Pushed
+92a24304619b: Pushed
+latest: digest: sha256:f0403e1905b4749582fd024f8827a9565055cf8d60637a9f622f41342bae4a63 size: 7017
+[33m[0] < Pushing matplotlib [localhost:5000/matplotlib:latest] done.
+[0m[33m[0] Worker done.
+[0m
+Deploying: matplotlib.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/matplotlib
+

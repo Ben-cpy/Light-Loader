@@ -1,0 +1,6199 @@
+{
+    "handler": [
+        "matplotlib.use",
+        "<builtin>.print",
+        "handler.handle"
+    ],
+    "matplotlib": [
+        "matplotlib.cbook._get_data_path",
+        "matplotlib._logged_cached.wrapper",
+        "locale.setlocale",
+        "logging.getLogger",
+        "matplotlib._rc_params_in_file",
+        "matplotlib._api.deprecation.suppress_matplotlib_deprecation_warning",
+        "matplotlib.RcParams.__init__",
+        "matplotlib.matplotlib_fname",
+        "collections.namedtuple",
+        "functools.cache",
+        "matplotlib.is_interactive",
+        "contextlib.contextmanager",
+        "matplotlib._logged_cached",
+        "matplotlib.RcParams.copy",
+        "matplotlib._check_versions"
+    ],
+    "collections": [],
+    "keyword": [
+        "<builtin>.frozenset"
+    ],
+    "<builtin>.frozenset": [],
+    "operator": [],
+    "reprlib": [
+        "reprlib.Repr.__init__"
+    ],
+    "reprlib.Repr.__init__": [],
+    "collections.OrderedDict": [
+        "reprlib.recursive_repr.decorating_function",
+        "<builtin>.classmethod",
+        "reprlib.recursive_repr",
+        "<builtin>.object"
+    ],
+    "<builtin>.object": [],
+    "reprlib.recursive_repr": [],
+    "reprlib.recursive_repr.decorating_function": [
+        "<builtin>.set",
+        "<builtin>.getattr"
+    ],
+    "<builtin>.set": [],
+    "<builtin>.getattr": [],
+    "<builtin>.classmethod": [],
+    "collections.Counter": [
+        "<builtin>.classmethod"
+    ],
+    "collections.ChainMap": [
+        "reprlib.recursive_repr.decorating_function",
+        "<builtin>.classmethod",
+        "reprlib.recursive_repr",
+        "<builtin>.property"
+    ],
+    "<builtin>.property": [],
+    "collections.UserDict": [
+        "<builtin>.classmethod"
+    ],
+    "collections.abc": [],
+    "contextlib": [],
+    "abc": [],
+    "_py_abc": [],
+    "_weakrefset": [],
+    "types": [
+        "types._c",
+        "types._g",
+        "<builtin>.type",
+        "<builtin>.globals",
+        "types._cell_factory",
+        "types._ag",
+        "<builtin>.object"
+    ],
+    "<builtin>.type": [],
+    "types._cell_factory": [],
+    "types._g": [],
+    "types._c": [],
+    "types._ag": [],
+    "types._GeneratorWrapper": [
+        "<builtin>.property"
+    ],
+    "<builtin>.globals": [],
+    "_weakrefset.WeakSet": [
+        "<builtin>.classmethod"
+    ],
+    "functools": [
+        "collections.namedtuple",
+        "<builtin>.object"
+    ],
+    "functools.partial": [
+        "reprlib.recursive_repr.decorating_function",
+        "reprlib.recursive_repr"
+    ],
+    "functools.partialmethod": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "collections.namedtuple": [
+        "<builtin>.map",
+        "<builtin>.set",
+        "<builtin>.str",
+        "<str>.replace",
+        "<builtin>.enumerate",
+        "<builtin>.zip",
+        "<builtin>.tuple",
+        "<builtin>.dict",
+        "<builtin>.classmethod",
+        "<builtin>.TypeError",
+        "<str>.join",
+        "<builtin>.len",
+        "<builtin>.eval",
+        "<builtin>.ValueError",
+        "<builtin>.list",
+        "<builtin>.type",
+        "<builtin>.isinstance",
+        "<str>.split",
+        "<builtin>.reversed",
+        "collections.<lambda1>"
+    ],
+    "<builtin>.isinstance": [],
+    "<builtin>.map": [],
+    "<builtin>.list": [],
+    "<builtin>.str": [],
+    "<builtin>.enumerate": [],
+    "<builtin>.TypeError": [],
+    "<builtin>.ValueError": [],
+    "<builtin>.tuple": [],
+    "<builtin>.len": [],
+    "<builtin>.reversed": [],
+    "<builtin>.zip": [],
+    "<builtin>.dict": [],
+    "<str>.join": [],
+    "<builtin>.eval": [],
+    "collections.<lambda1>": [
+        "operator.itemgetter.__init__",
+        "<builtin>.property"
+    ],
+    "operator.itemgetter.__init__": [],
+    "functools.singledispatchmethod": [
+        "<builtin>.property"
+    ],
+    "functools.cached_property": [
+        "<builtin>.classmethod"
+    ],
+    "contextlib.AbstractContextManager": [
+        "<builtin>.classmethod",
+        "abc.abstractmethod"
+    ],
+    "abc.abstractmethod": [],
+    "contextlib.AbstractAsyncContextManager": [
+        "<builtin>.classmethod",
+        "abc.abstractmethod"
+    ],
+    "contextlib._BaseExitStack": [
+        "<builtin>.staticmethod"
+    ],
+    "<builtin>.staticmethod": [],
+    "contextlib.AsyncExitStack": [
+        "<builtin>.staticmethod"
+    ],
+    "importlib": [],
+    "warnings": [
+        "<builtin>.hasattr",
+        "warnings.filterwarnings",
+        "warnings._processoptions",
+        "warnings.simplefilter"
+    ],
+    "warnings._processoptions": [
+        "<builtin>.print",
+        "warnings._setoption"
+    ],
+    "warnings._setoption": [
+        "re.escape",
+        "<builtin>.int",
+        "warnings.filterwarnings",
+        "warnings._getaction",
+        "warnings._getcategory",
+        "<builtin>.len"
+    ],
+    "warnings._getaction": [],
+    "warnings._getcategory": [
+        "<builtin>.issubclass",
+        "<builtin>.getattr",
+        "<builtin>.__import__"
+    ],
+    "<builtin>.__import__": [],
+    "<builtin>.issubclass": [],
+    "re": [
+        "copyreg.pickle",
+        "functools.lru_cache",
+        "<builtin>.type",
+        "<builtin>.chr",
+        "<builtin>.globals",
+        "sre_compile.compile",
+        "functools.lru_cache.decorating_function"
+    ],
+    "enum": [
+        "<builtin>.object"
+    ],
+    "enum.EnumMeta": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "enum.Enum": [
+        "types.DynamicClassAttribute.__init__",
+        "<builtin>.classmethod"
+    ],
+    "types.DynamicClassAttribute.__init__": [
+        "<builtin>.bool",
+        "<builtin>.getattr"
+    ],
+    "<builtin>.bool": [],
+    "enum.Flag": [
+        "<builtin>.classmethod"
+    ],
+    "enum.IntFlag": [
+        "<builtin>.classmethod"
+    ],
+    "sre_compile": [
+        "<builtin>.tuple"
+    ],
+    "sre_parse": [
+        "<builtin>.frozenset"
+    ],
+    "sre_constants": [
+        "sre_constants._makecodes"
+    ],
+    "sre_constants._makecodes": [
+        "<str>.split",
+        "<builtin>.enumerate",
+        "<str>.strip",
+        "<builtin>.globals"
+    ],
+    "<str>.strip": [],
+    "<str>.split": [],
+    "sre_parse.State": [
+        "<builtin>.property"
+    ],
+    "sre_parse.Tokenizer": [
+        "<builtin>.property"
+    ],
+    "<builtin>.chr": [],
+    "sre_compile.compile": [
+        "sre_compile._code",
+        "sre_parse.parse",
+        "<builtin>.print",
+        "sre_compile.dis",
+        "sre_compile.isstring",
+        "<map>.items",
+        "<builtin>.tuple"
+    ],
+    "sre_compile.isstring": [
+        "<builtin>.isinstance"
+    ],
+    "sre_parse.parse": [
+        "sre_parse.State.__init__",
+        "sre_parse.fix_flags",
+        "sre_parse.Tokenizer.error",
+        "sre_parse._parse_sub",
+        "sre_parse.Tokenizer.seek",
+        "sre_constants.error.__init__",
+        "sre_parse.SubPattern.dump",
+        "sre_parse.Tokenizer.__init__"
+    ],
+    "sre_parse.Tokenizer.__init__": [
+        "<builtin>.isinstance",
+        "<builtin>.str",
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.Tokenizer.__next": [
+        "sre_parse.Tokenizer.error",
+        "<builtin>.len"
+    ],
+    "sre_parse.Tokenizer.error": [
+        "sre_parse.Tokenizer.tell",
+        "sre_parse.Tokenizer.error"
+    ],
+    "sre_parse.Tokenizer.tell": [
+        "<builtin>.len"
+    ],
+    "sre_parse.State.__init__": [],
+    "sre_parse._parse_sub": [
+        "",
+        "sre_parse.Tokenizer.match",
+        "sre_parse.Tokenizer.tell",
+        "sre_parse.SubPattern.append",
+        "<builtin>.len",
+        "extend",
+        "sre_parse.SubPattern.__init__",
+        "append"
+    ],
+    "sre_parse.Tokenizer.match": [
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.SubPattern.__init__": [],
+    "extend": [],
+    "append": [],
+    "sre_parse.SubPattern.append": [
+        "append"
+    ],
+    "sre_parse.Tokenizer.seek": [
+        "sre_parse.Tokenizer.__next"
+    ],
+    "sre_parse.fix_flags": [
+        "<builtin>.isinstance",
+        "<builtin>.ValueError"
+    ],
+    "sre_constants.error.__init__": [
+        "<builtin>.isinstance",
+        "<str>.count",
+        "<str>.rfind",
+        "<builtin>.super"
+    ],
+    "<str>.count": [],
+    "<str>.rfind": [],
+    "<builtin>.super": [],
+    "sre_parse.SubPattern.dump": [
+        "<builtin>.print",
+        "<builtin>.enumerate",
+        "<builtin>.str",
+        "<builtin>.isinstance"
+    ],
+    "<builtin>.print": [],
+    "sre_compile._code": [
+        "sre_compile._compile_info",
+        "sre_compile._compile",
+        "append"
+    ],
+    "sre_compile._compile_info": [
+        "",
+        "sre_parse.SubPattern.getwidth",
+        "sre_compile._optimize_charset",
+        "sre_compile._compile_charset",
+        "extend",
+        "<builtin>.len",
+        "sre_compile._get_literal_prefix",
+        "sre_compile._get_charset_prefix"
+    ],
+    "sre_parse.SubPattern.getwidth": [
+        "<builtin>.min",
+        "<builtin>.max"
+    ],
+    "<builtin>.min": [],
+    "<builtin>.max": [],
+    "sre_compile._get_literal_prefix": [
+        "",
+        "sre_compile._get_iscased",
+        "<builtin>.len",
+        "extend",
+        "sre_compile._get_literal_prefix",
+        "sre_compile._combine_flags"
+    ],
+    "sre_compile._get_iscased": [],
+    "sre_compile._combine_flags": [],
+    "sre_compile._get_charset_prefix": [
+        "",
+        "<builtin>.map",
+        "<builtin>.any",
+        "sre_compile._get_iscased",
+        "<builtin>.range",
+        "sre_compile._combine_flags"
+    ],
+    "<builtin>.range": [],
+    "<builtin>.any": [],
+    "sre_compile._optimize_charset": [
+        "<builtin>.map",
+        "<builtin>.any",
+        "sre_compile._bytes_to_codes",
+        "<builtin>.bytearray",
+        "<builtin>.len",
+        "append",
+        "<builtin>.bytes",
+        "<builtin>.range",
+        "sre_compile._mk_bitmap"
+    ],
+    "<builtin>.bytearray": [],
+    "sre_compile._mk_bitmap": [
+        "<builtin>.range",
+        "<builtin>.len"
+    ],
+    "<builtin>.bytes": [],
+    "sre_compile._bytes_to_codes": [
+        "<builtin>.len",
+        "<builtin>.memoryview"
+    ],
+    "<builtin>.memoryview": [],
+    "sre_compile._compile_charset": [
+        "",
+        "extend",
+        "sre_constants.error.__init__"
+    ],
+    "sre_compile._compile": [
+        "",
+        "sre_compile._optimize_charset",
+        "sre_constants.error.__init__",
+        "sre_compile._compile_charset",
+        "sre_compile._simple",
+        "sre_compile._compile",
+        "sre_compile._combine_flags"
+    ],
+    "sre_compile._simple": [
+        "sre_compile._simple",
+        "<builtin>.len"
+    ],
+    "sre_compile.dis": [
+        "sre_compile.dis.dis_",
+        "<builtin>.set",
+        "<builtin>.str",
+        "<builtin>.len"
+    ],
+    "sre_compile.dis.dis_": [
+        "<builtin>.map",
+        "sre_compile.dis.dis_.print_",
+        "<builtin>.ValueError",
+        "sre_compile._hex_code",
+        "sre_compile.dis.dis_",
+        "<builtin>.bin",
+        "<builtin>.list",
+        "<builtin>.chr",
+        "<builtin>.str",
+        "sre_compile.dis.dis_.print_2",
+        "<builtin>.range"
+    ],
+    "<builtin>.bin": [],
+    "sre_compile.dis.dis_.print_": [
+        "<builtin>.print"
+    ],
+    "sre_compile.dis.dis_.print_2": [
+        "<builtin>.print"
+    ],
+    "sre_compile._hex_code": [],
+    "<map>.items": [],
+    "functools.lru_cache": [
+        "<builtin>.callable",
+        "functools.update_wrapper",
+        "<builtin>.isinstance",
+        "functools._lru_cache_wrapper",
+        "<builtin>.TypeError"
+    ],
+    "<builtin>.callable": [],
+    "functools._lru_cache_wrapper": [
+        "<builtin>.object"
+    ],
+    "functools.update_wrapper": [
+        "<builtin>.getattr"
+    ],
+    "functools.lru_cache.decorating_function": [
+        "functools._lru_cache_wrapper",
+        "functools.update_wrapper"
+    ],
+    "copyreg": [
+        "copyreg.pickle",
+        "<builtin>.type"
+    ],
+    "copyreg.pickle": [
+        "<builtin>.callable",
+        "copyreg.constructor",
+        "<builtin>.TypeError"
+    ],
+    "copyreg.constructor": [
+        "<builtin>.callable",
+        "<builtin>.TypeError"
+    ],
+    "re.escape": [
+        "<builtin>.isinstance",
+        "<builtin>.str",
+        "<str>.translate",
+        "<str>.encode"
+    ],
+    "<builtin>.int": [],
+    "warnings.filterwarnings": [
+        "<builtin>.isinstance",
+        "warnings._add_filter",
+        "<builtin>.issubclass",
+        "re.compile"
+    ],
+    "re.compile": [
+        "re._compile"
+    ],
+    "re._compile": [
+        "<builtin>.iter",
+        "<builtin>.next",
+        "<builtin>.ValueError",
+        "<builtin>.type",
+        "<builtin>.isinstance",
+        "sre_compile.compile",
+        "sre_compile.isstring",
+        "<builtin>.len",
+        "<builtin>.TypeError"
+    ],
+    "<builtin>.iter": [],
+    "<builtin>.next": [],
+    "warnings._add_filter": [
+        "insert",
+        "warnings._filters_mutated",
+        "remove",
+        "append"
+    ],
+    "remove": [],
+    "insert": [],
+    "warnings._filters_mutated": [],
+    "<builtin>.hasattr": [],
+    "warnings.simplefilter": [
+        "<builtin>.isinstance",
+        "warnings._add_filter"
+    ],
+    "inspect": [
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "<builtin>.globals",
+        "<map>.items",
+        "collections.namedtuple",
+        "<builtin>.object"
+    ],
+    "ast": [
+        "<builtin>.hasattr",
+        "<builtin>.repr",
+        "<builtin>.type",
+        "<builtin>.property"
+    ],
+    "<builtin>.repr": [],
+    "ast._Unparser": [
+        "contextlib.contextmanager",
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "contextlib.contextmanager": [
+        "functools.wraps"
+    ],
+    "functools.wraps": [],
+    "dis": [
+        "collections.namedtuple"
+    ],
+    "io": [],
+    "opcode": [
+        "opcode.def_op",
+        "opcode.name_op",
+        "opcode.jabs_op",
+        "append",
+        "opcode.jrel_op",
+        "<builtin>.range"
+    ],
+    "opcode.def_op": [],
+    "opcode.name_op": [
+        "opcode.def_op",
+        "append"
+    ],
+    "opcode.jrel_op": [
+        "opcode.def_op",
+        "append"
+    ],
+    "opcode.jabs_op": [
+        "opcode.def_op",
+        "append"
+    ],
+    "dis.Bytecode": [
+        "<builtin>.classmethod"
+    ],
+    "importlib.machinery": [],
+    "linecache": [],
+    "os": [
+        "os._fscodec",
+        "<builtin>.ImportError",
+        "<builtin>.set",
+        "os._exists",
+        "<builtin>.type",
+        "<builtin>.globals",
+        "os._createenviron",
+        "os._Environ.__init__",
+        "extend",
+        "append",
+        "os._add"
+    ],
+    "stat": [],
+    "<builtin>.ImportError": [],
+    "ntpath": [
+        "<builtin>.hasattr"
+    ],
+    "genericpath": [],
+    "posixpath": [],
+    "os._exists": [
+        "<builtin>.globals"
+    ],
+    "os._add": [],
+    "os._createenviron": [
+        "os._createenviron.encodekey",
+        "os._Environ.__init__"
+    ],
+    "os._createenviron.encodekey": [
+        "os._createenviron.encode"
+    ],
+    "os._createenviron.encode": [
+        "<builtin>.isinstance",
+        "<builtin>.type",
+        "<builtin>.TypeError"
+    ],
+    "os._Environ.__init__": [],
+    "os._fscodec": [],
+    "os.PathLike": [
+        "<builtin>.classmethod",
+        "abc.abstractmethod"
+    ],
+    "tokenize": [
+        "<builtin>.map",
+        "<builtin>.any",
+        "re.compile",
+        "<builtin>.set",
+        "functools.lru_cache",
+        "<builtin>.sorted",
+        "tokenize.maybe",
+        "tokenize._all_string_prefixes",
+        "collections.namedtuple",
+        "tokenize.group"
+    ],
+    "codecs": [
+        "<builtin>.SystemError"
+    ],
+    "<builtin>.SystemError": [],
+    "encodings": [],
+    "token": [
+        "<builtin>.globals",
+        "<builtin>.isinstance",
+        "extend"
+    ],
+    "tokenize.TokenInfo": [
+        "<builtin>.property"
+    ],
+    "tokenize.maybe": [
+        "tokenize.group"
+    ],
+    "tokenize.group": [],
+    "tokenize._all_string_prefixes": [],
+    "<builtin>.sorted": [],
+    "<str>.replace": [],
+    "inspect._ParameterKind": [
+        "<builtin>.property"
+    ],
+    "inspect.Parameter": [
+        "<builtin>.property"
+    ],
+    "inspect.BoundArguments": [
+        "<builtin>.property"
+    ],
+    "inspect.Signature": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "locale": [
+        "re.compile",
+        "<builtin>.sorted",
+        "<builtin>.globals",
+        "<map>.setdefault",
+        "<map>.items",
+        "functools.wraps"
+    ],
+    "encodings.aliases": [],
+    "<map>.setdefault": [],
+    "logging": [
+        "logging.RootLogger.__init__",
+        "ntpath.normcase",
+        "logging.Formatter.__init__",
+        "<builtin>.hasattr",
+        "posixpath.normcase",
+        "threading.RLock",
+        "_weakrefset.WeakSet.__init__",
+        "weakref.WeakValueDictionary.__init__",
+        "logging._StderrHandler.__init__",
+        "logging.Manager.__init__"
+    ],
+    "traceback": [],
+    "traceback.FrameSummary": [
+        "<builtin>.property"
+    ],
+    "traceback.StackSummary": [
+        "<builtin>.classmethod"
+    ],
+    "traceback.TracebackException": [
+        "<builtin>.classmethod"
+    ],
+    "weakref": [],
+    "weakref.finalize": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "string": [
+        "string.Template.__init_subclass__"
+    ],
+    "string.Template.__init_subclass__": [
+        "re.compile",
+        "re.escape",
+        "<builtin>.super"
+    ],
+    "threading": [
+        "<builtin>.set",
+        "<builtin>.hasattr",
+        "threading.RLock",
+        "threading._MainThread.__init__",
+        "_weakrefset.WeakSet.__init__",
+        "append",
+        "collections.namedtuple"
+    ],
+    "threading.Barrier": [
+        "<builtin>.property"
+    ],
+    "threading.RLock": [
+        "threading._RLock.__init__"
+    ],
+    "threading._RLock.__init__": [],
+    "_weakrefset.WeakSet.__init__": [
+        "<builtin>.set",
+        "_weakrefset.WeakSet.update"
+    ],
+    "_weakrefset.WeakSet.update": [
+        "_weakrefset.WeakSet._commit_removals",
+        "_weakrefset.WeakSet.add"
+    ],
+    "_weakrefset.WeakSet._commit_removals": [],
+    "_weakrefset.WeakSet.add": [
+        "_weakrefset.WeakSet._commit_removals"
+    ],
+    "threading.Thread": [
+        "<builtin>.property"
+    ],
+    "threading._MainThread.__init__": [
+        "threading.Thread.__init__",
+        "threading.Thread._set_ident",
+        "threading.Thread._set_native_id",
+        "threading.Thread._set_tstate_lock",
+        "threading.Event.set"
+    ],
+    "threading.Thread.__init__": [
+        "threading.current_thread",
+        "<builtin>.str",
+        "threading._newname",
+        "threading._make_invoke_excepthook",
+        "_weakrefset.WeakSet.add",
+        "threading.Event.__init__"
+    ],
+    "threading._newname": [],
+    "threading.current_thread": [
+        "threading._DummyThread.__init__"
+    ],
+    "threading._DummyThread.__init__": [
+        "threading.Thread._set_ident",
+        "threading._newname",
+        "threading.Thread._set_native_id",
+        "threading.Thread.__init__"
+    ],
+    "threading.Thread._set_ident": [],
+    "threading.Thread._set_native_id": [],
+    "threading.Event.__init__": [
+        "threading.Condition.__init__"
+    ],
+    "threading.Condition.__init__": [
+        "threading.RLock"
+    ],
+    "threading._make_invoke_excepthook": [
+        "<builtin>.RuntimeError"
+    ],
+    "<builtin>.RuntimeError": [],
+    "threading.Thread._set_tstate_lock": [],
+    "threading.Event.set": [],
+    "_threading_local": [
+        "contextlib.contextmanager"
+    ],
+    "posixpath.normcase": [
+        "os._fspath"
+    ],
+    "os._fspath": [
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "<builtin>.isinstance",
+        "<str>.format",
+        "<builtin>.TypeError"
+    ],
+    "<str>.format": [],
+    "ntpath.normcase": [
+        "<builtin>.isinstance",
+        "os._fspath"
+    ],
+    "logging.PercentStyle": [
+        "re.compile"
+    ],
+    "logging.StrFormatStyle": [
+        "re.compile"
+    ],
+    "logging.Formatter.__init__": [
+        "logging.StrFormatStyle.validate",
+        "<builtin>.ValueError",
+        "logging.PercentStyle.validate",
+        "logging.PercentStyle.__init__",
+        "logging.StringTemplateStyle.validate",
+        "logging.StringTemplateStyle.__init__",
+        "<map>.keys"
+    ],
+    "<map>.keys": [],
+    "logging.StringTemplateStyle.__init__": [
+        "string.Template.__init__",
+        "<builtin>.super"
+    ],
+    "string.Template.__init__": [],
+    "logging.PercentStyle.__init__": [],
+    "weakref.WeakValueDictionary.__init__": [
+        "<builtin>.set",
+        "weakref.WeakValueDictionary.update"
+    ],
+    "weakref.WeakValueDictionary.update": [
+        "<builtin>.hasattr",
+        "weakref.KeyedRef.__init__",
+        "<builtin>.dict",
+        "weakref.WeakValueDictionary._commit_removals"
+    ],
+    "weakref.WeakValueDictionary._commit_removals": [],
+    "weakref.KeyedRef.__init__": [
+        "<builtin>.super"
+    ],
+    "logging.Handler": [
+        "<builtin>.property"
+    ],
+    "logging._StderrHandler": [
+        "<builtin>.property"
+    ],
+    "logging._StderrHandler.__init__": [
+        "logging.Handler.__init__"
+    ],
+    "logging.Handler.__init__": [
+        "logging._addHandlerRef",
+        "logging.Handler.createLock",
+        "logging.Filterer.__init__",
+        "logging._checkLevel"
+    ],
+    "logging.Filterer.__init__": [],
+    "logging._checkLevel": [
+        "<builtin>.isinstance",
+        "<builtin>.str",
+        "<builtin>.TypeError",
+        "<builtin>.ValueError"
+    ],
+    "logging._addHandlerRef": [
+        "logging._acquireLock",
+        "append"
+    ],
+    "logging._acquireLock": [],
+    "logging.Handler.createLock": [
+        "logging._register_at_fork_reinit_lock",
+        "threading.RLock"
+    ],
+    "logging._register_at_fork_reinit_lock": [
+        "logging._acquireLock",
+        "_weakrefset.WeakSet.add"
+    ],
+    "logging.Manager": [
+        "<builtin>.property"
+    ],
+    "logging.LoggerAdapter": [
+        "<builtin>.property"
+    ],
+    "logging.RootLogger.__init__": [
+        "logging.Logger.__init__"
+    ],
+    "logging.Logger.__init__": [
+        "logging.Filterer.__init__",
+        "logging._checkLevel"
+    ],
+    "logging.Manager.__init__": [],
+    "pathlib": [
+        "<builtin>.hasattr",
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "fnmatch": [
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "urllib.parse": [
+        "re.compile",
+        "<builtin>.frozenset",
+        "urllib.parse._fix_result_transcoding",
+        "<builtin>.bytes",
+        "collections.namedtuple"
+    ],
+    "urllib.parse._NetlocResultMixinBase": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "urllib.parse._NetlocResultMixinStr": [
+        "<builtin>.property"
+    ],
+    "urllib.parse._NetlocResultMixinBytes": [
+        "<builtin>.property"
+    ],
+    "urllib.parse._fix_result_transcoding": [],
+    "pathlib._WindowsFlavour": [
+        "<builtin>.set"
+    ],
+    "pathlib._NormalAccessor": [
+        "<builtin>.hasattr",
+        "<builtin>.staticmethod"
+    ],
+    "pathlib.PurePath": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "operator.attrgetter.__init__"
+    ],
+    "operator.attrgetter.__init__": [
+        "<builtin>.map",
+        "<builtin>.isinstance",
+        "<str>.split",
+        "<builtin>.tuple",
+        "<builtin>.TypeError"
+    ],
+    "pathlib.Path": [
+        "<builtin>.classmethod"
+    ],
+    "pprint": [
+        "<builtin>.type",
+        "<builtin>.frozenset"
+    ],
+    "dataclasses": [
+        "re.compile",
+        "dataclasses._FIELD_BASE.__init__"
+    ],
+    "copy": [
+        "<builtin>.getattr",
+        "<builtin>.type"
+    ],
+    "dataclasses._FIELD_BASE.__init__": [],
+    "dataclasses.Field": [
+        "<builtin>.classmethod"
+    ],
+    "shutil": [
+        "<builtin>.hasattr",
+        "collections.namedtuple",
+        "append"
+    ],
+    "bz2": [],
+    "_compression": [],
+    "bz2.BZ2File": [
+        "<builtin>.property"
+    ],
+    "lzma": [],
+    "lzma.LZMAFile": [
+        "<builtin>.property"
+    ],
+    "subprocess": [
+        "<builtin>.hasattr",
+        "<builtin>.getattr",
+        "subprocess._use_posix_spawn"
+    ],
+    "signal": [
+        "<builtin>.globals",
+        "signal._wraps.decorator",
+        "signal._wraps"
+    ],
+    "signal._wraps": [],
+    "signal._wraps.decorator": [],
+    "selectors": [
+        "<builtin>.hasattr",
+        "selectors._can_use",
+        "collections.namedtuple"
+    ],
+    "selectors.BaseSelector": [
+        "abc.abstractmethod"
+    ],
+    "selectors._can_use": [
+        "<builtin>.getattr"
+    ],
+    "subprocess.CalledProcessError": [
+        "<builtin>.property"
+    ],
+    "subprocess.TimeoutExpired": [
+        "<builtin>.property"
+    ],
+    "subprocess.CompletedProcess": [
+        "<builtin>.classmethod"
+    ],
+    "subprocess._use_posix_spawn": [
+        "<builtin>.hasattr",
+        "<builtin>.map",
+        "<builtin>.tuple",
+        "<builtin>.len"
+    ],
+    "subprocess.Popen": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "tempfile": [
+        "<builtin>.hasattr"
+    ],
+    "random": [
+        "<builtin>.hasattr",
+        "random.Random.__init__"
+    ],
+    "bisect": [],
+    "hashlib": [
+        "hashlib.__get_builtin_constructor",
+        "logging.exception",
+        "<builtin>.set",
+        "<builtin>.globals",
+        "<builtin>.bytes",
+        "<builtin>.range"
+    ],
+    "hashlib.__get_builtin_constructor": [
+        "<map>.get",
+        "<builtin>.ValueError"
+    ],
+    "<map>.get": [],
+    "logging.exception": [
+        "logging.error"
+    ],
+    "logging.error": [
+        "logging.basicConfig",
+        "logging.Logger.error",
+        "<builtin>.len"
+    ],
+    "logging.basicConfig": [
+        "<builtin>.ValueError",
+        "logging.Formatter.__init__",
+        "logging.Logger.setLevel",
+        "logging.Logger.addHandler",
+        "logging.Logger.removeHandler",
+        "<builtin>.len",
+        "logging.StreamHandler.__init__",
+        "<map>.keys",
+        "logging._acquireLock",
+        "logging.FileHandler.__init__"
+    ],
+    "logging.Logger.removeHandler": [
+        "remove",
+        "logging._acquireLock"
+    ],
+    "logging.StreamHandler.__init__": [
+        "logging.Handler.__init__"
+    ],
+    "logging.FileHandler.__init__": [
+        "os._fspath",
+        "ntpath.abspath",
+        "logging.Handler.__init__",
+        "posixpath.abspath",
+        "logging.StreamHandler.__init__",
+        "logging.FileHandler._open"
+    ],
+    "posixpath.abspath": [
+        "os._fspath",
+        "posixpath.isabs",
+        "posixpath.join",
+        "<builtin>.isinstance",
+        "posixpath.normpath"
+    ],
+    "posixpath.isabs": [
+        "posixpath._get_sep",
+        "os._fspath"
+    ],
+    "posixpath._get_sep": [
+        "<builtin>.isinstance"
+    ],
+    "posixpath.join": [
+        "posixpath._get_sep",
+        "os._fspath",
+        "<builtin>.map",
+        "genericpath._check_arg_types"
+    ],
+    "genericpath._check_arg_types": [
+        "<builtin>.isinstance",
+        "<builtin>.TypeError"
+    ],
+    "posixpath.normpath": [
+        "<builtin>.isinstance",
+        "os._fspath",
+        "pop",
+        "append"
+    ],
+    "pop": [],
+    "ntpath.abspath": [],
+    "logging.FileHandler._open": [],
+    "logging.StringTemplateStyle.validate": [
+        "<builtin>.set",
+        "<builtin>.ValueError"
+    ],
+    "logging.StrFormatStyle.validate": [
+        "<builtin>.set",
+        "string.Formatter.parse",
+        "<builtin>.ValueError"
+    ],
+    "string.Formatter.parse": [],
+    "logging.PercentStyle.validate": [
+        "<builtin>.ValueError"
+    ],
+    "logging.Logger.addHandler": [
+        "logging._acquireLock",
+        "append"
+    ],
+    "logging.Logger.setLevel": [
+        "logging._checkLevel"
+    ],
+    "logging.Logger.error": [
+        "logging.Logger._log",
+        "logging.Logger.isEnabledFor"
+    ],
+    "logging.Logger.isEnabledFor": [
+        "logging._acquireLock",
+        "logging.Logger.getEffectiveLevel"
+    ],
+    "logging.Logger.getEffectiveLevel": [],
+    "logging.Logger._log": [
+        "logging.Logger.findCaller",
+        "<builtin>.type",
+        "<builtin>.isinstance",
+        "logging.Logger.handle",
+        "logging.Logger.makeRecord"
+    ],
+    "logging.Logger.findCaller": [
+        "ntpath.normcase",
+        "<builtin>.hasattr",
+        "posixpath.normcase",
+        "traceback.print_stack",
+        "logging.currentframe"
+    ],
+    "logging.currentframe": [],
+    "traceback.print_stack": [
+        "traceback.extract_stack",
+        "traceback.print_list"
+    ],
+    "traceback.extract_stack": [
+        "traceback.StackSummary.extract",
+        "traceback.walk_stack"
+    ],
+    "traceback.walk_stack": [],
+    "traceback.StackSummary.extract": [
+        "<builtin>.set",
+        "traceback.FrameSummary.__init__",
+        "<builtin>.getattr",
+        "linecache.lazycache",
+        "linecache.checkcache"
+    ],
+    "linecache.lazycache": [
+        "<builtin>.getattr",
+        "<str>.startswith",
+        "<str>.endswith",
+        "<builtin>.len"
+    ],
+    "traceback.FrameSummary.__init__": [
+        "<builtin>.repr"
+    ],
+    "linecache.checkcache": [
+        "<map>.keys",
+        "<map>.pop",
+        "<builtin>.len",
+        "<builtin>.list"
+    ],
+    "<map>.pop": [],
+    "traceback.print_list": [
+        "traceback.StackSummary.from_list",
+        "<builtin>.print",
+        "traceback.StackSummary.format"
+    ],
+    "traceback.StackSummary.from_list": [
+        "<builtin>.isinstance",
+        "traceback.FrameSummary.__init__"
+    ],
+    "traceback.StackSummary.format": [
+        "<builtin>.sorted",
+        "append"
+    ],
+    "logging.Logger.makeRecord": [
+        "logging.LogRecord.__init__",
+        "<builtin>.KeyError"
+    ],
+    "logging.LogRecord.__init__": [
+        "ntpath.basename",
+        "threading.current_thread",
+        "<builtin>.int",
+        "<builtin>.hasattr",
+        "posixpath.splitext",
+        "<builtin>.isinstance",
+        "logging.getLevelName",
+        "ntpath.splitext",
+        "<builtin>.len",
+        "posixpath.basename"
+    ],
+    "logging.getLevelName": [
+        "<map>.get"
+    ],
+    "posixpath.basename": [
+        "posixpath._get_sep",
+        "os._fspath"
+    ],
+    "ntpath.basename": [
+        "ntpath.split"
+    ],
+    "ntpath.split": [
+        "ntpath.splitdrive",
+        "os._fspath",
+        "<builtin>.len",
+        "ntpath._get_bothseps"
+    ],
+    "ntpath._get_bothseps": [
+        "<builtin>.isinstance"
+    ],
+    "ntpath.splitdrive": [
+        "<builtin>.isinstance",
+        "os._fspath",
+        "<builtin>.len"
+    ],
+    "posixpath.splitext": [
+        "<builtin>.isinstance",
+        "genericpath._splitext",
+        "os._fspath"
+    ],
+    "genericpath._splitext": [
+        "<builtin>.max"
+    ],
+    "ntpath.splitext": [
+        "<builtin>.isinstance",
+        "genericpath._splitext",
+        "os._fspath"
+    ],
+    "<builtin>.KeyError": [],
+    "logging.Logger.handle": [
+        "logging.Filterer.filter",
+        "logging.Logger.callHandlers"
+    ],
+    "logging.Filterer.filter": [
+        "<builtin>.hasattr"
+    ],
+    "logging.Logger.callHandlers": [
+        "logging.Handler.handle"
+    ],
+    "logging.Handler.handle": [
+        "logging.Handler.emit",
+        "logging.Filterer.filter",
+        "logging.Handler.acquire"
+    ],
+    "logging.Handler.acquire": [],
+    "logging.Handler.emit": [
+        "<builtin>.NotImplementedError"
+    ],
+    "<builtin>.NotImplementedError": [],
+    "random.Random.__init__": [
+        "random.Random.seed"
+    ],
+    "random.Random.seed": [
+        "<builtin>.map",
+        "<builtin>.type",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.super",
+        "<builtin>.ord",
+        "warnings.warn"
+    ],
+    "warnings.warn": [
+        "<builtin>.type",
+        "<builtin>.range",
+        "<builtin>.isinstance",
+        "warnings.warn_explicit",
+        "warnings._is_internal_frame",
+        "<builtin>.issubclass",
+        "warnings._next_external_frame",
+        "<builtin>.TypeError"
+    ],
+    "warnings._is_internal_frame": [],
+    "warnings._next_external_frame": [
+        "warnings._is_internal_frame"
+    ],
+    "warnings.warn_explicit": [
+        "<map>.clear",
+        "<map>.get",
+        "linecache.getlines",
+        "<builtin>.RuntimeError",
+        "warnings.WarningMessage.__init__",
+        "<builtin>.int",
+        "<builtin>.str",
+        "<str>.lower",
+        "<builtin>.isinstance",
+        "warnings._showwarnmsg",
+        "<builtin>.issubclass"
+    ],
+    "<str>.lower": [],
+    "<map>.clear": [],
+    "linecache.getlines": [
+        "linecache.clearcache",
+        "<builtin>.len",
+        "linecache.updatecache"
+    ],
+    "linecache.updatecache": [
+        "ntpath.isabs",
+        "ntpath.join",
+        "tokenize.open",
+        "<str>.endswith",
+        "posixpath.isabs",
+        "posixpath.join",
+        "linecache.lazycache",
+        "<builtin>.len",
+        "<str>.startswith",
+        "<map>.pop"
+    ],
+    "<str>.startswith": [],
+    "<str>.endswith": [],
+    "ntpath.isabs": [
+        "os._fspath",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "ntpath._get_bothseps",
+        "ntpath.splitdrive"
+    ],
+    "ntpath.join": [
+        "<builtin>.map",
+        "os._fspath",
+        "<builtin>.isinstance",
+        "ntpath.splitdrive",
+        "genericpath._check_arg_types"
+    ],
+    "tokenize.open": [
+        "tokenize.detect_encoding"
+    ],
+    "tokenize.detect_encoding": [
+        "tokenize.detect_encoding.find_cookie",
+        "tokenize.detect_encoding.read_or_stop"
+    ],
+    "tokenize.detect_encoding.read_or_stop": [],
+    "tokenize.detect_encoding.find_cookie": [
+        "tokenize._get_normal_name",
+        "<builtin>.SyntaxError"
+    ],
+    "<builtin>.SyntaxError": [],
+    "tokenize._get_normal_name": [],
+    "linecache.clearcache": [
+        "<map>.clear"
+    ],
+    "warnings.WarningMessage.__init__": [],
+    "warnings._showwarnmsg": [
+        "warnings._showwarnmsg_impl"
+    ],
+    "warnings._showwarnmsg_impl": [
+        "warnings._formatwarnmsg"
+    ],
+    "warnings._formatwarnmsg": [
+        "warnings._formatwarnmsg_impl"
+    ],
+    "warnings._formatwarnmsg_impl": [
+        "linecache.getline"
+    ],
+    "linecache.getline": [
+        "linecache.getlines",
+        "<builtin>.len"
+    ],
+    "tracemalloc": [],
+    "pickle": [
+        "extend",
+        "append"
+    ],
+    "struct": [],
+    "_compat_pickle": [
+        "<map>.update",
+        "<builtin>.dict",
+        "<builtin>.len",
+        "<map>.items"
+    ],
+    "<map>.update": [],
+    "pickle._Pickler": [
+        "<builtin>.type"
+    ],
+    "tracemalloc.Frame": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Traceback": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Trace": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Filter": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.DomainFilter": [
+        "<builtin>.property"
+    ],
+    "tracemalloc.Snapshot": [
+        "<builtin>.staticmethod"
+    ],
+    "<builtin>.ord": [],
+    "tempfile._RandomNameSequence": [
+        "<builtin>.property"
+    ],
+    "tempfile.SpooledTemporaryFile": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "tempfile.TemporaryDirectory": [
+        "<builtin>.classmethod"
+    ],
+    "packaging.version": [
+        "re.compile"
+    ],
+    "__future__": [
+        "__future__._Feature.__init__"
+    ],
+    "__future__._Feature.__init__": [],
+    "typing": [
+        "<builtin>.frozenset",
+        "typing._SpecialGenericAlias.__init__",
+        "typing._tp_cache",
+        "typing._SpecialForm.__init__",
+        "typing._tp_cache.decorator",
+        "typing.TypeVar.__init__"
+    ],
+    "typing._SpecialForm": [
+        "typing._tp_cache"
+    ],
+    "typing._tp_cache": [
+        "typing._tp_cache.decorator"
+    ],
+    "typing._tp_cache.decorator": [
+        "functools.wraps",
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function",
+        "append"
+    ],
+    "typing._SpecialForm.__init__": [],
+    "typing.ParamSpec": [
+        "<builtin>.property"
+    ],
+    "typing._GenericAlias": [
+        "typing._tp_cache"
+    ],
+    "typing._SpecialGenericAlias": [
+        "typing._tp_cache"
+    ],
+    "typing._CallableType": [
+        "typing._tp_cache"
+    ],
+    "typing._TupleType": [
+        "typing._tp_cache"
+    ],
+    "typing.Generic": [
+        "typing._tp_cache"
+    ],
+    "typing.Annotated": [
+        "typing._tp_cache"
+    ],
+    "typing.TypeVar.__init__": [
+        "typing._type_check",
+        "<builtin>.len",
+        "<builtin>.super",
+        "<builtin>.tuple",
+        "<builtin>.TypeError"
+    ],
+    "typing._type_check": [
+        "<builtin>.isinstance",
+        "typing._type_convert",
+        "<builtin>.callable",
+        "<builtin>.TypeError"
+    ],
+    "typing._type_convert": [
+        "<builtin>.isinstance",
+        "<builtin>.type",
+        "typing.ForwardRef.__init__"
+    ],
+    "typing.ForwardRef.__init__": [
+        "<builtin>.isinstance",
+        "<builtin>.SyntaxError",
+        "<builtin>.TypeError",
+        "<builtin>.compile"
+    ],
+    "<builtin>.compile": [],
+    "typing._SpecialGenericAlias.__init__": [
+        "<builtin>.super"
+    ],
+    "typing.SupportsInt": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsFloat": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsComplex": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsBytes": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsIndex": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsAbs": [
+        "abc.abstractmethod"
+    ],
+    "typing.SupportsRound": [
+        "abc.abstractmethod"
+    ],
+    "typing.IO": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "typing.BinaryIO": [
+        "abc.abstractmethod"
+    ],
+    "typing.TextIO": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "packaging.version.Version": [
+        "<builtin>.property",
+        "re.compile"
+    ],
+    "matplotlib._api": [],
+    "matplotlib._api.deprecation": [
+        "contextlib.contextmanager"
+    ],
+    "matplotlib._api.classproperty": [
+        "<builtin>.property"
+    ],
+    "matplotlib._version": [],
+    "matplotlib.cbook": [
+        "matplotlib._api.deprecation.delete_parameter",
+        "operator.attrgetter.__init__",
+        "functools.cache",
+        "contextlib.contextmanager",
+        "matplotlib._api.deprecation.delete_parameter.wrapper",
+        "<map>.items"
+    ],
+    "gzip": [],
+    "gzip.GzipFile": [
+        "<builtin>.property"
+    ],
+    "shlex": [
+        "re.compile"
+    ],
+    "shlex.shlex": [
+        "<builtin>.property"
+    ],
+    "numpy": [
+        "<map>.update",
+        "<builtin>.ImportError",
+        "numpy._pytesttester.PytestTester.__init__",
+        "warnings.catch_warnings.__init__",
+        "<builtin>.RuntimeError",
+        "<builtin>.int",
+        "warnings.filterwarnings",
+        "<builtin>.str",
+        "numpy._sanity_check",
+        "numpy.core.getlimits._register_known_types",
+        "<builtin>.getattr",
+        "extend",
+        "<builtin>.len",
+        "numpy._mac_os_check",
+        "<builtin>.tuple",
+        "remove"
+    ],
+    "numpy._globals": [
+        "<builtin>.globals",
+        "<builtin>.RuntimeError"
+    ],
+    "numpy.__config__": [
+        "ntpath.join",
+        "genericpath.isdir",
+        "posixpath.join",
+        "posixpath.dirname",
+        "os.add_dll_directory",
+        "ntpath.dirname"
+    ],
+    "posixpath.dirname": [
+        "posixpath._get_sep",
+        "os._fspath",
+        "<builtin>.len"
+    ],
+    "ntpath.dirname": [
+        "ntpath.split"
+    ],
+    "genericpath.isdir": [
+        "stat.S_ISDIR"
+    ],
+    "stat.S_ISDIR": [
+        "stat.S_IFMT"
+    ],
+    "stat.S_IFMT": [],
+    "os.add_dll_directory": [
+        "os._AddedDllDirectory.__init__"
+    ],
+    "os._AddedDllDirectory.__init__": [],
+    "numpy._distributor_init": [],
+    "numpy.core": [
+        "<builtin>.ImportError",
+        "numpy._pytesttester.PytestTester.__init__",
+        "copyreg.pickle",
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "append"
+    ],
+    "numpy.version": [
+        "numpy._version.get_versions"
+    ],
+    "numpy._version": [],
+    "json": [],
+    "numpy._version.get_versions": [
+        "json.loads"
+    ],
+    "json.loads": [
+        "<builtin>.isinstance",
+        "<str>.startswith",
+        "json.detect_encoding",
+        "<builtin>.TypeError"
+    ],
+    "json.detect_encoding": [
+        "<builtin>.len"
+    ],
+    "numpy.core.multiarray": [],
+    "numpy.core.overrides": [
+        "<builtin>.int",
+        "<builtin>.bool",
+        "collections.namedtuple"
+    ],
+    "numpy.compat._inspect": [],
+    "numpy.core.umath": [],
+    "numpy.core.numerictypes": [
+        "numpy.core.overrides.set_module.decorator",
+        "<builtin>.sorted",
+        "numpy.core.overrides.set_module",
+        "<builtin>.globals",
+        "numpy.core.numerictypes._register_types",
+        "numpy.core.numerictypes._construct_lookups",
+        "<builtin>.len",
+        "append",
+        "<builtin>.tuple"
+    ],
+    "numbers": [],
+    "numbers.Complex": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numbers.Real": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numbers.Rational": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numbers.Integral": [
+        "<builtin>.property",
+        "abc.abstractmethod"
+    ],
+    "numpy.core._string_helpers": [
+        "<builtin>.range",
+        "<builtin>.chr"
+    ],
+    "numpy.core._type_aliases": [
+        "<builtin>.list",
+        "numpy.core._type_aliases._set_up_aliases",
+        "numpy.core._type_aliases._add_aliases",
+        "numpy.core._type_aliases._add_types",
+        "<builtin>.isinstance",
+        "numpy.core._type_aliases._set_array_types",
+        "<map>.items",
+        "numpy.core._type_aliases._add_integer_aliases",
+        "numpy.core._string_helpers.english_lower"
+    ],
+    "numpy.compat": [
+        "extend"
+    ],
+    "numpy.compat._pep440": [
+        "collections.namedtuple",
+        "re.compile"
+    ],
+    "numpy.compat._pep440.LegacyVersion": [
+        "<builtin>.property"
+    ],
+    "numpy.compat._pep440.Version": [
+        "<builtin>.property",
+        "re.compile"
+    ],
+    "numpy.compat.py3k": [],
+    "numpy.core._dtype": [],
+    "numpy.core._string_helpers.english_lower": [],
+    "numpy.core._type_aliases._add_types": [
+        "<map>.items"
+    ],
+    "numpy.core._type_aliases._add_aliases": [
+        "numpy.core._type_aliases.bitname",
+        "<map>.items"
+    ],
+    "numpy.core._type_aliases.bitname": [
+        "numpy.core._type_aliases._bits_of",
+        "numpy.core._dtype._kind_name"
+    ],
+    "numpy.core._type_aliases._bits_of": [
+        "<builtin>.next",
+        "<map>.values",
+        "<builtin>.ValueError"
+    ],
+    "<map>.values": [],
+    "numpy.core._dtype._kind_name": [
+        "<builtin>.RuntimeError"
+    ],
+    "numpy.core._type_aliases._add_integer_aliases": [
+        "<builtin>.zip",
+        "<builtin>.set"
+    ],
+    "numpy.core._type_aliases._set_up_aliases": [],
+    "numpy.core._type_aliases._set_array_types": [
+        "numpy.core._type_aliases._add_array_type",
+        "<builtin>.len"
+    ],
+    "numpy.core._type_aliases._add_array_type": [],
+    "numpy.core.overrides.set_module": [],
+    "numpy.core.overrides.set_module.decorator": [],
+    "numpy.core.numerictypes._construct_lookups": [
+        "<builtin>.len"
+    ],
+    "numpy.core.numerictypes._register_types": [],
+    "numpy.core.numeric": [
+        "<builtin>.type",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.numeric.extend_all",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_array_function_like_doc"
+    ],
+    "numpy.core.shape_base": [
+        "<builtin>.getattr"
+    ],
+    "numpy.core.fromnumeric": [],
+    "numpy.core._methods": [
+        "<map>.update"
+    ],
+    "numpy.core._exceptions": [],
+    "numpy.core._exceptions._ArrayMemoryError": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "numpy.core._ufunc_config": [
+        "numpy.core._ufunc_config._setdef",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator",
+        "<map>.items"
+    ],
+    "numpy.core._ufunc_config._setdef": [],
+    "numpy.core.overrides.set_array_function_like_doc": [],
+    "numpy.core.arrayprint": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.arrayprint._recursive_guard",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.arrayprint._recursive_guard.decorating_function",
+        "numpy.core.overrides.set_module",
+        "<builtin>.getattr",
+        "contextlib.contextmanager",
+        "append",
+        "<builtin>.issubclass"
+    ],
+    "numpy.core.arrayprint._recursive_guard": [],
+    "numpy.core.arrayprint._recursive_guard.decorating_function": [
+        "<builtin>.set",
+        "functools.wraps"
+    ],
+    "numpy.core.overrides.array_function_dispatch": [],
+    "numpy.core.overrides.array_function_dispatch.decorator": [],
+    "numpy.core.arrayprint.StructuredVoidFormat": [
+        "<builtin>.classmethod"
+    ],
+    "numpy.core._asarray": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_array_function_like_doc"
+    ],
+    "numpy.core.numeric.extend_all": [
+        "<builtin>.set",
+        "<builtin>.getattr"
+    ],
+    "numpy.core.defchararray": [
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.core.records": [
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.core.memmap": [],
+    "numpy.core.function_base": [],
+    "numpy.core._machar": [],
+    "numpy.core.getlimits": [
+        "<builtin>.dict"
+    ],
+    "numpy.core.getlimits.MachArLike": [
+        "<builtin>.property"
+    ],
+    "numpy.core.getlimits.finfo": [
+        "<builtin>.property"
+    ],
+    "numpy.core.getlimits.iinfo": [
+        "<builtin>.property"
+    ],
+    "numpy.core.einsumfunc": [
+        "<builtin>.set",
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.core._add_newdocs": [
+        "numpy.core.function_base.add_newdoc",
+        "numpy.core._add_newdocs.refer_to_array_attribute",
+        "<str>.replace"
+    ],
+    "numpy.core.function_base.add_newdoc": [
+        "<str>.strip",
+        "<builtin>.globals",
+        "numpy.core.function_base._add_docstring",
+        "<builtin>.getattr",
+        "<builtin>.isinstance",
+        "<builtin>.__import__"
+    ],
+    "numpy.core.function_base._add_docstring": [
+        "numpy.core.function_base._needs_add_docstring",
+        "warnings.warn"
+    ],
+    "numpy.core.function_base._needs_add_docstring": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.core._add_newdocs.refer_to_array_attribute": [],
+    "numpy.core._add_newdocs_scalars": [
+        "numpy.core._add_newdocs_scalars.add_newdoc_for_scalar_type",
+        "numpy.core.function_base.add_newdoc",
+        "numpy.core._add_newdocs_scalars.numeric_type_aliases"
+    ],
+    "platform": [
+        "collections.namedtuple",
+        "re.compile"
+    ],
+    "platform._Processor": [
+        "<builtin>.classmethod"
+    ],
+    "platform.uname_result": [
+        "functools.cached_property.__init__",
+        "<builtin>.classmethod"
+    ],
+    "functools.cached_property.__init__": [],
+    "numpy.core._add_newdocs_scalars.numeric_type_aliases": [
+        "numpy.core._add_newdocs_scalars.numeric_type_aliases.type_aliases_gen",
+        "<builtin>.list"
+    ],
+    "numpy.core._add_newdocs_scalars.numeric_type_aliases.type_aliases_gen": [
+        "<builtin>.getattr"
+    ],
+    "numpy.core._add_newdocs_scalars.add_newdoc_for_scalar_type": [
+        "<str>.strip",
+        "numpy.core.function_base.add_newdoc",
+        "<builtin>.getattr",
+        "platform.system",
+        "platform.machine"
+    ],
+    "platform.system": [
+        "platform.uname"
+    ],
+    "platform.uname": [
+        "platform.java_ver",
+        "<builtin>.map",
+        "<builtin>.any",
+        "platform.win32_ver",
+        "platform._node",
+        "platform._get_machine_win32",
+        "platform._syscmd_ver"
+    ],
+    "platform._node": [],
+    "socket": [
+        "<builtin>.hasattr",
+        "<builtin>.getattr",
+        "extend",
+        "append",
+        "<builtin>.object"
+    ],
+    "socket.socket": [
+        "<builtin>.hasattr",
+        "<builtin>.property"
+    ],
+    "socket.SocketIO": [
+        "<builtin>.property"
+    ],
+    "platform.win32_ver": [
+        "<map>.get",
+        "<builtin>.map",
+        "<str>.split",
+        "<builtin>.getattr",
+        "platform._syscmd_ver"
+    ],
+    "platform._syscmd_ver": [
+        "subprocess.check_output",
+        "platform._norm_version"
+    ],
+    "subprocess.check_output": [
+        "subprocess.run",
+        "<builtin>.ValueError"
+    ],
+    "subprocess.run": [
+        "subprocess.Popen.communicate",
+        "subprocess.Popen.__exit__",
+        "subprocess.Popen.kill",
+        "subprocess.Popen.__init__",
+        "<builtin>.ValueError",
+        "subprocess.Popen.poll",
+        "subprocess.CompletedProcess.__init__",
+        "subprocess.CalledProcessError.__init__",
+        "subprocess.Popen.__enter__",
+        "subprocess.Popen.wait"
+    ],
+    "subprocess.Popen.__init__": [
+        "<builtin>.filter",
+        "<builtin>.bool",
+        "<builtin>.ValueError",
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "subprocess.Popen._execute_child",
+        "<builtin>.isinstance",
+        "subprocess.Popen._get_handles",
+        "append",
+        "subprocess._cleanup",
+        "<builtin>.TypeError",
+        "warnings.warn"
+    ],
+    "subprocess._cleanup": [
+        "remove"
+    ],
+    "subprocess.Popen._get_handles": [
+        "<builtin>.isinstance",
+        "<builtin>.hasattr",
+        "subprocess.Popen._get_devnull"
+    ],
+    "subprocess.Popen._get_devnull": [
+        "<builtin>.hasattr"
+    ],
+    "subprocess.Popen._execute_child": [
+        "ntpath.join",
+        "subprocess.Popen._posix_spawn",
+        "<builtin>.map",
+        "os.get_exec_path",
+        "<builtin>.set",
+        "<builtin>.int",
+        "subprocess.Popen._close_pipe_fds",
+        "subprocess.Popen._handle_exitstatus",
+        "<builtin>.tuple",
+        "<builtin>.getattr",
+        "<builtin>.bytes",
+        "<builtin>.TypeError",
+        "ntpath.dirname",
+        "posixpath.join",
+        "<builtin>.len",
+        "posixpath.dirname",
+        "<builtin>.issubclass",
+        "<builtin>.ValueError",
+        "<builtin>.hasattr",
+        "<builtin>.list",
+        "<builtin>.sorted",
+        "<builtin>.isinstance",
+        "<builtin>.bytearray",
+        "append"
+    ],
+    "subprocess.Popen._posix_spawn": [
+        "<builtin>.getattr",
+        "subprocess.Popen._close_pipe_fds",
+        "append"
+    ],
+    "subprocess.Popen._close_pipe_fds": [
+        "<builtin>.getattr"
+    ],
+    "os.get_exec_path": [
+        "<str>.split",
+        "warnings.catch_warnings.__init__"
+    ],
+    "warnings.catch_warnings.__init__": [],
+    "subprocess.Popen._handle_exitstatus": [],
+    "<builtin>.filter": [],
+    "subprocess.Popen.__enter__": [],
+    "subprocess.Popen.__exit__": [],
+    "subprocess.Popen.communicate": [
+        "subprocess.Popen._wait",
+        "subprocess.Popen._communicate",
+        "<builtin>.ValueError",
+        "<builtin>.min",
+        "subprocess.Popen._remaining_time",
+        "subprocess.Popen._stdin_write",
+        "subprocess.Popen.wait"
+    ],
+    "subprocess.Popen._communicate": [
+        "<builtin>.RuntimeError",
+        "subprocess.Popen._remaining_time",
+        "subprocess.Popen._save_input",
+        "selectors.SelectSelector.__init__",
+        "subprocess.Popen._translate_newlines",
+        "subprocess.Popen._check_timeout",
+        "subprocess.Popen.wait",
+        "<builtin>.memoryview"
+    ],
+    "subprocess.Popen._save_input": [],
+    "selectors.SelectSelector.__init__": [
+        "<builtin>.set",
+        "<builtin>.super"
+    ],
+    "subprocess.Popen._remaining_time": [],
+    "subprocess.Popen._check_timeout": [
+        "subprocess.TimeoutExpired.__init__"
+    ],
+    "subprocess.TimeoutExpired.__init__": [],
+    "subprocess.Popen.wait": [
+        "subprocess.Popen._wait",
+        "subprocess.Popen._remaining_time",
+        "<builtin>.min"
+    ],
+    "subprocess.Popen._wait": [
+        "<builtin>.min",
+        "subprocess.Popen._remaining_time",
+        "subprocess.Popen._try_wait",
+        "subprocess.TimeoutExpired.__init__",
+        "subprocess.Popen._handle_exitstatus"
+    ],
+    "subprocess.Popen._try_wait": [],
+    "subprocess.Popen._translate_newlines": [],
+    "subprocess.Popen._stdin_write": [],
+    "subprocess.Popen.kill": [
+        "subprocess.Popen.send_signal"
+    ],
+    "subprocess.Popen.send_signal": [
+        "subprocess.Popen.poll"
+    ],
+    "subprocess.Popen.poll": [
+        "subprocess.Popen._internal_poll"
+    ],
+    "subprocess.Popen._internal_poll": [
+        "subprocess.Popen._handle_exitstatus"
+    ],
+    "subprocess.CalledProcessError.__init__": [],
+    "subprocess.CompletedProcess.__init__": [],
+    "platform._norm_version": [
+        "<str>.split",
+        "<builtin>.map",
+        "<builtin>.list"
+    ],
+    "platform._get_machine_win32": [],
+    "platform.java_ver": [
+        "platform._java_getprop"
+    ],
+    "platform._java_getprop": [],
+    "platform.machine": [
+        "platform.uname"
+    ],
+    "numpy.core._dtype_ctypes": [],
+    "numpy.core._internal": [
+        "platform.python_implementation",
+        "<map>.keys",
+        "re.compile"
+    ],
+    "ctypes": [
+        "ctypes.PYFUNCTYPE",
+        "<builtin>.int",
+        "ctypes.CFUNCTYPE",
+        "ctypes._check_size",
+        "ctypes._reset_cache",
+        "<builtin>.Exception",
+        "ctypes.LibraryLoader.__init__"
+    ],
+    "<builtin>.Exception": [],
+    "ctypes._check_size": [
+        "<builtin>.SystemError"
+    ],
+    "ctypes.LibraryLoader": [
+        "<builtin>.classmethod"
+    ],
+    "ctypes.LibraryLoader.__init__": [],
+    "ctypes.CFUNCTYPE": [
+        "<builtin>.ValueError"
+    ],
+    "ctypes.PYFUNCTYPE": [],
+    "ctypes._endian": [
+        "<builtin>.type"
+    ],
+    "ctypes._reset_cache": [
+        "<map>.clear"
+    ],
+    "platform.python_implementation": [
+        "platform._sys_version"
+    ],
+    "platform._sys_version": [
+        "<map>.get",
+        "<builtin>.ValueError",
+        "<builtin>.hasattr",
+        "<builtin>.len",
+        "<builtin>.repr"
+    ],
+    "numpy.core._internal._ctypes": [
+        "<builtin>.property"
+    ],
+    "numpy.core._internal._Stream": [
+        "<builtin>.property"
+    ],
+    "numpy._pytesttester": [],
+    "numpy._pytesttester.PytestTester.__init__": [],
+    "numpy.lib": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.lib.mixins": [],
+    "numpy.lib.mixins.NDArrayOperatorsMixin": [
+        "numpy.lib.mixins._binary_method",
+        "numpy.lib.mixins._unary_method",
+        "numpy.lib.mixins._reflected_binary_method",
+        "numpy.lib.mixins._numeric_methods"
+    ],
+    "numpy.lib.mixins._binary_method": [],
+    "numpy.lib.mixins._numeric_methods": [
+        "numpy.lib.mixins._binary_method",
+        "numpy.lib.mixins._inplace_binary_method",
+        "numpy.lib.mixins._reflected_binary_method"
+    ],
+    "numpy.lib.mixins._reflected_binary_method": [],
+    "numpy.lib.mixins._inplace_binary_method": [],
+    "numpy.lib.mixins._unary_method": [],
+    "numpy.lib.scimath": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.lib.type_check": [
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.lib.ufunclike": [
+        "numpy.lib.ufunclike._deprecate_out_named_y",
+        "numpy.lib.ufunclike._fix_and_maybe_deprecate_out_named_y",
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.lib.ufunclike._deprecate_out_named_y": [
+        "functools.wraps"
+    ],
+    "numpy.lib.ufunclike._fix_and_maybe_deprecate_out_named_y": [
+        "numpy.lib.ufunclike._fix_out_named_y",
+        "numpy.lib.ufunclike._deprecate_out_named_y"
+    ],
+    "numpy.lib.ufunclike._fix_out_named_y": [
+        "functools.wraps"
+    ],
+    "numpy.lib.index_tricks": [
+        "numpy.lib.index_tricks.MGridClass.__init__",
+        "numpy.lib.index_tricks.IndexExpression.__init__",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module",
+        "numpy.lib.index_tricks.CClass.__init__",
+        "numpy.lib.index_tricks.OGridClass.__init__",
+        "numpy.lib.index_tricks.RClass.__init__"
+    ],
+    "numpy.matrixlib": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.matrixlib.defmatrix": [
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.linalg": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.linalg.linalg": [
+        "numpy.linalg.linalg._determine_error_states"
+    ],
+    "numpy.lib.twodim_base": [
+        "numpy.core.overrides.set_array_function_like_doc",
+        "numpy.core.overrides.set_module",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.getlimits.iinfo.__init__"
+    ],
+    "numpy.lib.stride_tricks": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.core.getlimits.iinfo.__init__": [
+        "<builtin>.type",
+        "<builtin>.ValueError"
+    ],
+    "numpy.linalg.linalg._determine_error_states": [
+        "numpy.core._ufunc_config.errstate.__init__"
+    ],
+    "numpy.core._ufunc_config.errstate.__init__": [],
+    "numpy.matrixlib.defmatrix.matrix": [
+        "<builtin>.property"
+    ],
+    "numpy.lib.function_base": [
+        "<builtin>.dict",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.lib.histograms": [],
+    "numpy.lib.index_tricks.MGridClass.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.lib.index_tricks.OGridClass.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.lib.index_tricks.AxisConcatenator": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.lib.index_tricks.RClass.__init__": [
+        "numpy.lib.index_tricks.AxisConcatenator.__init__"
+    ],
+    "numpy.lib.index_tricks.AxisConcatenator.__init__": [],
+    "numpy.lib.index_tricks.CClass.__init__": [
+        "numpy.lib.index_tricks.AxisConcatenator.__init__"
+    ],
+    "numpy.lib.index_tricks.IndexExpression.__init__": [],
+    "numpy.lib.nanfunctions": [],
+    "numpy.lib.shape_base": [],
+    "numpy.lib.polynomial": [
+        "re.compile",
+        "warnings.simplefilter"
+    ],
+    "numpy.lib.polynomial.poly1d": [
+        "<builtin>.property"
+    ],
+    "numpy.lib.utils": [
+        "re.compile",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "textwrap": [
+        "re.compile"
+    ],
+    "textwrap.TextWrapper": [
+        "<builtin>.ord",
+        "re.escape",
+        "re.compile"
+    ],
+    "<str>.translate": [],
+    "<str>.encode": [],
+    "numpy.lib.arraysetops": [],
+    "numpy.lib.npyio": [
+        "numpy.core.overrides.set_array_function_like_doc",
+        "<builtin>.sorted",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.lib.format": [
+        "<builtin>.len"
+    ],
+    "numpy.lib._datasource": [
+        "numpy.lib._datasource._FileOpeners.__init__"
+    ],
+    "numpy.lib._datasource._FileOpeners.__init__": [],
+    "numpy.lib._iotools": [],
+    "numpy.lib._iotools.NameValidator": [
+        "<builtin>.set"
+    ],
+    "numpy.lib._iotools.StringConverter": [
+        "<builtin>.classmethod",
+        "extend",
+        "append"
+    ],
+    "numpy.lib.arrayterator": [],
+    "numpy.lib.arrayterator.Arrayterator": [
+        "<builtin>.property"
+    ],
+    "numpy.lib.arraypad": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.array_function_dispatch.decorator"
+    ],
+    "numpy.lib._version": [],
+    "numpy.fft": [
+        "numpy._pytesttester.PytestTester.__init__",
+        "copy"
+    ],
+    "numpy.fft._pocketfft": [],
+    "numpy.fft.helper": [
+        "numpy.core.overrides.array_function_dispatch",
+        "numpy.core.overrides.set_module.decorator",
+        "numpy.core.overrides.array_function_dispatch.decorator",
+        "numpy.core.overrides.set_module"
+    ],
+    "numpy.polynomial": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.polynomial.polynomial": [],
+    "numpy.polynomial.polyutils": [],
+    "numpy.polynomial._polybase": [],
+    "numpy.polynomial._polybase.ABCPolyBase": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "abc.abstractmethod",
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.polynomial.Polynomial": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.chebyshev": [],
+    "numpy.polynomial.chebyshev.Chebyshev": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.legendre": [],
+    "numpy.polynomial.legendre.Legendre": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.hermite": [],
+    "numpy.polynomial.hermite.Hermite": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.hermite_e": [],
+    "numpy.polynomial.hermite_e.HermiteE": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.polynomial.laguerre": [],
+    "numpy.polynomial.laguerre.Laguerre": [
+        "<builtin>.staticmethod"
+    ],
+    "numpy.random": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.random._pickle": [],
+    "numpy.ctypeslib": [
+        "numpy.ctypeslib._get_scalar_type_map",
+        "numpy.core._internal._getintp_ctype"
+    ],
+    "numpy.core._internal._getintp_ctype": [
+        "numpy.core._internal.dummy_ctype.__init__"
+    ],
+    "numpy.core._internal.dummy_ctype.__init__": [],
+    "numpy.ctypeslib._ndptr": [
+        "<builtin>.classmethod"
+    ],
+    "numpy.ctypeslib._concrete_ndptr": [
+        "<builtin>.property"
+    ],
+    "numpy.ctypeslib._get_scalar_type_map": [],
+    "numpy.ma": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy.ma.core": [
+        "numpy.ma.core._DomainedBinaryOperation.__init__",
+        "numpy.ma.core.doc_note",
+        "numpy.ma.core._DomainCheckInterval.__init__",
+        "<builtin>.dict",
+        "numpy.ma.core._DomainTan.__init__",
+        "numpy.ma.core._MaskedUnaryOperation.__init__",
+        "numpy.ma.core._convert2ma.__init__",
+        "numpy.ma.core._DomainGreaterEqual.__init__",
+        "numpy.ma.core._DomainGreater.__init__",
+        "numpy.ma.core._MaskedBinaryOperation.__init__",
+        "numpy.ma.core._MaskedPrintOption.__init__",
+        "numpy.ma.core._DomainSafeDivide.__init__",
+        "textwrap.dedent",
+        "<builtin>.complex",
+        "numpy.ma.core._frommethod.__init__",
+        "numpy.ma.core._extrema_operation.__init__"
+    ],
+    "<builtin>.complex": [],
+    "numpy.ma.core._MaskedUnaryOperation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core._DomainGreaterEqual.__init__": [],
+    "numpy.ma.core._DomainGreater.__init__": [],
+    "numpy.ma.core._DomainTan.__init__": [],
+    "numpy.ma.core._DomainCheckInterval.__init__": [],
+    "numpy.ma.core._MaskedBinaryOperation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core._DomainSafeDivide.__init__": [],
+    "numpy.ma.core._DomainedBinaryOperation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core._MaskedPrintOption.__init__": [],
+    "textwrap.dedent": [
+        "<builtin>.zip",
+        "<builtin>.enumerate",
+        "re.sub"
+    ],
+    "re.sub": [
+        "re._compile"
+    ],
+    "numpy.ma.core.MaskedArray": [
+        "numpy.ma.core._arraymethod",
+        "<builtin>.property"
+    ],
+    "numpy.ma.core._arraymethod": [
+        "<builtin>.getattr"
+    ],
+    "numpy.ma.core.mvoid": [
+        "<builtin>.property"
+    ],
+    "numpy.ma.core.MaskedConstant": [
+        "<builtin>.classmethod"
+    ],
+    "numpy.ma.core._frommethod.__init__": [
+        "numpy.ma.core._frommethod.getdoc"
+    ],
+    "numpy.ma.core._frommethod.getdoc": [
+        "numpy.ma.core.get_object_signature",
+        "<builtin>.getattr"
+    ],
+    "numpy.ma.core.get_object_signature": [
+        "numpy.compat._inspect.formatargspec",
+        "numpy.compat._inspect.getargspec"
+    ],
+    "numpy.compat._inspect.getargspec": [
+        "numpy.compat._inspect.ismethod",
+        "numpy.compat._inspect.isfunction",
+        "numpy.compat._inspect.getargs",
+        "<builtin>.TypeError"
+    ],
+    "numpy.compat._inspect.ismethod": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.compat._inspect.isfunction": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.compat._inspect.getargs": [
+        "numpy.compat._inspect.iscode",
+        "<builtin>.range",
+        "<builtin>.list",
+        "<builtin>.TypeError"
+    ],
+    "numpy.compat._inspect.iscode": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.compat._inspect.formatargspec": [
+        "<builtin>.len",
+        "append",
+        "numpy.compat._inspect.strseq",
+        "<builtin>.range",
+        "numpy.compat._inspect.<lambda3>"
+    ],
+    "numpy.compat._inspect.strseq": [
+        "numpy.compat._inspect.joinseq",
+        "<builtin>.type",
+        "numpy.compat._inspect.strseq"
+    ],
+    "numpy.compat._inspect.joinseq": [
+        "<builtin>.len"
+    ],
+    "numpy.compat._inspect.<lambda3>": [
+        "<builtin>.repr"
+    ],
+    "numpy.ma.core._extrema_operation.__init__": [
+        "<builtin>.super"
+    ],
+    "numpy.ma.core.doc_note": [
+        "inspect.cleandoc",
+        "re.split"
+    ],
+    "inspect.cleandoc": [
+        "<str>.expandtabs"
+    ],
+    "re.split": [
+        "re._compile"
+    ],
+    "<str>.expandtabs": [],
+    "numpy.ma.core._convert2ma.__init__": [
+        "numpy.ma.core._convert2ma.getdoc",
+        "<builtin>.getattr"
+    ],
+    "numpy.ma.core._convert2ma.getdoc": [
+        "numpy.ma.core.get_object_signature",
+        "<builtin>.getattr",
+        "numpy.ma.core._convert2ma._replace_return_type"
+    ],
+    "numpy.ma.core._convert2ma._replace_return_type": [
+        "<builtin>.RuntimeError"
+    ],
+    "numpy.ma.extras": [
+        "numpy.ma.core.doc_note",
+        "numpy.ma.extras.mr_class.__init__"
+    ],
+    "numpy.ma.extras.MAxisConcatenator": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "numpy.ma.extras.mr_class.__init__": [
+        "numpy.lib.index_tricks.AxisConcatenator.__init__"
+    ],
+    "numpy.core.getlimits._register_known_types": [
+        "numpy.core._ufunc_config.errstate.__init__",
+        "numpy.core.getlimits._register_type",
+        "numpy.core.getlimits.MachArLike.__init__"
+    ],
+    "numpy.core.getlimits.MachArLike.__init__": [
+        "<builtin>.int",
+        "numpy.core.getlimits.MachArLike._float_conv",
+        "numpy.core.getlimits.MachArLike._float_to_str",
+        "numpy.core.getlimits.MachArLike._float_to_float"
+    ],
+    "numpy.core.getlimits.MachArLike._float_to_float": [
+        "numpy.core.getlimits.MachArLike._float_conv",
+        "numpy.core.getlimits._fr1"
+    ],
+    "numpy.core.getlimits.MachArLike._float_conv": [],
+    "numpy.core.getlimits._fr1": [],
+    "numpy.core.getlimits.MachArLike._float_to_str": [
+        "numpy.core.getlimits._fr0"
+    ],
+    "numpy.core.getlimits._fr0": [],
+    "numpy.core.getlimits._register_type": [],
+    "numpy._sanity_check": [
+        "<builtin>.RuntimeError",
+        "<builtin>.AssertionError",
+        "<builtin>.abs"
+    ],
+    "<builtin>.abs": [],
+    "<builtin>.AssertionError": [],
+    "numpy._mac_os_check": [],
+    "matplotlib.cbook.CallbackRegistry": [
+        "contextlib.contextmanager"
+    ],
+    "matplotlib._api.deprecation.delete_parameter": [
+        "functools.wraps",
+        "<builtin>.next",
+        "inspect.signature"
+    ],
+    "inspect.signature": [
+        "inspect.Signature.from_callable"
+    ],
+    "inspect.Signature.from_callable": [
+        "inspect._signature_from_callable"
+    ],
+    "inspect._signature_from_callable": [
+        "<builtin>.callable",
+        "inspect.unwrap",
+        "inspect._signature_get_user_defined_method",
+        "inspect._signature_get_partial",
+        "<builtin>.ValueError",
+        "<builtin>.type",
+        "inspect.isfunction",
+        "<builtin>.isinstance",
+        "inspect._signature_from_function",
+        "inspect._signature_bound_method",
+        "inspect._signature_is_functionlike",
+        "inspect.Signature.from_callable",
+        "<builtin>.TypeError",
+        "inspect._signature_from_builtin",
+        "inspect._signature_is_builtin"
+    ],
+    "inspect._signature_bound_method": [
+        "<builtin>.tuple",
+        "<builtin>.ValueError"
+    ],
+    "inspect.unwrap": [
+        "inspect.unwrap._is_wrapper",
+        "<builtin>.id",
+        "<builtin>.len",
+        "<builtin>.ValueError"
+    ],
+    "<builtin>.id": [],
+    "inspect.unwrap._is_wrapper": [
+        "<builtin>.hasattr",
+        "inspect._signature_from_callable.<lambda1>"
+    ],
+    "inspect._signature_from_callable.<lambda1>": [],
+    "inspect.isfunction": [
+        "<builtin>.isinstance"
+    ],
+    "inspect._signature_is_functionlike": [
+        "<builtin>.callable",
+        "inspect.isclass",
+        "<builtin>.getattr",
+        "<builtin>.isinstance"
+    ],
+    "inspect.isclass": [
+        "<builtin>.isinstance"
+    ],
+    "inspect._signature_from_function": [
+        "inspect.isfunction",
+        "<builtin>.enumerate",
+        "<builtin>.getattr",
+        "inspect._signature_fromstr",
+        "<builtin>.len",
+        "append",
+        "inspect.Signature.__init__",
+        "inspect._signature_is_functionlike",
+        "inspect.get_annotations",
+        "<builtin>.TypeError"
+    ],
+    "inspect._signature_fromstr": [
+        "inspect._signature_fromstr.p",
+        "inspect._signature_strip_non_python_syntax",
+        "<builtin>.ValueError",
+        "ast.parse",
+        "<builtin>.list",
+        "<builtin>.isinstance",
+        "<builtin>.enumerate",
+        "<builtin>.getattr",
+        "<builtin>.reversed",
+        "inspect.Signature.__init__",
+        "<builtin>.zip",
+        "inspect.ismodule",
+        "pop",
+        "<builtin>.object"
+    ],
+    "inspect._signature_strip_non_python_syntax": [
+        "",
+        "tokenize.tokenize",
+        "<builtin>.iter",
+        "<builtin>.next"
+    ],
+    "tokenize.tokenize": [
+        "<builtin>.iter",
+        "tokenize.detect_encoding",
+        "tokenize._tokenize"
+    ],
+    "tokenize._tokenize": [
+        "<map>.get",
+        "<builtin>.IndentationError",
+        "<builtin>.len",
+        "append",
+        "tokenize._compile"
+    ],
+    "<builtin>.IndentationError": [],
+    "tokenize._compile": [
+        "re.compile"
+    ],
+    "ast.parse": [
+        "<builtin>.isinstance",
+        "<builtin>.compile"
+    ],
+    "inspect._signature_fromstr.p": [
+        "ast.NodeVisitor.visit",
+        "inspect._signature_fromstr.parse_name",
+        "ast.literal_eval",
+        "append"
+    ],
+    "inspect._signature_fromstr.parse_name": [
+        "<builtin>.isinstance",
+        "<builtin>.ValueError"
+    ],
+    "ast.NodeVisitor.visit": [
+        "<builtin>.getattr"
+    ],
+    "ast.literal_eval": [
+        "<builtin>.isinstance",
+        "ast.literal_eval._convert",
+        "ast.parse"
+    ],
+    "ast.literal_eval._convert": [
+        "<builtin>.zip",
+        "<builtin>.map",
+        "<builtin>.dict",
+        "<builtin>.set",
+        "<builtin>.list",
+        "<builtin>.isinstance",
+        "ast.literal_eval._convert_signed_num",
+        "ast.literal_eval._raise_malformed_node",
+        "<builtin>.len",
+        "ast.literal_eval._convert_num",
+        "<builtin>.tuple"
+    ],
+    "ast.literal_eval._convert_signed_num": [
+        "<builtin>.isinstance",
+        "ast.literal_eval._convert_num"
+    ],
+    "ast.literal_eval._convert_num": [
+        "<builtin>.isinstance",
+        "ast.literal_eval._raise_malformed_node",
+        "<builtin>.type"
+    ],
+    "ast.literal_eval._raise_malformed_node": [
+        "<builtin>.getattr",
+        "<builtin>.ValueError"
+    ],
+    "inspect.ismodule": [
+        "<builtin>.isinstance"
+    ],
+    "inspect.Signature.__init__": [
+        "collections.OrderedDict.__init__",
+        "<builtin>.ValueError"
+    ],
+    "collections.OrderedDict.__init__": [],
+    "inspect.get_annotations": [
+        "<builtin>.callable",
+        "<builtin>.eval",
+        "<builtin>.dict",
+        "<builtin>.ValueError",
+        "<builtin>.hasattr",
+        "<builtin>.isinstance",
+        "<builtin>.getattr",
+        "<builtin>.vars",
+        "<builtin>.TypeError"
+    ],
+    "<builtin>.vars": [],
+    "inspect._signature_is_builtin": [
+        "<builtin>.isinstance",
+        "inspect.ismethoddescriptor",
+        "inspect.isbuiltin"
+    ],
+    "inspect.isbuiltin": [
+        "<builtin>.isinstance"
+    ],
+    "inspect.ismethoddescriptor": [
+        "inspect.ismethod",
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "inspect.isfunction",
+        "inspect.isclass"
+    ],
+    "inspect.ismethod": [
+        "<builtin>.isinstance"
+    ],
+    "inspect._signature_from_builtin": [
+        "<builtin>.ValueError",
+        "inspect._signature_fromstr",
+        "<builtin>.getattr",
+        "<builtin>.TypeError",
+        "inspect._signature_is_builtin"
+    ],
+    "inspect._signature_get_partial": [
+        "collections.OrderedDict.__init__",
+        "<builtin>.ValueError",
+        "collections.OrderedDict.pop",
+        "collections.OrderedDict.values",
+        "collections.OrderedDict.move_to_end"
+    ],
+    "collections.OrderedDict.pop": [
+        "<builtin>.KeyError"
+    ],
+    "collections.OrderedDict.move_to_end": [],
+    "collections.OrderedDict.values": [],
+    "inspect._signature_get_user_defined_method": [
+        "<builtin>.getattr"
+    ],
+    "matplotlib._api.deprecation.delete_parameter.wrapper": [
+        "matplotlib._api.deprecation.warn_deprecated",
+        "<builtin>.repr",
+        "<builtin>.any",
+        "<builtin>.len"
+    ],
+    "matplotlib._api.deprecation.warn_deprecated": [
+        "matplotlib._api.deprecation._generate_deprecation_warning"
+    ],
+    "matplotlib._api.deprecation._generate_deprecation_warning": [
+        "<builtin>.int",
+        "<builtin>.dict",
+        "<builtin>.ValueError"
+    ],
+    "matplotlib.cbook.Grouper": [
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib._api.deprecation.deprecated": [],
+    "matplotlib._api.deprecation.deprecated.deprecate": [
+        "<builtin>.isinstance",
+        "inspect.cleandoc",
+        "<builtin>.type",
+        "matplotlib._api.deprecation.deprecated.deprecate.finalize"
+    ],
+    "matplotlib._api.deprecation.deprecated.deprecate.finalize": [
+        "functools.wraps"
+    ],
+    "functools.cache": [
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "matplotlib._docstring": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib._docstring._ArtistPropertiesSubstitution.__init__": [],
+    "matplotlib.rcsetup": [
+        "matplotlib.rcsetup._convert_validator_spec",
+        "functools.lru_cache",
+        "<map>.items",
+        "matplotlib.rcsetup._make_type_validator",
+        "matplotlib.rcsetup.ValidateInStrings.__init__",
+        "matplotlib.rcsetup._listify_validator",
+        "<builtin>.object"
+    ],
+    "matplotlib.backends": [],
+    "matplotlib.backends.registry": [
+        "matplotlib.backends.registry.BackendRegistry.__init__"
+    ],
+    "matplotlib.backends.registry.BackendRegistry.__init__": [],
+    "matplotlib.colors": [
+        "<map>.update",
+        "matplotlib.colors.ColorSequenceRegistry.__init__",
+        "re.compile",
+        "matplotlib.colors.make_norm_from_scale",
+        "matplotlib.colors._make_norm_from_scale.Norm.__init__",
+        "matplotlib.colors._ColorMapping.__init__",
+        "functools.cache"
+    ],
+    "base64": [],
+    "PIL.Image": [
+        "<builtin>.ImportError",
+        "PIL.Image._apply_env_variables",
+        "logging.getLogger",
+        "<builtin>.int",
+        "<builtin>.str",
+        "PIL._util.DeferredError.new",
+        "<builtin>.hasattr",
+        "<builtin>.setattr",
+        "<builtin>.getattr",
+        "warnings.warn"
+    ],
+    "PIL.ExifTags": [],
+    "PIL.ImageMode": [
+        "functools.lru_cache"
+    ],
+    "PIL._deprecate": [],
+    "PIL.TiffTags": [
+        "PIL.TiffTags._populate"
+    ],
+    "PIL.TiffTags._populate": [
+        "<builtin>.len",
+        "<map>.items"
+    ],
+    "PIL._binary": [],
+    "PIL._util": [],
+    "PIL._typing": [
+        "typing.TypeVar.__init__"
+    ],
+    "numpy.typing": [
+        "numpy._pytesttester.PytestTester.__init__"
+    ],
+    "numpy._typing": [],
+    "numpy._typing._nested_sequence": [
+        "typing.TypeVar.__init__"
+    ],
+    "numpy._typing._nested_sequence._NestedSequence": [
+        "typing.overload"
+    ],
+    "typing.overload": [],
+    "numpy._typing._nbit": [],
+    "numpy._typing._char_codes": [],
+    "numpy._typing._scalars": [],
+    "numpy._typing._shape": [],
+    "numpy._typing._dtype_like": [
+        "typing.TypeVar.__init__"
+    ],
+    "numpy._typing._generic_alias": [
+        "typing.TypeVar.__init__",
+        "numpy._typing._generic_alias._GenericAlias.__init__"
+    ],
+    "numpy._typing._generic_alias._GenericAlias": [
+        "<builtin>.property",
+        "<builtin>.frozenset"
+    ],
+    "numpy._typing._generic_alias._GenericAlias.__init__": [
+        "<builtin>.isinstance",
+        "numpy._typing._generic_alias._parse_parameters",
+        "<builtin>.tuple"
+    ],
+    "numpy._typing._generic_alias._parse_parameters": [
+        "<builtin>.isinstance",
+        "<builtin>.hasattr"
+    ],
+    "numpy._typing._dtype_like._SupportsDType": [
+        "<builtin>.property"
+    ],
+    "numpy._typing._array_like": [
+        "typing.TypeVar.__init__"
+    ],
+    "numpy._typing._add_docstring": [
+        "<builtin>.repr",
+        "numpy._typing._add_docstring.add_newdoc",
+        "numpy._typing._add_docstring._parse_docstrings"
+    ],
+    "numpy._typing._add_docstring.add_newdoc": [
+        "append"
+    ],
+    "numpy._typing._add_docstring._parse_docstrings": [
+        "pop",
+        "append",
+        "textwrap.dedent",
+        "re.match"
+    ],
+    "re.match": [
+        "re._compile"
+    ],
+    "typing_extensions": [
+        "typing_extensions._SpecialGenericAlias.__init__",
+        "inspect.signature",
+        "<builtin>.frozenset",
+        "typing_extensions._LiteralForm.__init__",
+        "<builtin>.hasattr",
+        "typing._tp_cache",
+        "<builtin>.type",
+        "typing_extensions._UnpackSpecialForm.__init__",
+        "<builtin>.getattr",
+        "typing_extensions._SpecialForm.__init__",
+        "<builtin>.classmethod",
+        "typing_extensions._ensure_subclassable",
+        "append",
+        "typing_extensions._ensure_subclassable.inner",
+        "typing.TypeVar.__init__"
+    ],
+    "typing_extensions._LiteralForm.__init__": [],
+    "typing_extensions._SpecialGenericAlias": [
+        "typing._tp_cache"
+    ],
+    "typing_extensions._SpecialGenericAlias.__init__": [
+        "<builtin>.super"
+    ],
+    "typing_extensions.SupportsInt": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions.SupportsFloat": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions.SupportsComplex": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions.SupportsBytes": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions.SupportsIndex": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions.SupportsAbs": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions.SupportsRound": [
+        "abc.abstractmethod"
+    ],
+    "typing_extensions._ensure_subclassable": [],
+    "typing_extensions._ensure_subclassable.inner": [
+        "<builtin>.type",
+        "functools.update_wrapper",
+        "<builtin>.staticmethod"
+    ],
+    "typing_extensions.Annotated": [
+        "typing._tp_cache"
+    ],
+    "typing_extensions.ParamSpec": [
+        "<builtin>.property"
+    ],
+    "typing_extensions._ConcatenateGenericAlias": [
+        "<builtin>.property"
+    ],
+    "typing_extensions._SpecialForm": [
+        "typing._tp_cache"
+    ],
+    "typing_extensions._SpecialForm.__init__": [],
+    "typing_extensions._UnpackSpecialForm.__init__": [
+        "<builtin>.super"
+    ],
+    "PIL._util.DeferredError": [
+        "<builtin>.staticmethod"
+    ],
+    "logging.getLogger": [
+        "<builtin>.isinstance"
+    ],
+    "PIL._util.DeferredError.new": [
+        "PIL._util.DeferredError.__init__"
+    ],
+    "PIL._util.DeferredError.__init__": [],
+    "<builtin>.setattr": [],
+    "xml.etree.ElementTree": [
+        "<builtin>.set",
+        "contextlib.contextmanager",
+        "re.compile"
+    ],
+    "xml.etree.ElementPath": [
+        "re.compile"
+    ],
+    "PIL.ImageFile": [],
+    "PIL.ImageFile.StubHandler": [
+        "abc.abstractmethod"
+    ],
+    "PIL.ImageFile.PyDecoder": [
+        "<builtin>.property"
+    ],
+    "PIL.ImageFile.PyEncoder": [
+        "<builtin>.property"
+    ],
+    "PIL.ImageFilter": [],
+    "PIL.ImageFilter.Filter": [
+        "abc.abstractmethod"
+    ],
+    "PIL.ImageFilter.Color3DLUT": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "PIL.ImagePalette": [],
+    "PIL.GimpGradientFile": [],
+    "PIL.GimpPaletteFile": [],
+    "PIL.ImageColor": [
+        "functools.lru_cache"
+    ],
+    "PIL.PaletteFile": [],
+    "PIL.ImagePalette.ImagePalette": [
+        "<builtin>.property"
+    ],
+    "PIL.ImageQt": [
+        "sort"
+    ],
+    "sort": [],
+    "PIL.TiffImagePlugin": [
+        "logging.getLogger",
+        "<builtin>.setattr",
+        "PIL._deprecate.deprecate",
+        "<builtin>.getattr",
+        "<builtin>.max",
+        "<builtin>.len",
+        "<map>.items"
+    ],
+    "fractions": [
+        "re.compile"
+    ],
+    "decimal": [],
+    "_pydecimal": [
+        "re.compile",
+        "_pydecimal._Log10Memoize.__init__",
+        "<builtin>.pow",
+        "_pydecimal.Context.__init__",
+        "collections.namedtuple"
+    ],
+    "contextvars": [],
+    "_pydecimal.Decimal": [
+        "<builtin>.dict",
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "_pydecimal._Log10Memoize.__init__": [],
+    "_pydecimal.Context.__init__": [
+        "<builtin>.isinstance",
+        "<builtin>.int",
+        "<builtin>.dict",
+        "copy"
+    ],
+    "<builtin>.pow": [],
+    "fractions.Fraction": [
+        "fractions.Fraction._operator_fallbacks",
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "fractions.Fraction._operator_fallbacks": [],
+    "PIL.ImageOps": [],
+    "PIL._deprecate.deprecate": [
+        "<builtin>.int",
+        "<builtin>.RuntimeError",
+        "warnings.warn",
+        "<builtin>.ValueError"
+    ],
+    "PIL.TiffImagePlugin.IFDRational": [
+        "<builtin>.hasattr",
+        "<builtin>.property",
+        "PIL.TiffImagePlugin._delegate"
+    ],
+    "PIL.TiffImagePlugin._delegate": [],
+    "PIL.TiffImagePlugin.ImageFileDirectory_v2": [
+        "PIL.TiffImagePlugin._register_writer",
+        "<builtin>.map",
+        "<builtin>.list",
+        "PIL.TiffImagePlugin._register_loader",
+        "PIL.TiffImagePlugin._register_writer.decorator",
+        "<builtin>.property",
+        "PIL.TiffImagePlugin._register_loader.decorator"
+    ],
+    "PIL.TiffImagePlugin._register_loader": [],
+    "PIL.TiffImagePlugin._register_loader.decorator": [],
+    "PIL.TiffImagePlugin._register_writer": [],
+    "PIL.TiffImagePlugin._register_writer.decorator": [],
+    "PIL.TiffImagePlugin.ImageFileDirectory_v1": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "PIL.TiffImagePlugin.TiffImageFile": [
+        "<builtin>.property"
+    ],
+    "PIL.TiffImagePlugin.AppendingTiffWriter": [
+        "<builtin>.staticmethod"
+    ],
+    "PIL.Image.Image": [
+        "<builtin>.property"
+    ],
+    "PIL.Image.ImagePointHandler": [
+        "abc.abstractmethod"
+    ],
+    "PIL.Image.ImageTransformHandler": [
+        "abc.abstractmethod"
+    ],
+    "PIL.Image.SupportsArrayInterface": [
+        "<builtin>.property"
+    ],
+    "PIL.Image._apply_env_variables": [
+        "<builtin>.int",
+        "<builtin>.len",
+        "warnings.warn"
+    ],
+    "PIL.PngImagePlugin": [
+        "logging.getLogger",
+        "re.compile"
+    ],
+    "PIL.ImageChops": [],
+    "PIL.ImageSequence": [],
+    "PIL.PngImagePlugin.iTXt": [
+        "<builtin>.staticmethod"
+    ],
+    "PIL.PngImagePlugin.PngImageFile": [
+        "<builtin>.property"
+    ],
+    "matplotlib._cm": [
+        "<builtin>.globals",
+        "<builtin>.range",
+        "matplotlib._cm.cubehelix"
+    ],
+    "matplotlib._cm.cubehelix": [],
+    "matplotlib.scale": [
+        "<builtin>.map",
+        "matplotlib.scale._get_scale_docs",
+        "matplotlib.scale.get_scale_names",
+        "<builtin>.repr",
+        "matplotlib._docstring.Substitution.update",
+        "<str>.rstrip"
+    ],
+    "matplotlib.transforms": [],
+    "matplotlib.path": [],
+    "matplotlib.bezier": [
+        "numpy.lib.function_base.vectorize.__init__",
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "numpy.lib.function_base.vectorize.__init__": [
+        "<builtin>.ValueError",
+        "<builtin>.set",
+        "numpy.lib.function_base._parse_gufunc_signature",
+        "<builtin>.isinstance",
+        "numpy.lib.function_base.iterable"
+    ],
+    "numpy.lib.function_base.iterable": [
+        "<builtin>.iter"
+    ],
+    "numpy.lib.function_base._parse_gufunc_signature": [
+        "<builtin>.ValueError",
+        "re.match",
+        "re.sub",
+        "re.findall",
+        "<builtin>.tuple"
+    ],
+    "re.findall": [
+        "re._compile"
+    ],
+    "matplotlib.bezier.BezierSegment": [
+        "<builtin>.property"
+    ],
+    "matplotlib.path.Path": [
+        "functools.lru_cache",
+        "<builtin>.classmethod",
+        "functools.lru_cache.decorating_function",
+        "weakref.WeakValueDictionary.__init__",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.transforms.TransformNode": [
+        "<builtin>.range",
+        "matplotlib._api.deprecation.deprecated.deprecate",
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib._api.classproperty.__init__"
+    ],
+    "matplotlib._api.classproperty.__init__": [
+        "<builtin>.ValueError"
+    ],
+    "matplotlib.transforms.BboxBase": [
+        "matplotlib._api.classproperty.__init__",
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib._api.deprecation.deprecated.deprecate",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib._api.deprecation.rename_parameter",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib._api.deprecation.rename_parameter": [
+        "functools.wraps",
+        "inspect.signature"
+    ],
+    "matplotlib._api.deprecation.rename_parameter.wrapper": [
+        "matplotlib._api.deprecation.warn_deprecated"
+    ],
+    "matplotlib.transforms.Bbox": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.transforms.TransformedBbox": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.transforms._make_str_method": [],
+    "matplotlib.transforms.LockableBbox": [
+        "matplotlib.transforms._make_str_method",
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.Transform": [
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.TransformWrapper": [
+        "matplotlib.transforms._make_str_method",
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.AffineBase": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.transforms.Affine2DBase": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.Affine2D": [
+        "matplotlib.transforms._make_str_method",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.transforms.IdentityTransform": [
+        "numpy.core.numeric.identity",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib.transforms._make_str_method",
+        "matplotlib._api.deprecation.rename_parameter"
+    ],
+    "numpy.core.numeric.identity": [
+        "numpy.lib.twodim_base.eye"
+    ],
+    "numpy.lib.twodim_base.eye": [
+        "operator.index"
+    ],
+    "operator.index": [
+        "<int>.__index__"
+    ],
+    "<int>.__index__": [],
+    "matplotlib.transforms._BlendedMixin": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.transforms.BlendedGenericTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.CompositeGenericTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib.transforms._make_str_method",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.CompositeAffine2D": [
+        "matplotlib.transforms._make_str_method",
+        "<builtin>.property"
+    ],
+    "matplotlib.transforms.BboxTransform": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.transforms.BboxTransformTo": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.transforms.BboxTransformFrom": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.transforms.ScaledTranslation": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.transforms.AffineDeltaTransform": [
+        "matplotlib.transforms._make_str_method"
+    ],
+    "matplotlib.scale.LogTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.InvertedLogTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.LogScale": [
+        "<builtin>.property"
+    ],
+    "matplotlib.scale.FuncScaleLog": [
+        "<builtin>.property"
+    ],
+    "matplotlib.scale.SymmetricalLogTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.InvertedSymmetricalLogTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.SymmetricalLogScale": [
+        "<builtin>.property"
+    ],
+    "matplotlib.scale.AsinhTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.InvertedAsinhTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.AsinhScale": [
+        "<builtin>.property"
+    ],
+    "matplotlib.scale.LogitTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.LogisticTransform": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.scale.get_scale_names": [
+        "<builtin>.sorted"
+    ],
+    "matplotlib.scale._get_scale_docs": [
+        "inspect.getdoc",
+        "extend",
+        "<map>.items"
+    ],
+    "inspect.getdoc": [
+        "<builtin>.isinstance",
+        "inspect.cleandoc",
+        "inspect._finddoc"
+    ],
+    "inspect._finddoc": [
+        "inspect.ismethoddescriptor",
+        "inspect.ismemberdescriptor",
+        "inspect.ismethod",
+        "inspect._findclass",
+        "inspect.isfunction",
+        "<builtin>.isinstance",
+        "<builtin>.getattr",
+        "inspect.isclass",
+        "inspect.isdatadescriptor",
+        "inspect.isbuiltin"
+    ],
+    "inspect.isdatadescriptor": [
+        "inspect.ismethod",
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "inspect.isfunction",
+        "inspect.isclass"
+    ],
+    "inspect.ismemberdescriptor": [],
+    "inspect._findclass": [
+        "inspect.isclass",
+        "<builtin>.getattr"
+    ],
+    "<str>.rstrip": [],
+    "matplotlib._docstring.Substitution.update": [],
+    "matplotlib._color_data": [
+        "<map>.items"
+    ],
+    "matplotlib.colors._ColorMapping.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.colors.ColorSequenceRegistry.__init__": [],
+    "matplotlib.colors.ColorConverter": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.colors.LinearSegmentedColormap": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.colors.Normalize": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.colors.TwoSlopeNorm": [
+        "<builtin>.property"
+    ],
+    "matplotlib.colors.CenteredNorm": [
+        "<builtin>.property"
+    ],
+    "matplotlib.colors.make_norm_from_scale": [
+        "<builtin>.isinstance",
+        "matplotlib.colors._make_norm_from_scale",
+        "<builtin>.tuple",
+        "inspect.signature"
+    ],
+    "matplotlib.colors._make_norm_from_scale": [],
+    "matplotlib.colors._make_norm_from_scale.Norm": [
+        "inspect.Parameter.__init__"
+    ],
+    "inspect.Parameter.__init__": [
+        "<builtin>.ValueError",
+        "<builtin>.type",
+        "<str>.isdigit",
+        "<builtin>.isinstance",
+        "<str>.isidentifier",
+        "<builtin>.TypeError"
+    ],
+    "<str>.isdigit": [],
+    "<str>.isidentifier": [],
+    "matplotlib.colors._make_norm_from_scale.Norm.__init__": [
+        "<builtin>.dict",
+        "<builtin>.super"
+    ],
+    "matplotlib.colors.SymLogNorm": [
+        "<builtin>.property"
+    ],
+    "matplotlib.colors.AsinhNorm": [
+        "<builtin>.property"
+    ],
+    "matplotlib.colors.LightSource": [
+        "<builtin>.property"
+    ],
+    "matplotlib._fontconfig_pattern": [
+        "functools.lru_cache",
+        "re.compile"
+    ],
+    "pyparsing": [
+        "<builtin>.globals"
+    ],
+    "pyparsing.version_info": [
+        "<builtin>.property"
+    ],
+    "pyparsing.util": [
+        "typing.TypeVar.__init__",
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function",
+        "<builtin>.chr"
+    ],
+    "pyparsing.util.__config_flags": [
+        "<builtin>.classmethod"
+    ],
+    "pyparsing.exceptions": [
+        "pyparsing.util._collapse_string_to_ranges",
+        "re.compile"
+    ],
+    "pyparsing.util._collapse_string_to_ranges": [
+        "pyparsing.util._collapse_string_to_ranges.escape_re_range_char",
+        "<builtin>.next",
+        "<builtin>.set",
+        "pyparsing.util._GroupConsecutive.__init__",
+        "<builtin>.sorted",
+        "<builtin>.chr",
+        "<builtin>.len",
+        "append",
+        "<builtin>.ord",
+        "contextlib.suppress.__init__"
+    ],
+    "pyparsing.util._collapse_string_to_ranges.escape_re_range_char": [],
+    "pyparsing.util._GroupConsecutive.__init__": [],
+    "contextlib.suppress.__init__": [],
+    "pyparsing.exceptions.ParseBaseException": [
+        "functools.cached_property.__init__",
+        "pyparsing.util.replaced_by_pep8",
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "pyparsing.util.replaced_by_pep8": [
+        "inspect.signature",
+        "<builtin>.hasattr",
+        "<builtin>.list",
+        "<builtin>.isinstance",
+        "<builtin>.getattr",
+        "functools.wraps",
+        "typing.cast"
+    ],
+    "typing.cast": [],
+    "pyparsing.actions": [
+        "pyparsing.util.replaced_by_pep8",
+        "<builtin>.object"
+    ],
+    "pyparsing.core": [
+        "pyparsing.core.enable_all_warnings",
+        "pyparsing.core.Regex.__init__",
+        "pyparsing.core.Group.__init__",
+        "pyparsing.core.ParserElement.set_name",
+        "pyparsing.core.Suppress.__init__",
+        "pyparsing.core.Combine.__init__",
+        "pyparsing.core.LineEnd.__init__",
+        "pyparsing.core.CharsNotIn.__init__",
+        "pyparsing.core.Literal.__init__",
+        "pyparsing.core.srange",
+        "pyparsing.core.Empty.__init__",
+        "pyparsing.core.Opt.__init__",
+        "pyparsing.core.LineStart.__init__",
+        "pyparsing.core._should_enable_warnings",
+        "pyparsing.core.ParserElement.set_parse_action",
+        "<builtin>.vars",
+        "pyparsing.util.replaced_by_pep8",
+        "pyparsing.core.ParserElement.copy",
+        "<builtin>.isinstance",
+        "pyparsing.core.StringStart.__init__",
+        "pyparsing.core.StringEnd.__init__",
+        "pyparsing.core.ParserElement.set_results_name"
+    ],
+    "pyparsing.results": [
+        "<builtin>.type"
+    ],
+    "pyparsing.results.ParseResults": [
+        "<builtin>.classmethod"
+    ],
+    "pyparsing.core.__compat__": [
+        "<builtin>.locals"
+    ],
+    "<builtin>.locals": [],
+    "pyparsing.core.__diag__": [
+        "<builtin>.locals",
+        "<builtin>.classmethod"
+    ],
+    "pyparsing.core._should_enable_warnings": [
+        "<builtin>.bool"
+    ],
+    "pyparsing.core.enable_all_warnings": [
+        "pyparsing.core.__diag__.enable_all_warnings"
+    ],
+    "pyparsing.core.__diag__.enable_all_warnings": [],
+    "pyparsing.core.ParserElement": [
+        "pyparsing.util.replaced_by_pep8",
+        "threading.RLock",
+        "<builtin>.classmethod",
+        "abc.abstractmethod",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "pyparsing.core.Keyword": [
+        "pyparsing.util.replaced_by_pep8",
+        "<builtin>.staticmethod"
+    ],
+    "pyparsing.core.Regex": [
+        "functools.cached_property.__init__"
+    ],
+    "pyparsing.core.QuotedString": [
+        "<builtin>.dict"
+    ],
+    "pyparsing.core.ParseExpression": [
+        "pyparsing.util.replaced_by_pep8"
+    ],
+    "pyparsing.core.ParseElementEnhance": [
+        "pyparsing.util.replaced_by_pep8"
+    ],
+    "pyparsing.core.Forward": [
+        "pyparsing.util.replaced_by_pep8"
+    ],
+    "pyparsing.core.Empty.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.ParserElement.set_name": [
+        "<builtin>.str",
+        "pyparsing.core.ParserElement.set_debug"
+    ],
+    "pyparsing.core.ParserElement.set_debug": [
+        "pyparsing.core.ParserElement.set_debug_actions",
+        "pyparsing.core.ParserElement.visit_all"
+    ],
+    "pyparsing.core.ParserElement.visit_all": [
+        "<builtin>.set"
+    ],
+    "pyparsing.core.ParserElement.set_debug_actions": [],
+    "pyparsing.core.LineStart.__init__": [
+        "<builtin>.set",
+        "pyparsing.core.ParserElement.set_name",
+        "pyparsing.core.ParserElement.set_whitespace_chars",
+        "pyparsing.core.Empty.__init__",
+        "<builtin>.super",
+        "pyparsing.core.ParserElement.leave_whitespace"
+    ],
+    "pyparsing.core.ParserElement.leave_whitespace": [],
+    "pyparsing.core.ParserElement.set_whitespace_chars": [
+        "<builtin>.set"
+    ],
+    "pyparsing.core.LineEnd.__init__": [
+        "pyparsing.core.ParserElement.set_name",
+        "<builtin>.super",
+        "pyparsing.core.ParserElement.set_whitespace_chars"
+    ],
+    "pyparsing.core.StringStart.__init__": [
+        "pyparsing.core.ParserElement.set_name",
+        "<builtin>.super"
+    ],
+    "pyparsing.core.StringEnd.__init__": [
+        "pyparsing.core.ParserElement.set_name",
+        "<builtin>.super"
+    ],
+    "pyparsing.core.Regex.__init__": [
+        "<builtin>.callable",
+        "<builtin>.ValueError",
+        "<builtin>.hasattr",
+        "<builtin>.isinstance",
+        "<builtin>.super",
+        "<builtin>.TypeError"
+    ],
+    "pyparsing.core.ParserElement.set_parse_action": [
+        "<builtin>.callable",
+        "<builtin>.list",
+        "<builtin>.TypeError",
+        "<builtin>.all",
+        "pyparsing.core._trim_arity"
+    ],
+    "<builtin>.all": [],
+    "pyparsing.core._trim_arity": [
+        "<builtin>.getattr",
+        "traceback.extract_stack"
+    ],
+    "pyparsing.core.CharsNotIn.__init__": [
+        "<builtin>.set",
+        "<builtin>.super",
+        "<builtin>.ValueError"
+    ],
+    "pyparsing.core.Suppress.__init__": [
+        "pyparsing.core._PendingSkip.__init__",
+        "pyparsing.core.NoMatch.__init__",
+        "<builtin>.super"
+    ],
+    "pyparsing.core.NoMatch.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core._PendingSkip.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.Group.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.Literal.__init__": [
+        "<builtin>.len",
+        "<builtin>.super"
+    ],
+    "pyparsing.core.Opt.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.ParserElement.set_results_name": [
+        "pyparsing.core.ParserElement._setResultsName"
+    ],
+    "pyparsing.core.ParserElement._setResultsName": [
+        "pyparsing.core.ParserElement.copy",
+        "<str>.endswith"
+    ],
+    "pyparsing.core.ParserElement.copy": [
+        "<builtin>.set"
+    ],
+    "pyparsing.core.Combine.__init__": [
+        "pyparsing.core.ParseElementEnhance.leave_whitespace",
+        "<builtin>.super"
+    ],
+    "pyparsing.core.ParseElementEnhance.leave_whitespace": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.srange": [
+        "pyparsing.core.ParserElement.parse_string",
+        "pyparsing.core.srange.<lambda1>"
+    ],
+    "pyparsing.core.srange.<lambda1>": [
+        "<builtin>.isinstance",
+        "<builtin>.range",
+        "<builtin>.ord",
+        "<builtin>.chr"
+    ],
+    "pyparsing.core.ParserElement.parse_string": [
+        "pyparsing.core.StringEnd.__init__",
+        "pyparsing.core.ParserElement._parseNoCache",
+        "pyparsing.core.ParserElement.preParse",
+        "pyparsing.core.Empty.__init__",
+        "<str>.expandtabs",
+        "pyparsing.core.ParserElement.reset_cache",
+        "pyparsing.core.ParserElement.streamline",
+        "pyparsing.core.ParserElement.set_debug"
+    ],
+    "pyparsing.core.ParserElement.reset_cache": [
+        "<builtin>.len"
+    ],
+    "pyparsing.core.ParserElement.streamline": [],
+    "pyparsing.core.ParserElement._parseNoCache": [
+        "pyparsing.core.ParserElement.parseImpl",
+        "pyparsing.core.ParserElement.preParse",
+        "pyparsing.core.ParserElement.postParse",
+        "<builtin>.isinstance",
+        "pyparsing.results.ParseResults.__init__",
+        "pyparsing.exceptions.ParseBaseException.__init__",
+        "<builtin>.len"
+    ],
+    "pyparsing.core.ParserElement.preParse": [
+        "pyparsing.core.ParserElement._skipIgnorables",
+        "<builtin>.len"
+    ],
+    "pyparsing.core.ParserElement._skipIgnorables": [],
+    "pyparsing.core.ParserElement.parseImpl": [],
+    "pyparsing.exceptions.ParseBaseException.__init__": [],
+    "pyparsing.core.ParserElement.postParse": [],
+    "pyparsing.results.ParseResults.__init__": [
+        "<builtin>.isinstance",
+        "<builtin>.str",
+        "pyparsing.results._ParseResultsWithOffset.__init__",
+        "pyparsing.results.ParseResults.__init__"
+    ],
+    "pyparsing.results._ParseResultsWithOffset.__init__": [],
+    "pyparsing.helpers": [
+        "pyparsing.core.ParserElement.__init__",
+        "pyparsing.core.Word.__init__",
+        "pyparsing.util.replaced_by_pep8",
+        "pyparsing.helpers.make_html_tags",
+        "pyparsing.core.ParserElement.set_name",
+        "pyparsing.core.Suppress.__init__",
+        "pyparsing.core.Regex.__init__",
+        "<builtin>.isinstance",
+        "pyparsing.core.Combine.__init__",
+        "pyparsing.core.ParserElement.leave_whitespace",
+        "<builtin>.vars"
+    ],
+    "html.entities": [
+        "<builtin>.chr",
+        "<map>.items"
+    ],
+    "pyparsing.core.ParserElement.__init__": [
+        "<builtin>.set",
+        "<builtin>.list"
+    ],
+    "pyparsing.core.Word.__init__": [
+        "re.escape",
+        "re.compile",
+        "<builtin>.ValueError",
+        "<builtin>.set",
+        "<builtin>.type",
+        "<builtin>.sorted",
+        "pyparsing.util._collapse_string_to_ranges",
+        "<builtin>.super",
+        "<builtin>.len"
+    ],
+    "pyparsing.helpers.make_html_tags": [
+        "pyparsing.helpers._makeTags"
+    ],
+    "pyparsing.helpers._makeTags": [
+        "pyparsing.core.Literal.__init__",
+        "pyparsing.core.ParserElement.__init__",
+        "pyparsing.core.Word.__init__",
+        "pyparsing.core.ParserElement.copy",
+        "pyparsing.core.ParserElement.set_name",
+        "pyparsing.core.Suppress.__init__",
+        "pyparsing.core.ZeroOrMore.__init__",
+        "pyparsing.core.ParserElement.add_parse_action",
+        "pyparsing.core.SkipTo.__init__",
+        "<builtin>.isinstance",
+        "pyparsing.core.Opt.__init__",
+        "pyparsing.core.Combine.__init__",
+        "pyparsing.core.Dict.__init__",
+        "pyparsing.core.ParserElement.set_parse_action",
+        "pyparsing.core.Keyword.__init__",
+        "pyparsing.core.Group.__init__"
+    ],
+    "pyparsing.core.Keyword.__init__": [
+        "<builtin>.ValueError",
+        "<builtin>.set",
+        "<builtin>.type",
+        "<builtin>.len",
+        "<builtin>.super"
+    ],
+    "pyparsing.core.ZeroOrMore.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.Dict.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.ParserElement.add_parse_action": [
+        "pyparsing.core._trim_arity"
+    ],
+    "pyparsing.core.SkipTo.__init__": [
+        "pyparsing.core.Empty.__init__",
+        "<builtin>.isinstance",
+        "<builtin>.super",
+        "pyparsing.core.SkipTo._update_ignorer",
+        "pyparsing.core.ParserElement.leave_whitespace"
+    ],
+    "pyparsing.core.SkipTo._update_ignorer": [],
+    "pyparsing.testing": [],
+    "pyparsing.testing.pyparsing_test.TestParseResultsAsserts": [
+        "contextlib.contextmanager"
+    ],
+    "pyparsing.testing.pyparsing_test": [
+        "<builtin>.staticmethod"
+    ],
+    "pyparsing.common": [
+        "<builtin>.isinstance",
+        "<builtin>.vars"
+    ],
+    "datetime": [
+        "datetime.timezone._create",
+        "datetime._days_before_year",
+        "append"
+    ],
+    "datetime._days_before_year": [],
+    "datetime.timedelta": [
+        "<builtin>.property"
+    ],
+    "datetime.date": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "datetime.IsoCalendarDate": [
+        "<builtin>.property"
+    ],
+    "datetime.time": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "datetime.datetime": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "datetime.timezone": [
+        "<builtin>.staticmethod",
+        "<builtin>.classmethod",
+        "<builtin>.object"
+    ],
+    "datetime.timezone._create": [],
+    "pyparsing.common.pyparsing_common": [
+        "pyparsing.core.Word.__init__",
+        "pyparsing.core.Regex.__init__",
+        "pyparsing.core.ParserElement.streamline",
+        "pyparsing.core.token_map",
+        "pyparsing.core.ParserElement.set_name",
+        "pyparsing.core.ParserElement.add_parse_action",
+        "pyparsing.core.Combine.__init__",
+        "pyparsing.core.DelimitedList.__init__",
+        "pyparsing.core.LineEnd.__init__",
+        "<builtin>.staticmethod",
+        "pyparsing.core.Literal.__init__",
+        "pyparsing.core.Opt.__init__",
+        "pyparsing.core.ParserElement.suppress",
+        "pyparsing.core.ParserElement.set_parse_action",
+        "pyparsing.core.White.__init__",
+        "pyparsing.core.ParserElement.__init__",
+        "pyparsing.core.ParserElement.add_condition",
+        "pyparsing.core.ParserElement.copy",
+        "pyparsing.util.replaced_by_pep8",
+        "pyparsing.core.FollowedBy.__init__",
+        "pyparsing.core.ParseElementEnhance.streamline"
+    ],
+    "pyparsing.core.token_map": [
+        "<builtin>.getattr"
+    ],
+    "pyparsing.core.ParserElement.suppress": [
+        "pyparsing.core.Suppress.__init__"
+    ],
+    "pyparsing.core.ParserElement.add_condition": [
+        "<builtin>.bool",
+        "<builtin>.str",
+        "pyparsing.core.condition_as_parse_action"
+    ],
+    "pyparsing.core.condition_as_parse_action": [
+        "functools.wraps",
+        "pyparsing.core._trim_arity"
+    ],
+    "pyparsing.core.White.__init__": [
+        "<builtin>.super",
+        "pyparsing.core.ParserElement.set_whitespace_chars"
+    ],
+    "pyparsing.core.FollowedBy.__init__": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.ParseElementEnhance.streamline": [
+        "<builtin>.super"
+    ],
+    "pyparsing.core.DelimitedList.__init__": [
+        "<builtin>.ValueError",
+        "pyparsing.core.Suppress.__init__",
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "pyparsing.core.Opt.__init__",
+        "pyparsing.core.Combine.__init__",
+        "<builtin>.super",
+        "typing.cast"
+    ],
+    "matplotlib._enums": [
+        "matplotlib._docstring.Substitution.update"
+    ],
+    "matplotlib._enums.JoinStyle": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib._enums.CapStyle": [
+        "<builtin>.staticmethod"
+    ],
+    "cycler": [
+        "typing.TypeVar.__init__",
+        "typing.overload"
+    ],
+    "cycler.Cycler": [
+        "typing.overload",
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "matplotlib.rcsetup.__getattr__": [
+        "matplotlib._api.deprecation.deprecated",
+        "<builtin>.property",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib.rcsetup._listify_validator": [
+        "<builtin>.type"
+    ],
+    "matplotlib.rcsetup._make_type_validator": [],
+    "matplotlib.rcsetup.ValidateInStrings.__init__": [
+        "matplotlib.rcsetup.ValidateInStrings.__init__.func"
+    ],
+    "matplotlib.rcsetup.ValidateInStrings.__init__.func": [],
+    "matplotlib.rcsetup._convert_validator_spec": [
+        "<builtin>.isinstance",
+        "matplotlib.rcsetup.ValidateInStrings.__init__"
+    ],
+    "matplotlib.__getattr__": [
+        "<builtin>.property"
+    ],
+    "matplotlib._check_versions": [
+        "importlib.import_module",
+        "<builtin>.ImportError",
+        "packaging.version.parse"
+    ],
+    "importlib.import_module": [
+        "<builtin>.TypeError"
+    ],
+    "packaging.version.parse": [
+        "packaging.version.Version.__init__"
+    ],
+    "packaging.version.Version.__init__": [
+        "packaging.version._parse_letter_version",
+        "<builtin>.int",
+        "packaging.version._parse_local_version",
+        "packaging.version._cmpkey",
+        "<builtin>.tuple"
+    ],
+    "packaging.version._parse_letter_version": [
+        "<str>.lower",
+        "<builtin>.int"
+    ],
+    "packaging.version._parse_local_version": [
+        "<builtin>.int",
+        "<builtin>.tuple"
+    ],
+    "packaging.version._cmpkey": [
+        "<builtin>.isinstance",
+        "<builtin>.reversed",
+        "<builtin>.list",
+        "<builtin>.tuple"
+    ],
+    "matplotlib._logged_cached": [
+        "functools.wraps"
+    ],
+    "matplotlib._logged_cached.wrapper": [],
+    "matplotlib.cbook._get_data_path": [
+        "matplotlib.get_data_path"
+    ],
+    "matplotlib.get_data_path": [
+        "<builtin>.str",
+        "pathlib.PurePath.with_name"
+    ],
+    "pathlib.PurePath.with_name": [
+        "pathlib.PurePath._from_parsed_parts",
+        "<builtin>.len",
+        "<builtin>.ValueError"
+    ],
+    "pathlib.PurePath._from_parsed_parts": [],
+    "matplotlib._rc_params_in_file": [
+        "<builtin>.dict",
+        "matplotlib.cbook._strip_comment",
+        "matplotlib.RcParams.__init__",
+        "matplotlib.<lambda2>",
+        "<builtin>.enumerate",
+        "matplotlib._api.deprecation.warn_deprecated",
+        "<builtin>.len",
+        "<map>.items",
+        "matplotlib._open_file_or_url"
+    ],
+    "matplotlib._open_file_or_url": [
+        "<builtin>.open",
+        "matplotlib._get_ssl_context",
+        "posixpath.expanduser",
+        "<builtin>.isinstance",
+        "ntpath.expanduser"
+    ],
+    "posixpath.expanduser": [
+        "os._fspath",
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "posixpath._get_sep"
+    ],
+    "ntpath.expanduser": [
+        "ntpath.basename",
+        "ntpath.join",
+        "os._fspath",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "ntpath._get_bothseps",
+        "ntpath.dirname"
+    ],
+    "<builtin>.open": [],
+    "urllib.request": [
+        "<builtin>.hasattr",
+        "re.compile",
+        "append"
+    ],
+    "email": [],
+    "http.client": [
+        "<builtin>.globals",
+        "re.compile"
+    ],
+    "email.parser": [],
+    "email.feedparser": [
+        "re.compile",
+        "<builtin>.object"
+    ],
+    "email.errors": [],
+    "email._policybase": [],
+    "email.header": [
+        "email.charset.Charset.__init__",
+        "re.compile"
+    ],
+    "email.quoprimime": [
+        "<builtin>.ord",
+        "<builtin>.range",
+        "<builtin>.chr",
+        "<str>.encode"
+    ],
+    "email.base64mime": [],
+    "email.charset": [],
+    "email.encoders": [],
+    "quopri": [],
+    "email.charset.Charset.__init__": [
+        "<builtin>.isinstance",
+        "<map>.get",
+        "<builtin>.str",
+        "<str>.encode"
+    ],
+    "email.utils": [
+        "re.compile"
+    ],
+    "email._parseaddr": [],
+    "calendar": [
+        "calendar._localized_day.__init__",
+        "calendar._localized_month.__init__",
+        "<builtin>.range",
+        "datetime.date.toordinal"
+    ],
+    "calendar._localized_month": [
+        "<builtin>.range"
+    ],
+    "calendar._localized_day": [
+        "<builtin>.range"
+    ],
+    "calendar._localized_day.__init__": [],
+    "calendar._localized_month.__init__": [],
+    "calendar.Calendar": [
+        "<builtin>.property"
+    ],
+    "datetime.date.toordinal": [
+        "datetime._ymd2ord"
+    ],
+    "datetime._ymd2ord": [
+        "datetime._days_before_month",
+        "datetime._days_in_month",
+        "datetime._days_before_year"
+    ],
+    "datetime._days_in_month": [
+        "datetime._is_leap"
+    ],
+    "datetime._is_leap": [],
+    "datetime._days_before_month": [
+        "datetime._is_leap"
+    ],
+    "email._policybase.Policy": [
+        "abc.abstractmethod"
+    ],
+    "email.message": [
+        "re.compile"
+    ],
+    "uu": [],
+    "email._encoded_words": [
+        "<builtin>.ord",
+        "re.compile"
+    ],
+    "email._encoded_words._QByteMap": [
+        "<str>.encode"
+    ],
+    "email.iterators": [],
+    "http": [],
+    "http.client.HTTPConnection": [
+        "<builtin>.staticmethod"
+    ],
+    "ssl": [
+        "<builtin>.hasattr",
+        "<builtin>.getattr",
+        "collections.namedtuple"
+    ],
+    "ssl._ASN1Object": [
+        "<builtin>.classmethod"
+    ],
+    "ssl.SSLContext": [
+        "<builtin>.hasattr",
+        "<builtin>.property"
+    ],
+    "ssl.SSLObject": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "ssl.SSLSocket": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "ssl._sslcopydoc"
+    ],
+    "ssl._sslcopydoc": [
+        "<builtin>.getattr"
+    ],
+    "urllib.error": [],
+    "urllib.response": [],
+    "urllib.response.addinfourl": [
+        "<builtin>.property"
+    ],
+    "urllib.error.HTTPError": [
+        "<builtin>.property"
+    ],
+    "urllib.request.Request": [
+        "<builtin>.property"
+    ],
+    "urllib.request.AbstractBasicAuthHandler": [
+        "re.compile"
+    ],
+    "nturl2path": [],
+    "matplotlib._get_ssl_context": [
+        "ssl.create_default_context",
+        "certifi.core.where"
+    ],
+    "certifi": [],
+    "certifi.core": [],
+    "importlib.resources": [
+        "functools.singledispatch"
+    ],
+    "importlib.abc": [
+        "importlib.abc._register"
+    ],
+    "importlib.abc._register": [
+        "<builtin>.getattr"
+    ],
+    "importlib.abc.InspectLoader": [
+        "<builtin>.staticmethod"
+    ],
+    "functools.singledispatch": [
+        "<builtin>.getattr",
+        "weakref.WeakKeyDictionary.__init__",
+        "functools.update_wrapper"
+    ],
+    "weakref.WeakKeyDictionary.__init__": [
+        "<builtin>.set",
+        "weakref.WeakKeyDictionary.update"
+    ],
+    "weakref.WeakKeyDictionary.update": [
+        "<builtin>.hasattr",
+        "<builtin>.type",
+        "weakref.WeakKeyDictionary.update",
+        "<builtin>.len"
+    ],
+    "certifi.core.where": [
+        "posixpath.join",
+        "posixpath.dirname",
+        "ntpath.join",
+        "ntpath.dirname"
+    ],
+    "ssl.create_default_context": [
+        "<builtin>.ValueError",
+        "<builtin>.hasattr",
+        "<builtin>.isinstance",
+        "ssl.SSLContext.load_default_certs",
+        "<builtin>.TypeError"
+    ],
+    "ssl.SSLContext.load_default_certs": [
+        "<builtin>.isinstance",
+        "ssl.SSLContext._load_windows_store_certs",
+        "<builtin>.TypeError"
+    ],
+    "ssl.SSLContext._load_windows_store_certs": [
+        "<builtin>.bytearray",
+        "warnings.warn"
+    ],
+    "matplotlib.<lambda2>": [],
+    "matplotlib.cbook._strip_comment": [
+        "<builtin>.ValueError"
+    ],
+    "matplotlib.RcParams.__init__": [],
+    "matplotlib.matplotlib_fname": [
+        "genericpath.isdir",
+        "genericpath.exists",
+        "<builtin>.RuntimeError",
+        "matplotlib.matplotlib_fname.gen_candidates"
+    ],
+    "matplotlib.matplotlib_fname.gen_candidates": [
+        "posixpath.join",
+        "matplotlib.get_configdir",
+        "ntpath.join",
+        "matplotlib.get_data_path"
+    ],
+    "matplotlib.get_configdir": [
+        "matplotlib._get_config_or_cache_dir"
+    ],
+    "matplotlib._get_config_or_cache_dir": [
+        "matplotlib._get_xdg_cache_dir",
+        "<builtin>.OSError",
+        "tempfile.mkdtemp",
+        "pathlib.Path.home",
+        "pathlib.Path.mkdir",
+        "pathlib.Path.resolve",
+        "matplotlib._get_xdg_config_dir"
+    ],
+    "pathlib.Path.home": [
+        "pathlib.Path.expanduser"
+    ],
+    "pathlib.Path.expanduser": [
+        "<builtin>.RuntimeError",
+        "pathlib.PurePath._from_parts"
+    ],
+    "pathlib.PurePath._from_parts": [],
+    "matplotlib._get_xdg_config_dir": [
+        "<builtin>.str",
+        "pathlib.Path.home"
+    ],
+    "pathlib.Path.resolve": [
+        "pathlib.Path.resolve.check_eloop",
+        "pathlib.PurePath._from_parts"
+    ],
+    "pathlib.Path.resolve.check_eloop": [
+        "<builtin>.getattr",
+        "<builtin>.RuntimeError"
+    ],
+    "pathlib.Path.mkdir": [
+        "pathlib.Path.is_dir",
+        "pathlib.Path.mkdir"
+    ],
+    "pathlib.Path.is_dir": [
+        "pathlib.Path.stat",
+        "stat.S_ISDIR",
+        "pathlib._ignore_error"
+    ],
+    "pathlib.Path.stat": [],
+    "pathlib._ignore_error": [
+        "<builtin>.getattr"
+    ],
+    "tempfile.mkdtemp": [
+        "ntpath.join",
+        "<builtin>.next",
+        "<builtin>.map",
+        "tempfile._get_candidate_names",
+        "posixpath.join",
+        "genericpath.isdir",
+        "<builtin>.FileExistsError",
+        "<builtin>.range",
+        "tempfile._sanitize_params"
+    ],
+    "tempfile._sanitize_params": [
+        "tempfile.gettempdirb",
+        "tempfile._infer_return_type",
+        "tempfile.gettempdir"
+    ],
+    "tempfile._infer_return_type": [
+        "<builtin>.isinstance",
+        "os._fspath",
+        "<builtin>.TypeError"
+    ],
+    "tempfile.gettempdirb": [
+        "tempfile._gettempdir"
+    ],
+    "tempfile._gettempdir": [
+        "tempfile._get_default_tempdir"
+    ],
+    "tempfile._get_default_tempdir": [
+        "ntpath.join",
+        "<builtin>.next",
+        "ntpath.abspath",
+        "<builtin>.FileNotFoundError",
+        "genericpath.isdir",
+        "posixpath.join",
+        "posixpath.abspath",
+        "<builtin>.range",
+        "tempfile._candidate_tempdir_list"
+    ],
+    "tempfile._candidate_tempdir_list": [
+        "append",
+        "extend",
+        "os.getenv"
+    ],
+    "os.getenv": [],
+    "<builtin>.FileNotFoundError": [],
+    "tempfile.gettempdir": [
+        "tempfile._gettempdir"
+    ],
+    "tempfile._get_candidate_names": [],
+    "<builtin>.FileExistsError": [],
+    "<builtin>.OSError": [],
+    "genericpath.exists": [],
+    "matplotlib.RcParams.copy": [
+        "matplotlib.RcParams.__iter__",
+        "matplotlib.RcParams._set",
+        "matplotlib.RcParams.__init__",
+        "matplotlib.RcParams._get"
+    ],
+    "matplotlib.RcParams.__iter__": [
+        "matplotlib._api.deprecation.suppress_matplotlib_deprecation_warning"
+    ],
+    "matplotlib._api.deprecation.suppress_matplotlib_deprecation_warning": [
+        "warnings.catch_warnings.__init__"
+    ],
+    "matplotlib.RcParams._get": [],
+    "matplotlib.RcParams._set": [],
+    "locale.setlocale": [],
+    "matplotlib.is_interactive": [],
+    "matplotlib.cm": [
+        "matplotlib.cm._gen_cmap_registry",
+        "matplotlib._api.deprecation.deprecated",
+        "<builtin>.globals",
+        "matplotlib.cm.ColormapRegistry.__init__",
+        "matplotlib._docstring.Substitution.update",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib._cm_listed": [
+        "matplotlib.colors.ListedColormap.__init__",
+        "<builtin>.len"
+    ],
+    "matplotlib.colors.ListedColormap.__init__": [
+        "<builtin>.list",
+        "<builtin>.isinstance",
+        "<builtin>.float",
+        "<builtin>.len",
+        "<builtin>.super",
+        "numpy.lib.function_base.iterable"
+    ],
+    "<builtin>.float": [],
+    "matplotlib.cm._gen_cmap_registry": [
+        "matplotlib.colors.ListedColormap.__init__",
+        "<map>.values",
+        "<builtin>.list",
+        "matplotlib.colors.LinearSegmentedColormap.__init__",
+        "matplotlib.colors.LinearSegmentedColormap.from_list"
+    ],
+    "matplotlib.colors.LinearSegmentedColormap.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.colors.LinearSegmentedColormap.from_list": [
+        "<builtin>.ValueError",
+        "matplotlib.colors.to_rgba_array",
+        "<builtin>.isinstance",
+        "matplotlib.colors.LinearSegmentedColormap.__init__",
+        "<builtin>.len",
+        "<builtin>.zip",
+        "numpy.lib.shape_base.column_stack",
+        "numpy.lib.function_base.iterable",
+        "numpy.core.linspace"
+    ],
+    "numpy.core.linspace": [],
+    "matplotlib.colors.to_rgba_array": [
+        "numpy.lib.shape_base.tile",
+        "numpy.ma.core.is_masked",
+        "numpy.core.fromnumeric.any",
+        "<builtin>.ValueError",
+        "numpy.ma.core.getdata",
+        "matplotlib.colors.to_rgba",
+        "matplotlib.cbook._str_equal",
+        "<builtin>.isinstance",
+        "matplotlib.cbook._str_lower_equal",
+        "<builtin>.len",
+        "numpy.core.ones",
+        "numpy.lib.shape_base.column_stack",
+        "numpy.lib.function_base.iterable"
+    ],
+    "numpy.ma.core.is_masked": [
+        "numpy.ma.core.getmask"
+    ],
+    "numpy.ma.core.getmask": [
+        "<builtin>.getattr"
+    ],
+    "numpy.ma.core.getdata": [],
+    "numpy.lib.shape_base.tile": [
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.zip",
+        "<builtin>.tuple",
+        "<builtin>.all"
+    ],
+    "numpy.lib.shape_base.column_stack": [
+        "numpy.core.arrayprint.concatenate",
+        "numpy.core.shape_base._arrays_for_stack_dispatcher",
+        "append"
+    ],
+    "numpy.core.shape_base._arrays_for_stack_dispatcher": [
+        "<builtin>.hasattr",
+        "warnings.warn"
+    ],
+    "numpy.core.arrayprint.concatenate": [],
+    "numpy.core.fromnumeric.any": [
+        "numpy.core.fromnumeric._wrapreduction"
+    ],
+    "numpy.core.fromnumeric._wrapreduction": [
+        "<builtin>.getattr",
+        "<builtin>.type"
+    ],
+    "matplotlib.cbook._str_lower_equal": [
+        "<builtin>.isinstance"
+    ],
+    "matplotlib.colors.to_rgba": [
+        "<builtin>.int",
+        "matplotlib.colors._is_nth_color",
+        "<builtin>.isinstance",
+        "matplotlib.colors._to_rgba_no_colorcycle",
+        "<builtin>.len"
+    ],
+    "matplotlib.colors._is_nth_color": [
+        "<builtin>.isinstance"
+    ],
+    "matplotlib.colors._to_rgba_no_colorcycle": [
+        "<builtin>.map",
+        "<builtin>.any",
+        "re.match",
+        "<builtin>.ValueError",
+        "<builtin>.int",
+        "<builtin>.isinstance",
+        "<builtin>.float",
+        "numpy.lib.function_base.iterable",
+        "<builtin>.len",
+        "<builtin>.tuple",
+        "<builtin>.all"
+    ],
+    "numpy.core.ones": [],
+    "matplotlib.cbook._str_equal": [
+        "<builtin>.isinstance"
+    ],
+    "matplotlib.cm.ColormapRegistry.__init__": [
+        "<builtin>.tuple"
+    ],
+    "matplotlib.cm.ScalarMappable": [
+        "<builtin>.property"
+    ],
+    "matplotlib.pyplot": [
+        "typing_extensions.ParamSpec.__init__",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib.backends.registry.BackendRegistry.list_builtin",
+        "logging.getLogger",
+        "typing.overload",
+        "<builtin>.set",
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib.cbook._get_running_interactive_framework",
+        "matplotlib.RcParams._set",
+        "typing.TypeVar.__init__",
+        "matplotlib.RcParams._get_backend_or_none",
+        "matplotlib.pyplot._copy_docstring_and_deprecators",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib.colorbar": [
+        "logging.getLogger",
+        "matplotlib._docstring.Substitution.update",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.collections": [],
+    "matplotlib.artist": [
+        "logging.getLogger",
+        "matplotlib.artist.Artist._update_set_signature_and_docstring",
+        "collections.namedtuple"
+    ],
+    "matplotlib.artist.Artist": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "contextlib.contextmanager"
+    ],
+    "matplotlib.artist.ArtistInspector": [
+        "functools.cache",
+        "re.compile",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.artist.Artist._update_set_signature_and_docstring": [
+        "matplotlib.artist.ArtistInspector.get_setters",
+        "matplotlib.artist.ArtistInspector.__init__",
+        "inspect.Signature.__init__",
+        "matplotlib.artist.kwdoc",
+        "inspect.Parameter.__init__"
+    ],
+    "matplotlib.artist.ArtistInspector.__init__": [
+        "<builtin>.type",
+        "<builtin>.list",
+        "<builtin>.isinstance",
+        "matplotlib.artist.ArtistInspector.get_aliases",
+        "<builtin>.len",
+        "numpy.lib.function_base.iterable"
+    ],
+    "matplotlib.artist.ArtistInspector.get_aliases": [
+        "<builtin>.callable",
+        "inspect.getdoc",
+        "re.search",
+        "matplotlib.artist.ArtistInspector.is_alias",
+        "<builtin>.getattr",
+        "<map>.setdefault",
+        "<builtin>.dir"
+    ],
+    "<builtin>.dir": [],
+    "matplotlib.artist.ArtistInspector.is_alias": [
+        "inspect.getdoc"
+    ],
+    "re.search": [
+        "re._compile"
+    ],
+    "matplotlib.artist.ArtistInspector.get_setters": [
+        "<builtin>.callable",
+        "matplotlib.artist.ArtistInspector.is_alias",
+        "matplotlib.artist.ArtistInspector.number_of_parameters",
+        "<builtin>.getattr",
+        "<builtin>.dir",
+        "append"
+    ],
+    "matplotlib.artist.ArtistInspector.number_of_parameters": [
+        "<builtin>.len",
+        "inspect.signature"
+    ],
+    "matplotlib.artist.kwdoc": [
+        "matplotlib.artist.ArtistInspector.__init__",
+        "matplotlib.artist.ArtistInspector.pprint_setters_rest",
+        "matplotlib.artist.ArtistInspector.pprint_setters"
+    ],
+    "matplotlib.artist.ArtistInspector.pprint_setters_rest": [
+        "<str>.ljust",
+        "matplotlib.artist.ArtistInspector.get_setters",
+        "matplotlib.artist.ArtistInspector.get_valid_values",
+        "matplotlib.artist.ArtistInspector.aliased_name_rest",
+        "<builtin>.sorted",
+        "<builtin>.getattr",
+        "<builtin>.max",
+        "<builtin>.len",
+        "append",
+        "<builtin>.zip"
+    ],
+    "matplotlib.artist.ArtistInspector.get_valid_values": [
+        "inspect.getdoc",
+        "re.search",
+        "<builtin>.hasattr",
+        "re.sub",
+        "<builtin>.getattr",
+        "<builtin>.AttributeError"
+    ],
+    "<builtin>.AttributeError": [],
+    "matplotlib.artist.ArtistInspector.aliased_name_rest": [
+        "<map>.get",
+        "<builtin>.sorted"
+    ],
+    "<str>.ljust": [],
+    "matplotlib.artist.ArtistInspector.pprint_setters": [
+        "matplotlib.artist.ArtistInspector.get_setters",
+        "matplotlib.artist.ArtistInspector.get_valid_values",
+        "<builtin>.sorted",
+        "append",
+        "matplotlib.artist.ArtistInspector.aliased_name"
+    ],
+    "matplotlib.artist.ArtistInspector.aliased_name": [
+        "<map>.get",
+        "<builtin>.sorted"
+    ],
+    "matplotlib.hatch": [],
+    "matplotlib.lines": [
+        "logging.getLogger"
+    ],
+    "matplotlib.markers": [
+        "<builtin>.range",
+        "matplotlib.path.Path.__init__"
+    ],
+    "matplotlib.path.Path.__init__": [
+        "matplotlib.cbook._to_unmasked_float_array",
+        "<builtin>.ValueError",
+        "matplotlib._api.check_shape",
+        "<builtin>.len",
+        "matplotlib.path.Path._update_values"
+    ],
+    "matplotlib.cbook._to_unmasked_float_array": [
+        "<builtin>.hasattr",
+        "numpy.ma.core.asarray",
+        "numpy.ma.core.MaskedArray.filled"
+    ],
+    "numpy.ma.core.asarray": [],
+    "numpy.ma.core.MaskedArray.filled": [
+        "numpy.ma.core._recursive_filled",
+        "numpy.core.multiarray.copyto",
+        "numpy.core.fromnumeric.choose",
+        "numpy.ma.core._check_fill_value"
+    ],
+    "numpy.ma.core._check_fill_value": [
+        "<builtin>.ValueError",
+        "numpy.ma.core._recursive_set_fill_value",
+        "numpy.ma.core.default_fill_value",
+        "<builtin>.isinstance",
+        "<builtin>.TypeError"
+    ],
+    "numpy.ma.core._recursive_set_fill_value": [
+        "numpy.core.fromnumeric.resize",
+        "<builtin>.len",
+        "append",
+        "<builtin>.zip",
+        "<builtin>.tuple"
+    ],
+    "numpy.core.fromnumeric.resize": [
+        "<builtin>.ValueError",
+        "<builtin>.isinstance",
+        "numpy.core.numeric.zeros_like",
+        "numpy.core.fromnumeric.ravel",
+        "numpy.core.fromnumeric.reshape",
+        "numpy.core.multiarray.concatenate"
+    ],
+    "numpy.core.fromnumeric.ravel": [
+        "<builtin>.isinstance"
+    ],
+    "numpy.core.numeric.zeros_like": [
+        "numpy.core.multiarray.empty_like",
+        "numpy.core.multiarray.copyto"
+    ],
+    "numpy.core.multiarray.empty_like": [],
+    "numpy.core.multiarray.copyto": [],
+    "numpy.core.multiarray.concatenate": [
+        "<builtin>.list"
+    ],
+    "numpy.core.fromnumeric.reshape": [
+        "numpy.core.fromnumeric._wrapfunc"
+    ],
+    "numpy.core.fromnumeric._wrapfunc": [
+        "numpy.core.fromnumeric._wrapit",
+        "<builtin>.getattr"
+    ],
+    "numpy.core.fromnumeric._wrapit": [
+        "<builtin>.isinstance",
+        "<builtin>.getattr"
+    ],
+    "numpy.ma.core.default_fill_value": [
+        "numpy.ma.core._recursive_fill_value",
+        "numpy.ma.core._get_dtype_of"
+    ],
+    "numpy.ma.core._get_dtype_of": [
+        "<builtin>.isinstance",
+        "<builtin>.hasattr"
+    ],
+    "numpy.ma.core._recursive_fill_value": [
+        "numpy.ma.core._recursive_fill_value",
+        "<builtin>.tuple",
+        "numpy.core.numeric.full",
+        "numpy.ma.core.default_fill_value._scalar_fill_value"
+    ],
+    "numpy.ma.core.default_fill_value._scalar_fill_value": [
+        "<map>.get"
+    ],
+    "numpy.core.numeric.full": [
+        "numpy.core.multiarray.copyto"
+    ],
+    "numpy.core.fromnumeric.choose": [
+        "numpy.core.fromnumeric._wrapfunc"
+    ],
+    "numpy.ma.core._recursive_filled": [
+        "numpy.ma.core._recursive_filled",
+        "numpy.core.multiarray.copyto"
+    ],
+    "matplotlib._api.check_shape": [
+        "<builtin>.iter",
+        "<builtin>.next",
+        "<builtin>.any",
+        "<builtin>.ValueError",
+        "<builtin>.str",
+        "<builtin>.len",
+        "<builtin>.zip"
+    ],
+    "matplotlib.path.Path._update_values": [
+        "<builtin>.len",
+        "numpy.core.fromnumeric.all"
+    ],
+    "numpy.core.fromnumeric.all": [
+        "numpy.core.fromnumeric._wrapreduction"
+    ],
+    "matplotlib.markers.MarkerStyle": [
+        "matplotlib.path.Path._create_closed",
+        "matplotlib.path.Path.__init__"
+    ],
+    "matplotlib.path.Path._create_closed": [
+        "matplotlib.cbook._to_unmasked_float_array",
+        "matplotlib.path.Path.__init__",
+        "numpy.core.numeric.concatenate"
+    ],
+    "numpy.core.numeric.concatenate": [],
+    "matplotlib.lines.Line2D": [
+        "<builtin>.property",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.artist.allow_rasterization": [
+        "functools.wraps"
+    ],
+    "matplotlib.lines.VertexSelector": [
+        "<builtin>.property"
+    ],
+    "matplotlib.collections.Collection": [
+        "<builtin>.staticmethod",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.collections._CollectionWithSizes": [
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.collections.RegularPolyCollection": [
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.collections.EllipseCollection": [
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.collections.TriMesh": [
+        "matplotlib.artist.allow_rasterization",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.collections._MeshData": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.collections.QuadMesh": [
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.contour": [
+        "matplotlib._docstring.Substitution.update"
+    ],
+    "matplotlib.backend_bases": [
+        "logging.getLogger",
+        "contextlib.contextmanager"
+    ],
+    "matplotlib.backend_tools": [
+        "<builtin>.set"
+    ],
+    "uuid": [
+        "<builtin>.getattr",
+        "uuid.UUID.__init__",
+        "platform.system"
+    ],
+    "uuid.UUID": [
+        "<builtin>.property"
+    ],
+    "uuid.UUID.__init__": [
+        "<builtin>.ValueError",
+        "<str>.strip",
+        "<builtin>.isinstance",
+        "<builtin>.len",
+        "<builtin>.repr",
+        "<builtin>.TypeError"
+    ],
+    "matplotlib._pylab_helpers": [],
+    "matplotlib._pylab_helpers.Gcf": [
+        "<builtin>.classmethod",
+        "collections.OrderedDict.__init__"
+    ],
+    "matplotlib.backend_tools.ToolBase": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolToggleBase": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolQuit": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolQuitAll": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolGrid": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolMinorGrid": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolFullScreen": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolYScale": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolXScale": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolHome": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolBack": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolForward": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.SaveFigureBase": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolZoom": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolPan": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_tools.ToolHelpBase": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.backend_tools.ToolCopyToClipboardBase": [
+        "<builtin>.property"
+    ],
+    "matplotlib.text": [
+        "matplotlib._docstring.Substitution.update",
+        "logging.getLogger",
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "matplotlib.font_manager": [
+        "logging.getLogger",
+        "<builtin>.hasattr",
+        "<builtin>.str",
+        "functools.lru_cache",
+        "matplotlib.font_manager._load_fontmanager",
+        "pathlib.Path.home",
+        "functools.lru_cache.decorating_function",
+        "collections.namedtuple"
+    ],
+    "plistlib": [
+        "<builtin>.globals",
+        "<builtin>.dict",
+        "re.compile",
+        "<builtin>.object"
+    ],
+    "xml.parsers.expat": [],
+    "matplotlib.font_manager.FontProperties": [
+        "<builtin>.classmethod"
+    ],
+    "matplotlib.font_manager.FontManager": [
+        "functools.lru_cache.decorating_function",
+        "functools.lru_cache",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.font_manager._load_fontmanager": [
+        "matplotlib.font_manager.json_dump",
+        "matplotlib.get_cachedir",
+        "matplotlib.font_manager.FontManager.__init__",
+        "matplotlib.font_manager.json_load"
+    ],
+    "matplotlib.get_cachedir": [
+        "matplotlib._get_config_or_cache_dir"
+    ],
+    "matplotlib._get_xdg_cache_dir": [
+        "<builtin>.str",
+        "pathlib.Path.home"
+    ],
+    "matplotlib.font_manager.json_load": [
+        "<builtin>.open",
+        "json.load"
+    ],
+    "json.load": [
+        "json.loads"
+    ],
+    "matplotlib.font_manager.FontManager.__init__": [
+        "matplotlib.cbook._get_data_path",
+        "matplotlib.font_manager.FontManager.addfont",
+        "threading.Timer.__init__",
+        "matplotlib.font_manager.findSystemFonts",
+        "threading.Thread.start"
+    ],
+    "threading.Timer.__init__": [
+        "threading.Thread.__init__",
+        "threading.Event.__init__"
+    ],
+    "threading.Thread.start": [
+        "threading.Event.wait",
+        "<builtin>.RuntimeError",
+        "threading.Event.is_set"
+    ],
+    "threading.Event.is_set": [],
+    "threading.Event.wait": [],
+    "matplotlib.font_manager.findSystemFonts": [
+        "<builtin>.map",
+        "matplotlib.font_manager._get_fontconfig_fonts",
+        "matplotlib.font_manager.list_fonts",
+        "<builtin>.set",
+        "<builtin>.str",
+        "<builtin>.isinstance",
+        "matplotlib.font_manager._get_macos_fonts",
+        "matplotlib.font_manager._get_win32_installed_fonts",
+        "genericpath.exists",
+        "matplotlib.font_manager.get_fontext_synonyms"
+    ],
+    "matplotlib.font_manager.get_fontext_synonyms": [],
+    "matplotlib.font_manager._get_fontconfig_fonts": [
+        "subprocess.check_output"
+    ],
+    "matplotlib.font_manager._get_macos_fonts": [
+        "plistlib.loads",
+        "subprocess.check_output"
+    ],
+    "plistlib.loads": [
+        "plistlib.load"
+    ],
+    "plistlib.load": [
+        "<map>.values"
+    ],
+    "matplotlib.font_manager._get_win32_installed_fonts": [
+        "<builtin>.set",
+        "<builtin>.isinstance",
+        "pathlib.Path.resolve",
+        "matplotlib.font_manager.win32FontDirectory",
+        "<builtin>.range"
+    ],
+    "matplotlib.font_manager.win32FontDirectory": [
+        "posixpath.join",
+        "ntpath.join"
+    ],
+    "matplotlib.font_manager.list_fonts": [
+        "os.walk",
+        "posixpath.join",
+        "ntpath.join"
+    ],
+    "os.walk": [
+        "os._walk",
+        "os._fspath"
+    ],
+    "os._walk": [
+        "os._walk",
+        "ntpath.join",
+        "posixpath.join",
+        "ntpath.islink",
+        "posixpath.islink"
+    ],
+    "ntpath.islink": [
+        "stat.S_ISLNK"
+    ],
+    "stat.S_ISLNK": [
+        "stat.S_IFMT"
+    ],
+    "posixpath.islink": [
+        "stat.S_ISLNK"
+    ],
+    "matplotlib.font_manager.FontManager.addfont": [
+        "matplotlib.font_manager.afmFontProperty",
+        "<builtin>.open",
+        "matplotlib.font_manager.ttfFontProperty"
+    ],
+    "matplotlib.font_manager.ttfFontProperty": [
+        "<builtin>.filter",
+        "<builtin>.any",
+        "<builtin>.int",
+        "matplotlib.font_manager.ttfFontProperty.get_weight",
+        "<builtin>.NotImplementedError"
+    ],
+    "matplotlib.font_manager.ttfFontProperty.get_weight": [
+        "re.search"
+    ],
+    "matplotlib.font_manager.afmFontProperty": [
+        "<builtin>.any"
+    ],
+    "matplotlib.font_manager.json_dump": [
+        "matplotlib.cbook._lock_path"
+    ],
+    "matplotlib.cbook._lock_path": [
+        "<builtin>.range",
+        "pathlib.PurePath.with_name"
+    ],
+    "matplotlib.patches": [
+        "inspect.getdoc",
+        "matplotlib._docstring.Substitution.update"
+    ],
+    "matplotlib.patches.Patch": [
+        "<builtin>.property",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Shadow": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Rectangle": [
+        "<builtin>.property",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.RegularPolygon": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.PathPatch": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.StepPatch": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Polygon": [
+        "<builtin>.property",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Wedge": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Arrow": [
+        "matplotlib.path.Path._create_closed",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.FancyArrow": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.CirclePolygon": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Ellipse": [
+        "<builtin>.property",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Annulus": [
+        "<builtin>.property",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Circle": [
+        "<builtin>.property",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.Arc": [
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches._Style": [
+        "<builtin>.classmethod"
+    ],
+    "matplotlib.patches.ArrowStyle._Base": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.patches.FancyBboxPatch": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.FancyArrowPatch": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.patches.ConnectionPatch": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.textpath": [
+        "logging.getLogger",
+        "matplotlib.textpath.TextToPath.__init__"
+    ],
+    "matplotlib._text_helpers": [],
+    "matplotlib.dviread": [
+        "logging.getLogger",
+        "functools.lru_cache",
+        "collections.namedtuple",
+        "<builtin>.dict"
+    ],
+    "matplotlib.dviread.Text": [
+        "<builtin>.property"
+    ],
+    "matplotlib.dviread.PsfontsMap": [
+        "functools.lru_cache"
+    ],
+    "matplotlib.dviread._LuatexKpsewhich": [
+        "functools.lru_cache"
+    ],
+    "matplotlib.mathtext": [
+        "logging.getLogger"
+    ],
+    "matplotlib.mathtext.MathTextParser": [
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function"
+    ],
+    "matplotlib.texmanager": [
+        "logging.getLogger"
+    ],
+    "matplotlib.texmanager.TexManager": [
+        "ntpath.join",
+        "matplotlib.get_cachedir",
+        "matplotlib._api.deprecation.deprecate_privatize_attribute.__init__",
+        "functools.lru_cache",
+        "posixpath.join",
+        "<builtin>.classmethod"
+    ],
+    "matplotlib._api.deprecation.deprecate_privatize_attribute.__init__": [
+        "matplotlib._api.deprecation.deprecated"
+    ],
+    "matplotlib.textpath.TextToPath": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.textpath.TextToPath.__init__": [
+        "matplotlib.mathtext.MathTextParser.__init__"
+    ],
+    "matplotlib.mathtext.MathTextParser.__init__": [
+        "<str>.lower",
+        "matplotlib._api.check_getitem"
+    ],
+    "matplotlib._api.check_getitem": [
+        "<builtin>.map",
+        "<builtin>.len",
+        "<builtin>.ValueError"
+    ],
+    "matplotlib.textpath.TextPath": [
+        "<builtin>.property"
+    ],
+    "matplotlib.text.Text": [
+        "matplotlib._docstring.kwarg_doc",
+        "<builtin>.dict",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._docstring.kwarg_doc.decorator"
+    ],
+    "matplotlib._docstring.kwarg_doc": [],
+    "matplotlib._docstring.kwarg_doc.decorator": [],
+    "matplotlib.text.Annotation": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "<builtin>.property",
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib._tight_bbox": [],
+    "matplotlib.widgets": [],
+    "matplotlib.widgets.Widget": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.AxesWidget": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.TextBox": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.RadioButtons": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets._SelectorWidget": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.SpanSelector": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.widgets.ToolLineHandles": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.ToolHandles": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.RectangleSelector": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.EllipseSelector": [
+        "<builtin>.property"
+    ],
+    "matplotlib.widgets.PolygonSelector": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_managers": [],
+    "matplotlib.backend_managers.ToolManager": [
+        "<builtin>.property"
+    ],
+    "matplotlib.layout_engine": [],
+    "matplotlib._constrained_layout": [
+        "logging.getLogger"
+    ],
+    "matplotlib._layoutgrid": [
+        "logging.getLogger"
+    ],
+    "kiwisolver": [],
+    "kiwisolver.exceptions": [],
+    "matplotlib._tight_layout": [],
+    "matplotlib.layout_engine.LayoutEngine": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_bases.GraphicsContextBase": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.backend_bases.TimerBase": [
+        "matplotlib._api.deprecation.delete_parameter",
+        "matplotlib._api.deprecation.delete_parameter.wrapper",
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_bases.Event": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_bases.LocationEvent": [
+        "matplotlib._api.deprecation.deprecated.deprecate",
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib._api.classproperty.__init__"
+    ],
+    "matplotlib.backend_bases.FigureCanvasBase": [
+        "matplotlib._api.deprecation.deprecated",
+        "functools.cache",
+        "matplotlib._api.deprecation.deprecated.deprecate",
+        "<builtin>.classmethod",
+        "contextlib.contextmanager",
+        "<builtin>.property",
+        "matplotlib._api.classproperty.__init__"
+    ],
+    "matplotlib.backend_bases.FigureManagerBase": [
+        "<builtin>.classmethod"
+    ],
+    "matplotlib.backend_bases._Mode": [
+        "<builtin>.property"
+    ],
+    "matplotlib.backend_bases.NavigationToolbar2": [
+        "collections.namedtuple",
+        "contextlib.contextmanager",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.backend_bases._Backend": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.contour.ContourLabeler": [
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib.contour.ContourSet": [
+        "matplotlib._api.deprecation.deprecated",
+        "<builtin>.property",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib.spines": [],
+    "matplotlib.spines.Spine": [
+        "<builtin>.classmethod",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.spines.Spines": [
+        "<builtin>.classmethod"
+    ],
+    "matplotlib.colorbar.Colorbar": [
+        "<builtin>.property"
+    ],
+    "matplotlib.image": [
+        "logging.getLogger",
+        "<builtin>.set"
+    ],
+    "matplotlib.image._ImageBase": [
+        "matplotlib.artist.allow_rasterization",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.image.NonUniformImage": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib._api.deprecation.rename_parameter.wrapper"
+    ],
+    "matplotlib.style": [],
+    "matplotlib.style.core": [
+        "ntpath.join",
+        "<builtin>.map",
+        "matplotlib.get_data_path",
+        "logging.getLogger",
+        "<builtin>.sorted",
+        "posixpath.join",
+        "matplotlib.get_configdir",
+        "matplotlib._docstring.Substitution.__init__",
+        "contextlib.contextmanager",
+        "matplotlib.style.core.reload_library",
+        "matplotlib.style.core.read_style_directory"
+    ],
+    "importlib_resources": [],
+    "importlib_resources._common": [
+        "contextlib.contextmanager",
+        "functools.singledispatch",
+        "importlib_resources._common.package_to_anchor"
+    ],
+    "importlib_resources.abc": [],
+    "importlib_resources.compat.py38": [],
+    "importlib_resources.abc.Traversable": [
+        "<builtin>.property"
+    ],
+    "importlib_resources._common.package_to_anchor": [
+        "functools.wraps",
+        "<builtin>.object"
+    ],
+    "importlib_resources._functional": [
+        "<builtin>.object"
+    ],
+    "matplotlib._docstring.Substitution.__init__": [
+        "<builtin>.TypeError"
+    ],
+    "matplotlib.style.core.read_style_directory": [
+        "pathlib.Path.glob",
+        "matplotlib._rc_params_in_file",
+        "warnings.catch_warnings.__init__",
+        "<builtin>.dict"
+    ],
+    "pathlib.Path.glob": [
+        "<builtin>.ValueError",
+        "pathlib._Selector.select_from",
+        "<builtin>.NotImplementedError",
+        "pathlib._make_selector",
+        "<builtin>.tuple"
+    ],
+    "pathlib._make_selector": [
+        "<builtin>.ValueError",
+        "pathlib._PreciseSelector.__init__",
+        "pathlib._is_wildcard_pattern",
+        "pathlib._WildcardSelector.__init__",
+        "pathlib._RecursiveWildcardSelector.__init__"
+    ],
+    "pathlib._is_wildcard_pattern": [],
+    "pathlib._RecursiveWildcardSelector.__init__": [
+        "pathlib._Selector.__init__"
+    ],
+    "pathlib._Selector.__init__": [
+        "pathlib._make_selector"
+    ],
+    "pathlib._WildcardSelector.__init__": [
+        "pathlib._Selector.__init__"
+    ],
+    "pathlib._PreciseSelector.__init__": [
+        "pathlib._Selector.__init__"
+    ],
+    "pathlib._Selector.select_from": [
+        "<builtin>.iter",
+        "<builtin>.type"
+    ],
+    "matplotlib.style.core.reload_library": [
+        "<map>.clear",
+        "<map>.update",
+        "<map>.keys",
+        "<builtin>.sorted"
+    ],
+    "matplotlib.figure": [
+        "logging.getLogger"
+    ],
+    "matplotlib._blocking_input": [],
+    "matplotlib.projections": [
+        "matplotlib.projections.ProjectionRegistry.get_projection_names",
+        "matplotlib.projections.ProjectionRegistry.register",
+        "matplotlib.projections.ProjectionRegistry.__init__",
+        "matplotlib._docstring.Substitution.update",
+        "warnings.warn"
+    ],
+    "mpl_toolkits.mplot3d": [],
+    "matplotlib.projections.ProjectionRegistry.__init__": [],
+    "matplotlib.projections.ProjectionRegistry.register": [],
+    "matplotlib.projections.ProjectionRegistry.get_projection_names": [
+        "<builtin>.sorted"
+    ],
+    "matplotlib.axes": [],
+    "matplotlib.axes._base": [
+        "logging.getLogger"
+    ],
+    "matplotlib.offsetbox": [],
+    "matplotlib.offsetbox.OffsetBox": [
+        "matplotlib.offsetbox._compat_get_offset"
+    ],
+    "matplotlib.offsetbox._compat_get_offset": [
+        "functools.wraps"
+    ],
+    "matplotlib.offsetbox.DrawingArea": [
+        "<builtin>.property"
+    ],
+    "matplotlib.offsetbox.AnchoredOffsetbox": [
+        "matplotlib.offsetbox._compat_get_offset"
+    ],
+    "matplotlib.offsetbox.AnnotationBbox": [
+        "<builtin>.property",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.offsetbox.DraggableBase": [
+        "<builtin>.property"
+    ],
+    "matplotlib.axis": [
+        "<map>.values",
+        "matplotlib.artist.ArtistInspector.get_setters",
+        "logging.getLogger",
+        "<builtin>.list",
+        "matplotlib.artist.ArtistInspector.__init__"
+    ],
+    "matplotlib.units": [],
+    "matplotlib.units.ConversionInterface": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.units.DecimalConverter": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.axis.Tick": [
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib._api.deprecation.rename_parameter",
+        "<builtin>.property",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib.axis.Ticker": [
+        "<builtin>.property"
+    ],
+    "matplotlib.axis.Axis": [
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib.axis._LazyTickList.__init__",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.axis._LazyTickList.__init__": [],
+    "matplotlib.axis.XAxis": [
+        "matplotlib.axis._make_getset_interval"
+    ],
+    "matplotlib.axis._make_getset_interval": [],
+    "matplotlib.axis.YAxis": [
+        "matplotlib.axis._make_getset_interval"
+    ],
+    "matplotlib.gridspec": [
+        "logging.getLogger"
+    ],
+    "matplotlib.gridspec.GridSpecBase": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.gridspec.SubplotSpec": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.table": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.table.Cell": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib._api.deprecation.rename_parameter",
+        "<builtin>.property"
+    ],
+    "matplotlib.table.Table": [
+        "<builtin>.property",
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.axes._base._process_plot_var_args": [
+        "<builtin>.frozenset"
+    ],
+    "matplotlib.axes._base._AxesBase": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib._api.deprecation.make_keyword_only",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib.cbook.Grouper.__init__",
+        "matplotlib._api.deprecation.make_keyword_only.wrapper",
+        "matplotlib.axes._base._axis_method_wrapper.__init__",
+        "<builtin>.property"
+    ],
+    "matplotlib.cbook.Grouper.__init__": [
+        "_weakrefset.WeakSet.__init__",
+        "weakref.WeakKeyDictionary.__init__",
+        "<builtin>.len"
+    ],
+    "matplotlib.axes._base._axis_method_wrapper.__init__": [
+        "<builtin>.getattr",
+        "inspect.getdoc",
+        "append",
+        "<map>.items"
+    ],
+    "matplotlib._api.deprecation.make_keyword_only": [
+        "index",
+        "functools.wraps",
+        "inspect.signature"
+    ],
+    "index": [],
+    "matplotlib._api.deprecation.make_keyword_only.wrapper": [
+        "matplotlib._api.deprecation.warn_deprecated",
+        "<builtin>.len"
+    ],
+    "matplotlib.axes._axes": [
+        "logging.getLogger"
+    ],
+    "matplotlib.category": [
+        "logging.getLogger"
+    ],
+    "dateutil.parser": [
+        "dateutil.parser.__deprecate_private_class",
+        "dateutil.parser.__deprecated_private_func"
+    ],
+    "dateutil.parser._parser": [
+        "dateutil.parser._parser.parser.__init__"
+    ],
+    "six": [
+        "six._SixMetaPathImporter.__init__",
+        "six.MovedModule.__init__",
+        "<builtin>.int",
+        "<builtin>.type",
+        "<builtin>.setattr",
+        "operator.attrgetter.__init__",
+        "<builtin>.isinstance",
+        "six.exec_",
+        "<builtin>.getattr",
+        "<builtin>.globals",
+        "six.MovedAttribute.__init__",
+        "operator.itemgetter.__init__",
+        "<builtin>.len",
+        "<builtin>.enumerate",
+        "six._add_doc",
+        "operator.methodcaller.__init__",
+        "six._SixMetaPathImporter._add_module"
+    ],
+    "importlib.util": [
+        "contextlib.contextmanager"
+    ],
+    "importlib.util.LazyLoader": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "six._SixMetaPathImporter.__init__": [],
+    "six.MovedAttribute.__init__": [
+        "<builtin>.super"
+    ],
+    "six.MovedModule.__init__": [
+        "<builtin>.super"
+    ],
+    "six._SixMetaPathImporter._add_module": [],
+    "six.Module_six_moves_urllib": [
+        "six._SixMetaPathImporter._get_module"
+    ],
+    "six._SixMetaPathImporter._get_module": [],
+    "six._add_doc": [],
+    "operator.methodcaller.__init__": [
+        "<builtin>.isinstance",
+        "<builtin>.TypeError"
+    ],
+    "six.exec_": [
+        "<builtin>.exec"
+    ],
+    "<builtin>.exec": [],
+    "dateutil": [],
+    "dateutil._version": [],
+    "dateutil.parser._parser._timelex": [
+        "<builtin>.classmethod",
+        "re.compile"
+    ],
+    "dateutil.parser._parser._ymd": [
+        "<builtin>.property"
+    ],
+    "dateutil.parser._parser.parser.__init__": [
+        "dateutil.parser._parser.parserinfo.__init__"
+    ],
+    "dateutil.parser._parser.parserinfo.__init__": [
+        "dateutil.parser._parser.parserinfo._convert"
+    ],
+    "dateutil.parser._parser.parserinfo._convert": [
+        "<builtin>.isinstance",
+        "<builtin>.enumerate"
+    ],
+    "dateutil.parser.isoparser": [
+        "dateutil.parser.isoparser.isoparser.__init__"
+    ],
+    "dateutil.tz": [],
+    "dateutil.tz.tz": [
+        "dateutil.tz.tz.__get_gettz",
+        "datetime.date.toordinal"
+    ],
+    "dateutil.tz._common": [
+        "<builtin>.hasattr"
+    ],
+    "dateutil.tz._common._DatetimeWithFold": [
+        "<builtin>.property"
+    ],
+    "dateutil.tz._common._tzinfo": [
+        "dateutil.tz._common._validate_fromutc_inputs"
+    ],
+    "dateutil.tz._common._validate_fromutc_inputs": [
+        "functools.wraps"
+    ],
+    "dateutil.tz._common.tzrangebase": [
+        "<builtin>.property",
+        "dateutil.tz._common.tzname_in_python2"
+    ],
+    "dateutil.tz._common.tzname_in_python2": [
+        "functools.wraps"
+    ],
+    "dateutil.tz._factories": [],
+    "dateutil.tz.win": [
+        "<builtin>.ImportError",
+        "dateutil.tz.win._settzkeyname"
+    ],
+    "ctypes.wintypes": [],
+    "dateutil.tz.win._settzkeyname": [],
+    "dateutil.tz.win.tzwinbase": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "dateutil.tz.tz.tzutc": [
+        "dateutil.tz._common._validate_fromutc_inputs",
+        "dateutil.tz._common.tzname_in_python2"
+    ],
+    "dateutil.tz.tz.tzoffset": [
+        "dateutil.tz._common._validate_fromutc_inputs",
+        "dateutil.tz._common.tzname_in_python2"
+    ],
+    "dateutil.tz.tz.tzlocal": [
+        "dateutil.tz._common.tzname_in_python2"
+    ],
+    "dateutil.tz.tz.tzfile": [
+        "dateutil.tz._common.tzname_in_python2"
+    ],
+    "dateutil.tz.tz.tzrange": [
+        "<builtin>.property"
+    ],
+    "dateutil.tz.tz._tzicalvtz": [
+        "dateutil.tz._common.tzname_in_python2"
+    ],
+    "dateutil.tz.tz.__get_gettz": [
+        "dateutil.tz.tz.__get_gettz.GettzFunc.__init__"
+    ],
+    "dateutil.tz.tz.__get_gettz.GettzFunc": [
+        "<builtin>.staticmethod"
+    ],
+    "dateutil.tz.tz.__get_gettz.GettzFunc.__init__": [
+        "collections.OrderedDict.__init__",
+        "weakref.WeakValueDictionary.__init__"
+    ],
+    "dateutil.parser.isoparser.isoparser": [
+        "dateutil.parser.isoparser._takes_ascii",
+        "re.compile"
+    ],
+    "dateutil.parser.isoparser._takes_ascii": [
+        "functools.wraps"
+    ],
+    "dateutil.parser.isoparser.isoparser.__init__": [
+        "<builtin>.ord",
+        "<builtin>.len",
+        "<builtin>.ValueError"
+    ],
+    "dateutil.parser.__deprecate_private_class": [],
+    "dateutil.parser.__deprecated_private_func": [
+        "functools.wraps"
+    ],
+    "matplotlib.category.StrCategoryConverter": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.category.StrCategoryFormatter": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.category.UnitData": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.dates": [
+        "logging.getLogger",
+        "<builtin>.float",
+        "numpy.lib.function_base.vectorize.__init__",
+        "datetime.date.toordinal"
+    ],
+    "dateutil.rrule": [
+        "<builtin>.range",
+        "<builtin>.tuple",
+        "dateutil.rrule.weekday.__init__",
+        "<builtin>.list"
+    ],
+    "heapq": [],
+    "dateutil._common": [],
+    "dateutil.rrule.weekday.__init__": [
+        "<builtin>.super",
+        "<builtin>.ValueError"
+    ],
+    "dateutil.rrule.rruleset": [
+        "dateutil.rrule._invalidates_cache"
+    ],
+    "dateutil.rrule._invalidates_cache": [
+        "functools.wraps"
+    ],
+    "dateutil.relativedelta": [
+        "<builtin>.range",
+        "<builtin>.tuple",
+        "dateutil._common.weekday.__init__"
+    ],
+    "dateutil._common.weekday.__init__": [],
+    "dateutil.relativedelta.relativedelta": [
+        "<builtin>.property"
+    ],
+    "matplotlib.dates.RRuleLocator": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.dates.DateConverter": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.dates._SwitchableDateConverter": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.legend": [
+        "matplotlib._docstring.Substitution.update"
+    ],
+    "matplotlib.container": [],
+    "matplotlib.legend_handler": [],
+    "matplotlib.legend_handler.HandlerStepPatch": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.legend.Legend": [
+        "matplotlib.legend_handler.HandlerRegularPolyCollection.__init__",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib.artist.allow_rasterization",
+        "matplotlib.legend_handler.HandlerErrorbar.__init__",
+        "matplotlib.legend_handler.HandlerStem.__init__",
+        "<builtin>.classmethod",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib.legend_handler.HandlerPatch.__init__",
+        "matplotlib._api.deprecation.rename_parameter",
+        "<builtin>.property",
+        "matplotlib.legend_handler.HandlerTuple.__init__",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.legend_handler.HandlerStem.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.legend_handler.HandlerErrorbar.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.legend_handler.HandlerPatch.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.legend_handler.HandlerRegularPolyCollection.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.legend_handler.HandlerTuple.__init__": [
+        "<builtin>.super"
+    ],
+    "matplotlib.mlab": [
+        "matplotlib._docstring.Substitution.update",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.quiver": [
+        "matplotlib._docstring.Substitution.update"
+    ],
+    "matplotlib.quiver.QuiverKey": [
+        "<builtin>.property",
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.quiver.Quiver": [
+        "matplotlib._docstring.Substitution.__init__",
+        "matplotlib.artist.allow_rasterization"
+    ],
+    "matplotlib.quiver.Barbs": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.stackplot": [],
+    "matplotlib.streamplot": [],
+    "matplotlib.streamplot.Grid": [
+        "<builtin>.property"
+    ],
+    "matplotlib.tri": [],
+    "matplotlib.tri._triangulation": [],
+    "matplotlib.tri._triangulation.Triangulation": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.tri._tricontour": [
+        "matplotlib._docstring.Substitution.__init__",
+        "matplotlib._docstring.Substitution.update",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__"
+    ],
+    "matplotlib.tri._trifinder": [],
+    "matplotlib.tri._triinterpolate": [],
+    "matplotlib.tri._tritools": [],
+    "matplotlib.tri._tritools.TriAnalyzer": [
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.tri._triinterpolate.CubicTriInterpolator": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.tri._triinterpolate._ReducedHCT_Element": [
+        "numpy.core.ones"
+    ],
+    "matplotlib.tri._triinterpolate._DOF_estimator": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.tri._triinterpolate._Sparse_Matrix_coo": [
+        "<builtin>.property"
+    ],
+    "matplotlib.tri._tripcolor": [],
+    "matplotlib.tri._triplot": [],
+    "matplotlib.tri._trirefine": [],
+    "matplotlib.tri._trirefine.UniformTriRefiner": [
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.axes._secondary_axes": [
+        "matplotlib._docstring.Substitution.update"
+    ],
+    "matplotlib.axes._secondary_axes.SecondaryAxis": [
+        "matplotlib._docstring.copy",
+        "matplotlib._docstring.copy.do_copy"
+    ],
+    "matplotlib._docstring.copy": [],
+    "matplotlib._docstring.copy.do_copy": [],
+    "matplotlib.axes._axes.Axes": [
+        "matplotlib._preprocess_data.inner",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib._docstring.copy",
+        "matplotlib._preprocess_data",
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib._api.deprecation.deprecated.deprecate",
+        "matplotlib._api.deprecation.rename_parameter.wrapper",
+        "matplotlib._docstring.copy.do_copy",
+        "matplotlib._api.deprecation.rename_parameter",
+        "matplotlib.axes._axes._make_axes_method",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib._preprocess_data": [
+        "inspect.signature",
+        "<builtin>.list",
+        "append",
+        "functools.wraps",
+        "matplotlib._add_data_doc",
+        "inspect.Parameter.__init__"
+    ],
+    "matplotlib._add_data_doc": [
+        "inspect.cleandoc",
+        "<builtin>.map",
+        "<builtin>.len"
+    ],
+    "matplotlib._preprocess_data.inner": [
+        "<map>.get",
+        "<builtin>.map",
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib.cbook.sanitize_sequence",
+        "matplotlib._replacer",
+        "matplotlib._label_from_arg",
+        "<builtin>.tuple"
+    ],
+    "matplotlib.cbook.sanitize_sequence": [
+        "<builtin>.isinstance",
+        "<builtin>.list"
+    ],
+    "matplotlib._replacer": [
+        "<builtin>.isinstance",
+        "matplotlib.cbook.sanitize_sequence"
+    ],
+    "matplotlib._label_from_arg": [
+        "<builtin>.isinstance"
+    ],
+    "matplotlib.axes._axes._make_axes_method": [],
+    "matplotlib.figure.FigureBase": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib._docstring.copy",
+        "matplotlib._api.deprecation.make_keyword_only",
+        "matplotlib._docstring.Substitution.__init__",
+        "matplotlib._docstring.copy.do_copy",
+        "matplotlib._api.deprecation.make_keyword_only.wrapper",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "matplotlib.figure.SubFigure": [
+        "<builtin>.property"
+    ],
+    "matplotlib.figure.Figure": [
+        "matplotlib._docstring._ArtistPropertiesSubstitution.__init__",
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib.artist.allow_rasterization",
+        "threading.RLock",
+        "matplotlib.artist._finalize_rasterization",
+        "<builtin>.property",
+        "matplotlib._api.deprecation.deprecated.deprecate"
+    ],
+    "matplotlib.artist._finalize_rasterization": [
+        "functools.wraps"
+    ],
+    "matplotlib.typing": [
+        "typing.TypeVar.__init__"
+    ],
+    "typing_extensions.ParamSpec.__init__": [
+        "typing_extensions._set_default",
+        "<builtin>.bool",
+        "typing._type_check",
+        "typing_extensions._caller"
+    ],
+    "typing_extensions._set_default": [],
+    "typing_extensions._caller": [],
+    "matplotlib.pyplot._copy_docstring_and_deprecators": [],
+    "matplotlib.RcParams._get_backend_or_none": [
+        "matplotlib.RcParams._get"
+    ],
+    "matplotlib.backends.registry.BackendRegistry.list_builtin": [
+        "<map>.items"
+    ],
+    "matplotlib.cbook._get_running_interactive_framework": [],
+    "matplotlib.use": [
+        "matplotlib.RcParams._get_backend_or_none",
+        "matplotlib.rcsetup.validate_backend"
+    ],
+    "matplotlib.rcsetup.validate_backend": [
+        "matplotlib.backends.registry.BackendRegistry.is_valid_backend",
+        "matplotlib.backends.registry.BackendRegistry.list_all",
+        "<builtin>.ValueError"
+    ],
+    "matplotlib.backends.registry.BackendRegistry.is_valid_backend": [
+        "<str>.lower",
+        "<map>.get",
+        "<str>.startswith",
+        "matplotlib.backends.registry.BackendRegistry._ensure_entry_points_loaded"
+    ],
+    "matplotlib.backends.registry.BackendRegistry._ensure_entry_points_loaded": [
+        "matplotlib.backends.registry.BackendRegistry._validate_and_store_entry_points",
+        "matplotlib.backends.registry.BackendRegistry._read_entry_points"
+    ],
+    "matplotlib.backends.registry.BackendRegistry._read_entry_points": [
+        "importlib.metadata.entry_points",
+        "matplotlib.backends.registry.BackendRegistry._read_entry_points.backward_compatible_entry_points"
+    ],
+    "importlib.metadata": [
+        "collections.namedtuple"
+    ],
+    "csv": [],
+    "csv.DictReader": [
+        "<builtin>.property"
+    ],
+    "zipfile": [],
+    "zipfile.ZipInfo": [
+        "<builtin>.classmethod"
+    ],
+    "zipfile._ZipWriteFile": [
+        "<builtin>.property"
+    ],
+    "zipfile.ZipFile": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "zipfile.CompleteDirs": [
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "zipfile.Path": [
+        "<builtin>.property"
+    ],
+    "importlib.metadata._adapters": [],
+    "importlib.metadata._text": [],
+    "importlib.metadata._adapters.Message": [
+        "<builtin>.set",
+        "<builtin>.map",
+        "<builtin>.property"
+    ],
+    "importlib.metadata._meta": [
+        "typing.TypeVar.__init__"
+    ],
+    "importlib.metadata._meta.PackageMetadata": [
+        "<builtin>.property"
+    ],
+    "importlib.metadata._itertools": [],
+    "importlib.metadata.PackageNotFoundError": [
+        "<builtin>.property"
+    ],
+    "importlib.metadata.Sectioned": [
+        "textwrap.dedent",
+        "<builtin>.classmethod",
+        "<builtin>.staticmethod"
+    ],
+    "importlib.metadata.EntryPoint": [
+        "<builtin>.property",
+        "re.compile"
+    ],
+    "importlib.metadata.EntryPoints": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "<builtin>.staticmethod"
+    ],
+    "importlib.metadata.SelectableGroups": [
+        "<builtin>.classmethod",
+        "<builtin>.property"
+    ],
+    "importlib.metadata.Distribution": [
+        "<builtin>.classmethod",
+        "<builtin>.property",
+        "abc.abstractmethod",
+        "<builtin>.staticmethod"
+    ],
+    "importlib.metadata.DistributionFinder.Context": [
+        "<builtin>.property"
+    ],
+    "importlib.metadata.DistributionFinder": [
+        "abc.abstractmethod",
+        "importlib.metadata.DistributionFinder.Context.__init__"
+    ],
+    "importlib.metadata.DistributionFinder.Context.__init__": [
+        "<builtin>.vars"
+    ],
+    "importlib.metadata.FastPath": [
+        "functools.lru_cache",
+        "functools.lru_cache.decorating_function",
+        "<builtin>.property"
+    ],
+    "importlib.metadata.Prepared": [
+        "<builtin>.staticmethod"
+    ],
+    "importlib.metadata.MetadataPathFinder": [
+        "<builtin>.classmethod",
+        "importlib.metadata.DistributionFinder.Context.__init__"
+    ],
+    "importlib.metadata.PathDistribution": [
+        "<builtin>.property"
+    ],
+    "importlib.metadata.entry_points": [
+        "importlib.metadata.distributions",
+        "importlib.metadata.SelectableGroups.load",
+        "operator.attrgetter.__init__",
+        "importlib.metadata.SelectableGroups.select"
+    ],
+    "importlib.metadata.distributions": [
+        "importlib.metadata.Distribution.discover"
+    ],
+    "importlib.metadata.Distribution.discover": [
+        "importlib.metadata.DistributionFinder.Context.__init__",
+        "importlib.metadata.Distribution._discover_resolvers",
+        "<builtin>.ValueError"
+    ],
+    "importlib.metadata.Distribution._discover_resolvers": [
+        "<builtin>.filter",
+        "<builtin>.getattr"
+    ],
+    "importlib.metadata.SelectableGroups.load": [
+        "operator.attrgetter.__init__",
+        "<builtin>.sorted"
+    ],
+    "importlib.metadata.SelectableGroups.select": [],
+    "matplotlib.backends.registry.BackendRegistry._read_entry_points.backward_compatible_entry_points": [
+        "matplotlib._parse_to_version_info",
+        "importlib.metadata.version"
+    ],
+    "importlib.metadata.version": [
+        "importlib.metadata.distribution"
+    ],
+    "importlib.metadata.distribution": [
+        "importlib.metadata.Distribution.from_name"
+    ],
+    "importlib.metadata.Distribution.from_name": [
+        "importlib.metadata.DistributionFinder.Context.__init__",
+        "<builtin>.iter",
+        "<builtin>.next",
+        "importlib.metadata.Distribution._discover_resolvers"
+    ],
+    "matplotlib._parse_to_version_info": [
+        "packaging.version.parse"
+    ],
+    "matplotlib.backends.registry.BackendRegistry._validate_and_store_entry_points": [
+        "<builtin>.set",
+        "<builtin>.RuntimeError"
+    ],
+    "matplotlib.backends.registry.BackendRegistry.list_all": [
+        "matplotlib.backends.registry.BackendRegistry._ensure_entry_points_loaded",
+        "matplotlib.backends.registry.BackendRegistry.list_builtin"
+    ],
+    "handler.handle": [
+        "matplotlib.pyplot.savefig",
+        "matplotlib.pyplot.legend",
+        "matplotlib.pyplot.ylabel",
+        "matplotlib.pyplot.close",
+        "matplotlib.pyplot.title",
+        "matplotlib.pyplot.xlabel",
+        "matplotlib.pyplot.plot"
+    ],
+    "matplotlib.pyplot.plot": [
+        "matplotlib.pyplot.gca"
+    ],
+    "matplotlib.pyplot.gca": [
+        "matplotlib.pyplot.gcf"
+    ],
+    "matplotlib.pyplot.gcf": [
+        "matplotlib._pylab_helpers.Gcf.get_active",
+        "matplotlib.pyplot.figure"
+    ],
+    "matplotlib._pylab_helpers.Gcf.get_active": [
+        "collections.OrderedDict.values",
+        "<builtin>.next",
+        "<builtin>.reversed"
+    ],
+    "matplotlib.pyplot.figure": [
+        "importlib.import_module",
+        "matplotlib.pyplot.new_figure_manager",
+        "<builtin>.ValueError",
+        "<builtin>.int",
+        "matplotlib.pyplot.draw_if_interactive",
+        "matplotlib._pylab_helpers.Gcf.set_active",
+        "matplotlib._api.warn_external",
+        "<builtin>.isinstance",
+        "<builtin>.getattr",
+        "<builtin>.max",
+        "matplotlib._pylab_helpers.Gcf.get_fig_manager",
+        "<builtin>.len",
+        "matplotlib._pylab_helpers.Gcf._set_new_active_manager",
+        "matplotlib.pyplot.get_figlabels",
+        "matplotlib.pyplot.get_fignums"
+    ],
+    "matplotlib._pylab_helpers.Gcf.set_active": [
+        "collections.OrderedDict.move_to_end"
+    ],
+    "matplotlib.pyplot.get_fignums": [
+        "<builtin>.sorted"
+    ],
+    "matplotlib.pyplot.get_figlabels": [
+        "matplotlib._pylab_helpers.Gcf.get_all_fig_managers"
+    ],
+    "matplotlib._pylab_helpers.Gcf.get_all_fig_managers": [
+        "collections.OrderedDict.values",
+        "<builtin>.list"
+    ],
+    "matplotlib._api.warn_external": [
+        "warnings.warn",
+        "re.match"
+    ],
+    "matplotlib._pylab_helpers.Gcf.get_fig_manager": [
+        "matplotlib._pylab_helpers.Gcf.set_active"
+    ],
+    "matplotlib.pyplot.new_figure_manager": [
+        "matplotlib.pyplot._warn_if_gui_out_of_main_thread",
+        "matplotlib.pyplot._get_backend_mod"
+    ],
+    "matplotlib.pyplot._warn_if_gui_out_of_main_thread": [
+        "threading.current_thread",
+        "matplotlib.pyplot._get_backend_mod",
+        "<builtin>.hasattr",
+        "matplotlib._api.warn_external",
+        "threading.main_thread",
+        "typing.cast"
+    ],
+    "matplotlib.pyplot._get_backend_mod": [
+        "matplotlib.pyplot.switch_backend",
+        "matplotlib.RcParams._get",
+        "typing.cast"
+    ],
+    "matplotlib.pyplot.switch_backend": [
+        "<builtin>.ImportError",
+        "matplotlib.pyplot.switch_backend",
+        "inspect.signature",
+        "matplotlib.cbook._get_running_interactive_framework",
+        "<builtin>.ValueError",
+        "importlib.metadata.version",
+        "matplotlib.backends.registry.BackendRegistry.backend_for_gui_framework",
+        "matplotlib.cbook._str_equal",
+        "matplotlib.pyplot.close",
+        "<builtin>.globals",
+        "<builtin>.getattr",
+        "matplotlib._parse_to_version_info",
+        "matplotlib._api.deprecation.warn_deprecated",
+        "matplotlib.pyplot.install_repl_displayhook",
+        "matplotlib.pyplot.get_fignums",
+        "inspect.getattr_static",
+        "matplotlib.backends.registry.BackendRegistry.load_backend_module",
+        "typing.cast"
+    ],
+    "matplotlib.backends.registry.BackendRegistry.backend_for_gui_framework": [
+        "<map>.get"
+    ],
+    "matplotlib.backends.registry.BackendRegistry.load_backend_module": [
+        "matplotlib.backends.registry.BackendRegistry._backend_module_name",
+        "importlib.import_module"
+    ],
+    "matplotlib.backends.registry.BackendRegistry._backend_module_name": [
+        "<map>.get"
+    ],
+    "matplotlib.pyplot.switch_backend.backend_mod": [
+        "<builtin>.locals",
+        "<builtin>.vars"
+    ],
+    "inspect.getattr_static": [
+        "inspect._static_getmro",
+        "inspect._check_instance",
+        "<builtin>.type",
+        "inspect._check_class",
+        "inspect._is_type",
+        "<builtin>.AttributeError",
+        "inspect._shadowed_dict"
+    ],
+    "inspect._is_type": [
+        "inspect._static_getmro"
+    ],
+    "inspect._static_getmro": [],
+    "inspect._shadowed_dict": [
+        "inspect._static_getmro"
+    ],
+    "inspect._check_instance": [],
+    "inspect._check_class": [
+        "<builtin>.type",
+        "inspect._static_getmro",
+        "inspect._shadowed_dict"
+    ],
+    "matplotlib.pyplot.close": [
+        "matplotlib._pylab_helpers.Gcf.get_active",
+        "matplotlib._pylab_helpers.Gcf.destroy_fig",
+        "<builtin>.hasattr",
+        "matplotlib._pylab_helpers.Gcf.destroy_all",
+        "<builtin>.type",
+        "<builtin>.isinstance",
+        "matplotlib.pyplot.get_figlabels",
+        "matplotlib.pyplot.get_fignums",
+        "<builtin>.TypeError",
+        "matplotlib._pylab_helpers.Gcf.destroy"
+    ],
+    "matplotlib._pylab_helpers.Gcf.destroy_fig": [
+        "collections.OrderedDict.values",
+        "<builtin>.next",
+        "matplotlib._pylab_helpers.Gcf.destroy"
+    ],
+    "matplotlib._pylab_helpers.Gcf.destroy": [
+        "<builtin>.hasattr",
+        "collections.OrderedDict.pop",
+        "<builtin>.all"
+    ],
+    "matplotlib._pylab_helpers.Gcf.destroy_all": [
+        "collections.OrderedDict.clear",
+        "collections.OrderedDict.values",
+        "<builtin>.list"
+    ],
+    "collections.OrderedDict.clear": [
+        "<map>.clear"
+    ],
+    "matplotlib.pyplot.install_repl_displayhook": [
+        "matplotlib.backends.registry.BackendRegistry.resolve_backend",
+        "matplotlib.get_backend"
+    ],
+    "matplotlib.get_backend": [],
+    "matplotlib.backends.registry.BackendRegistry.resolve_backend": [
+        "<map>.get",
+        "<builtin>.RuntimeError",
+        "matplotlib.get_backend",
+        "<builtin>.isinstance",
+        "matplotlib.backends.registry.BackendRegistry._ensure_entry_points_loaded",
+        "matplotlib.backends.registry.BackendRegistry._get_gui_framework_by_loading"
+    ],
+    "matplotlib.backends.registry.BackendRegistry._get_gui_framework_by_loading": [
+        "matplotlib.backends.registry.BackendRegistry.load_backend_module"
+    ],
+    "threading.main_thread": [],
+    "matplotlib._pylab_helpers.Gcf._set_new_active_manager": [
+        "<builtin>.hasattr",
+        "matplotlib._pylab_helpers.Gcf.set_active"
+    ],
+    "matplotlib.pyplot.draw_if_interactive": [
+        "matplotlib.pyplot._get_backend_mod"
+    ],
+    "matplotlib.pyplot.xlabel": [
+        "matplotlib.pyplot.gca"
+    ],
+    "matplotlib.pyplot.ylabel": [
+        "matplotlib.pyplot.gca"
+    ],
+    "matplotlib.pyplot.title": [
+        "matplotlib.pyplot.gca"
+    ],
+    "matplotlib.pyplot.legend": [
+        "matplotlib.pyplot.gca"
+    ],
+    "matplotlib.pyplot.savefig": [
+        "matplotlib.pyplot.gcf"
+    ]
+}

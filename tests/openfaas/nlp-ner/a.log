@@ -1,0 +1,73 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building nlp-ner.
+[0mClearing temporary build folder: ./build/nlp-ner/
+Preparing: ./nlp-ner/ build/nlp-ner/function
+Building: localhost:5000/nlp-ner:latest with python3-debian template. Please wait..
+nlp-ner shrink-wrapped to ./build/nlp-ner/
+[33m[0] < Building nlp-ner done in 0.19s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.19s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params rt.as.user='true' keep.perms='true' tags='' image-build-engine='internal' target.type='image' target.image='fat-img:latest' continue.mode='probe' 
+cmd=build state=image.inspection.start
+cmd=build info=image id='sha256:50065b93748c2762862c3362b4b418185ed78cf2dba1dc3ea87424662d3fa58a' size.bytes='2238031504' size.human='2.2 GB' 
+cmd=build info=image.users exe='app' all='app,root,app' 
+cmd=build info=image.stack id='sha256:50065b93748c2762862c3362b4b418185ed78cf2dba1dc3ea87424662d3fa58a' index='0' name='fat-img:latest' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='slimk_160672_20250107014321' id='e9ffbecc2de1dce7468a91eb229ce4d4d2c5fb5576c71422e181341338a3611c' 
+cmd=build info=container status='running' name='slimk_160672_20250107014321' id='e9ffbecc2de1dce7468a91eb229ce4d4d2c5fb5576c71422e181341338a3611c' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.8' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_160672_20250107014321' id='e9ffbecc2de1dce7468a91eb229ce4d4d2c5fb5576c71422e181341338a3611c' target.port.list='33616' target.port.info='8080/tcp => 0.0.0.0:33616' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='1' targets='33616' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call error='none' time='2025-01-07T01:43:39Z' status='200' method='GET' target='http://127.0.0.1:33616/' attempt='1' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:33616/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:33616/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='8.77X' size.original='2.2 GB' size.optimized='255 MB' 
+cmd=build info=results has.data='true' image-build-engine='internal' image.name='fat-img.slim' image.size='255 MB' image.id='sha256:e6af1a7f4218eab8715ff1b2589f113441c6bd62554543720faf5e0f9f4b6c55' image.digest='sha256:dd006e622b0c45bf8880168440c0501dbf97b1fee4acbf6b45ea49c39b595adc' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/50065b93748c2762862c3362b4b418185ed78cf2dba1dc3ea87424662d3fa58a/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='fat-img-seccomp.json' 
+cmd=build info=results artifacts.apparmor='fat-img-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Step 5: Renaming the slimmed image...
+Step 6: Pushing the slimmed image to the registry...
+The push refers to repository [localhost:5000/nlp-ner]
+05e0c48f56d9: Preparing
+05e0c48f56d9: Pushed
+latest: digest: sha256:ed02162387597ddc8924b4118953e2750e32a6e1ffa4adcb335f06ec6692b055 size: 529
+Step 7: Checking if function is already deployed...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: nlp-ner.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/nlp-ner
+
+Deployment complete!

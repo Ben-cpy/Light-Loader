@@ -1,0 +1,48 @@
+得到项目LOC和项目大小
+
+我现在位于一个目录中, 它包含许多结构类似的子目录. 我想对除了名称为 `info` `_yaml` `__pycache__`的其他目录进行如下操作.
+###目录情况
+[root@cloud-node openfaas-la]# ls
+app10  app6       auth             code2flow  graph_bfs    nlp-ner     __pycache__  type-check
+app11  app7       beet             crypto     img-recg     ocr         pygame       video
+app21  app8       bidict           errbot     info         opencv-img  selenium     _yaml
+app3   app9       cat-dog          formatter  marshal      pdfminer    template
+app5   audioread  cli-application  geopanda   mathplotlib  psutil      tinydb
+###
+1.进入每个子目录中, 执行 `cloc .` 命令, 会输出一个类似这样的输出
+###
+输出
+###
+[root@cloud-node app3]# cloc .
+    2266 text files.
+    2257 unique files.                                          
+     462 files ignored.
+
+github.com/AlDanial/cloc v 1.70  T=15.28 s (125.7 files/s, 56580.2 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Python                        1744         134950         174524         502638
+Cython                          44           6646           9013          21643
+C/C++ Header                    29           1249           1993           7824
+C                               45            183            292           1812
+Fortran 90                      35             94             73            682
+Fortran 77                      14             18             48            322
+C++                              1             13             14            143
+XML                              3              1              0            102
+INI                              3              7              0             35
+XSLT                             2              5              0             32
+-------------------------------------------------------------------------------
+SUM:                          1920         143166         185957         535233
+-------------------------------------------------------------------------------
+###
+我想获得的是在倒是第二行是SUM这一行中的 code对应的数量535233, 最后用k表示, 这里应该是535.2k(保留一位小数)
+###
+2.在这子目录下先执行`find . -type d -name "__pycache__" -exec rm -rf {} + ` ,清楚一些编译的字节码,再执行`du -h . | tail -n 1` 会输出类似这样的输出,得到文件大小.
+###
+输出
+###
+131M    .
+###
+最后, 我希望对每个子文件夹都执行这样的操作,并且最终输出按照每个子文件输出, 每个子文件夹输出2个信息,第一个是它的LOC,第二个是他的大小.
+给我一个脚本执行上面操作.

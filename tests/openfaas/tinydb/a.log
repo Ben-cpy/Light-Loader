@@ -1,0 +1,114 @@
+Using regular OpenFaaS workflow...
+Step 1: Building the function...
+[33m[0] > Building tinydb.
+[0mClearing temporary build folder: ./build/tinydb/
+Preparing: ./tinydb/ build/tinydb/function
+Building: localhost:5000/tinydb:latest with python3-debian template. Please wait..
+Image: localhost:5000/tinydb:latest built.
+[33m[0] < Building tinydb done in 26.51s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 26.51s[0m
+Step 2: Pushing to registry...
+[33m[0] > Pushing tinydb [localhost:5000/tinydb:latest].
+[0mThe push refers to repository [localhost:5000/tinydb]
+882cdacba54e: Preparing
+db5136595e2d: Preparing
+e061f7aa998c: Preparing
+0f5b215099f7: Preparing
+5f70bf18a086: Preparing
+a2205d320573: Preparing
+12504e03113e: Preparing
+5f70bf18a086: Preparing
+53034c2716f9: Preparing
+41a70b499702: Preparing
+f4a1c0cef247: Preparing
+8a12311451ce: Preparing
+2295cc7615ca: Preparing
+3f26c7a32451: Preparing
+ee67f0071e6f: Preparing
+36ccebb3daf7: Preparing
+f1011ad616ce: Preparing
+c6b89608d737: Preparing
+0d9e4c33e011: Preparing
+59de3390a451: Preparing
+e729c4134cc3: Preparing
+25b7ac7c2745: Preparing
+c1537681ddab: Preparing
+c4c2f1c63c2f: Preparing
+4be7fe848f91: Preparing
+6a3d7465dae1: Preparing
+2143381c9922: Preparing
+8a12311451ce: Waiting
+2295cc7615ca: Waiting
+12228ba7a3b1: Preparing
+a2205d320573: Waiting
+9b55156abf26: Preparing
+3f26c7a32451: Waiting
+293d5db30c9f: Preparing
+12504e03113e: Waiting
+ee67f0071e6f: Waiting
+03127cdb479b: Preparing
+53034c2716f9: Waiting
+9c742cd6c7a5: Preparing
+41a70b499702: Waiting
+59de3390a451: Waiting
+36ccebb3daf7: Waiting
+f4a1c0cef247: Waiting
+c4c2f1c63c2f: Waiting
+e729c4134cc3: Waiting
+f1011ad616ce: Waiting
+4be7fe848f91: Waiting
+9b55156abf26: Waiting
+25b7ac7c2745: Waiting
+293d5db30c9f: Waiting
+c6b89608d737: Waiting
+c1537681ddab: Waiting
+6a3d7465dae1: Waiting
+03127cdb479b: Waiting
+0d9e4c33e011: Waiting
+9c742cd6c7a5: Waiting
+12228ba7a3b1: Waiting
+e061f7aa998c: Layer already exists
+0f5b215099f7: Layer already exists
+5f70bf18a086: Layer already exists
+12504e03113e: Layer already exists
+41a70b499702: Layer already exists
+a2205d320573: Layer already exists
+53034c2716f9: Layer already exists
+8a12311451ce: Layer already exists
+2295cc7615ca: Layer already exists
+f4a1c0cef247: Layer already exists
+ee67f0071e6f: Layer already exists
+36ccebb3daf7: Layer already exists
+3f26c7a32451: Layer already exists
+f1011ad616ce: Layer already exists
+c6b89608d737: Layer already exists
+0d9e4c33e011: Layer already exists
+59de3390a451: Layer already exists
+e729c4134cc3: Layer already exists
+25b7ac7c2745: Layer already exists
+c1537681ddab: Layer already exists
+c4c2f1c63c2f: Layer already exists
+4be7fe848f91: Layer already exists
+2143381c9922: Layer already exists
+6a3d7465dae1: Layer already exists
+12228ba7a3b1: Layer already exists
+9b55156abf26: Layer already exists
+293d5db30c9f: Layer already exists
+03127cdb479b: Layer already exists
+9c742cd6c7a5: Layer already exists
+882cdacba54e: Pushed
+db5136595e2d: Pushed
+latest: digest: sha256:f83f4b49be4d6c47fa02b31287c659f36cc9fa25d11d0ca4b6f5cb140af19e93 size: 7013
+[33m[0] < Pushing tinydb [localhost:5000/tinydb:latest] done.
+[0m[33m[0] Worker done.
+[0mStep 7: Checking if function is already deployed...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: tinydb.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/tinydb
+
+Deployment complete!

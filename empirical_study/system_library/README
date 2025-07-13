@@ -1,0 +1,21 @@
+## 探究系统库(system library)针对FaaS函数的使用情况
+> /home/chenpengyu/experiments/system_library
+
+需要使用 `strace` 这个系统级别的工具分析. 系统的运行是采用的本地的运行`/home/chenpengyu/openfaas-la`
+
+```bash
+strace -e trace=open,openat -o strace.log python3 handler.py
+grep '\.so' strace.log | awk -F'"' '{print $2}' | sort | uniq > strace_so_list.txt
+./app_deps_size.sh
+```
+
+
+2个脚本工具, 一个是统计总的系统库的数量, 一个是 统计使用过的占据比例
+
+测试准备在 `ori` 上进行
+
+> 追加一行运行
+```
+echo 'handle("1")' >> handler.py
+```
+

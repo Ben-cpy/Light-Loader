@@ -1,0 +1,17 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  app3:
+    lang: python3-debian
+    handler: ./app3
+    image: localhost:5000/app3:latest
+    constraints:
+    - "performance=high"
+    limits:
+      memory: 500Mi
+      cpu: 1000m
+    requests:
+      memory: 300Mi
+      cpu: 500m

@@ -1,0 +1,121 @@
+Using regular OpenFaaS workflow...
+Step 1: Building the function...
+[33m[0] > Building bidict.
+[0mClearing temporary build folder: ./build/bidict/
+Preparing: ./bidict/ build/bidict/function
+Building: localhost:5000/bidict:latest with python3-debian template. Please wait..
+Image: localhost:5000/bidict:latest built.
+[33m[0] < Building bidict done in 20.15s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 20.15s[0m
+Step 2: Pushing to registry...
+[33m[0] > Pushing bidict [localhost:5000/bidict:latest].
+[0mThe push refers to repository [localhost:5000/bidict]
+24fcd8f7d6b3: Preparing
+84c960178f2a: Preparing
+f9a97bfacbfd: Preparing
+5f6f56ed1f4a: Preparing
+5f70bf18a086: Preparing
+15ee1e7bf820: Preparing
+40b89038b451: Preparing
+5f70bf18a086: Preparing
+4299eb174a15: Preparing
+d44bf7b42084: Preparing
+afcb845e3e7d: Preparing
+f7f917325767: Preparing
+3f48882a784b: Preparing
+75814bacaa07: Preparing
+312dc3a5310f: Preparing
+42f76d58374a: Preparing
+40b89038b451: Waiting
+f1011ad616ce: Preparing
+4299eb174a15: Waiting
+c6b89608d737: Preparing
+15ee1e7bf820: Waiting
+0d9e4c33e011: Preparing
+d44bf7b42084: Waiting
+3f48882a784b: Waiting
+59de3390a451: Preparing
+e729c4134cc3: Preparing
+afcb845e3e7d: Waiting
+75814bacaa07: Waiting
+42f76d58374a: Waiting
+25b7ac7c2745: Preparing
+f7f917325767: Waiting
+312dc3a5310f: Waiting
+c1537681ddab: Preparing
+f1011ad616ce: Waiting
+c6b89608d737: Waiting
+c4c2f1c63c2f: Preparing
+0d9e4c33e011: Waiting
+59de3390a451: Waiting
+4be7fe848f91: Preparing
+c1537681ddab: Waiting
+e729c4134cc3: Waiting
+25b7ac7c2745: Waiting
+6a3d7465dae1: Preparing
+c4c2f1c63c2f: Waiting
+2143381c9922: Preparing
+4be7fe848f91: Waiting
+6a3d7465dae1: Waiting
+12228ba7a3b1: Preparing
+2143381c9922: Waiting
+9b55156abf26: Preparing
+12228ba7a3b1: Waiting
+293d5db30c9f: Preparing
+9b55156abf26: Waiting
+03127cdb479b: Preparing
+293d5db30c9f: Waiting
+9c742cd6c7a5: Preparing
+03127cdb479b: Waiting
+9c742cd6c7a5: Waiting
+f9a97bfacbfd: Layer already exists
+5f6f56ed1f4a: Layer already exists
+5f70bf18a086: Layer already exists
+15ee1e7bf820: Layer already exists
+40b89038b451: Layer already exists
+4299eb174a15: Layer already exists
+d44bf7b42084: Layer already exists
+afcb845e3e7d: Layer already exists
+f7f917325767: Layer already exists
+3f48882a784b: Layer already exists
+75814bacaa07: Layer already exists
+312dc3a5310f: Layer already exists
+42f76d58374a: Layer already exists
+f1011ad616ce: Layer already exists
+c6b89608d737: Layer already exists
+0d9e4c33e011: Layer already exists
+e729c4134cc3: Layer already exists
+25b7ac7c2745: Layer already exists
+59de3390a451: Layer already exists
+c1537681ddab: Layer already exists
+c4c2f1c63c2f: Layer already exists
+4be7fe848f91: Layer already exists
+6a3d7465dae1: Layer already exists
+12228ba7a3b1: Layer already exists
+2143381c9922: Layer already exists
+9b55156abf26: Layer already exists
+293d5db30c9f: Layer already exists
+03127cdb479b: Layer already exists
+9c742cd6c7a5: Layer already exists
+84c960178f2a: Pushed
+24fcd8f7d6b3: Pushed
+latest: digest: sha256:8b1b87e04fa8ff77ae63980c8e0e80fef4f2375cf1bb6562ab9cf64241a4c257 size: 7013
+[33m[0] < Pushing bidict [localhost:5000/bidict:latest] done.
+[0m[33m[0] Worker done.
+[0mStep 7: Checking if function is already deployed...
+Sat Feb 22 22:27:47 CST 2025 - Function 'bidict' is already deployed. Waiting...
+Sat Feb 22 22:27:49 CST 2025 - Function 'bidict' is already deployed. Waiting...
+Sat Feb 22 22:27:51 CST 2025 - Function 'bidict' is already deployed. Waiting...
+Sat Feb 22 22:27:53 CST 2025 - Function 'bidict' is already deployed. Waiting...
+Sat Feb 22 22:27:55 CST 2025 - Function 'bidict' is already deployed. Waiting...
+Sat Feb 22 22:27:57 CST 2025 - Function 'bidict' is already deployed. Waiting...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: bidict.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/bidict
+
+Deployment complete!

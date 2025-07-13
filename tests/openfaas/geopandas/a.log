@@ -1,0 +1,73 @@
+Step 1: Building the function with faas build...
+[33m[0] > Building geopandas.
+[0mClearing temporary build folder: ./build/geopandas/
+Preparing: ./geopandas/ build/geopandas/function
+Building: localhost:5000/geopandas:latest with python3-debian template. Please wait..
+geopandas shrink-wrapped to ./build/geopandas/
+[33m[0] < Building geopandas done in 0.17s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 0.17s[0m
+Step 4: Slimming down the image with docker-slim...
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params image-build-engine='internal' target.type='image' target.image='fat-img:latest' continue.mode='probe' rt.as.user='true' keep.perms='true' tags='' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.bytes='2112658895' size.human='2.1 GB' id='sha256:47194d2130c2c62b7cc95fec36b3ccd773c282f89c14a7e1c6ae8be99b9dcdb3' 
+cmd=build info=image.users all='app,root,app' exe='app' 
+cmd=build info=image.stack index='0' name='fat-img:latest' id='sha256:47194d2130c2c62b7cc95fec36b3ccd773c282f89c14a7e1c6ae8be99b9dcdb3' 
+cmd=build info=image.exposed_ports list='8080/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container id='5a749239be0caa732d3b3f82900979be79e6c20b93bce504050e235d68b21a04' status='created' name='slimk_82869_20250107072250' 
+cmd=build info=container id='5a749239be0caa732d3b3f82900979be79e6c20b93bce504050e235d68b21a04' status='running' name='slimk_82869_20250107072250' 
+cmd=build info=container message='obtained IP address' ip='172.17.0.8' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container name='slimk_82869_20250107072250' id='5a749239be0caa732d3b3f82900979be79e6c20b93bce504050e235d68b21a04' target.port.list='33622' target.port.info='8080/tcp => 0.0.0.0:33622' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' 
+cmd=build state=http.probe.starting message="WAIT FOR HTTP PROBE TO FINISH" 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports targets='33622' count='1' 
+cmd=build info=http.probe.commands commands='GET /' count='1' 
+cmd=build info=http.probe.call status='200' method='GET' target='http://127.0.0.1:33622/' attempt='1' error='none' time='2025-01-07T07:23:09Z' 
+cmd=build info=http.probe.summary total='1' failures='0' successful='1' 
+cmd=build state=http.probe.done
+cmd=build info=http.probe.crawler page='0' url='http://127.0.0.1:33622/' 
+cmd=build info=probe.crawler.done addr='http://127.0.0.1:33622/' 
+cmd=build info=event message='HTTP probe is done' 
+cmd=build state=container.inspection.finishing
+cmd=build state=container.inspection.artifact.processing
+cmd=build state=container.inspection.done
+cmd=build state=building message="building optimized image" engine=internal 
+cmd=build state=completed
+cmd=build info=results status='MINIFIED' by='8.49X' size.original='2.1 GB' size.optimized='249 MB' 
+cmd=build info=results image.id='sha256:f798d82f4ce7a71fae86cfed55e18d8d57c89c0bf098859063df0765d446a570' image.digest='sha256:afe3911502d2014f1400af4e544c1822f45ae6c076e0dd65427abf5cf57d3a1f' has.data='true' image-build-engine='internal' image.name='fat-img.slim' image.size='249 MB' 
+cmd=build info=results artifacts.location='/tmp/slim-state/.slim-state/images/47194d2130c2c62b7cc95fec36b3ccd773c282f89c14a7e1c6ae8be99b9dcdb3/artifacts' 
+cmd=build info=results artifacts.report='creport.json' 
+cmd=build info=results artifacts.dockerfile.reversed='Dockerfile.reversed' 
+cmd=build info=results artifacts.seccomp='fat-img-seccomp.json' 
+cmd=build info=results artifacts.apparmor='fat-img-apparmor-profile' 
+cmd=build state=done
+cmd=build info=commands message='use the xray command to learn more about the optimize image' 
+cmd=build info=report file='slim.report.json' 
+app='slim' message='GitHub Discussions' info='https://github.com/slimtoolkit/slim/discussions'
+app='slim' message='Join the CNCF Slack channel to ask questions or to share your feedback' info='https://cloud-native.slack.com/archives/C059QP1RH1S'
+app='slim' message='Join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+app='slim' message='Join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+Step 5: Renaming the slimmed image...
+Step 6: Pushing the slimmed image to the registry...
+The push refers to repository [localhost:5000/geopandas]
+1aff3407e748: Preparing
+1aff3407e748: Pushed
+latest: digest: sha256:d148ec5a7e07845e399553623f391fc6da06522ce08a17bd4acc74fc36579c2c size: 529
+Step 7: Checking if function is already deployed...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: geopandas.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/geopandas
+
+Deployment complete!

@@ -1,0 +1,117 @@
+Using regular OpenFaaS workflow...
+Step 1: Building the function...
+[33m[0] > Building game.
+[0mClearing temporary build folder: ./build/game/
+Preparing: ./game/ build/game/function
+Building: localhost:5000/game:latest with python3-debian template. Please wait..
+Image: localhost:5000/game:latest built.
+[33m[0] < Building game done in 24.88s.
+[0m[33m[0] Worker done.
+[0m
+[33mTotal build time: 24.88s[0m
+Step 2: Pushing to registry...
+[33m[0] > Pushing game [localhost:5000/game:latest].
+[0mThe push refers to repository [localhost:5000/game]
+ac1b5142ffea: Preparing
+da935c4fbca6: Preparing
+6efbb990ea06: Preparing
+7a7dfd607703: Preparing
+5f70bf18a086: Preparing
+a97bb3db4d9c: Preparing
+f146e4b49e42: Preparing
+5f70bf18a086: Preparing
+c0a5efaac466: Preparing
+e8f213ee5134: Preparing
+b9242d7ef405: Preparing
+736a9599fb08: Preparing
+bd0453777bd0: Preparing
+4abdd36d846b: Preparing
+b4b9b55ca9f3: Preparing
+ff3b13ed715f: Preparing
+f1011ad616ce: Preparing
+c6b89608d737: Preparing
+0d9e4c33e011: Preparing
+59de3390a451: Preparing
+e729c4134cc3: Preparing
+25b7ac7c2745: Preparing
+c1537681ddab: Preparing
+c4c2f1c63c2f: Preparing
+4be7fe848f91: Preparing
+6a3d7465dae1: Preparing
+c0a5efaac466: Waiting
+2143381c9922: Preparing
+12228ba7a3b1: Preparing
+bd0453777bd0: Waiting
+736a9599fb08: Waiting
+9b55156abf26: Preparing
+a97bb3db4d9c: Waiting
+e8f213ee5134: Waiting
+293d5db30c9f: Preparing
+b9242d7ef405: Waiting
+4abdd36d846b: Waiting
+b4b9b55ca9f3: Waiting
+03127cdb479b: Preparing
+25b7ac7c2745: Waiting
+c1537681ddab: Waiting
+9c742cd6c7a5: Preparing
+c4c2f1c63c2f: Waiting
+4be7fe848f91: Waiting
+0d9e4c33e011: Waiting
+ff3b13ed715f: Waiting
+e729c4134cc3: Waiting
+59de3390a451: Waiting
+6a3d7465dae1: Waiting
+293d5db30c9f: Waiting
+2143381c9922: Waiting
+03127cdb479b: Waiting
+9c742cd6c7a5: Waiting
+9b55156abf26: Waiting
+f146e4b49e42: Waiting
+f1011ad616ce: Waiting
+12228ba7a3b1: Waiting
+6efbb990ea06: Layer already exists
+7a7dfd607703: Layer already exists
+5f70bf18a086: Layer already exists
+a97bb3db4d9c: Layer already exists
+f146e4b49e42: Layer already exists
+c0a5efaac466: Layer already exists
+e8f213ee5134: Layer already exists
+b9242d7ef405: Layer already exists
+736a9599fb08: Layer already exists
+bd0453777bd0: Layer already exists
+4abdd36d846b: Layer already exists
+b4b9b55ca9f3: Layer already exists
+ff3b13ed715f: Layer already exists
+f1011ad616ce: Layer already exists
+c6b89608d737: Layer already exists
+0d9e4c33e011: Layer already exists
+59de3390a451: Layer already exists
+e729c4134cc3: Layer already exists
+25b7ac7c2745: Layer already exists
+c1537681ddab: Layer already exists
+c4c2f1c63c2f: Layer already exists
+4be7fe848f91: Layer already exists
+6a3d7465dae1: Layer already exists
+2143381c9922: Layer already exists
+12228ba7a3b1: Layer already exists
+9b55156abf26: Layer already exists
+293d5db30c9f: Layer already exists
+03127cdb479b: Layer already exists
+9c742cd6c7a5: Layer already exists
+da935c4fbca6: Pushed
+ac1b5142ffea: Pushed
+latest: digest: sha256:fbb0c9a5935bed8ebcf00461a545fca82803d435b986b43a7576978febe7ec2f size: 7022
+[33m[0] < Pushing game [localhost:5000/game:latest] done.
+[0m[33m[0] Worker done.
+[0mStep 7: Checking if function is already deployed...
+Thu Feb 20 20:19:22 CST 2025 - Function 'game' is already deployed. Waiting...
+Thu Feb 20 20:19:24 CST 2025 - Function 'game' is already deployed. Waiting...
+Thu Feb 20 20:19:27 CST 2025 - Function 'game' is already deployed. Waiting...
+Step 8: Deploying the function to OpenFaaS...
+Deploying: game.
+WARNING! You are not using an encrypted connection to the gateway, consider using HTTPS.
+
+Deployed. 202 Accepted.
+URL: http://133.133.135.8:31112/function/game
+
+Deployment complete!

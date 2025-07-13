@@ -1,0 +1,1932 @@
+Processing function: light-pdfminer
+Deploying light-pdfminer (Hot Start)...
+Waiting for light-pdfminer to be ready...
+--------Testing t1 (Hot Start) for light-pdfminer...
+Round1:
+Iteration 1: Latency is 354.440673828125 ms
+Iteration 2: Latency is 349.468505859375 ms
+Iteration 3: Latency is 359.86572265625 ms
+Iteration 4: Latency is 374.47119140625 ms
+Iteration 5: Latency is 374.43310546875 ms
+Iteration 6: Latency is 355.768310546875 ms
+Iteration 7: Latency is 372.34619140625 ms
+Iteration 8: Latency is 403.733154296875 ms
+Iteration 9: Latency is 442.64306640625 ms
+Iteration 10: Latency is 374.631591796875 ms
+Iteration 11: Latency is 349.558349609375 ms
+Iteration 12: Latency is 350.2763671875 ms
+Iteration 13: Latency is 343.608154296875 ms
+Iteration 14: Latency is 343.35498046875 ms
+Iteration 15: Latency is 364.430419921875 ms
+Iteration 16: Latency is 366.844482421875 ms
+Iteration 17: Latency is 358.558349609375 ms
+Iteration 18: Latency is 351.22265625 ms
+Iteration 19: Latency is 366.5615234375 ms
+Iteration 20: Latency is 350.26318359375 ms
+Average latency over 20 iterations: 365.3 ms
+Round2:
+Iteration 1: Latency is 378.293701171875 ms
+Iteration 2: Latency is 367.6630859375 ms
+Iteration 3: Latency is 360.1455078125 ms
+Iteration 4: Latency is 368.84130859375 ms
+Iteration 5: Latency is 348.60400390625 ms
+Iteration 6: Latency is 348.463134765625 ms
+Iteration 7: Latency is 343.65185546875 ms
+Iteration 8: Latency is 345.09765625 ms
+Iteration 9: Latency is 351.380859375 ms
+Iteration 10: Latency is 405.93701171875 ms
+Iteration 11: Latency is 344.6376953125 ms
+Iteration 12: Latency is 349.573486328125 ms
+Iteration 13: Latency is 350.4619140625 ms
+Iteration 14: Latency is 397.977783203125 ms
+Iteration 15: Latency is 360.594482421875 ms
+Iteration 16: Latency is 360.551513671875 ms
+Iteration 17: Latency is 355.94189453125 ms
+Iteration 18: Latency is 344.16259765625 ms
+Iteration 19: Latency is 370.25537109375 ms
+Iteration 20: Latency is 345.602294921875 ms
+Average latency over 20 iterations: 359.8 ms
+Round3:
+Iteration 1: Latency is 357.20751953125 ms
+Iteration 2: Latency is 402.927978515625 ms
+Iteration 3: Latency is 358.903076171875 ms
+Iteration 4: Latency is 354.132080078125 ms
+Iteration 5: Latency is 343.60107421875 ms
+Iteration 6: Latency is 362.617919921875 ms
+Iteration 7: Latency is 341.815185546875 ms
+Iteration 8: Latency is 351.23046875 ms
+Iteration 9: Latency is 349.87548828125 ms
+Iteration 10: Latency is 353.277587890625 ms
+Iteration 11: Latency is 341.19091796875 ms
+Iteration 12: Latency is 344.2529296875 ms
+Iteration 13: Latency is 346.977783203125 ms
+Iteration 14: Latency is 365.744873046875 ms
+Iteration 15: Latency is 388.730224609375 ms
+Iteration 16: Latency is 345.229736328125 ms
+Iteration 17: Latency is 351.7177734375 ms
+Iteration 18: Latency is 348.18603515625 ms
+Iteration 19: Latency is 349.87060546875 ms
+Iteration 20: Latency is 346.167724609375 ms
+Average latency over 20 iterations: 355.1 ms
+--------Testing t2 E2E (Hot Start) for light-pdfminer...
+Round1:
+Iteration 1: Response time is 467 milliseconds
+Iteration 2: Response time is 432 milliseconds
+Iteration 3: Response time is 486 milliseconds
+Iteration 4: Response time is 530 milliseconds
+Iteration 5: Response time is 429 milliseconds
+Iteration 6: Response time is 484 milliseconds
+Iteration 7: Response time is 429 milliseconds
+Iteration 8: Response time is 431 milliseconds
+Iteration 9: Response time is 513 milliseconds
+Iteration 10: Response time is 447 milliseconds
+Iteration 11: Response time is 440 milliseconds
+Iteration 12: Response time is 487 milliseconds
+Iteration 13: Response time is 489 milliseconds
+Iteration 14: Response time is 429 milliseconds
+Iteration 15: Response time is 483 milliseconds
+Iteration 16: Response time is 454 milliseconds
+Iteration 17: Response time is 438 milliseconds
+Iteration 18: Response time is 449 milliseconds
+Iteration 19: Response time is 432 milliseconds
+Iteration 20: Response time is 465 milliseconds
+Average response time over 20 iterations: 460.700000 milliseconds
+Round2:
+Iteration 1: Response time is 432 milliseconds
+Iteration 2: Response time is 478 milliseconds
+Iteration 3: Response time is 448 milliseconds
+Iteration 4: Response time is 465 milliseconds
+Iteration 5: Response time is 432 milliseconds
+Iteration 6: Response time is 436 milliseconds
+Iteration 7: Response time is 432 milliseconds
+Iteration 8: Response time is 478 milliseconds
+Iteration 9: Response time is 434 milliseconds
+Iteration 10: Response time is 479 milliseconds
+Iteration 11: Response time is 491 milliseconds
+Iteration 12: Response time is 458 milliseconds
+Iteration 13: Response time is 433 milliseconds
+Iteration 14: Response time is 446 milliseconds
+Iteration 15: Response time is 424 milliseconds
+Iteration 16: Response time is 471 milliseconds
+Iteration 17: Response time is 442 milliseconds
+Iteration 18: Response time is 430 milliseconds
+Iteration 19: Response time is 431 milliseconds
+Iteration 20: Response time is 438 milliseconds
+Average response time over 20 iterations: 448.900000 milliseconds
+Round3:
+Iteration 1: Response time is 433 milliseconds
+Iteration 2: Response time is 426 milliseconds
+Iteration 3: Response time is 457 milliseconds
+Iteration 4: Response time is 446 milliseconds
+Iteration 5: Response time is 440 milliseconds
+Iteration 6: Response time is 438 milliseconds
+Iteration 7: Response time is 468 milliseconds
+Iteration 8: Response time is 428 milliseconds
+Iteration 9: Response time is 430 milliseconds
+Iteration 10: Response time is 431 milliseconds
+Iteration 11: Response time is 432 milliseconds
+Iteration 12: Response time is 434 milliseconds
+Iteration 13: Response time is 490 milliseconds
+Iteration 14: Response time is 493 milliseconds
+Iteration 15: Response time is 438 milliseconds
+Iteration 16: Response time is 476 milliseconds
+Iteration 17: Response time is 430 milliseconds
+Iteration 18: Response time is 485 milliseconds
+Iteration 19: Response time is 437 milliseconds
+Iteration 20: Response time is 448 milliseconds
+Average response time over 20 iterations: 448.000000 milliseconds
+Simulating Cold Start for light-pdfminer...
+Deploying light-pdfminer (Cold Start)...
+Waiting for light-pdfminer to be ready...
+--------Testing t1 (Cold Start) for light-pdfminer...
+Round1:
+Iteration 1: Latency is 495.189697265625 ms
+Iteration 2: Latency is 516.384033203125 ms
+Iteration 3: Latency is 524.305419921875 ms
+Iteration 4: Latency is 529.917236328125 ms
+Iteration 5: Latency is 505.62158203125 ms
+Iteration 6: Latency is 526.86083984375 ms
+Iteration 7: Latency is 532.628173828125 ms
+Iteration 8: Latency is 568.18408203125 ms
+Iteration 9: Latency is 913.966064453125 ms
+Iteration 10: Latency is 480.845947265625 ms
+Iteration 11: Latency is 488.605224609375 ms
+Iteration 12: Latency is 493.36279296875 ms
+Iteration 13: Latency is 536.098876953125 ms
+Iteration 14: Latency is 510.80126953125 ms
+Iteration 15: Latency is 504.236572265625 ms
+Iteration 16: Latency is 1327.226806640625 ms
+Iteration 17: Latency is 551.933349609375 ms
+Iteration 18: Latency is 508.44775390625 ms
+Iteration 19: Latency is 544.945556640625 ms
+Iteration 20: Latency is 503.510009765625 ms
+Average latency over 20 iterations: 578.1 ms
+Round2:
+Iteration 1: Latency is 521.818603515625 ms
+Iteration 2: Latency is 524.533203125 ms
+Iteration 3: Latency is 540.772705078125 ms
+Iteration 4: Latency is 524.401123046875 ms
+Iteration 5: Latency is 531.09423828125 ms
+Iteration 6: Latency is 528.488037109375 ms
+Iteration 7: Latency is 553.668212890625 ms
+Iteration 8: Latency is 539.5400390625 ms
+Iteration 9: Latency is 492.140625 ms
+Iteration 10: Latency is 505.834228515625 ms
+Iteration 11: Latency is 506.947021484375 ms
+Iteration 12: Latency is 511.266845703125 ms
+Iteration 13: Latency is 491.68408203125 ms
+Iteration 14: Latency is 510.182861328125 ms
+Iteration 15: Latency is 523.462890625 ms
+Iteration 16: Latency is 509.783203125 ms
+Iteration 17: Latency is 520.8076171875 ms
+Iteration 18: Latency is 526.580322265625 ms
+Iteration 19: Latency is 516.28369140625 ms
+Iteration 20: Latency is 574.593505859375 ms
+Average latency over 20 iterations: 522.6 ms
+Round3:
+Iteration 1: Latency is 557.56201171875 ms
+Iteration 2: Latency is 494.3564453125 ms
+Iteration 3: Latency is 535.60888671875 ms
+Iteration 4: Latency is 600.5888671875 ms
+Iteration 5: Latency is 542.374755859375 ms
+Iteration 6: Latency is 507.007080078125 ms
+Iteration 7: Latency is 504.258056640625 ms
+Iteration 8: Latency is 519.18603515625 ms
+Iteration 9: Latency is 523.703857421875 ms
+Iteration 10: Latency is 553.595703125 ms
+Iteration 11: Latency is 501.2197265625 ms
+Iteration 12: Latency is 498.653076171875 ms
+Iteration 13: Latency is 509.90087890625 ms
+Iteration 14: Latency is 525.13525390625 ms
+Iteration 15: Latency is 507.15625 ms
+Iteration 16: Latency is 648.453857421875 ms
+Iteration 17: Latency is 499.275634765625 ms
+Iteration 18: Latency is 587.428466796875 ms
+Iteration 19: Latency is 512.767578125 ms
+Iteration 20: Latency is 555.494140625 ms
+Average latency over 20 iterations: 534.1 ms
+--------Testing t2 E2E (Cold Start) for light-pdfminer...
+Round1:
+Iteration 1: Response time is 612 milliseconds
+Iteration 2: Response time is 647 milliseconds
+Iteration 3: Response time is 653 milliseconds
+Iteration 4: Response time is 631 milliseconds
+Iteration 5: Response time is 596 milliseconds
+Iteration 6: Response time is 599 milliseconds
+Iteration 7: Response time is 643 milliseconds
+Iteration 8: Response time is 652 milliseconds
+Iteration 9: Response time is 638 milliseconds
+Iteration 10: Response time is 620 milliseconds
+Iteration 11: Response time is 616 milliseconds
+Iteration 12: Response time is 704 milliseconds
+Iteration 13: Response time is 611 milliseconds
+Iteration 14: Response time is 618 milliseconds
+Iteration 15: Response time is 676 milliseconds
+Iteration 16: Response time is 614 milliseconds
+Iteration 17: Response time is 664 milliseconds
+Iteration 18: Response time is 665 milliseconds
+Iteration 19: Response time is 625 milliseconds
+Iteration 20: Response time is 679 milliseconds
+Average response time over 20 iterations: 638.150000 milliseconds
+Round2:
+Iteration 1: Response time is 641 milliseconds
+Iteration 2: Response time is 675 milliseconds
+Iteration 3: Response time is 607 milliseconds
+Iteration 4: Response time is 645 milliseconds
+Iteration 5: Response time is 652 milliseconds
+Iteration 6: Response time is 672 milliseconds
+Iteration 7: Response time is 641 milliseconds
+Iteration 8: Response time is 687 milliseconds
+Iteration 9: Response time is 612 milliseconds
+Iteration 10: Response time is 656 milliseconds
+Iteration 11: Response time is 649 milliseconds
+Iteration 12: Response time is 650 milliseconds
+Iteration 13: Response time is 666 milliseconds
+Iteration 14: Response time is 664 milliseconds
+Iteration 15: Response time is 599 milliseconds
+Iteration 16: Response time is 808 milliseconds
+Iteration 17: Response time is 642 milliseconds
+Iteration 18: Response time is 782 milliseconds
+Iteration 19: Response time is 606 milliseconds
+Iteration 20: Response time is 646 milliseconds
+Average response time over 20 iterations: 660.000000 milliseconds
+Round3:
+Iteration 1: Response time is 605 milliseconds
+Iteration 2: Response time is 599 milliseconds
+Iteration 3: Response time is 584 milliseconds
+Iteration 4: Response time is 636 milliseconds
+Iteration 5: Response time is 694 milliseconds
+Iteration 6: Response time is 598 milliseconds
+Iteration 7: Response time is 622 milliseconds
+Iteration 8: Response time is 659 milliseconds
+Iteration 9: Response time is 637 milliseconds
+Iteration 10: Response time is 629 milliseconds
+Iteration 11: Response time is 606 milliseconds
+Iteration 12: Response time is 714 milliseconds
+Iteration 13: Response time is 635 milliseconds
+Iteration 14: Response time is 606 milliseconds
+Iteration 15: Response time is 683 milliseconds
+Iteration 16: Response time is 591 milliseconds
+Iteration 17: Response time is 596 milliseconds
+Iteration 18: Response time is 658 milliseconds
+Iteration 19: Response time is 644 milliseconds
+Iteration 20: Response time is 594 milliseconds
+Average response time over 20 iterations: 629.500000 milliseconds
+Cleaning up light-pdfminer...
+----------------------------------------Next function----------------------------------------
+Processing function: light-marshal
+Deploying light-marshal (Hot Start)...
+Waiting for light-marshal to be ready...
+--------Testing t1 (Hot Start) for light-marshal...
+Round1:
+Iteration 1: Latency is 226.291015625 ms
+Iteration 2: Latency is 235.385986328125 ms
+Iteration 3: Latency is 224.6259765625 ms
+Iteration 4: Latency is 251.077392578125 ms
+Iteration 5: Latency is 221.9013671875 ms
+Iteration 6: Latency is 229.30029296875 ms
+Iteration 7: Latency is 224.114501953125 ms
+Iteration 8: Latency is 219.232666015625 ms
+Iteration 9: Latency is 224.24560546875 ms
+Iteration 10: Latency is 231.71142578125 ms
+Iteration 11: Latency is 224.07568359375 ms
+Iteration 12: Latency is 225.66748046875 ms
+Iteration 13: Latency is 243.85888671875 ms
+Iteration 14: Latency is 218.78076171875 ms
+Iteration 15: Latency is 225.316162109375 ms
+Iteration 16: Latency is 220.3701171875 ms
+Iteration 17: Latency is 220.619140625 ms
+Iteration 18: Latency is 220.6640625 ms
+Iteration 19: Latency is 245.27783203125 ms
+Iteration 20: Latency is 243.27685546875 ms
+Average latency over 20 iterations: 228.7 ms
+Round2:
+Iteration 1: Latency is 221.9287109375 ms
+Iteration 2: Latency is 220.038330078125 ms
+Iteration 3: Latency is 258.082763671875 ms
+Iteration 4: Latency is 223.232421875 ms
+Iteration 5: Latency is 223.770263671875 ms
+Iteration 6: Latency is 223.253662109375 ms
+Iteration 7: Latency is 220.0859375 ms
+Iteration 8: Latency is 243.962646484375 ms
+Iteration 9: Latency is 218.734130859375 ms
+Iteration 10: Latency is 220.0419921875 ms
+Iteration 11: Latency is 235.714599609375 ms
+Iteration 12: Latency is 229.82275390625 ms
+Iteration 13: Latency is 222.829345703125 ms
+Iteration 14: Latency is 234.43408203125 ms
+Iteration 15: Latency is 247.29345703125 ms
+Iteration 16: Latency is 215.944580078125 ms
+Iteration 17: Latency is 225.51953125 ms
+Iteration 18: Latency is 225.3359375 ms
+Iteration 19: Latency is 250.1923828125 ms
+Iteration 20: Latency is 218.3349609375 ms
+Average latency over 20 iterations: 228.9 ms
+Round3:
+Iteration 1: Latency is 215.13232421875 ms
+Iteration 2: Latency is 218.349365234375 ms
+Iteration 3: Latency is 224.017578125 ms
+Iteration 4: Latency is 219.86181640625 ms
+Iteration 5: Latency is 223.09375 ms
+Iteration 6: Latency is 217.191650390625 ms
+Iteration 7: Latency is 218.333984375 ms
+Iteration 8: Latency is 220.771240234375 ms
+Iteration 9: Latency is 215.25634765625 ms
+Iteration 10: Latency is 218.896484375 ms
+Iteration 11: Latency is 229.16552734375 ms
+Iteration 12: Latency is 221.57861328125 ms
+Iteration 13: Latency is 222.19482421875 ms
+Iteration 14: Latency is 221.33837890625 ms
+Iteration 15: Latency is 222.648193359375 ms
+Iteration 16: Latency is 215.24853515625 ms
+Iteration 17: Latency is 215.634765625 ms
+Iteration 18: Latency is 237.954833984375 ms
+Iteration 19: Latency is 219.49853515625 ms
+Iteration 20: Latency is 217.865966796875 ms
+Average latency over 20 iterations: 220.7 ms
+--------Testing t2 E2E (Hot Start) for light-marshal...
+Round1:
+Iteration 1: Response time is 426 milliseconds
+Iteration 2: Response time is 433 milliseconds
+Iteration 3: Response time is 440 milliseconds
+Iteration 4: Response time is 456 milliseconds
+Iteration 5: Response time is 427 milliseconds
+Iteration 6: Response time is 425 milliseconds
+Iteration 7: Response time is 471 milliseconds
+Iteration 8: Response time is 426 milliseconds
+Iteration 9: Response time is 431 milliseconds
+Iteration 10: Response time is 431 milliseconds
+Iteration 11: Response time is 424 milliseconds
+Iteration 12: Response time is 500 milliseconds
+Iteration 13: Response time is 453 milliseconds
+Iteration 14: Response time is 430 milliseconds
+Iteration 15: Response time is 437 milliseconds
+Iteration 16: Response time is 446 milliseconds
+Iteration 17: Response time is 428 milliseconds
+Iteration 18: Response time is 437 milliseconds
+Iteration 19: Response time is 430 milliseconds
+Iteration 20: Response time is 448 milliseconds
+Average response time over 20 iterations: 439.950000 milliseconds
+Round2:
+Iteration 1: Response time is 448 milliseconds
+Iteration 2: Response time is 448 milliseconds
+Iteration 3: Response time is 439 milliseconds
+Iteration 4: Response time is 426 milliseconds
+Iteration 5: Response time is 446 milliseconds
+Iteration 6: Response time is 430 milliseconds
+Iteration 7: Response time is 440 milliseconds
+Iteration 8: Response time is 473 milliseconds
+Iteration 9: Response time is 434 milliseconds
+Iteration 10: Response time is 429 milliseconds
+Iteration 11: Response time is 462 milliseconds
+Iteration 12: Response time is 442 milliseconds
+Iteration 13: Response time is 456 milliseconds
+Iteration 14: Response time is 441 milliseconds
+Iteration 15: Response time is 424 milliseconds
+Iteration 16: Response time is 434 milliseconds
+Iteration 17: Response time is 421 milliseconds
+Iteration 18: Response time is 467 milliseconds
+Iteration 19: Response time is 430 milliseconds
+Iteration 20: Response time is 434 milliseconds
+Average response time over 20 iterations: 441.200000 milliseconds
+Round3:
+Iteration 1: Response time is 450 milliseconds
+Iteration 2: Response time is 435 milliseconds
+Iteration 3: Response time is 424 milliseconds
+Iteration 4: Response time is 427 milliseconds
+Iteration 5: Response time is 452 milliseconds
+Iteration 6: Response time is 427 milliseconds
+Iteration 7: Response time is 434 milliseconds
+Iteration 8: Response time is 427 milliseconds
+Iteration 9: Response time is 425 milliseconds
+Iteration 10: Response time is 434 milliseconds
+Iteration 11: Response time is 433 milliseconds
+Iteration 12: Response time is 440 milliseconds
+Iteration 13: Response time is 426 milliseconds
+Iteration 14: Response time is 450 milliseconds
+Iteration 15: Response time is 453 milliseconds
+Iteration 16: Response time is 447 milliseconds
+Iteration 17: Response time is 428 milliseconds
+Iteration 18: Response time is 451 milliseconds
+Iteration 19: Response time is 430 milliseconds
+Iteration 20: Response time is 436 milliseconds
+Average response time over 20 iterations: 436.450000 milliseconds
+Simulating Cold Start for light-marshal...
+Deploying light-marshal (Cold Start)...
+Waiting for light-marshal to be ready...
+--------Testing t1 (Cold Start) for light-marshal...
+Round1:
+Iteration 1: Latency is 275.44384765625 ms
+Iteration 2: Latency is 312.97705078125 ms
+Iteration 3: Latency is 296.67919921875 ms
+Iteration 4: Latency is 265.504150390625 ms
+Iteration 5: Latency is 279.267333984375 ms
+Iteration 6: Latency is 289.505615234375 ms
+Iteration 7: Latency is 307.709716796875 ms
+Iteration 8: Latency is 279.28466796875 ms
+Iteration 9: Latency is 276.631591796875 ms
+Iteration 10: Latency is 294.19873046875 ms
+Iteration 11: Latency is 293.972900390625 ms
+Iteration 12: Latency is 272.112548828125 ms
+Iteration 13: Latency is 291.158203125 ms
+Iteration 14: Latency is 308.44140625 ms
+Iteration 15: Latency is 285.2724609375 ms
+Iteration 16: Latency is 320.082763671875 ms
+Iteration 17: Latency is 312.33056640625 ms
+Iteration 18: Latency is 335.5 ms
+Iteration 19: Latency is 270.486083984375 ms
+Iteration 20: Latency is 278.75537109375 ms
+Average latency over 20 iterations: 292.2 ms
+Round2:
+Iteration 1: Latency is 573.8115234375 ms
+Iteration 2: Latency is 277.578857421875 ms
+Iteration 3: Latency is 276.92431640625 ms
+Iteration 4: Latency is 279.166259765625 ms
+Iteration 5: Latency is 279.10205078125 ms
+Iteration 6: Latency is 317.9970703125 ms
+Iteration 7: Latency is 292.998779296875 ms
+Iteration 8: Latency is 277.786376953125 ms
+Iteration 9: Latency is 270.393310546875 ms
+Iteration 10: Latency is 388.77587890625 ms
+Iteration 11: Latency is 270.5966796875 ms
+Iteration 12: Latency is 273.751708984375 ms
+Iteration 13: Latency is 349.41650390625 ms
+Iteration 14: Latency is 300.169921875 ms
+Iteration 15: Latency is 299.30908203125 ms
+Iteration 16: Latency is 291.041015625 ms
+Iteration 17: Latency is 310.333251953125 ms
+Iteration 18: Latency is 338.742919921875 ms
+Iteration 19: Latency is 291.64892578125 ms
+Iteration 20: Latency is 268.591064453125 ms
+Average latency over 20 iterations: 311.4 ms
+Round3:
+Iteration 1: Latency is 303.332763671875 ms
+Iteration 2: Latency is 318.61962890625 ms
+Iteration 3: Latency is 267.4501953125 ms
+Iteration 4: Latency is 363.8515625 ms
+Iteration 5: Latency is 330.013916015625 ms
+Iteration 6: Latency is 393.013916015625 ms
+Iteration 7: Latency is 338.689697265625 ms
+Iteration 8: Latency is 278.5263671875 ms
+Iteration 9: Latency is 314.099853515625 ms
+Iteration 10: Latency is 284.18994140625 ms
+Iteration 11: Latency is 299.272216796875 ms
+Iteration 12: Latency is 287.962158203125 ms
+Iteration 13: Latency is 287.45751953125 ms
+Iteration 14: Latency is 297.27490234375 ms
+Iteration 15: Latency is 282.0439453125 ms
+Iteration 16: Latency is 298.3564453125 ms
+Iteration 17: Latency is 337.092041015625 ms
+Iteration 18: Latency is 294.95849609375 ms
+Iteration 19: Latency is 263.28759765625 ms
+Iteration 20: Latency is 272.986328125 ms
+Average latency over 20 iterations: 305.6 ms
+--------Testing t2 E2E (Cold Start) for light-marshal...
+Round1:
+Iteration 1: Response time is 531 milliseconds
+Iteration 2: Response time is 493 milliseconds
+Iteration 3: Response time is 508 milliseconds
+Iteration 4: Response time is 555 milliseconds
+Iteration 5: Response time is 640 milliseconds
+Iteration 6: Response time is 503 milliseconds
+Iteration 7: Response time is 489 milliseconds
+Iteration 8: Response time is 701 milliseconds
+Iteration 9: Response time is 532 milliseconds
+Iteration 10: Response time is 494 milliseconds
+Iteration 11: Response time is 529 milliseconds
+Iteration 12: Response time is 520 milliseconds
+Iteration 13: Response time is 530 milliseconds
+Iteration 14: Response time is 522 milliseconds
+Iteration 15: Response time is 521 milliseconds
+Iteration 16: Response time is 503 milliseconds
+Iteration 17: Response time is 536 milliseconds
+Iteration 18: Response time is 536 milliseconds
+Iteration 19: Response time is 496 milliseconds
+Iteration 20: Response time is 509 milliseconds
+Average response time over 20 iterations: 532.400000 milliseconds
+Round2:
+Iteration 1: Response time is 518 milliseconds
+Iteration 2: Response time is 508 milliseconds
+Iteration 3: Response time is 538 milliseconds
+Iteration 4: Response time is 554 milliseconds
+Iteration 5: Response time is 594 milliseconds
+Iteration 6: Response time is 513 milliseconds
+Iteration 7: Response time is 507 milliseconds
+Iteration 8: Response time is 504 milliseconds
+Iteration 9: Response time is 564 milliseconds
+Iteration 10: Response time is 519 milliseconds
+Iteration 11: Response time is 539 milliseconds
+Iteration 12: Response time is 559 milliseconds
+Iteration 13: Response time is 547 milliseconds
+Iteration 14: Response time is 529 milliseconds
+Iteration 15: Response time is 504 milliseconds
+Iteration 16: Response time is 539 milliseconds
+Iteration 17: Response time is 541 milliseconds
+Iteration 18: Response time is 501 milliseconds
+Iteration 19: Response time is 565 milliseconds
+Iteration 20: Response time is 488 milliseconds
+Average response time over 20 iterations: 531.550000 milliseconds
+Round3:
+Iteration 1: Response time is 547 milliseconds
+Iteration 2: Response time is 486 milliseconds
+Iteration 3: Response time is 497 milliseconds
+Iteration 4: Response time is 565 milliseconds
+Iteration 5: Response time is 532 milliseconds
+Iteration 6: Response time is 493 milliseconds
+Iteration 7: Response time is 525 milliseconds
+Iteration 8: Response time is 518 milliseconds
+Iteration 9: Response time is 527 milliseconds
+Iteration 10: Response time is 494 milliseconds
+Iteration 11: Response time is 522 milliseconds
+Iteration 12: Response time is 501 milliseconds
+Iteration 13: Response time is 543 milliseconds
+Iteration 14: Response time is 498 milliseconds
+Iteration 15: Response time is 513 milliseconds
+Iteration 16: Response time is 539 milliseconds
+Iteration 17: Response time is 556 milliseconds
+Iteration 18: Response time is 483 milliseconds
+Iteration 19: Response time is 501 milliseconds
+Iteration 20: Response time is 513 milliseconds
+Average response time over 20 iterations: 517.650000 milliseconds
+Cleaning up light-marshal...
+----------------------------------------Next function----------------------------------------
+Processing function: light-type-check
+Deploying light-type-check (Hot Start)...
+Waiting for light-type-check to be ready...
+--------Testing t1 (Hot Start) for light-type-check...
+Round1:
+Iteration 1: Latency is 326.218017578125 ms
+Iteration 2: Latency is 338.53857421875 ms
+Iteration 3: Latency is 329.061279296875 ms
+Iteration 4: Latency is 323.808837890625 ms
+Iteration 5: Latency is 318.971923828125 ms
+Iteration 6: Latency is 330.23974609375 ms
+Iteration 7: Latency is 326.184814453125 ms
+Iteration 8: Latency is 366.24560546875 ms
+Iteration 9: Latency is 351.47509765625 ms
+Iteration 10: Latency is 334.447509765625 ms
+Iteration 11: Latency is 322.432373046875 ms
+Iteration 12: Latency is 323.778564453125 ms
+Iteration 13: Latency is 325.749267578125 ms
+Iteration 14: Latency is 326.27490234375 ms
+Iteration 15: Latency is 354.65869140625 ms
+Iteration 16: Latency is 329.00927734375 ms
+Iteration 17: Latency is 331.46240234375 ms
+Iteration 18: Latency is 358.724853515625 ms
+Iteration 19: Latency is 329.9658203125 ms
+Iteration 20: Latency is 334.810546875 ms
+Average latency over 20 iterations: 334.1 ms
+Round2:
+Iteration 1: Latency is 325.686767578125 ms
+Iteration 2: Latency is 393.975830078125 ms
+Iteration 3: Latency is 323.060791015625 ms
+Iteration 4: Latency is 396.615478515625 ms
+Iteration 5: Latency is 471.958740234375 ms
+Iteration 6: Latency is 339.33544921875 ms
+Iteration 7: Latency is 369.8916015625 ms
+Iteration 8: Latency is 337.89453125 ms
+Iteration 9: Latency is 350.27099609375 ms
+Iteration 10: Latency is 321.130126953125 ms
+Iteration 11: Latency is 342.628173828125 ms
+Iteration 12: Latency is 346.70556640625 ms
+Iteration 13: Latency is 352.467041015625 ms
+Iteration 14: Latency is 324.384765625 ms
+Iteration 15: Latency is 320.367919921875 ms
+Iteration 16: Latency is 339.188720703125 ms
+Iteration 17: Latency is 349.323486328125 ms
+Iteration 18: Latency is 315.0390625 ms
+Iteration 19: Latency is 322.612060546875 ms
+Iteration 20: Latency is 327.643798828125 ms
+Average latency over 20 iterations: 348.5 ms
+Round3:
+Iteration 1: Latency is 323.4970703125 ms
+Iteration 2: Latency is 326.5185546875 ms
+Iteration 3: Latency is 319.1552734375 ms
+Iteration 4: Latency is 331.7666015625 ms
+Iteration 5: Latency is 314.909912109375 ms
+Iteration 6: Latency is 315.87548828125 ms
+Iteration 7: Latency is 322.325439453125 ms
+Iteration 8: Latency is 320.0615234375 ms
+Iteration 9: Latency is 318.5908203125 ms
+Iteration 10: Latency is 322.6826171875 ms
+Iteration 11: Latency is 317.573974609375 ms
+Iteration 12: Latency is 333.903564453125 ms
+Iteration 13: Latency is 326.070068359375 ms
+Iteration 14: Latency is 329.02685546875 ms
+Iteration 15: Latency is 356.325927734375 ms
+Iteration 16: Latency is 348.276123046875 ms
+Iteration 17: Latency is 326.149169921875 ms
+Iteration 18: Latency is 316.1220703125 ms
+Iteration 19: Latency is 364.439453125 ms
+Iteration 20: Latency is 317.214599609375 ms
+Average latency over 20 iterations: 327.5 ms
+--------Testing t2 E2E (Hot Start) for light-type-check...
+Round1:
+Iteration 1: Response time is 415 milliseconds
+Iteration 2: Response time is 397 milliseconds
+Iteration 3: Response time is 399 milliseconds
+Iteration 4: Response time is 444 milliseconds
+Iteration 5: Response time is 392 milliseconds
+Iteration 6: Response time is 398 milliseconds
+Iteration 7: Response time is 427 milliseconds
+Iteration 8: Response time is 407 milliseconds
+Iteration 9: Response time is 393 milliseconds
+Iteration 10: Response time is 419 milliseconds
+Iteration 11: Response time is 392 milliseconds
+Iteration 12: Response time is 406 milliseconds
+Iteration 13: Response time is 416 milliseconds
+Iteration 14: Response time is 410 milliseconds
+Iteration 15: Response time is 388 milliseconds
+Iteration 16: Response time is 464 milliseconds
+Iteration 17: Response time is 420 milliseconds
+Iteration 18: Response time is 386 milliseconds
+Iteration 19: Response time is 391 milliseconds
+Iteration 20: Response time is 386 milliseconds
+Average response time over 20 iterations: 407.500000 milliseconds
+Round2:
+Iteration 1: Response time is 393 milliseconds
+Iteration 2: Response time is 455 milliseconds
+Iteration 3: Response time is 476 milliseconds
+Iteration 4: Response time is 397 milliseconds
+Iteration 5: Response time is 434 milliseconds
+Iteration 6: Response time is 400 milliseconds
+Iteration 7: Response time is 393 milliseconds
+Iteration 8: Response time is 399 milliseconds
+Iteration 9: Response time is 398 milliseconds
+Iteration 10: Response time is 408 milliseconds
+Iteration 11: Response time is 398 milliseconds
+Iteration 12: Response time is 396 milliseconds
+Iteration 13: Response time is 423 milliseconds
+Iteration 14: Response time is 426 milliseconds
+Iteration 15: Response time is 424 milliseconds
+Iteration 16: Response time is 423 milliseconds
+Iteration 17: Response time is 434 milliseconds
+Iteration 18: Response time is 432 milliseconds
+Iteration 19: Response time is 431 milliseconds
+Iteration 20: Response time is 387 milliseconds
+Average response time over 20 iterations: 416.350000 milliseconds
+Round3:
+Iteration 1: Response time is 388 milliseconds
+Iteration 2: Response time is 403 milliseconds
+Iteration 3: Response time is 392 milliseconds
+Iteration 4: Response time is 424 milliseconds
+Iteration 5: Response time is 431 milliseconds
+Iteration 6: Response time is 414 milliseconds
+Iteration 7: Response time is 394 milliseconds
+Iteration 8: Response time is 389 milliseconds
+Iteration 9: Response time is 403 milliseconds
+Iteration 10: Response time is 393 milliseconds
+Iteration 11: Response time is 407 milliseconds
+Iteration 12: Response time is 458 milliseconds
+Iteration 13: Response time is 432 milliseconds
+Iteration 14: Response time is 389 milliseconds
+Iteration 15: Response time is 399 milliseconds
+Iteration 16: Response time is 398 milliseconds
+Iteration 17: Response time is 401 milliseconds
+Iteration 18: Response time is 394 milliseconds
+Iteration 19: Response time is 394 milliseconds
+Iteration 20: Response time is 390 milliseconds
+Average response time over 20 iterations: 404.650000 milliseconds
+Simulating Cold Start for light-type-check...
+Deploying light-type-check (Cold Start)...
+Waiting for light-type-check to be ready...
+--------Testing t1 (Cold Start) for light-type-check...
+Round1:
+Iteration 1: Latency is 339.58447265625 ms
+Iteration 2: Latency is 437.059326171875 ms
+Iteration 3: Latency is 358.3037109375 ms
+Iteration 4: Latency is 348.65478515625 ms
+Iteration 5: Latency is 336.83837890625 ms
+Iteration 6: Latency is 346.76220703125 ms
+Iteration 7: Latency is 361.301513671875 ms
+Iteration 8: Latency is 401.966796875 ms
+Iteration 9: Latency is 345.130615234375 ms
+Iteration 10: Latency is 333.085205078125 ms
+Iteration 11: Latency is 343.864501953125 ms
+Iteration 12: Latency is 354.923095703125 ms
+Iteration 13: Latency is 339.93310546875 ms
+Iteration 14: Latency is 340.049560546875 ms
+Iteration 15: Latency is 354.67822265625 ms
+Iteration 16: Latency is 335.41748046875 ms
+Iteration 17: Latency is 341.364013671875 ms
+Iteration 18: Latency is 345.65966796875 ms
+Iteration 19: Latency is 348.282470703125 ms
+Iteration 20: Latency is 345.57666015625 ms
+Average latency over 20 iterations: 352.9 ms
+Round2:
+Iteration 1: Latency is 348.462890625 ms
+Iteration 2: Latency is 333.853759765625 ms
+Iteration 3: Latency is 344.71826171875 ms
+Iteration 4: Latency is 328.36474609375 ms
+Iteration 5: Latency is 333.55517578125 ms
+Iteration 6: Latency is 330.484130859375 ms
+Iteration 7: Latency is 341.732666015625 ms
+Iteration 8: Latency is 373.49560546875 ms
+Iteration 9: Latency is 342.50537109375 ms
+Iteration 10: Latency is 339.8603515625 ms
+Iteration 11: Latency is 331.61669921875 ms
+Iteration 12: Latency is 334.408447265625 ms
+Iteration 13: Latency is 335.744140625 ms
+Iteration 14: Latency is 337.60986328125 ms
+Iteration 15: Latency is 335.152099609375 ms
+Iteration 16: Latency is 331.848388671875 ms
+Iteration 17: Latency is 335.703125 ms
+Iteration 18: Latency is 399.38623046875 ms
+Iteration 19: Latency is 380.443115234375 ms
+Iteration 20: Latency is 386.79931640625 ms
+Average latency over 20 iterations: 346.2 ms
+Round3:
+Iteration 1: Latency is 349.79052734375 ms
+Iteration 2: Latency is 329.489013671875 ms
+Iteration 3: Latency is 335.358154296875 ms
+Iteration 4: Latency is 334.48193359375 ms
+Iteration 5: Latency is 345.2158203125 ms
+Iteration 6: Latency is 344.883544921875 ms
+Iteration 7: Latency is 334.105224609375 ms
+Iteration 8: Latency is 332.170654296875 ms
+Iteration 9: Latency is 361.62939453125 ms
+Iteration 10: Latency is 350.633544921875 ms
+Iteration 11: Latency is 331.37890625 ms
+Iteration 12: Latency is 349.755126953125 ms
+Iteration 13: Latency is 330.09814453125 ms
+Iteration 14: Latency is 339.759521484375 ms
+Iteration 15: Latency is 335.306396484375 ms
+Iteration 16: Latency is 329.946044921875 ms
+Iteration 17: Latency is 344.167724609375 ms
+Iteration 18: Latency is 335.948974609375 ms
+Iteration 19: Latency is 329.814697265625 ms
+Iteration 20: Latency is 350.470458984375 ms
+Average latency over 20 iterations: 339.7 ms
+--------Testing t2 E2E (Cold Start) for light-type-check...
+Round1:
+Iteration 1: Response time is 413 milliseconds
+Iteration 2: Response time is 445 milliseconds
+Iteration 3: Response time is 434 milliseconds
+Iteration 4: Response time is 410 milliseconds
+Iteration 5: Response time is 436 milliseconds
+Iteration 6: Response time is 458 milliseconds
+Iteration 7: Response time is 451 milliseconds
+Iteration 8: Response time is 439 milliseconds
+Iteration 9: Response time is 450 milliseconds
+Iteration 10: Response time is 440 milliseconds
+Iteration 11: Response time is 442 milliseconds
+Iteration 12: Response time is 417 milliseconds
+Iteration 13: Response time is 465 milliseconds
+Iteration 14: Response time is 459 milliseconds
+Iteration 15: Response time is 424 milliseconds
+Iteration 16: Response time is 433 milliseconds
+Iteration 17: Response time is 454 milliseconds
+Iteration 18: Response time is 412 milliseconds
+Iteration 19: Response time is 424 milliseconds
+Iteration 20: Response time is 407 milliseconds
+Average response time over 20 iterations: 435.650000 milliseconds
+Round2:
+Iteration 1: Response time is 428 milliseconds
+Iteration 2: Response time is 571 milliseconds
+Iteration 3: Response time is 415 milliseconds
+Iteration 4: Response time is 415 milliseconds
+Iteration 5: Response time is 415 milliseconds
+Iteration 6: Response time is 410 milliseconds
+Iteration 7: Response time is 438 milliseconds
+Iteration 8: Response time is 456 milliseconds
+Iteration 9: Response time is 417 milliseconds
+Iteration 10: Response time is 460 milliseconds
+Iteration 11: Response time is 415 milliseconds
+Iteration 12: Response time is 408 milliseconds
+Iteration 13: Response time is 451 milliseconds
+Iteration 14: Response time is 434 milliseconds
+Iteration 15: Response time is 479 milliseconds
+Iteration 16: Response time is 427 milliseconds
+Iteration 17: Response time is 424 milliseconds
+Iteration 18: Response time is 464 milliseconds
+Iteration 19: Response time is 426 milliseconds
+Iteration 20: Response time is 443 milliseconds
+Average response time over 20 iterations: 439.800000 milliseconds
+Round3:
+Iteration 1: Response time is 427 milliseconds
+Iteration 2: Response time is 436 milliseconds
+Iteration 3: Response time is 439 milliseconds
+Iteration 4: Response time is 449 milliseconds
+Iteration 5: Response time is 478 milliseconds
+Iteration 6: Response time is 407 milliseconds
+Iteration 7: Response time is 416 milliseconds
+Iteration 8: Response time is 406 milliseconds
+Iteration 9: Response time is 408 milliseconds
+Iteration 10: Response time is 465 milliseconds
+Iteration 11: Response time is 420 milliseconds
+Iteration 12: Response time is 444 milliseconds
+Iteration 13: Response time is 415 milliseconds
+Iteration 14: Response time is 448 milliseconds
+Iteration 15: Response time is 441 milliseconds
+Iteration 16: Response time is 424 milliseconds
+Iteration 17: Response time is 407 milliseconds
+Iteration 18: Response time is 408 milliseconds
+Iteration 19: Response time is 437 milliseconds
+Iteration 20: Response time is 418 milliseconds
+Average response time over 20 iterations: 429.650000 milliseconds
+Cleaning up light-type-check...
+----------------------------------------Next function----------------------------------------
+Processing function: light-graph
+Deploying light-graph (Hot Start)...
+Waiting for light-graph to be ready...
+--------Testing t1 (Hot Start) for light-graph...
+Round1:
+Iteration 1: Latency is 189.123779296875 ms
+Iteration 2: Latency is 184.526611328125 ms
+Iteration 3: Latency is 198.185546875 ms
+Iteration 4: Latency is 202.276123046875 ms
+Iteration 5: Latency is 185.1083984375 ms
+Iteration 6: Latency is 187.88232421875 ms
+Iteration 7: Latency is 188.31640625 ms
+Iteration 8: Latency is 188.521484375 ms
+Iteration 9: Latency is 188.06982421875 ms
+Iteration 10: Latency is 193.248779296875 ms
+Iteration 11: Latency is 193.279052734375 ms
+Iteration 12: Latency is 247.221923828125 ms
+Iteration 13: Latency is 210.509521484375 ms
+Iteration 14: Latency is 189.841552734375 ms
+Iteration 15: Latency is 187.796875 ms
+Iteration 16: Latency is 218.62890625 ms
+Iteration 17: Latency is 227.69921875 ms
+Iteration 18: Latency is 211.445068359375 ms
+Iteration 19: Latency is 190.85595703125 ms
+Iteration 20: Latency is 186.73779296875 ms
+Average latency over 20 iterations: 198.4 ms
+Round2:
+Iteration 1: Latency is 230.497802734375 ms
+Iteration 2: Latency is 225.170654296875 ms
+Iteration 3: Latency is 185.72900390625 ms
+Iteration 4: Latency is 197.68701171875 ms
+Iteration 5: Latency is 187.235107421875 ms
+Iteration 6: Latency is 195.2763671875 ms
+Iteration 7: Latency is 184.66552734375 ms
+Iteration 8: Latency is 186.27294921875 ms
+Iteration 9: Latency is 185.321533203125 ms
+Iteration 10: Latency is 193.68310546875 ms
+Iteration 11: Latency is 184.669921875 ms
+Iteration 12: Latency is 184.862060546875 ms
+Iteration 13: Latency is 191.970458984375 ms
+Iteration 14: Latency is 198.746826171875 ms
+Iteration 15: Latency is 193.486083984375 ms
+Iteration 16: Latency is 189.405517578125 ms
+Iteration 17: Latency is 188.26904296875 ms
+Iteration 18: Latency is 185.791259765625 ms
+Iteration 19: Latency is 197.049072265625 ms
+Iteration 20: Latency is 206.0400390625 ms
+Average latency over 20 iterations: 194.5 ms
+Round3:
+Iteration 1: Latency is 184.33154296875 ms
+Iteration 2: Latency is 186.9736328125 ms
+Iteration 3: Latency is 188.273193359375 ms
+Iteration 4: Latency is 187.732177734375 ms
+Iteration 5: Latency is 199.181640625 ms
+Iteration 6: Latency is 210.387451171875 ms
+Iteration 7: Latency is 209.273193359375 ms
+Iteration 8: Latency is 192.021728515625 ms
+Iteration 9: Latency is 190.457763671875 ms
+Iteration 10: Latency is 195.01708984375 ms
+Iteration 11: Latency is 404.038818359375 ms
+Iteration 12: Latency is 194.8662109375 ms
+Iteration 13: Latency is 211.0693359375 ms
+Iteration 14: Latency is 186.1689453125 ms
+Iteration 15: Latency is 186.82763671875 ms
+Iteration 16: Latency is 189.493896484375 ms
+Iteration 17: Latency is 185.984130859375 ms
+Iteration 18: Latency is 186.24755859375 ms
+Iteration 19: Latency is 186.225830078125 ms
+Iteration 20: Latency is 190.00732421875 ms
+Average latency over 20 iterations: 203.2 ms
+--------Testing t2 E2E (Hot Start) for light-graph...
+Round1:
+Iteration 1: Response time is 255 milliseconds
+Iteration 2: Response time is 262 milliseconds
+Iteration 3: Response time is 285 milliseconds
+Iteration 4: Response time is 257 milliseconds
+Iteration 5: Response time is 290 milliseconds
+Iteration 6: Response time is 259 milliseconds
+Iteration 7: Response time is 294 milliseconds
+Iteration 8: Response time is 268 milliseconds
+Iteration 9: Response time is 296 milliseconds
+Iteration 10: Response time is 268 milliseconds
+Iteration 11: Response time is 265 milliseconds
+Iteration 12: Response time is 256 milliseconds
+Iteration 13: Response time is 256 milliseconds
+Iteration 14: Response time is 271 milliseconds
+Iteration 15: Response time is 262 milliseconds
+Iteration 16: Response time is 282 milliseconds
+Iteration 17: Response time is 280 milliseconds
+Iteration 18: Response time is 264 milliseconds
+Iteration 19: Response time is 265 milliseconds
+Iteration 20: Response time is 264 milliseconds
+Average response time over 20 iterations: 269.950000 milliseconds
+Round2:
+Iteration 1: Response time is 257 milliseconds
+Iteration 2: Response time is 260 milliseconds
+Iteration 3: Response time is 304 milliseconds
+Iteration 4: Response time is 310 milliseconds
+Iteration 5: Response time is 301 milliseconds
+Iteration 6: Response time is 299 milliseconds
+Iteration 7: Response time is 300 milliseconds
+Iteration 8: Response time is 255 milliseconds
+Iteration 9: Response time is 250 milliseconds
+Iteration 10: Response time is 331 milliseconds
+Iteration 11: Response time is 263 milliseconds
+Iteration 12: Response time is 284 milliseconds
+Iteration 13: Response time is 260 milliseconds
+Iteration 14: Response time is 256 milliseconds
+Iteration 15: Response time is 263 milliseconds
+Iteration 16: Response time is 255 milliseconds
+Iteration 17: Response time is 258 milliseconds
+Iteration 18: Response time is 268 milliseconds
+Iteration 19: Response time is 268 milliseconds
+Iteration 20: Response time is 263 milliseconds
+Average response time over 20 iterations: 275.250000 milliseconds
+Round3:
+Iteration 1: Response time is 279 milliseconds
+Iteration 2: Response time is 262 milliseconds
+Iteration 3: Response time is 258 milliseconds
+Iteration 4: Response time is 254 milliseconds
+Iteration 5: Response time is 253 milliseconds
+Iteration 6: Response time is 271 milliseconds
+Iteration 7: Response time is 260 milliseconds
+Iteration 8: Response time is 257 milliseconds
+Iteration 9: Response time is 265 milliseconds
+Iteration 10: Response time is 266 milliseconds
+Iteration 11: Response time is 252 milliseconds
+Iteration 12: Response time is 260 milliseconds
+Iteration 13: Response time is 258 milliseconds
+Iteration 14: Response time is 253 milliseconds
+Iteration 15: Response time is 282 milliseconds
+Iteration 16: Response time is 278 milliseconds
+Iteration 17: Response time is 279 milliseconds
+Iteration 18: Response time is 257 milliseconds
+Iteration 19: Response time is 267 milliseconds
+Iteration 20: Response time is 260 milliseconds
+Average response time over 20 iterations: 263.550000 milliseconds
+Simulating Cold Start for light-graph...
+Deploying light-graph (Cold Start)...
+Waiting for light-graph to be ready...
+--------Testing t1 (Cold Start) for light-graph...
+Round1:
+Iteration 1: Latency is 377.744384765625 ms
+Iteration 2: Latency is 428.8212890625 ms
+Iteration 3: Latency is 429.17578125 ms
+Iteration 4: Latency is 426.49365234375 ms
+Iteration 5: Latency is 398.444091796875 ms
+Iteration 6: Latency is 428.25732421875 ms
+Iteration 7: Latency is 642.1689453125 ms
+Iteration 8: Latency is 392.14794921875 ms
+Iteration 9: Latency is 435.97802734375 ms
+Iteration 10: Latency is 393.066162109375 ms
+Iteration 11: Latency is 403.005615234375 ms
+Iteration 12: Latency is 416.029052734375 ms
+Iteration 13: Latency is 415.271728515625 ms
+Iteration 14: Latency is 363.781494140625 ms
+Iteration 15: Latency is 727.687744140625 ms
+Iteration 16: Latency is 470.73486328125 ms
+Iteration 17: Latency is 363.40771484375 ms
+Iteration 18: Latency is 431.2099609375 ms
+Iteration 19: Latency is 379.311767578125 ms
+Iteration 20: Latency is 394.11181640625 ms
+Average latency over 20 iterations: 435.8 ms
+Round2:
+Iteration 1: Latency is 422.30908203125 ms
+Iteration 2: Latency is 451.2939453125 ms
+Iteration 3: Latency is 370.666015625 ms
+Iteration 4: Latency is 438.20361328125 ms
+Iteration 5: Latency is 416.602783203125 ms
+Iteration 6: Latency is 445.236083984375 ms
+Iteration 7: Latency is 381.62255859375 ms
+Iteration 8: Latency is 442.296875 ms
+Iteration 9: Latency is 369.524169921875 ms
+Iteration 10: Latency is 472.525390625 ms
+Iteration 11: Latency is 480.21142578125 ms
+Iteration 12: Latency is 838.2998046875 ms
+Iteration 13: Latency is 376.47119140625 ms
+Iteration 14: Latency is 401.819091796875 ms
+Iteration 15: Latency is 375.699951171875 ms
+Iteration 16: Latency is 420.55712890625 ms
+Iteration 17: Latency is 382.26220703125 ms
+Iteration 18: Latency is 422.052978515625 ms
+Iteration 19: Latency is 361.420654296875 ms
+Iteration 20: Latency is 385.08935546875 ms
+Average latency over 20 iterations: 432.7 ms
+Round3:
+Iteration 1: Latency is 424.8271484375 ms
+Iteration 2: Latency is 375.71142578125 ms
+Iteration 3: Latency is 427.385009765625 ms
+Iteration 4: Latency is 383.41259765625 ms
+Iteration 5: Latency is 373.970703125 ms
+Iteration 6: Latency is 367.49072265625 ms
+Iteration 7: Latency is 413.149169921875 ms
+Iteration 8: Latency is 442.438720703125 ms
+Iteration 9: Latency is 373.1689453125 ms
+Iteration 10: Latency is 444.84765625 ms
+Iteration 11: Latency is 506.86279296875 ms
+Iteration 12: Latency is 426.1552734375 ms
+Iteration 13: Latency is 475.474365234375 ms
+Iteration 14: Latency is 438.75439453125 ms
+Iteration 15: Latency is 380.69677734375 ms
+Iteration 16: Latency is 364.005615234375 ms
+Iteration 17: Latency is 507.876953125 ms
+Iteration 18: Latency is 464.230224609375 ms
+Iteration 19: Latency is 405.7197265625 ms
+Iteration 20: Latency is 412.0244140625 ms
+Average latency over 20 iterations: 420.4 ms
+--------Testing t2 E2E (Cold Start) for light-graph...
+Round1:
+Iteration 1: Response time is 506 milliseconds
+Iteration 2: Response time is 492 milliseconds
+Iteration 3: Response time is 469 milliseconds
+Iteration 4: Response time is 495 milliseconds
+Iteration 5: Response time is 478 milliseconds
+Iteration 6: Response time is 489 milliseconds
+Iteration 7: Response time is 539 milliseconds
+Iteration 8: Response time is 502 milliseconds
+Iteration 9: Response time is 511 milliseconds
+Iteration 10: Response time is 466 milliseconds
+Iteration 11: Response time is 492 milliseconds
+Iteration 12: Response time is 458 milliseconds
+Iteration 13: Response time is 457 milliseconds
+Iteration 14: Response time is 626 milliseconds
+Iteration 15: Response time is 508 milliseconds
+Iteration 16: Response time is 504 milliseconds
+Iteration 17: Response time is 504 milliseconds
+Iteration 18: Response time is 494 milliseconds
+Iteration 19: Response time is 708 milliseconds
+Iteration 20: Response time is 572 milliseconds
+Average response time over 20 iterations: 513.500000 milliseconds
+Round2:
+Iteration 1: Response time is 800 milliseconds
+Iteration 2: Response time is 529 milliseconds
+Iteration 3: Response time is 504 milliseconds
+Iteration 4: Response time is 482 milliseconds
+Iteration 5: Response time is 499 milliseconds
+Iteration 6: Response time is 528 milliseconds
+Iteration 7: Response time is 565 milliseconds
+Iteration 8: Response time is 612 milliseconds
+Iteration 9: Response time is 480 milliseconds
+Iteration 10: Response time is 506 milliseconds
+Iteration 11: Response time is 539 milliseconds
+Iteration 12: Response time is 447 milliseconds
+Iteration 13: Response time is 494 milliseconds
+Iteration 14: Response time is 537 milliseconds
+Iteration 15: Response time is 461 milliseconds
+Iteration 16: Response time is 551 milliseconds
+Iteration 17: Response time is 494 milliseconds
+Iteration 18: Response time is 484 milliseconds
+Iteration 19: Response time is 485 milliseconds
+Iteration 20: Response time is 489 milliseconds
+Average response time over 20 iterations: 524.300000 milliseconds
+Round3:
+Iteration 1: Response time is 471 milliseconds
+Iteration 2: Response time is 535 milliseconds
+Iteration 3: Response time is 593 milliseconds
+Iteration 4: Response time is 528 milliseconds
+Iteration 5: Response time is 516 milliseconds
+Iteration 6: Response time is 475 milliseconds
+Iteration 7: Response time is 559 milliseconds
+Iteration 8: Response time is 521 milliseconds
+Iteration 9: Response time is 461 milliseconds
+Iteration 10: Response time is 530 milliseconds
+Iteration 11: Response time is 475 milliseconds
+Iteration 12: Response time is 456 milliseconds
+Iteration 13: Response time is 483 milliseconds
+Iteration 14: Response time is 469 milliseconds
+Iteration 15: Response time is 542 milliseconds
+Iteration 16: Response time is 496 milliseconds
+Iteration 17: Response time is 424 milliseconds
+Iteration 18: Response time is 458 milliseconds
+Iteration 19: Response time is 488 milliseconds
+Iteration 20: Response time is 558 milliseconds
+Average response time over 20 iterations: 501.900000 milliseconds
+Cleaning up light-graph...
+----------------------------------------Next function----------------------------------------
+Processing function: light-graph
+Deploying light-graph (Hot Start)...
+Waiting for light-graph to be ready...
+--------Testing t1 (Hot Start) for light-graph...
+Round1:
+Iteration 1: Latency is 194.732177734375 ms
+Iteration 2: Latency is 192.32861328125 ms
+Iteration 3: Latency is 192.93798828125 ms
+Iteration 4: Latency is 247.931396484375 ms
+Iteration 5: Latency is 190.802734375 ms
+Iteration 6: Latency is 194.444580078125 ms
+Iteration 7: Latency is 201.404541015625 ms
+Iteration 8: Latency is 193.215576171875 ms
+Iteration 9: Latency is 200.17822265625 ms
+Iteration 10: Latency is 191.490478515625 ms
+Iteration 11: Latency is 195.93408203125 ms
+Iteration 12: Latency is 206.19287109375 ms
+Iteration 13: Latency is 190.021240234375 ms
+Iteration 14: Latency is 201.188720703125 ms
+Iteration 15: Latency is 202.09912109375 ms
+Iteration 16: Latency is 202.681884765625 ms
+Iteration 17: Latency is 188.05810546875 ms
+Iteration 18: Latency is 191.099609375 ms
+Iteration 19: Latency is 186.245361328125 ms
+Iteration 20: Latency is 189.46044921875 ms
+Average latency over 20 iterations: 197.6 ms
+Round2:
+Iteration 1: Latency is 187.04052734375 ms
+Iteration 2: Latency is 232.013671875 ms
+Iteration 3: Latency is 203.801513671875 ms
+Iteration 4: Latency is 197.16064453125 ms
+Iteration 5: Latency is 194.189453125 ms
+Iteration 6: Latency is 190.7646484375 ms
+Iteration 7: Latency is 196.7119140625 ms
+Iteration 8: Latency is 206.02001953125 ms
+Iteration 9: Latency is 194.21923828125 ms
+Iteration 10: Latency is 193.22607421875 ms
+Iteration 11: Latency is 189.49365234375 ms
+Iteration 12: Latency is 191.603515625 ms
+Iteration 13: Latency is 189.571533203125 ms
+Iteration 14: Latency is 212.208251953125 ms
+Iteration 15: Latency is 224.70458984375 ms
+Iteration 16: Latency is 230.093505859375 ms
+Iteration 17: Latency is 204.763916015625 ms
+Iteration 18: Latency is 252.081298828125 ms
+Iteration 19: Latency is 191.09521484375 ms
+Iteration 20: Latency is 189.223876953125 ms
+Average latency over 20 iterations: 203.4 ms
+Round3:
+Iteration 1: Latency is 189.196533203125 ms
+Iteration 2: Latency is 206.90185546875 ms
+Iteration 3: Latency is 190.753662109375 ms
+Iteration 4: Latency is 188.710205078125 ms
+Iteration 5: Latency is 196.629150390625 ms
+Iteration 6: Latency is 242.343994140625 ms
+Iteration 7: Latency is 195.91162109375 ms
+Iteration 8: Latency is 191.197021484375 ms
+Iteration 9: Latency is 200.544189453125 ms
+Iteration 10: Latency is 191.386962890625 ms
+Iteration 11: Latency is 189.6923828125 ms
+Iteration 12: Latency is 189.658447265625 ms
+Iteration 13: Latency is 194.95556640625 ms
+Iteration 14: Latency is 199.758056640625 ms
+Iteration 15: Latency is 221.357177734375 ms
+Iteration 16: Latency is 192.833984375 ms
+Iteration 17: Latency is 217.749267578125 ms
+Iteration 18: Latency is 247.6220703125 ms
+Iteration 19: Latency is 235.15234375 ms
+Iteration 20: Latency is 189.9296875 ms
+Average latency over 20 iterations: 203.6 ms
+--------Testing t2 E2E (Hot Start) for light-graph...
+Round1:
+Iteration 1: Response time is 278 milliseconds
+Iteration 2: Response time is 289 milliseconds
+Iteration 3: Response time is 270 milliseconds
+Iteration 4: Response time is 308 milliseconds
+Iteration 5: Response time is 265 milliseconds
+Iteration 6: Response time is 258 milliseconds
+Iteration 7: Response time is 300 milliseconds
+Iteration 8: Response time is 310 milliseconds
+Iteration 9: Response time is 280 milliseconds
+Iteration 10: Response time is 271 milliseconds
+Iteration 11: Response time is 265 milliseconds
+Iteration 12: Response time is 271 milliseconds
+Iteration 13: Response time is 288 milliseconds
+Iteration 14: Response time is 279 milliseconds
+Iteration 15: Response time is 266 milliseconds
+Iteration 16: Response time is 273 milliseconds
+Iteration 17: Response time is 258 milliseconds
+Iteration 18: Response time is 275 milliseconds
+Iteration 19: Response time is 262 milliseconds
+Iteration 20: Response time is 270 milliseconds
+Average response time over 20 iterations: 276.800000 milliseconds
+Round2:
+Iteration 1: Response time is 277 milliseconds
+Iteration 2: Response time is 345 milliseconds
+Iteration 3: Response time is 286 milliseconds
+Iteration 4: Response time is 284 milliseconds
+Iteration 5: Response time is 292 milliseconds
+Iteration 6: Response time is 261 milliseconds
+Iteration 7: Response time is 262 milliseconds
+Iteration 8: Response time is 256 milliseconds
+Iteration 9: Response time is 274 milliseconds
+Iteration 10: Response time is 261 milliseconds
+Iteration 11: Response time is 316 milliseconds
+Iteration 12: Response time is 280 milliseconds
+Iteration 13: Response time is 263 milliseconds
+Iteration 14: Response time is 265 milliseconds
+Iteration 15: Response time is 253 milliseconds
+Iteration 16: Response time is 360 milliseconds
+Iteration 17: Response time is 268 milliseconds
+Iteration 18: Response time is 256 milliseconds
+Iteration 19: Response time is 292 milliseconds
+Iteration 20: Response time is 299 milliseconds
+Average response time over 20 iterations: 282.500000 milliseconds
+Round3:
+Iteration 1: Response time is 291 milliseconds
+Iteration 2: Response time is 255 milliseconds
+Iteration 3: Response time is 259 milliseconds
+Iteration 4: Response time is 254 milliseconds
+Iteration 5: Response time is 306 milliseconds
+Iteration 6: Response time is 257 milliseconds
+Iteration 7: Response time is 258 milliseconds
+Iteration 8: Response time is 276 milliseconds
+Iteration 9: Response time is 274 milliseconds
+Iteration 10: Response time is 257 milliseconds
+Iteration 11: Response time is 300 milliseconds
+Iteration 12: Response time is 263 milliseconds
+Iteration 13: Response time is 284 milliseconds
+Iteration 14: Response time is 282 milliseconds
+Iteration 15: Response time is 258 milliseconds
+Iteration 16: Response time is 280 milliseconds
+Iteration 17: Response time is 264 milliseconds
+Iteration 18: Response time is 290 milliseconds
+Iteration 19: Response time is 266 milliseconds
+Iteration 20: Response time is 268 milliseconds
+Average response time over 20 iterations: 272.100000 milliseconds
+Simulating Cold Start for light-graph...
+Deploying light-graph (Cold Start)...
+Waiting for light-graph to be ready...
+--------Testing t1 (Cold Start) for light-graph...
+Round1:
+Iteration 1: Latency is 400.20166015625 ms
+Iteration 2: Latency is 424.561279296875 ms
+Iteration 3: Latency is 425.377685546875 ms
+Iteration 4: Latency is 356.889892578125 ms
+Iteration 5: Latency is 393.635498046875 ms
+Iteration 6: Latency is 373.353271484375 ms
+Iteration 7: Latency is 467.8076171875 ms
+Iteration 8: Latency is 470.14404296875 ms
+Iteration 9: Latency is 438.33984375 ms
+Iteration 10: Latency is 450.197509765625 ms
+Iteration 11: Latency is 440.792236328125 ms
+Iteration 12: Latency is 460.13818359375 ms
+Iteration 13: Latency is 416.651123046875 ms
+Iteration 14: Latency is 397.66552734375 ms
+Iteration 15: Latency is 395.621337890625 ms
+Iteration 16: Latency is 407.453857421875 ms
+Iteration 17: Latency is 362.79736328125 ms
+Iteration 18: Latency is 407.651123046875 ms
+Iteration 19: Latency is 378.736083984375 ms
+Iteration 20: Latency is 1344.743408203125 ms
+Average latency over 20 iterations: 460.6 ms
+Round2:
+Iteration 1: Latency is 420.16357421875 ms
+Iteration 2: Latency is 439.9453125 ms
+Iteration 3: Latency is 407.27099609375 ms
+Iteration 4: Latency is 363.492919921875 ms
+Iteration 5: Latency is 398.589599609375 ms
+Iteration 6: Latency is 409.58251953125 ms
+Iteration 7: Latency is 399.593505859375 ms
+Iteration 8: Latency is 418.36376953125 ms
+Iteration 9: Latency is 473.979248046875 ms
+Iteration 10: Latency is 408.8291015625 ms
+Iteration 11: Latency is 403.34619140625 ms
+Iteration 12: Latency is 532.859375 ms
+Iteration 13: Latency is 388.708740234375 ms
+Iteration 14: Latency is 395.55859375 ms
+Iteration 15: Latency is 429.533935546875 ms
+Iteration 16: Latency is 387.780029296875 ms
+Iteration 17: Latency is 410.406005859375 ms
+Iteration 18: Latency is 429.4091796875 ms
+Iteration 19: Latency is 441.70849609375 ms
+Iteration 20: Latency is 422.92529296875 ms
+Average latency over 20 iterations: 419.1 ms
+Round3:
+Iteration 1: Latency is 426.784912109375 ms
+Iteration 2: Latency is 428.1884765625 ms
+Iteration 3: Latency is 383.267822265625 ms
+Iteration 4: Latency is 418.1982421875 ms
+Iteration 5: Latency is 423.25927734375 ms
+Iteration 6: Latency is 355.947265625 ms
+Iteration 7: Latency is 439.323486328125 ms
+Iteration 8: Latency is 437.890869140625 ms
+Iteration 9: Latency is 397.164306640625 ms
+Iteration 10: Latency is 370.076904296875 ms
+Iteration 11: Latency is 373.25341796875 ms
+Iteration 12: Latency is 378.404052734375 ms
+Iteration 13: Latency is 397.312255859375 ms
+Iteration 14: Latency is 424.524169921875 ms
+Iteration 15: Latency is 441.22314453125 ms
+Iteration 16: Latency is 373.669189453125 ms
+Iteration 17: Latency is 435.796142578125 ms
+Iteration 18: Latency is 430.80224609375 ms
+Iteration 19: Latency is 401.376220703125 ms
+Iteration 20: Latency is 406.35595703125 ms
+Average latency over 20 iterations: 407.1 ms
+--------Testing t2 E2E (Cold Start) for light-graph...
+Round1:
+Iteration 1: Response time is 485 milliseconds
+Iteration 2: Response time is 507 milliseconds
+Iteration 3: Response time is 492 milliseconds
+Iteration 4: Response time is 546 milliseconds
+Iteration 5: Response time is 466 milliseconds
+Iteration 6: Response time is 455 milliseconds
+Iteration 7: Response time is 472 milliseconds
+Iteration 8: Response time is 490 milliseconds
+Iteration 9: Response time is 831 milliseconds
+Iteration 10: Response time is 618 milliseconds
+Iteration 11: Response time is 513 milliseconds
+Iteration 12: Response time is 507 milliseconds
+Iteration 13: Response time is 477 milliseconds
+Iteration 14: Response time is 456 milliseconds
+Iteration 15: Response time is 466 milliseconds
+Iteration 16: Response time is 482 milliseconds
+Iteration 17: Response time is 559 milliseconds
+Iteration 18: Response time is 521 milliseconds
+Iteration 19: Response time is 512 milliseconds
+Iteration 20: Response time is 477 milliseconds
+Average response time over 20 iterations: 516.600000 milliseconds
+Round2:
+Iteration 1: Response time is 464 milliseconds
+Iteration 2: Response time is 485 milliseconds
+Iteration 3: Response time is 508 milliseconds
+Iteration 4: Response time is 480 milliseconds
+Iteration 5: Response time is 521 milliseconds
+Iteration 6: Response time is 463 milliseconds
+Iteration 7: Response time is 477 milliseconds
+Iteration 8: Response time is 493 milliseconds
+Iteration 9: Response time is 502 milliseconds
+Iteration 10: Response time is 458 milliseconds
+Iteration 11: Response time is 533 milliseconds
+Iteration 12: Response time is 508 milliseconds
+Iteration 13: Response time is 516 milliseconds
+Iteration 14: Response time is 502 milliseconds
+Iteration 15: Response time is 652 milliseconds
+Iteration 16: Response time is 537 milliseconds
+Iteration 17: Response time is 558 milliseconds
+Iteration 18: Response time is 546 milliseconds
+Iteration 19: Response time is 490 milliseconds
+Iteration 20: Response time is 511 milliseconds
+Average response time over 20 iterations: 510.200000 milliseconds
+Round3:
+Iteration 1: Response time is 540 milliseconds
+Iteration 2: Response time is 460 milliseconds
+Iteration 3: Response time is 449 milliseconds
+Iteration 4: Response time is 478 milliseconds
+Iteration 5: Response time is 523 milliseconds
+Iteration 6: Response time is 494 milliseconds
+Iteration 7: Response time is 482 milliseconds
+Iteration 8: Response time is 494 milliseconds
+Iteration 9: Response time is 464 milliseconds
+Iteration 10: Response time is 517 milliseconds
+Iteration 11: Response time is 511 milliseconds
+Iteration 12: Response time is 471 milliseconds
+Iteration 13: Response time is 528 milliseconds
+Iteration 14: Response time is 494 milliseconds
+Iteration 15: Response time is 483 milliseconds
+Iteration 16: Response time is 523 milliseconds
+Iteration 17: Response time is 462 milliseconds
+Iteration 18: Response time is 478 milliseconds
+Iteration 19: Response time is 747 milliseconds
+Iteration 20: Response time is 502 milliseconds
+Average response time over 20 iterations: 505.000000 milliseconds
+Cleaning up light-graph...
+----------------------------------------Next function----------------------------------------
+Processing function: light-game
+Deploying light-game (Hot Start)...
+Waiting for light-game to be ready...
+--------Testing t1 (Hot Start) for light-game...
+Round1:
+Iteration 1: Latency is 467.04736328125 ms
+Iteration 2: Latency is 488.9091796875 ms
+Iteration 3: Latency is 469.9970703125 ms
+Iteration 4: Latency is 475.4423828125 ms
+Iteration 5: Latency is 466.642333984375 ms
+Iteration 6: Latency is 521.3828125 ms
+Iteration 7: Latency is 465.040283203125 ms
+Iteration 8: Latency is 462.64990234375 ms
+Iteration 9: Latency is 504.788330078125 ms
+Iteration 10: Latency is 475.812744140625 ms
+Iteration 11: Latency is 464.3798828125 ms
+Iteration 12: Latency is 463.458251953125 ms
+Iteration 13: Latency is 504.533447265625 ms
+Iteration 14: Latency is 499.23828125 ms
+Iteration 15: Latency is 474.349609375 ms
+Iteration 16: Latency is 468.624267578125 ms
+Iteration 17: Latency is 502.027099609375 ms
+Iteration 18: Latency is 479.96142578125 ms
+Iteration 19: Latency is 466.888427734375 ms
+Iteration 20: Latency is 465.193359375 ms
+Average latency over 20 iterations: 479.3 ms
+Round2:
+Iteration 1: Latency is 644.887451171875 ms
+Iteration 2: Latency is 477.893310546875 ms
+Iteration 3: Latency is 469.603515625 ms
+Iteration 4: Latency is 508.322265625 ms
+Iteration 5: Latency is 459.811279296875 ms
+Iteration 6: Latency is 459.302734375 ms
+Iteration 7: Latency is 450.906005859375 ms
+Iteration 8: Latency is 462.38232421875 ms
+Iteration 9: Latency is 456.082763671875 ms
+Iteration 10: Latency is 474.415283203125 ms
+Iteration 11: Latency is 514.372314453125 ms
+Iteration 12: Latency is 451.397705078125 ms
+Iteration 13: Latency is 457.512939453125 ms
+Iteration 14: Latency is 458.609375 ms
+Iteration 15: Latency is 452.810302734375 ms
+Iteration 16: Latency is 461.153076171875 ms
+Iteration 17: Latency is 456.794921875 ms
+Iteration 18: Latency is 481.8056640625 ms
+Iteration 19: Latency is 507.55908203125 ms
+Iteration 20: Latency is 455.834228515625 ms
+Average latency over 20 iterations: 478.0 ms
+Round3:
+Iteration 1: Latency is 459.267578125 ms
+Iteration 2: Latency is 471.278076171875 ms
+Iteration 3: Latency is 469.84814453125 ms
+Iteration 4: Latency is 472.7939453125 ms
+Iteration 5: Latency is 448.90380859375 ms
+Iteration 6: Latency is 472.8779296875 ms
+Iteration 7: Latency is 476.10986328125 ms
+Iteration 8: Latency is 478.2177734375 ms
+Iteration 9: Latency is 457.892333984375 ms
+Iteration 10: Latency is 477.876708984375 ms
+Iteration 11: Latency is 462.20703125 ms
+Iteration 12: Latency is 462.50634765625 ms
+Iteration 13: Latency is 463.493408203125 ms
+Iteration 14: Latency is 456.18603515625 ms
+Iteration 15: Latency is 455.75439453125 ms
+Iteration 16: Latency is 459.28173828125 ms
+Iteration 17: Latency is 471.95849609375 ms
+Iteration 18: Latency is 475.072509765625 ms
+Iteration 19: Latency is 461.583984375 ms
+Iteration 20: Latency is 476.12109375 ms
+Average latency over 20 iterations: 466.4 ms
+--------Testing t2 E2E (Hot Start) for light-game...
+Round1:
+Iteration 1: Response time is 557 milliseconds
+Iteration 2: Response time is 552 milliseconds
+Iteration 3: Response time is 611 milliseconds
+Iteration 4: Response time is 572 milliseconds
+Iteration 5: Response time is 550 milliseconds
+Iteration 6: Response time is 550 milliseconds
+Iteration 7: Response time is 558 milliseconds
+Iteration 8: Response time is 625 milliseconds
+Iteration 9: Response time is 556 milliseconds
+Iteration 10: Response time is 554 milliseconds
+Iteration 11: Response time is 592 milliseconds
+Iteration 12: Response time is 559 milliseconds
+Iteration 13: Response time is 568 milliseconds
+Iteration 14: Response time is 577 milliseconds
+Iteration 15: Response time is 568 milliseconds
+Iteration 16: Response time is 572 milliseconds
+Iteration 17: Response time is 545 milliseconds
+Iteration 18: Response time is 592 milliseconds
+Iteration 19: Response time is 555 milliseconds
+Iteration 20: Response time is 599 milliseconds
+Average response time over 20 iterations: 570.6 milliseconds
+Round2:
+Iteration 1: Response time is 593 milliseconds
+Iteration 2: Response time is 548 milliseconds
+Iteration 3: Response time is 637 milliseconds
+Iteration 4: Response time is 598 milliseconds
+Iteration 5: Response time is 588 milliseconds
+Iteration 6: Response time is 552 milliseconds
+Iteration 7: Response time is 561 milliseconds
+Iteration 8: Response time is 591 milliseconds
+Iteration 9: Response time is 574 milliseconds
+Iteration 10: Response time is 557 milliseconds
+Iteration 11: Response time is 587 milliseconds
+Iteration 12: Response time is 551 milliseconds
+Iteration 13: Response time is 554 milliseconds
+Iteration 14: Response time is 550 milliseconds
+Iteration 15: Response time is 582 milliseconds
+Iteration 16: Response time is 557 milliseconds
+Iteration 17: Response time is 572 milliseconds
+Iteration 18: Response time is 559 milliseconds
+Iteration 19: Response time is 570 milliseconds
+Iteration 20: Response time is 570 milliseconds
+Average response time over 20 iterations: 572.5 milliseconds
+Round3:
+Iteration 1: Response time is 555 milliseconds
+Iteration 2: Response time is 580 milliseconds
+Iteration 3: Response time is 584 milliseconds
+Iteration 4: Response time is 549 milliseconds
+Iteration 5: Response time is 567 milliseconds
+Iteration 6: Response time is 551 milliseconds
+Iteration 7: Response time is 552 milliseconds
+Iteration 8: Response time is 553 milliseconds
+Iteration 9: Response time is 604 milliseconds
+Iteration 10: Response time is 578 milliseconds
+Iteration 11: Response time is 550 milliseconds
+Iteration 12: Response time is 554 milliseconds
+Iteration 13: Response time is 585 milliseconds
+Iteration 14: Response time is 590 milliseconds
+Iteration 15: Response time is 570 milliseconds
+Iteration 16: Response time is 550 milliseconds
+Iteration 17: Response time is 558 milliseconds
+Iteration 18: Response time is 591 milliseconds
+Iteration 19: Response time is 592 milliseconds
+Iteration 20: Response time is 561 milliseconds
+Average response time over 20 iterations: 568.7 milliseconds
+Simulating Cold Start for light-game...
+Deploying light-game (Cold Start)...
+Waiting for light-game to be ready...
+--------Testing t1 (Cold Start) for light-game...
+Round1:
+Iteration 1: Latency is 493.473876953125 ms
+Iteration 2: Latency is 511.116943359375 ms
+Iteration 3: Latency is 571.5947265625 ms
+Iteration 4: Latency is 542.686767578125 ms
+Iteration 5: Latency is 568.167236328125 ms
+Iteration 6: Latency is 500.364990234375 ms
+Iteration 7: Latency is 557.391357421875 ms
+Iteration 8: Latency is 520.6806640625 ms
+Iteration 9: Latency is 523.454833984375 ms
+Iteration 10: Latency is 534.442626953125 ms
+Iteration 11: Latency is 527.86083984375 ms
+Iteration 12: Latency is 579.094482421875 ms
+Iteration 13: Latency is 513.853759765625 ms
+Iteration 14: Latency is 1131.49267578125 ms
+Iteration 15: Latency is 540.3740234375 ms
+Iteration 16: Latency is 505.300537109375 ms
+Iteration 17: Latency is 537.1728515625 ms
+Iteration 18: Latency is 609.2080078125 ms
+Iteration 19: Latency is 522.387451171875 ms
+Iteration 20: Latency is 544.58935546875 ms
+Average latency over 20 iterations: 566.7 ms
+Round2:
+Iteration 1: Latency is 534.24072265625 ms
+Iteration 2: Latency is 534.924072265625 ms
+Iteration 3: Latency is 517.432373046875 ms
+Iteration 4: Latency is 512.1318359375 ms
+Iteration 5: Latency is 522.387451171875 ms
+Iteration 6: Latency is 592.9013671875 ms
+Iteration 7: Latency is 563.383056640625 ms
+Iteration 8: Latency is 506.642578125 ms
+Iteration 9: Latency is 535.861328125 ms
+Iteration 10: Latency is 562.390869140625 ms
+Iteration 11: Latency is 561.959716796875 ms
+Iteration 12: Latency is 527.697021484375 ms
+Iteration 13: Latency is 503.314697265625 ms
+Iteration 14: Latency is 567.301025390625 ms
+Iteration 15: Latency is 494.5205078125 ms
+Iteration 16: Latency is 496.946044921875 ms
+Iteration 17: Latency is 504.057373046875 ms
+Iteration 18: Latency is 518.982666015625 ms
+Iteration 19: Latency is 528.701171875 ms
+Iteration 20: Latency is 506.7587890625 ms
+Average latency over 20 iterations: 529.6 ms
+Round3:
+Iteration 1: Latency is 504.22900390625 ms
+Iteration 2: Latency is 535.752197265625 ms
+Iteration 3: Latency is 527.138427734375 ms
+Iteration 4: Latency is 546.978759765625 ms
+Iteration 5: Latency is 569.56640625 ms
+Iteration 6: Latency is 517.1015625 ms
+Iteration 7: Latency is 873.234375 ms
+Iteration 8: Latency is 553.51416015625 ms
+Iteration 9: Latency is 503.378173828125 ms
+Iteration 10: Latency is 495.527587890625 ms
+Iteration 11: Latency is 530.11376953125 ms
+Iteration 12: Latency is 532.226318359375 ms
+Iteration 13: Latency is 550.181884765625 ms
+Iteration 14: Latency is 553.198486328125 ms
+Iteration 15: Latency is 502.424560546875 ms
+Iteration 16: Latency is 579.619384765625 ms
+Iteration 17: Latency is 508.14697265625 ms
+Iteration 18: Latency is 516.886474609375 ms
+Iteration 19: Latency is 538.708984375 ms
+Iteration 20: Latency is 535.56396484375 ms
+Average latency over 20 iterations: 548.6 ms
+--------Testing t2 E2E (Cold Start) for light-game...
+Round1:
+Iteration 1: Response time is 665 milliseconds
+Iteration 2: Response time is 696 milliseconds
+Iteration 3: Response time is 638 milliseconds
+Iteration 4: Response time is 761 milliseconds
+Iteration 5: Response time is 714 milliseconds
+Iteration 6: Response time is 673 milliseconds
+Iteration 7: Response time is 721 milliseconds
+Iteration 8: Response time is 673 milliseconds
+Iteration 9: Response time is 658 milliseconds
+Iteration 10: Response time is 644 milliseconds
+Iteration 11: Response time is 639 milliseconds
+Iteration 12: Response time is 638 milliseconds
+Iteration 13: Response time is 691 milliseconds
+Iteration 14: Response time is 738 milliseconds
+Iteration 15: Response time is 678 milliseconds
+Iteration 16: Response time is 667 milliseconds
+Iteration 17: Response time is 678 milliseconds
+Iteration 18: Response time is 633 milliseconds
+Iteration 19: Response time is 738 milliseconds
+Iteration 20: Response time is 693 milliseconds
+Average response time over 20 iterations: 681.8 milliseconds
+Round2:
+Iteration 1: Response time is 676 milliseconds
+Iteration 2: Response time is 675 milliseconds
+Iteration 3: Response time is 653 milliseconds
+Iteration 4: Response time is 763 milliseconds
+Iteration 5: Response time is 878 milliseconds
+Iteration 6: Response time is 596 milliseconds
+Iteration 7: Response time is 640 milliseconds
+Iteration 8: Response time is 658 milliseconds
+Iteration 9: Response time is 667 milliseconds
+Iteration 10: Response time is 643 milliseconds
+Iteration 11: Response time is 617 milliseconds
+Iteration 12: Response time is 647 milliseconds
+Iteration 13: Response time is 662 milliseconds
+Iteration 14: Response time is 642 milliseconds
+Iteration 15: Response time is 636 milliseconds
+Iteration 16: Response time is 764 milliseconds
+Iteration 17: Response time is 695 milliseconds
+Iteration 18: Response time is 629 milliseconds
+Iteration 19: Response time is 655 milliseconds
+Iteration 20: Response time is 636 milliseconds
+Average response time over 20 iterations: 671.6 milliseconds
+Round3:
+Iteration 1: Response time is 630 milliseconds
+Iteration 2: Response time is 715 milliseconds
+Iteration 3: Response time is 627 milliseconds
+Iteration 4: Response time is 654 milliseconds
+Iteration 5: Response time is 638 milliseconds
+Iteration 6: Response time is 654 milliseconds
+Iteration 7: Response time is 635 milliseconds
+Iteration 8: Response time is 620 milliseconds
+Iteration 9: Response time is 630 milliseconds
+Iteration 10: Response time is 613 milliseconds
+Iteration 11: Response time is 710 milliseconds
+Iteration 12: Response time is 632 milliseconds
+Iteration 13: Response time is 684 milliseconds
+Iteration 14: Response time is 688 milliseconds
+Iteration 15: Response time is 646 milliseconds
+Iteration 16: Response time is 702 milliseconds
+Iteration 17: Response time is 695 milliseconds
+Iteration 18: Response time is 624 milliseconds
+Iteration 19: Response time is 685 milliseconds
+Iteration 20: Response time is 673 milliseconds
+Average response time over 20 iterations: 657.7 milliseconds
+Cleaning up light-game...
+----------------------------------------Next function----------------------------------------
+Processing function: light-cli-application
+Deploying light-cli-application (Hot Start)...
+Waiting for light-cli-application to be ready...
+--------Testing t1 (Hot Start) for light-cli-application...
+Round1:
+Iteration 1: Latency is 629.12158203125 ms
+Iteration 2: Latency is 337.56640625 ms
+Iteration 3: Latency is 342.401611328125 ms
+Iteration 4: Latency is 343.88623046875 ms
+Iteration 5: Latency is 348.971435546875 ms
+Iteration 6: Latency is 386.298828125 ms
+Iteration 7: Latency is 338.5 ms
+Iteration 8: Latency is 334.202880859375 ms
+Iteration 9: Latency is 392.979248046875 ms
+Iteration 10: Latency is 463.07958984375 ms
+Iteration 11: Latency is 387.2060546875 ms
+Iteration 12: Latency is 336.529052734375 ms
+Iteration 13: Latency is 336.18701171875 ms
+Iteration 14: Latency is 356.181884765625 ms
+Iteration 15: Latency is 344.516845703125 ms
+Iteration 16: Latency is 340.984130859375 ms
+Iteration 17: Latency is 339.4814453125 ms
+Iteration 18: Latency is 354.4931640625 ms
+Iteration 19: Latency is 363.630615234375 ms
+Iteration 20: Latency is 355.680908203125 ms
+Average latency over 20 iterations: 371.5 ms
+Round2:
+Iteration 1: Latency is 342.591796875 ms
+Iteration 2: Latency is 342.20751953125 ms
+Iteration 3: Latency is 379.536865234375 ms
+Iteration 4: Latency is 340.728759765625 ms
+Iteration 5: Latency is 329.3671875 ms
+Iteration 6: Latency is 334.951416015625 ms
+Iteration 7: Latency is 371.54541015625 ms
+Iteration 8: Latency is 375.093994140625 ms
+Iteration 9: Latency is 355.395751953125 ms
+Iteration 10: Latency is 331.65869140625 ms
+Iteration 11: Latency is 333.2998046875 ms
+Iteration 12: Latency is 337.5107421875 ms
+Iteration 13: Latency is 326.503662109375 ms
+Iteration 14: Latency is 347.363037109375 ms
+Iteration 15: Latency is 341.831298828125 ms
+Iteration 16: Latency is 358.927490234375 ms
+Iteration 17: Latency is 345.8046875 ms
+Iteration 18: Latency is 331.39599609375 ms
+Iteration 19: Latency is 336.058349609375 ms
+Iteration 20: Latency is 347.7421875 ms
+Average latency over 20 iterations: 345.4 ms
+Round3:
+Iteration 1: Latency is 343.962158203125 ms
+Iteration 2: Latency is 329.42431640625 ms
+Iteration 3: Latency is 327.294921875 ms
+Iteration 4: Latency is 325.662353515625 ms
+Iteration 5: Latency is 356.5771484375 ms
+Iteration 6: Latency is 329.098876953125 ms
+Iteration 7: Latency is 335.302490234375 ms
+Iteration 8: Latency is 352.6103515625 ms
+Iteration 9: Latency is 333.798583984375 ms
+Iteration 10: Latency is 327.069091796875 ms
+Iteration 11: Latency is 330.7626953125 ms
+Iteration 12: Latency is 332.865234375 ms
+Iteration 13: Latency is 327.94775390625 ms
+Iteration 14: Latency is 327.90478515625 ms
+Iteration 15: Latency is 344.859619140625 ms
+Iteration 16: Latency is 328.4755859375 ms
+Iteration 17: Latency is 331.68896484375 ms
+Iteration 18: Latency is 340.095703125 ms
+Iteration 19: Latency is 330.47412109375 ms
+Iteration 20: Latency is 346.357421875 ms
+Average latency over 20 iterations: 335.1 ms
+--------Testing t2 E2E (Hot Start) for light-cli-application...
+Round1:
+Iteration 1: Response time is 436 milliseconds
+Iteration 2: Response time is 434 milliseconds
+Iteration 3: Response time is 469 milliseconds
+Iteration 4: Response time is 440 milliseconds
+Iteration 5: Response time is 433 milliseconds
+Iteration 6: Response time is 437 milliseconds
+Iteration 7: Response time is 425 milliseconds
+Iteration 8: Response time is 425 milliseconds
+Iteration 9: Response time is 442 milliseconds
+Iteration 10: Response time is 444 milliseconds
+Iteration 11: Response time is 471 milliseconds
+Iteration 12: Response time is 449 milliseconds
+Iteration 13: Response time is 429 milliseconds
+Iteration 14: Response time is 438 milliseconds
+Iteration 15: Response time is 428 milliseconds
+Iteration 16: Response time is 426 milliseconds
+Iteration 17: Response time is 430 milliseconds
+Iteration 18: Response time is 528 milliseconds
+Iteration 19: Response time is 444 milliseconds
+Iteration 20: Response time is 432 milliseconds
+Average response time over 20 iterations: 443.0 milliseconds
+Round2:
+Iteration 1: Response time is 450 milliseconds
+Iteration 2: Response time is 463 milliseconds
+Iteration 3: Response time is 423 milliseconds
+Iteration 4: Response time is 463 milliseconds
+Iteration 5: Response time is 432 milliseconds
+Iteration 6: Response time is 449 milliseconds
+Iteration 7: Response time is 443 milliseconds
+Iteration 8: Response time is 425 milliseconds
+Iteration 9: Response time is 436 milliseconds
+Iteration 10: Response time is 418 milliseconds
+Iteration 11: Response time is 441 milliseconds
+Iteration 12: Response time is 426 milliseconds
+Iteration 13: Response time is 430 milliseconds
+Iteration 14: Response time is 456 milliseconds
+Iteration 15: Response time is 462 milliseconds
+Iteration 16: Response time is 419 milliseconds
+Iteration 17: Response time is 481 milliseconds
+Iteration 18: Response time is 431 milliseconds
+Iteration 19: Response time is 451 milliseconds
+Iteration 20: Response time is 430 milliseconds
+Average response time over 20 iterations: 441.4 milliseconds
+Round3:
+Iteration 1: Response time is 470 milliseconds
+Iteration 2: Response time is 434 milliseconds
+Iteration 3: Response time is 429 milliseconds
+Iteration 4: Response time is 437 milliseconds
+Iteration 5: Response time is 434 milliseconds
+Iteration 6: Response time is 425 milliseconds
+Iteration 7: Response time is 432 milliseconds
+Iteration 8: Response time is 454 milliseconds
+Iteration 9: Response time is 438 milliseconds
+Iteration 10: Response time is 467 milliseconds
+Iteration 11: Response time is 450 milliseconds
+Iteration 12: Response time is 435 milliseconds
+Iteration 13: Response time is 433 milliseconds
+Iteration 14: Response time is 425 milliseconds
+Iteration 15: Response time is 428 milliseconds
+Iteration 16: Response time is 424 milliseconds
+Iteration 17: Response time is 442 milliseconds
+Iteration 18: Response time is 473 milliseconds
+Iteration 19: Response time is 440 milliseconds
+Iteration 20: Response time is 440 milliseconds
+Average response time over 20 iterations: 440.5 milliseconds
+Simulating Cold Start for light-cli-application...
+Deploying light-cli-application (Cold Start)...
+Waiting for light-cli-application to be ready...
+--------Testing t1 (Cold Start) for light-cli-application...
+Round1:
+Iteration 1: Latency is 410.587890625 ms
+Iteration 2: Latency is 436.292724609375 ms
+Iteration 3: Latency is 432.81201171875 ms
+Iteration 4: Latency is 929.34033203125 ms
+Iteration 5: Latency is 419.597900390625 ms
+Iteration 6: Latency is 400.052001953125 ms
+Iteration 7: Latency is 402.09912109375 ms
+Iteration 8: Latency is 433.440185546875 ms
+Iteration 9: Latency is 399.5810546875 ms
+Iteration 10: Latency is 396.732666015625 ms
+Iteration 11: Latency is 431.297119140625 ms
+Iteration 12: Latency is 413.674072265625 ms
+Iteration 13: Latency is 408.225341796875 ms
+Iteration 14: Latency is 397.046630859375 ms
+Iteration 15: Latency is 441.849609375 ms
+Iteration 16: Latency is 391.522705078125 ms
+Iteration 17: Latency is 420.53857421875 ms
+Iteration 18: Latency is 478.190185546875 ms
+Iteration 19: Latency is 431.825439453125 ms
+Iteration 20: Latency is 389.092041015625 ms
+Average latency over 20 iterations: 443.1 ms
+Round2:
+Iteration 1: Latency is 485.224365234375 ms
+Iteration 2: Latency is 391.94189453125 ms
+Iteration 3: Latency is 598.85693359375 ms
+Iteration 4: Latency is 471.2119140625 ms
+Iteration 5: Latency is 423.519775390625 ms
+Iteration 6: Latency is 406.691650390625 ms
+Iteration 7: Latency is 400.40380859375 ms
+Iteration 8: Latency is 388.569580078125 ms
+Iteration 9: Latency is 422.32861328125 ms
+Iteration 10: Latency is 433.44580078125 ms
+Iteration 11: Latency is 410.9423828125 ms
+Iteration 12: Latency is 433.772216796875 ms
+Iteration 13: Latency is 446.7705078125 ms
+Iteration 14: Latency is 393.805419921875 ms
+Iteration 15: Latency is 409.738525390625 ms
+Iteration 16: Latency is 408.936279296875 ms
+Iteration 17: Latency is 405.51171875 ms
+Iteration 18: Latency is 422.617431640625 ms
+Iteration 19: Latency is 435.51953125 ms
+Iteration 20: Latency is 434.40673828125 ms
+Average latency over 20 iterations: 431.2 ms
+Round3:
+Iteration 1: Latency is 420.198486328125 ms
+Iteration 2: Latency is 489.42236328125 ms
+Iteration 3: Latency is 455.222900390625 ms
+Iteration 4: Latency is 397.964599609375 ms
+Iteration 5: Latency is 413.37890625 ms
+Iteration 6: Latency is 403.7841796875 ms
+Iteration 7: Latency is 453.617431640625 ms
+Iteration 8: Latency is 380.441162109375 ms
+Iteration 9: Latency is 419.69580078125 ms
+Iteration 10: Latency is 410.393798828125 ms
+Iteration 11: Latency is 414.96630859375 ms
+Iteration 12: Latency is 395.156982421875 ms
+Iteration 13: Latency is 414.157958984375 ms
+Iteration 14: Latency is 466.616943359375 ms
+Iteration 15: Latency is 415.310791015625 ms
+Iteration 16: Latency is 417.822998046875 ms
+Iteration 17: Latency is 444.733154296875 ms
+Iteration 18: Latency is 398.782958984375 ms
+Iteration 19: Latency is 425.557861328125 ms
+Iteration 20: Latency is 391.27392578125 ms
+Average latency over 20 iterations: 421.4 ms
+--------Testing t2 E2E (Cold Start) for light-cli-application...
+Round1:
+Iteration 1: Response time is 530 milliseconds
+Iteration 2: Response time is 583 milliseconds
+Iteration 3: Response time is 525 milliseconds
+Iteration 4: Response time is 500 milliseconds
+Iteration 5: Response time is 521 milliseconds
+Iteration 6: Response time is 526 milliseconds
+Iteration 7: Response time is 521 milliseconds
+Iteration 8: Response time is 588 milliseconds
+Iteration 9: Response time is 527 milliseconds
+Iteration 10: Response time is 580 milliseconds
+Iteration 11: Response time is 596 milliseconds
+Iteration 12: Response time is 512 milliseconds
+Iteration 13: Response time is 539 milliseconds
+Iteration 14: Response time is 551 milliseconds
+Iteration 15: Response time is 508 milliseconds
+Iteration 16: Response time is 591 milliseconds
+Iteration 17: Response time is 554 milliseconds
+Iteration 18: Response time is 519 milliseconds
+Iteration 19: Response time is 507 milliseconds
+Iteration 20: Response time is 534 milliseconds
+Average response time over 20 iterations: 540.6 milliseconds
+Round2:
+Iteration 1: Response time is 545 milliseconds
+Iteration 2: Response time is 520 milliseconds
+Iteration 3: Response time is 540 milliseconds
+Iteration 4: Response time is 587 milliseconds
+Iteration 5: Response time is 503 milliseconds
+Iteration 6: Response time is 584 milliseconds
+Iteration 7: Response time is 499 milliseconds
+Iteration 8: Response time is 543 milliseconds
+Iteration 9: Response time is 601 milliseconds
+Iteration 10: Response time is 520 milliseconds
+Iteration 11: Response time is 534 milliseconds
+Iteration 12: Response time is 546 milliseconds
+Iteration 13: Response time is 699 milliseconds
+Iteration 14: Response time is 515 milliseconds
+Iteration 15: Response time is 530 milliseconds
+Iteration 16: Response time is 522 milliseconds
+Iteration 17: Response time is 508 milliseconds
+Iteration 18: Response time is 561 milliseconds
+Iteration 19: Response time is 566 milliseconds
+Iteration 20: Response time is 496 milliseconds
+Average response time over 20 iterations: 545.9 milliseconds
+Round3:
+Iteration 1: Response time is 540 milliseconds
+Iteration 2: Response time is 573 milliseconds
+Iteration 3: Response time is 521 milliseconds
+Iteration 4: Response time is 556 milliseconds
+Iteration 5: Response time is 547 milliseconds
+Iteration 6: Response time is 554 milliseconds
+Iteration 7: Response time is 544 milliseconds
+Iteration 8: Response time is 584 milliseconds
+Iteration 9: Response time is 560 milliseconds
+Iteration 10: Response time is 561 milliseconds
+Iteration 11: Response time is 514 milliseconds
+Iteration 12: Response time is 575 milliseconds
+Iteration 13: Response time is 484 milliseconds
+Iteration 14: Response time is 562 milliseconds
+Iteration 15: Response time is 560 milliseconds
+Iteration 16: Response time is 527 milliseconds
+Iteration 17: Response time is 533 milliseconds
+Iteration 18: Response time is 525 milliseconds
+Iteration 19: Response time is 513 milliseconds
+Iteration 20: Response time is 530 milliseconds
+Average response time over 20 iterations: 543.1 milliseconds
+Cleaning up light-cli-application...
+----------------------------------------Next function----------------------------------------

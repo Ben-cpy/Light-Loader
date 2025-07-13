@@ -1,0 +1,17 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  midd-thumbnailer:
+    lang: python3-debian
+    handler: ./midd-thumbnailer
+    image: localhost:5001/midd-thumbnailer:latest
+    constraints:
+    - "performance=high"
+    limits:
+      cpu: 1000m
+      memory: 500Mi
+configuration:
+  copy:
+    - ./midd-thumbnailer/cat.jpg

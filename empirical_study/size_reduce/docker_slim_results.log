@@ -1,0 +1,179 @@
+Docker-slim optimization results - Wed Feb 26 09:55:59 CST 2025
+----------------------------------------
+Processing app3...
+Original size: 1.85GB
+Running docker-slim on localhost:5000/app3...
+Optimized size: 128MB
+Reduction ratio: 14.80x
+----------------------------------------
+Removed slimmed image localhost:5000/app3-slim
+Processing app6...
+Original size: 1.85GB
+Running docker-slim on localhost:5000/app6...
+Optimized size: 128MB
+Reduction ratio: 14.80x
+----------------------------------------
+Removed slimmed image localhost:5000/app6-slim
+Processing app13...
+Original size: 1.74GB
+Running docker-slim on localhost:5000/app13...
+Optimized size: 99.5MB
+Reduction ratio: 17.90x
+----------------------------------------
+Removed slimmed image localhost:5000/app13-slim
+Processing tinydb...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/tinydb...
+Optimized size: 47.7MB
+Reduction ratio: 31.34x
+----------------------------------------
+Removed slimmed image localhost:5000/tinydb-slim
+Processing marshal...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/marshal...
+Optimized size: 44.9MB
+Reduction ratio: 33.29x
+----------------------------------------
+Removed slimmed image localhost:5000/marshal-slim
+Processing graph...
+Original size: 1.49GB
+Running docker-slim on localhost:5000/graph...
+Optimized size: 92.2MB
+Reduction ratio: 16.54x
+----------------------------------------
+Removed slimmed image localhost:5000/graph-slim
+Processing game...
+Original size: 1.58GB
+Running docker-slim on localhost:5000/game...
+Optimized size: 118MB
+Reduction ratio: 13.71x
+----------------------------------------
+Removed slimmed image localhost:5000/game-slim
+Processing auth...
+Original size: 1.54GB
+Running docker-slim on localhost:5000/auth...
+Optimized size: 
+Reduction ratio: x
+----------------------------------------
+Removed slimmed image localhost:5000/auth-slim
+Processing formatter...
+Original size: 1.49GB
+Running docker-slim on localhost:5000/formatter...
+Optimized size: 55.5MB
+Reduction ratio: 27.49x
+----------------------------------------
+Removed slimmed image localhost:5000/formatter-slim
+Processing crypto...
+Original size: 1.53GB
+Running docker-slim on localhost:5000/crypto...
+Optimized size: 
+Reduction ratio: x
+----------------------------------------
+Removed slimmed image localhost:5000/crypto-slim
+Processing psutil...
+Original size: 1.47GB
+Running docker-slim on localhost:5000/psutil...
+Optimized size: 47.4MB
+Reduction ratio: 31.75x
+----------------------------------------
+Removed slimmed image localhost:5000/psutil-slim
+Processing cli-application...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/cli-application...
+Optimized size: 48.6MB
+Reduction ratio: 30.76x
+----------------------------------------
+Removed slimmed image localhost:5000/cli-application-slim
+Processing type-check...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/type-check...
+Optimized size: 41.9MB
+Reduction ratio: 35.68x
+----------------------------------------
+Removed slimmed image localhost:5000/type-check-slim
+Processing tinydb...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/tinydb...
+Optimized size: 47.7MB
+Reduction ratio: 31.34x
+----------------------------------------
+Removed slimmed image localhost:5000/tinydb-slim
+Docker-slim optimization results - Wed Feb 26 15:29:27 CST 2025
+----------------------------------------
+Processing tinydb...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/tinydb...
+Optimized size: 47.7MB
+Reduction ratio: 31.34x
+----------------------------------------
+Removed slimmed image localhost:5000/tinydb-slim
+Processing formatter...
+Original size: 1.49GB
+Running docker-slim on localhost:5000/formatter...
+Optimized size: 55.5MB
+Reduction ratio: 27.49x
+----------------------------------------
+Removed slimmed image localhost:5000/formatter-slim
+Processing crypto...
+Original size: 1.53GB
+Running docker-slim on localhost:5000/crypto...
+Optimized size: 
+Reduction ratio: x
+----------------------------------------
+Removed slimmed image localhost:5000/crypto-slim
+Processing psutil...
+Original size: 1.47GB
+Running docker-slim on localhost:5000/psutil...
+Optimized size: 47.4MB
+Reduction ratio: 31.75x
+----------------------------------------
+Removed slimmed image localhost:5000/psutil-slim
+Processing pdfminer...
+Original size: 1.57GB
+Running docker-slim on localhost:5000/pdfminer...
+Optimized size: 
+Reduction ratio: x
+----------------------------------------
+Removed slimmed image localhost:5000/pdfminer-slim
+Processing bidict...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/bidict...
+Optimized size: 47.6MB
+Reduction ratio: 31.40x
+----------------------------------------
+Removed slimmed image localhost:5000/bidict-slim
+Processing formatter...
+Original size: 1.49GB
+Running docker-slim on localhost:5000/formatter...
+Optimized size: 55.5MB
+Reduction ratio: 27.49x
+----------------------------------------
+Removed slimmed image localhost:5000/formatter-slim
+Processing cli-application...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/cli-application...
+Optimized size: 48.6MB
+Reduction ratio: 30.76x
+----------------------------------------
+Removed slimmed image localhost:5000/cli-application-slim
+Processing crypto...
+Original size: 1.53GB
+Running docker-slim on localhost:5000/crypto...
+Optimized size: 
+Reduction ratio: x
+----------------------------------------
+Removed slimmed image localhost:5000/crypto-slim
+Processing type-check...
+Original size: 1.46GB
+Running docker-slim on localhost:5000/type-check...
+Optimized size: 41.9MB
+Reduction ratio: 35.68x
+----------------------------------------
+Removed slimmed image localhost:5000/type-check-slim
+Processing psutil...
+Original size: 1.47GB
+Running docker-slim on localhost:5000/psutil...
+Optimized size: 47.4MB
+Reduction ratio: 31.75x
+----------------------------------------
+Removed slimmed image localhost:5000/psutil-slim

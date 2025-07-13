@@ -1,0 +1,12 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://133.133.135.8:31112
+functions:
+  app8-non:
+    lang: python3-debian
+    handler: ./app8-non
+    image: localhost:5000/app8-non:latest
+    constraints:
+    - "performance=high"
+    imagePullPolicy: Always

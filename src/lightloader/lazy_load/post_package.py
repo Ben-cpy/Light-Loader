@@ -281,7 +281,7 @@ class ImportTransformer(ast.NodeTransformer):
                         # break #this means only append once
             for node in required_imports:
                 new_body.append(node)
-                # self.imports.remove(node) #没有必要移除,之后还可能会用到
+                # self.imports.remove(node) # no need to remove, might be used later
             new_body.append(stmt)
         return new_body
 

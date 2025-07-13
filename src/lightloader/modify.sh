@@ -32,7 +32,7 @@ if [ -f "$dockerfilePath" ]; then
         exit 1
     fi
     
-# 插入内容
+# insert content
 sed -i '53i\
 # copy LightLoader----------------------\
 COPY LightLoader         LightLoader\

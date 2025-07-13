@@ -88,7 +88,7 @@ def main():
             used_file_set.add(filename)
 
     # Determine redundant files and modules
-    redundant_files = set(filename_to_new_modules.keys()) - used_file_set # 114 稍微多一点,由于trace的存在
+    redundant_files = set(filename_to_new_modules.keys()) - used_file_set # 114 slightly more due to trace existence
     print('The size of redundant_files:', len(redundant_files))
     redundant_modules = set()
     for file in redundant_files:

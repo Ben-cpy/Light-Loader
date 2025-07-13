@@ -92,7 +92,7 @@ def pre_class_transform(node: astroid.ClassDef):
     body = []
     newnode = node
     parent_func = [ node.name ]
-    # module 上没有parent
+    # module has no parent
     while newnode.parent:
         if newnode.parent.__class__ == astroid.FunctionDef or newnode.parent.__class__ == astroid.ClassDef:
             parent_func.append(newnode.parent.name)
@@ -245,7 +245,7 @@ def rewrite_node(node: astroid.FunctionDef, unused_file_name, func_loc_in_file):
     for item in function_content[func_loc_in_file].body:
         node_tmp = parse(ast.unparse(item))
     # for i in node.body: 
-    #     node_tmp = parse(i.as_string()) # 会触发别的处理函数,收集相关信息
+    #     node_tmp = parse(i.as_string()) # will trigger other handlers, collect related info
     
     """find useful variables"""
     new_add = [] # 需要被保存的参数列表
@@ -468,11 +468,11 @@ def get_all_function_nodes(tree):
     class FunctionVisitor(ast.NodeVisitor):
         def visit_FunctionDef(self, node):
             function_nodes.append(node)
-            self.generic_visit(node)  # 继续遍历子节点
+            self.generic_visit(node)  # continue traversing child nodes
 
         def visit_AsyncFunctionDef(self, node):
             function_nodes.append(node)
-            self.generic_visit(node)  # 继续遍历子节点
+            self.generic_visit(node)  # continue traversing child nodes
 
     visitor = FunctionVisitor()
     visitor.visit(tree)
@@ -541,7 +541,7 @@ def rewrite(dir_name, package_path, used_func, gzip, built_list):
     list_name=content.split("\n")
     if len(list_name)>0:
         for i in list_name :
-            flag[i]=1   # 表示这个def/class 出现过,
+            flag[i]=1   # indicates this def/class has appeared
     T=1
 
     """start processing"""

@@ -23,7 +23,7 @@ def find_unused_imports(file_content):
             self.generic_visit(node)
 
         def visit_Attribute(self, node):
-            # 递归地访问属性链
+            # recursively visit attribute chain
             self.visit(node.value)
 
     import_finder = ImportFinder()

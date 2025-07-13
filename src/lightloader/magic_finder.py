@@ -14,17 +14,17 @@ handler_entry_path = "/home/app/handler_entry.txt" # to be create,
 
 """
 node reference:
-node.name                  # 函数名称
-node.args                  # 函数参数（arguments节点）
-node.body                  # 函数体中的语句列表
-node.decorator_list        # 函数装饰器列表
-node.returns               # 函数返回类型注释（如果有）
-node.lineno                # 函数定义的起始行号
-node.col_offset            # 函数定义的起始列偏移量
-node.parent                # 包含该函数定义的父节点
-node.doc                   # 函数的文档字符串
-node.async                 # 布尔值，表示是否为异步函数
-node.type_comment          # 函数的类型注释（如果有）
+node.name                  # function name
+node.args                  # function arguments (arguments node)
+node.body                  # statement list in function body
+node.decorator_list        # function decorator list
+node.returns               # function return type annotation (if any)
+node.lineno                # starting line number of function definition
+node.col_offset            # starting column offset of function definition
+node.parent                # parent node containing this function definition
+node.doc                   # function docstring
+node.async                 # boolean indicating if it's an async function
+node.type_comment          # function type annotation (if any)
 """
 def function_transform(node: astroid.FunctionDef ):
     newnode = node
@@ -42,7 +42,7 @@ def function_transform(node: astroid.FunctionDef ):
     parent_func.append(str_name[0]) # get app name without suffix
 
     """get the path of the file"""
-    while len(road)>0: #  完整路径添加到XX.xx.xx格式
+    while len(road)>0: # add complete path to XX.xx.xx format
         x=road.pop()
         if x==file_name:
             break
@@ -52,7 +52,7 @@ def function_transform(node: astroid.FunctionDef ):
     parent_func.reverse()
     magic_func = ["__getitem__", "__setitem__", "__delitem__","__len__", "__iter__"]
 
-    #  magic func, 添加进去
+    # magic func, add it
     if node.name in magic_func:
         if not ".".join(parent_func) in magic_save:
             magic_save.append(".".join(parent_func))
@@ -160,7 +160,7 @@ def find_by_used(dir_name, package_path, used_func_path, magic_output_path):
     global file_name,handle_file # handle_file is change, and it is a global var
     file_name = dir_name
     astroid.MANAGER.register_transform( astroid.nodes.FunctionDef, function_transform_by_used )
-    # 查看这些.py文件是否在我们的used_func中
+    # check if these .py files are in our used_func
     for root, dirs, files in os.walk(package_path):
         for name in files:
             if name.endswith('.py'):

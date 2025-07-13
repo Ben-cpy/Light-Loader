@@ -1,5 +1,5 @@
 """
-计算没有使用模块占据总体的时延.
+Calculate the latency occupied by unused modules in the total.
 """
 import importlib
 import time
@@ -10,12 +10,12 @@ import sysconfig
 import builtins
 from functools import wraps
 
-# 全局字典，用于存储每个模块的加载时间（毫秒）
+# global dictionary for storing load time of each module (milliseconds)
 module_load_times = {}
 
 def track_imports():
     """
-    设置一个导入钩子，用于跟踪每个模块的加载时间。
+    set a hook to trace load time
     """
     original_import = __import__
 
@@ -23,7 +23,7 @@ def track_imports():
         start_time = time.time()
         module = original_import(name, globals, locals, fromlist, level)
         end_time = time.time()
-        load_time = (end_time - start_time) * 1000  # 转换为毫秒
+        load_time = (end_time - start_time) * 1000  # convert to milliseconds
         module_load_times[name] = load_time
         return module
 
@@ -33,13 +33,13 @@ def track_imports():
 
 def restore_imports():
     """
-    恢复原始的导入函数。
+    Restore the original import function.
     """
     if hasattr(sys, 'modules_import'):
         builtins.__import__ = sys.modules_import
 
 def main():
-    # 设置导入跟踪
+    # setup import tracking
     track_imports()
 
     std_lib_path = sysconfig.get_paths()["stdlib"]
@@ -60,7 +60,7 @@ def main():
     init_module_load_time  = init_ed - init_st
     after_import_modules = set(sys.modules.keys())
     print(f"Modules loaded after import (contains duplicated): {len(after_import_modules)}")
-    new_modules = after_import_modules - initial_modules # 包含重复项
+    new_modules = after_import_modules - initial_modules # contains duplicates
     
     filename_to_new_modules = {}
     for name in new_modules:
@@ -72,7 +72,7 @@ def main():
             filename = filename.replace('\\', '/')
             if filename.endswith(('.pyc', '.pyo')):
                 filename = filename[:-1]
-            filename_to_new_modules.setdefault(filename, set()).add(name) # filename 是唯一的
+            filename_to_new_modules.setdefault(filename, set()).add(name) # filename is unique
     
     print(f"Unique files for new modules: {len(filename_to_new_modules)}")
     
@@ -121,7 +121,7 @@ def main():
     redundant_files = set(filename_to_new_modules.keys()) - used_file_set
     print('The number of unused module files:', len(redundant_files))
     
-    # 计算冗余模块占比
+    # calculate redundant module ratio
     print("Rate: unused module/new imported module = {:.2f}%".format(
         len(redundant_files) / len(filename_to_new_modules) * 100 if filename_to_new_modules else 0
     ))
@@ -132,7 +132,7 @@ def main():
         modules = filename_to_new_modules.get(file, set())
         redundant_modules.update(modules)
     
-    # 计算冗余模块的总加载时间和对应模块名称
+    # calculate total load time and corresponding module names for redundant modules
     redundant_load_time = 0.0
     redundant_modules_names = []  # 用于存储冗余模块的名称
     for mod in redundant_modules:
@@ -153,7 +153,7 @@ def main():
         total_load_time += load_time
         new_modules_names.append(mod)
 
-    # 将所有新导入的模块名写入文件
+    # write all newly imported module names to file
     with open("new_modules.txt", "w") as f:
         for mod in new_modules_names:
             f.write(f"{mod}\n")
@@ -168,7 +168,7 @@ def main():
     print(f"Total new modules load time: {total_load_time:.2f}ms")
     print(f"Redundant modules load time ratio: {redundant_ratio:.2f}%")
     
-    # 恢复原始的导入函数
+    # restore original import function
     restore_imports()
 
 if __name__ == "__main__":

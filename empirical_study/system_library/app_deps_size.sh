@@ -1,34 +1,34 @@
 #!/bin/bash
-# 文件名: app_deps_size.sh
+# Filename: app_deps_size.sh
 
-# 输入文件（来自strace的输出）
-INPUT_FILE="./strace_so_list.txt"  # 替换为你的实际文件路径
+# Input file (from strace output)
+INPUT_FILE="./strace_so_list.txt"  # Replace with your actual file path
 
-# 生成依赖库报告
-echo "===== 应用直接依赖库分析 =====" > deps_report.txt
+# Generate dependency library report
+echo "===== Application Direct Dependency Library Analysis =====" > deps_report.txt
 
-# 步骤1：筛选系统库并去重（排除Python本地模块）
+# Step 1: Filter system libraries and deduplicate (exclude Python local modules)
 grep -E '^(/lib|/usr/lib|/lib64|/usr/lib64)' "$INPUT_FILE" | sort -u > system_deps.txt
 
-# 步骤2：解析符号链接获取真实路径
-declare -A real_paths  # 使用关联数组去重
+# Step 2: Parse symbolic links to get real paths
+declare -A real_paths  # Use associative array for deduplication
 while IFS= read -r line
 do
-    # 跳过不存在的文件（如ld.so.cache）
+    # Skip non-existent files (like ld.so.cache)
     [ -e "$line" ] || continue
-    
-    # 解析真实路径
+
+    # Parse real path
     real_path=$(readlink -f "$line")
-    
-    # 去重处理
+
+    # Deduplication processing
     if [ -n "$real_path" ] && [ ! -d "$real_path" ]; then
         real_paths["$real_path"]=1
     fi
 done < system_deps.txt
 
-# 步骤3：计算总大小并生成明细
+# Step 3: Calculate total size and generate details
 total=0
-echo "依赖库明细：" >> deps_report.txt
+echo "Dependency library details:" >> deps_report.txt
 printf "%-60s %s\n" "Library Path" "Size (Bytes)" >> deps_report.txt
 printf "%-60s %s\n" "------------" "------------" >> deps_report.txt
 
@@ -40,12 +40,12 @@ for path in "${!real_paths[@]}"; do
     fi
 done
 
-# 生成汇总信息
+# Generate summary information
 echo "" >> deps_report.txt
-echo "汇总统计：" >> deps_report.txt
-echo "依赖库总数: ${#real_paths[@]}" >> deps_report.txt
-echo "总大小 (Bytes): $total" >> deps_report.txt
-echo "换算大小: $(echo "$total" | awk '{printf "%.2f MB\n", $1/1024/1024}')" >> deps_report.txt
+echo "Summary statistics:" >> deps_report.txt
+echo "Total dependency libraries: ${#real_paths[@]}" >> deps_report.txt
+echo "Total size (Bytes): $total" >> deps_report.txt
+echo "Converted size: $(echo "$total" | awk '{printf "%.2f MB\n", $1/1024/1024}')" >> deps_report.txt
 
-# 输出报告
+# Output report
 cat deps_report.txt

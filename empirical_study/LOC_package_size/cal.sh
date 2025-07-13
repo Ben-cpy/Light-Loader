@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# 定义要排除的目录名称
+# Define directory names to exclude
 EXCLUDE_DIRS=("info" "_yaml" "__pycache__")
 
-# 初始化输出表头
+# Initialize output header
 printf "%-20s %-10s %-10s\n" "Directory" "LOC(k)" "Size"
 
-# 遍历当前目录下的所有子目录
+# Iterate through all subdirectories in current directory
 for dir in */; do
-    # 去掉末尾的斜杠
+    # Remove trailing slash
     dir=${dir%/}
 
-    # 检查当前目录是否在排除列表中
+    # Check if current directory is in exclude list
     skip=false
     for excl in "${EXCLUDE_DIRS[@]}"; do
         if [[ "$dir" == "$excl" ]]; then
@@ -23,31 +23,31 @@ for dir in */; do
         continue
     fi
 
-    # 进入子目录
+    # Enter subdirectory
     pushd "$dir" > /dev/null
 
-    # 运行 cloc 并提取 'SUM' 行的 'code' 数量
+    # Run cloc and extract 'code' count from 'SUM' line
     cloc_output=$(cloc .)
-    # 使用 awk 提取 'SUM' 行中的第四列（code）
+    # Use awk to extract fourth column (code) from 'SUM' line
     code_lines=$(echo "$cloc_output" | awk '/SUM:/ {print $4}')
 
-    # 检查是否成功提取到 code_lines
+    # Check if code_lines was successfully extracted
     if [[ -z "$code_lines" ]]; then
         code_k="N/A"
     else
-        # 将 code_lines 转换为 k，保留一位小数
+        # Convert code_lines to k, keeping one decimal place
         code_k=$(awk "BEGIN {printf \"%.1fk\", $code_lines/1000}")
     fi
 
-    # 删除 __pycache__ 目录
+    # Remove __pycache__ directories
     find . -type d -name "__pycache__" -exec rm -rf {} +
 
-    # 获取目录大小
+    # Get directory size
     dir_size=$(du -h . | tail -n 1 | awk '{print $1}')
 
-    # 输出结果
+    # Output results
     printf "%-20s %-10s %-10s\n" "$dir" "$code_k" "$dir_size"
 
-    # 返回上一层目录
+    # Return to parent directory
     popd > /dev/null
 done

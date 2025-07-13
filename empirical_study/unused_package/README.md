@@ -1,5 +1,5 @@
-放在openfaas-la 目录下, 指定函数运行即可
-统计package level module 初始化情况
+Place in openfaas-la directory, specify function to run
+Statistics on package level module initialization
 
 
 当然，非常乐意为您详细讲解这个脚本的逻辑、设计思路以及相关工具的对比。

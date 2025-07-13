@@ -57,7 +57,7 @@ def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=Non
         # Remove processed directories from dirs
         dirs[:] = [d for d in dirs if d not in dirs_to_remove]
 
-        # 处理文件
+        # Process files
         for file in files:
             file_path = os.path.join(root, file)
             try:
@@ -70,7 +70,7 @@ def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=Non
             except OSError as e:
                 print(f"Cannot access file: {file_path}. Error: {e}")
 
-    # 计算相关大小占比
+    # Calculate relevant size percentage
     if total_size == 0:
         percentage = 0
     else:

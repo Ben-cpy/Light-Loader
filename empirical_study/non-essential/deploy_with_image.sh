@@ -12,55 +12,55 @@ get_time_milliseconds() {
 }
 
 for ((test=1;test<=${TOTAL_TESTS};test++)); do
-    echo "=== 开始第 ${test} 次测试 ==="
-    
-    echo "开始部署函数并测量时延..."
+    echo "=== Starting test ${test} ==="
+
+    echo "Starting function deployment and measuring latency..."
     START_DEPLOY=$(get_time_milliseconds)
     faas-cli deploy -f ${FUNCTION_NAME}.yml
 
-    echo "等待 Pod 创建..."
+    echo "Waiting for Pod creation..."
     RETRIES=30
     SLEEP_INTERVAL=2
     POD_NAME=""
     for ((i=1;i<=RETRIES;i++)); do
         POD_NAME=$(kubectl get pods -n ${NAMESPACE} -l "faas_function=${FUNCTION_NAME}" -o jsonpath="{.items[0].metadata.name}" 2>/dev/null || true)
         if [[ -n "$POD_NAME" ]]; then
-            echo "找到 Pod: $POD_NAME"
+            echo "Found Pod: $POD_NAME"
             break
         fi
-        echo "等待 Pod 创建中... (${i}/${RETRIES})"
+        echo "Waiting for Pod creation... (${i}/${RETRIES})"
         sleep ${SLEEP_INTERVAL}
     done
 
     if [[ -z "$POD_NAME" ]]; then
-        echo "Error: 在等待 $((RETRIES * SLEEP_INTERVAL)) 秒后仍未找到 Pod。"
+        echo "Error: Pod not found after waiting $((RETRIES * SLEEP_INTERVAL)) seconds."
         exit 1
     fi
 
-    echo "等待 Pod 就绪..."
+    echo "Waiting for Pod to be ready..."
     kubectl wait --for=condition=ready pod/"${POD_NAME}" -n "${NAMESPACE}" --timeout=300s
     END_DEPLOY=$(get_time_milliseconds)
     DEPLOY_DURATION=$(echo "scale=3; ($END_DEPLOY - $START_DEPLOY)/1000" | bc)
-    echo "函数部署完成，耗时 ${DEPLOY_DURATION} 秒"
-    
-    # 累加部署时间
+    echo "Function deployment completed, took ${DEPLOY_DURATION} seconds"
+
+    # Accumulate deployment time
     TOTAL_DEPLOY_TIME=$(echo "scale=3; ${TOTAL_DEPLOY_TIME} + ${DEPLOY_DURATION}" | bc)
-    
-    # 删除函数
-    echo "删除函数..."
+
+    # Remove function
+    echo "Removing function..."
     faas-cli remove ${FUNCTION_NAME}
-    
-    # 如果不是最后一次测试，等待一段时间再进行下一次测试
+
+    # If not the last test, wait before next test
     if [ $test -lt $TOTAL_TESTS ]; then
-        echo "等待 20 秒后进行下一次测试..."
+        echo "Waiting 60 seconds before next test..."
         sleep 60
     fi
 done
 
-# 计算平均部署时间
+# Calculate average deployment time
 AVERAGE_DEPLOY_TIME=$(echo "scale=3; ${TOTAL_DEPLOY_TIME}/${TOTAL_TESTS}" | bc)
 
 echo ""
-echo "=== 测试结果汇总 ==="
-echo "总测试次数: ${TOTAL_TESTS}"
-echo "平均部署时延: ${AVERAGE_DEPLOY_TIME} 秒"
+echo "=== Test Results Summary ==="
+echo "Total test runs: ${TOTAL_TESTS}"
+echo "Average deployment latency: ${AVERAGE_DEPLOY_TIME} seconds"

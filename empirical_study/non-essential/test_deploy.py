@@ -1,42 +1,42 @@
 #!/bin/bash
 
-# 配置部分
-FUNCTION_NAME="your_function_name"  # 替换为你的函数名称
-YAML_FILE="${FUNCTION_NAME}.yml"      # 部署文件路径
-TIMEOUT=300                         # 超时时间，单位：秒
-INTERVAL=2                          # 每次检查的间隔时间，单位：秒
+# Configuration section
+FUNCTION_NAME="your_function_name"  # Replace with your function name
+YAML_FILE="${FUNCTION_NAME}.yml"      # Deployment file path
+TIMEOUT=300                         # Timeout in seconds
+INTERVAL=2                          # Check interval in seconds
 
-# 记录开始时间
+# Record start time
 start_time=$(date +%s)
-echo "开始部署函数 ${FUNCTION_NAME}，时间戳：${start_time}"
+echo "Starting deployment of function ${FUNCTION_NAME}, timestamp: ${start_time}"
 
-# 部署函数
-echo "执行: faas-cli deploy -f ${YAML_FILE}"
+# Deploy function
+echo "Executing: faas-cli deploy -f ${YAML_FILE}"
 faas-cli deploy -f "${YAML_FILE}"
 
-# 循环等待对应 pod 出现并进入就绪状态
+# Loop waiting for corresponding pod to appear and become ready
 elapsed=0
 pod_ready=false
 
-echo "开始轮询检查 pod 状态..."
+echo "Starting polling to check pod status..."
 while [ ${elapsed} -lt ${TIMEOUT} ]; do
-    # 根据 OpenFaaS 部署时通常会给 pod 打上标签 faas_function=<函数名称>
+    # OpenFaaS deployment usually labels pods with faas_function=<function_name>
     pod_name=$(kubectl get pods -l "faas_function=${FUNCTION_NAME}" -o jsonpath="{.items[0].metadata.name}" 2>/dev/null)
-    
+
     if [ -n "$pod_name" ]; then
-        # 查询 pod 的 Ready 条件
+        # Query pod's Ready condition
         ready_status=$(kubectl get pod "${pod_name}" -o jsonpath="{.status.conditions[?(@.type=='Ready')].status}" 2>/dev/null)
         if [ "$ready_status" == "True" ]; then
-            echo "Pod ${pod_name} 已经就绪。"
+            echo "Pod ${pod_name} is ready."
             pod_ready=true
             break
         else
-            echo "Pod ${pod_name} 状态未就绪，当前状态：${ready_status}"
+            echo "Pod ${pod_name} is not ready, current status: ${ready_status}"
         fi
     else
-        echo "还未获取到 pod，等待中..."
+        echo "Pod not found yet, waiting..."
     fi
-    
+
     sleep ${INTERVAL}
     elapsed=$(( $(date +%s) - ${start_time} ))
 done
@@ -44,7 +44,7 @@ done
 end_time=$(date +%s)
 if [ "${pod_ready}" = true ]; then
     total_time=$(( end_time - start_time ))
-    echo "函数 pod 就绪所花费的时间：${total_time} 秒。"
+    echo "Time taken for function pod to be ready: ${total_time} seconds."
 else
-    echo "超时！在 ${TIMEOUT} 秒内未检测到函数 pod 就绪。"
+    echo "Timeout! Function pod not ready within ${TIMEOUT} seconds."
 fi

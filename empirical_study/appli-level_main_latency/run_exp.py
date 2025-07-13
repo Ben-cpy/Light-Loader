@@ -22,8 +22,8 @@ def get_pod_name(function_name):
 
 def get_app_init_latency_from_logs(pod_name):
     """Extract application-level latency from pod logs"""
-    # 等待日志出现
-    time.sleep(2) 
+    # Wait for logs to appear
+    time.sleep(2)
     cmd = f"kubectl logs -n openfaas-fn {pod_name}"
     try:
         logs = subprocess.check_output(cmd, shell=True, text=True, timeout=10)
@@ -63,7 +63,7 @@ def run_test():
                     end_time = time.perf_counter()
 
                     total_latency_ms = (end_time - start_time) * 1000
-                    
+
                     if response.status_code != 200:
                         print(f"  > Error: Received status code {response.status_code}")
                         print(f"  > Response: {response.text}")

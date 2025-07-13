@@ -1,4 +1,4 @@
-# 选择6个文件, 说明他们冗余文件的大小.
+# Select 6 files to show the size of their redundant files.
 import os
 import shutil
 

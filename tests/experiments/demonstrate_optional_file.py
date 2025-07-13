@@ -1,5 +1,5 @@
 """
-统计所有无关文件占整个项目的大小.
+Calculate the size of all irrelevant files in the entire project.
 """
 
 
@@ -7,7 +7,7 @@ import os
 
 def get_directory_size(directory):
     """
-    递归计算目录的总大小（包括所有子目录和文件）。
+    Recursively calculate the total size of a directory (including all subdirectories and files).
     """
     total = 0
     for root, dirs, files in os.walk(directory):
@@ -15,10 +15,10 @@ def get_directory_size(directory):
             fp = os.path.join(root, f)
             try:
                 if os.path.islink(fp):
-                    continue  # 跳过符号链接
+                    continue  # skip symbolic links
                 total += os.path.getsize(fp)
             except OSError as e:
-                print(f"无法访问文件: {fp}. 错误: {e}")
+                print(f"Cannot access file: {fp}. Error: {e}")
     return total
 
 def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=None):
@@ -33,7 +33,7 @@ def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=Non
     relevant_size = 0
 
     for root, dirs, files in os.walk(directory):
-        # 检查当前目录是否在忽略目录列表中
+        # check if current directory is in the ignore directory list
         current_dir = os.path.basename(root)
         dir_matched = False
         if current_dir in ignor_dir or any(spe in current_dir for spe in ignor_spe_dir):
@@ -41,7 +41,7 @@ def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=Non
             relevant_size += dir_size
             total_size += dir_size
             dir_matched = True
-            # 不再遍历这个目录下的子目录和文件
+            # no longer traverse subdirectories and files under this directory
             dirs[:] = []
             continue
 
@@ -54,7 +54,7 @@ def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=Non
                 relevant_size += dir_size
                 total_size += dir_size
                 dirs_to_remove.append(d)
-        # 从 dirs 中移除已处理的目录
+        # remove processed directories from dirs
         dirs[:] = [d for d in dirs if d not in dirs_to_remove]
 
         # 处理文件
@@ -62,13 +62,13 @@ def calculate_size(directory, ignor_dir=None, ignor_spe_dir=None, ignor_file=Non
             file_path = os.path.join(root, file)
             try:
                 if os.path.islink(file_path):
-                    continue  # 跳过符号链接
+                    continue  # skip symbolic links
                 file_size = os.path.getsize(file_path)
                 total_size += file_size
                 if any(file.endswith(ext) for ext in ignor_file):
                     relevant_size += file_size
             except OSError as e:
-                print(f"无法访问文件: {file_path}. 错误: {e}")
+                print(f"Cannot access file: {file_path}. Error: {e}")
 
     # 计算相关大小占比
     if total_size == 0:
@@ -89,13 +89,13 @@ def main(directory):
         ignor_spe_dir=ignor_spe_dir,
         ignor_file=ignor_file
     )
-    print(f"目录总大小: {total_size / (1024 * 1024):.2f} MB")
-    print(f"匹配的文件和目录总大小: {relevant_size / (1024 * 1024):.2f} MB")
-    print(f"匹配项占目录总大小的比例: {percentage:.2f}%")
+    print(f"Total directory size: {total_size / (1024 * 1024):.2f} MB")
+    print(f"Total size of matched files and directories: {relevant_size / (1024 * 1024):.2f} MB")
+    print(f"Percentage of matches in total directory size: {percentage:.2f}%")
 
 if __name__ == "__main__":
-    target_directory = input("请输入目录路径: ").strip()
+    target_directory = input("Please enter directory path: ").strip()
     if os.path.isdir(target_directory):
         main(target_directory)
     else:
-        print("请输入一个有效的目录路径。")
+        print("Please enter a valid directory path.")

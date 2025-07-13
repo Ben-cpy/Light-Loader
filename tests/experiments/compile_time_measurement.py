@@ -14,7 +14,7 @@ def measure_compile_time(filepath):
         return 0
 
 def main():
-    base_dir = '/home/app/python'  # 根据实际情况修改为你的项目根目录
+    base_dir = '/home/app/python'  # modify to your project root directory according to actual situation
     num_tests = 10
     total_compile_times = []
 
@@ -22,7 +22,7 @@ def main():
         print(f"Test {test + 1} of {num_tests}")
         total_compile_time = 0
 
-        # 测量 main.py 的编译时间
+        # measure compilation time of main.py
         main_file = os.path.join(base_dir, 'main.py')
         if os.path.exists(main_file):
             main_compile_time = measure_compile_time(main_file)
@@ -31,7 +31,7 @@ def main():
         else:
             print("main.py not found.")
 
-        # 遍历目录，找到所有包中的 .py 文件
+        # traverse directory to find all .py files in packages
         for root, dirs, files in os.walk(base_dir):
             for file in files:
                 if file.endswith('.py') and file != 'main.py':

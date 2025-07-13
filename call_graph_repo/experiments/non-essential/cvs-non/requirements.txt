@@ -1,2 +1,0 @@
-lightgbm==3.3.3
-numpy==1.23.5
